@@ -1966,7 +1966,7 @@ dl dd {
     left: 0;
     width: 100%;
     height: auto;
-    padding: 30px 15px 40px;
+    /* padding: 30px 15px 40px; */
     opacity: 0;
     margin-bottom: -100px;
     z-index: 2;

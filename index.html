@@ -36,9 +36,30 @@
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
-	.nav.navbar-nav li {
-    margin-left: 15px;
-    margin-right: 15px;
+	
+	.navbar-nav > li {
+		margin-right: 40px; /* 控制一级菜单横向间距，默认可以从20px调到40px */
+	}
+
+	nav .navbar-nav li > a {
+		font-size: 8px; /* 调小字体 */
+		padding: 4px 8px; /* 减少上下间距 */
+		display: block;
+		text-align: left; /* 向左对齐 */
+		margin-right: 20px;
+	}
+
+	li ul {
+		padding-left: 0; /* 移除内边距以靠近左边 */
+		margin: 0;
+		list-style: none;
+	}
+
+	li ul li a {
+		font-size: 10px; /* 子项再小一点 */
+		padding: 3px 12px; /* 控制子项间距 */
+		display: block;
+		text-align: left;
 	}
 
 	@media (max-width: 768px) {
@@ -47,6 +68,37 @@
 			margin-right: 5px;
 		}
 	}
+
+	.dlab-media img {
+		width: 400px;
+		height: auto;
+	}
+
+	.overlay-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4); /* 黑色半透明背景 */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+}
+
+.overlay-content .post-title {
+	color: white;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.overlay-content .site-button {
+	background-color: #ffffff;
+	color: #000;
+}
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -477,7 +529,7 @@
 				<div class="container clearfix">
 					<!-- website logo -->
 					<div class="logo-header mostion logo-dark">
-						<a href="index.html"><img src="images/logo-4.png" alt=""></a>
+						<a href="index.html"><img src="images/frtbio_logo.png" style="scale: 2.0; padding-right: 20px; padding-top: 6px;"  alt=""></a>
 					</div>
 					<!-- nav toggle button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -499,21 +551,21 @@
 						</form>
 					</div> -->
 					<!-- main nav -->
-					<div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+					<div class="header-nav navbar-collapse collapse justify-content-center"  id="navbarNavDropdown">
 						<div class="logo-header d-md-block d-lg-none">
 							<a href="index.html"><img src="images/logo-4.png" alt=""></a>
 						</div>
 						<ul class="nav navbar-nav">	
-							<li class="active has-mega-menu homedemo">
-								<a href="javascript:;">首页<i class="fas fa-chevron-down"></i></a>
+							<li class="active has-mega-menu ">
+								<a href="index.html">首页<i class="fas fa-chevron-down"></i></a>
 							</li>
 							
-							<li>
+							<li class="has-mega-menu">
 								<a href="product-center.html">产品中心<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu tab-content">
+								<ul class="mega-menu">
 									<li>
 										<a href="serums.html">血清 </a>
-										<!-- <ul class="sub-menu">
+										<ul>
 											<li><a href="header-style-1.html">特级胎牛血清</a></li>
 											<li><a href="header-style-2.html">优级胎牛血清</a></li>
 											<li><a href="header-style-3.html">新生牛血清</a></li>
@@ -525,11 +577,13 @@
 											<li><a href="header-style-9.html">供体山羊血清</a></li>
 											<li><a href="header-style-10.html">供体人血清</a></li>
 											<li><a href="header-style-11.html">Fetalgro®牛生长血清</a></li>
-										</ul> -->
+											
+										</ul>
 									</li>	
+										
 									<li> 
 										<a href="javascript:;">蛋白质组分</a>
-										<!-- <ul class="sub-menu">		
+										<ul style="text-align: left;">		
 											<li><a href="header-style-dark-1.html">Maxichol®诊断脂质组分</a></li>
 											<li><a href="header-style-dark-2.html">血清替代物</a></li>
 											<li><a href="header-style-dark-3.html">Fetalgro®牛生长血清</a></li>
@@ -538,16 +592,13 @@
 											<li><a href="header-style-dark-6.html">牛转铁蛋白APO和HOLO</a></li>
 											<li><a href="header-style-dark-7.html">牛凝血酶</a></li>
 											<li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
-										</ul> -->
+											<li><a href="header-style-dark-6.html">牛转铁蛋白APO和HOLO</a></li>
+											<li><a href="header-style-dark-7.html">牛凝血酶</a></li>
+											<li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
+										</ul>
 									</li>
-									<li> 
-										<a href="javascript:;">高纯水和工艺液体 </i></a>
-										<!-- <ul class="sub-menu">
-											<li><a href="footer-1.html">RMBIOne通用级注射用水</a></li>
-											<li><a href="footer-2.html">美国药典/欧洲药典级注射用水</a></li>
-											<li><a href="footer-3.html">美国药典级注射用水</a></li>
-										</ul> -->
-									</li>
+									
+									
 									<li> 
 										<a href="cell-culture-medium.html">细胞培养基</a>
 									</li>
@@ -603,42 +654,63 @@
 				<div class="container">
 					<div class="section-head text-black text-center">
 						<h2 class="title">热销产品</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+						<p>为生命科研工作者和人类健康提供优质的产品和服务</p>
 					</div>
 					<div class="row">
-						<div class="col-lg-4 col-md-6 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-							<div class="icon-bx-wraper service-box style5 shadow fly-box">
-								<div class="dlab-media dlab-img-effect zoom">
-									<img src="images/reagent.jpg" alt="">
-								</div>
-								<div class="icon-content" style="min-height: 120px;">
-									<p style="font-weight: bold;"><a href="services-details.html" >Front Biomed澳洲/新西兰特级胎牛血清 (FBS, Optimum)</a></p>
-									<a href="services-details.html" class="link-btn">+</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-							<div class="icon-bx-wraper service-box style5 shadow fly-box">
-								<div class="dlab-media dlab-img-effect zoom">
-									<img src="images/reagent.jpg" alt="">
-								</div>
-								<div class="icon-content" style="min-height: 120px;">
-									<p style="font-weight: bold;"><a href="services-details.html">Front Biomed国产特级胎牛血清 (FBS, Optimum) </a></p>
-									<a href="services-details.html" class="link-btn">+</a>
+						<div class="col-lg-6 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+							<div class="blog-post blog-grid blog-rounded blog-effect1 position-relative overflow-hidden">
+								<div class="dlab-post-media dlab-img-effect rotate position-relative">
+									<a href="javascript:void(0);">
+										<img src="images/product1.png"  style="max-height: 300px; width: 100%; object-fit: cover; scale: 0.9;" alt="">
+									</a>
+									<div class="overlay-content always-visible">
+										<h4 class="post-title text-white">Front Biomed澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h4>
+										<a href="javascript:void(0);" class="site-button btnhover20">查看详情</a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-							<div class="icon-bx-wraper service-box style5 shadow fly-box">
-								<div class="dlab-media dlab-img-effect zoom">
-									<img src="images/reagent.jpg" alt="">
-								</div>
-								<div class="icon-content" style="min-height: 120px;">
-									<p style="font-weight: bold;"><a href="services-details.html">其他动物血清<br></a></p>
-									<a href="services-details.html" class="link-btn">+</a>
+						<div class="col-lg-6 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+							<div class="blog-post blog-grid blog-rounded blog-effect1 position-relative overflow-hidden">
+								<div class="dlab-post-media dlab-img-effect rotate position-relative">
+									<a href="javascript:void(0);">
+										<img src="images/product2.png" style="max-height: 300px; width: 100%; object-fit: cover; scale: 0.9;" alt="">
+									</a>
+									<div class="overlay-content always-visible">
+										<h4 class="post-title text-white">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h4>
+										<a href="javascript:void(0);" class="site-button btnhover20">查看详情</a>
+									</div>
 								</div>
 							</div>
 						</div>
+						
+						<div class="col-lg-6 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+							<div class="blog-post blog-grid blog-rounded blog-effect1 position-relative overflow-hidden">
+								<div class="dlab-post-media dlab-img-effect rotate position-relative">
+									<a href="javascript:void(0);">
+										<img src="images/product3.png" style="max-height: 300px; width: 100%; object-fit: cover; scale: 0.9;" alt="">
+									</a>
+									<div class="overlay-content always-visible">
+										<h4 class="post-title text-white">其他动物血清</h4>
+										<a href="javascript:void(0);" class="site-button btnhover20">查看详情</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+							<div class="blog-post blog-grid blog-rounded blog-effect1 position-relative overflow-hidden">
+								<div class="dlab-post-media dlab-img-effect rotate position-relative">
+									<a href="javascript:void(0);">
+										<img src="images/product3.png" style="max-height: 300px; width: 100%; object-fit: cover; scale: 0.9;" alt="">
+									</a>
+									<div class="overlay-content always-visible">
+										<h4 class="post-title text-white">其他动物血清</h4>
+										<a href="javascript:void(0);" class="site-button btnhover20">查看详情</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -652,7 +724,7 @@
 							<p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 						</div>
 						<div class="col-lg-3 d-flex">
-							<a href="contact-1.html" class="site-button btnhover15 white align-self-center outline ms-auto radius-xl outline-2">Contact Us </a>
+							<a href="contact-1.html" class="site-button btnhover15 white align-self-center outline ms-auto radius-xl outline-2">联系我们 </a>
 						</div>
 					</div>
 				</div>
