@@ -191,33 +191,259 @@
 			<div class="section-full content-inner">
                 <div class="container">
 					<div class="row">
-						<div class="col-xl-3 col-lg-4 col-md-5">
-							<div class="widget sidebar-widget ext-sidebar-menu widget_nav_menu">
-								<ul class="menu">
-									<li><a href="product-center.html">产品中心</a> </li>
-									<li class="active"><a href="#">血清</a></li>
-									<li ><a href="cell-culture-medium.html">细胞培养基</a></li>
-								</ul>
-							</div>
-							<!-- <div class="widget">
-								<div class="download-file">
-									<h4 class="title">Get your brochures</h4>
-									<ul>
-										<li>
-											<a href="javascript:void(0);">
-												<div class="text">Company Brochures</div>
-												<i class="fas fa-download"></i>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<div class="text">Company Info</div>
-												<i class="fas fa-download"></i>
-											</a>
-										</li>
-									</ul>
+						<div class="col-lg-3 col-md-4 m-b30">
+							<aside class="side-bar shop-categories sticky-top">
+								<div class="widget recent-posts-entry">
+									<div class="dlab-accordion advanced-search toggle" id="accordion1">
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse" href="#categories">
+														Product categories
+													</a> 
+												</h5>
+											</div>
+											<div id="categories" class="acod-body collapse show">
+												<div class="acod-content">
+													<div class="widget widget_services">
+														<ul>
+															<li><a href="shop-cart.html">Bags</a></li>
+															<li><a href="shop-cart.html">Jeans</a></li>
+															<li><a href="shop-cart.html">Shoes</a></li>
+															<li><a href="shop-cart.html">Sweaters</a></li>
+															<li><a href="shop-cart.html">Tops</a></li>
+															<li><a href="shop-cart.html">Women</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title">
+													<a data-bs-toggle="collapse" href="#price-range">
+														Price Range
+													</a> 
+												</h5>
+											</div>
+											<div id="price-range" class="acod-body collapse show">
+												<div class="acod-content">
+													<div class="price-slide-2 range-slider">
+														<div class="price">
+															<input type="text" id="amount-2" class="amount" readonly="" value="$400 - $4000">
+															<div id="slider-range-2"></div>
+														</div>
+													 </div>
+												</div>
+											</div>
+										</div>
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse"  href="#color" >
+														COLOR
+													</a>
+												</h5>
+											</div>
+											<div id="color" class="acod-body collapse show">
+												<div class="acod-content">
+													<h6>Select the color</h6>
+													<div class="btn-group product-item-color" data-bs-toggle="buttons">
+														<input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked="">
+														<label class="btn bg-red" for="btnradio1"></label>
+	
+														<input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+														<label class="btn bg-dark" for="btnradio2"></label>
+	
+														<input type="radio" class="btn-check" name="btnradio" id="btnradio3">
+														<label class="btn bg-yellow" for="btnradio3"></label>
+													  
+														<input type="radio" class="btn-check" name="btnradio" id="btnradio4">
+														<label class="btn bg-blue" for="btnradio4"></label>
+													  
+														<input type="radio" class="btn-check" name="btnradio" id="btnradio5">
+														<label class="btn bg-green" for="btnradio5"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse"  href="#size">
+														Size
+													</a>
+												</h5>
+											</div>
+											<div id="size" class="acod-body collapse show">
+												<div class="acod-content">
+													<h6>Product Size</h6>
+													<div class="btn-group product-item-size" data-bs-toggle="buttons">
+														<input type="radio" class="btn-check" name="btnradio1" id="btnradio11" checked="">
+														<label class="btn" for="btnradio11">XS</label>
+	
+														<input type="radio" class="btn-check" name="btnradio1" id="btnradio21">
+														<label class="btn" for="btnradio21">SM</label>
+	
+														<input type="radio" class="btn-check" name="btnradio1" id="btnradio31">
+														<label class="btn" for="btnradio31">MD</label>
+													  
+														<input type="radio" class="btn-check" name="btnradio1" id="btnradio41">
+														<label class="btn" for="btnradio41">LG</label>
+													  
+														<input type="radio" class="btn-check" name="btnradio1" id="btnradio51">
+														<label class="btn" for="btnradio51">XL</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse" href="#vendor">
+														VENDOR
+													</a>
+												</h5>
+											</div>
+											<div id="vendor" class="acod-body collapse show">
+												<div class="acod-content">
+													<div class="product-brand">
+														<div class="search-content">
+															<input id="seating1" type="checkbox">
+															<label for="seating1"  class="search-content-area">Gap</label>
+														</div>
+														<div class="search-content">
+															<input id="seating2" type="checkbox">
+															<label for="seating2"  class="search-content-area">Guess</label>
+														</div>
+														<div class="search-content">
+															<input id="seating3" type="checkbox">
+															<label for="seating3"  class="search-content-area">Lacoste</label>
+														</div>
+														<div class="search-content">
+															<input id="seating4" type="checkbox">
+															<label for="seating4"  class="search-content-area">Levi's</label>
+														</div>
+														<div class="search-content">
+															<input id="seating5" type="checkbox">
+															<label for="seating5"  class="search-content-area">Polo</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse"  href="#tags" class="collapsed" >
+														POPULAR TAGS
+													</a>
+												</h5>
+											</div>
+											<div id="tags" class="acod-body collapse">
+												<div class="acod-content">
+													<div class="widget_tag_cloud radius">
+														<div class="tagcloud"> <a href="javascript:void(0);">Design</a> 
+														<a href="javascript:void(0);">User interface</a> 
+														<a href="javascript:void(0);">SEO</a> 
+														<a href="javascript:void(0);">WordPress</a> 
+														<a href="javascript:void(0);">Development</a> 
+														<a href="javascript:void(0);">Joomla</a> 
+														<a href="javascript:void(0);">Design</a> 
+														<a href="javascript:void(0);">User interface</a> 
+														<a href="javascript:void(0);">SEO</a> 
+														<a href="javascript:void(0);">WordPress</a>
+														<a href="javascript:void(0);">Development</a> 
+														<a href="javascript:void(0);">Joomla</a> 
+														<a href="javascript:void(0);">Design</a> 
+														<a href="javascript:void(0);">User interface</a> 
+														<a href="javascript:void(0);">SEO</a> 
+														<a href="javascript:void(0);">WordPress</a> 
+														<a href="javascript:void(0);">Development</a> 
+														<a href="javascript:void(0);">Joomla</a> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse"  href="#features" class="collapsed" >
+														Features
+													</a>
+												</h5>
+											</div>
+											<div id="features" class="acod-body collapse">
+												<div class="acod-content">
+													<div class="item-widgets-box">
+														<div class="item-widgets-left">
+															<img src="images/product/thumb/item1.jpg" alt="">
+														</div>
+														<div class="item-widgets-body text-black">
+															<h6 class="item-title text-capitalize font-weight-500 m-t0">
+																<a href="shop-product-details.html">Product Title</a>
+															</h6>
+															<ul class="item-review text-yellow-light">
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star-half-alt text-yellow"></i></li>
+																<li><i class="far fa-star"></i></li>
+															</ul>
+															<h6 class="item-price m-b0">
+																<del>$232</del> 
+																<span class="text-primary">$192</span>
+															</h6>
+														</div>
+													</div>
+													<div class="item-widgets-box">
+														<div class="item-widgets-left">
+															<img src="images/product/thumb/item2.jpg" alt="">
+														</div>
+														<div class="item-widgets-body text-black">
+															<h6 class="item-title text-capitalize font-weight-500 m-t0">
+																<a href="shop-product-details.html">Product Title</a>
+															</h6>
+															<ul class="item-review text-yellow-light">
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star-half-alt text-yellow"></i></li>
+																<li><i class="far fa-star"></i></li>
+															</ul>
+															<h6 class="item-price m-b0">
+																<del>$232</del> 
+																<span class="text-primary">$192</span>
+															</h6>
+														</div>
+													</div>
+													<div class="item-widgets-box">
+														<div class="item-widgets-left">
+															<img src="images/product/thumb/item3.jpg" alt="">
+														</div>
+														<div class="item-widgets-body text-black">
+															<h6 class="item-title text-capitalize font-weight-500 m-t0">
+																<a href="shop-product-details.html">Product Title</a>
+															</h6>
+															<ul class="item-review text-yellow-light">
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star text-yellow"></i></li>
+																<li><i class="fas fa-star-half-alt text-yellow"></i></li>
+																<li><i class="far fa-star"></i></li>
+															</ul>
+															<h6 class="item-price m-b0">
+																<del>$232</del> 
+																<span class="text-primary">$192</span>
+															</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div> -->
+							</aside>
 						</div>
 						<div class="col-xl-9 col-lg-8 col-md-7 m-b30">
 							<div class="row">
