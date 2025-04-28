@@ -86,57 +86,67 @@
 										<div class="panel" style="margin-top: 10px;">
 											<div class="acod-head">
 												<h5 class="acod-title"> 
-													<a data-bs-toggle="collapse" href="#serums">
-														血清
+													<a data-bs-toggle="collapse" href="#Fetal-Bovine-Serum">
+														胎牛血清
 													</a> 
 												</h5>
 											</div>
-											<div id="serums" class="acod-body collapse show">
+											<div id="Fetal-Bovine-Serum" class="acod-body collapse show">
 												<div class="acod-content">
 													<div class="widget widget_services">
-														<ul>
-														<li><a href="#">特级胎牛血清</a></li>
-														<li><a href="#">优级胎牛血清</a></li>
-														<li><a href="#">新生牛血清</a></li>
-														<li><a href="#">小牛血清</a></li>
-														<li><a href="#">成年牛血清</a></li>
-														<li><a href="#">铁强化牛血清</a></li>
-														<li><a href="#">猪血清</a></li>
-														<li><a href="#">供体马血清</a></li>
-														<li><a href="#">供体山羊血清</a></li>
-														<li><a href="#">供体人血清</a></li>
-														<li><a href="#">Fetalgro®牛生长血清</a></li>
+														<ul class="list-star red">
+															<li><a href="#">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="#">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="#">Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
 														</ul>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="panel">
+										<div class="panel" style="margin-top: 10px;">
 											<div class="acod-head">
 												<h5 class="acod-title"> 
-													<a data-bs-toggle="collapse" href="#cell-culture-medium">
-														细胞培养基
+													<a data-bs-toggle="collapse" href="#Bovine-Serum">
+														牛血清
 													</a> 
 												</h5>
 											</div>
-											<div id="cell-culture-medium" class="acod-body collapse show">
+											<div id="Bovine-Serum" class="acod-body collapse show">
 												<div class="acod-content">
 													<div class="widget widget_services">
-														<ul>
-														<li><a href="#">Maxichol®诊断脂质组分</a></li>
-														<li><a href="#">血清替代物</a></li>
-														<li><a href="#">Fetalgro®牛生长血清</a></li>
-														<li><a href="#">牛低密度脂蛋白浓缩胆固醇</a></li>
-														<li><a href="#">猪浓缩胆固醇</a></li>
-														<li><a href="#">牛转铁蛋白APO和HOLO</a></li>
-														<li><a href="#">牛凝血酶</a></li>
-														<li><a href="#">猪胰蛋白酶</a></li>
+														<ul class="list-star red">
+															<li><a href="#">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
+															<li><a href="#">小牛血清Calf Serum(CSF)</a></li>
+															<li><a href="#">成年牛血清(Adult Bovine Serum)</a></li>
+															<li><a href="#">铁强化牛血清(Iron Fortified Bovine Calf Serum)</a></li>
 														</ul>
 													</div>
 												</div>
 											</div>
 										</div>
-										
+										<div class="panel" style="margin-top: 10px;">
+											<div class="acod-head">
+												<h5 class="acod-title"> 
+													<a data-bs-toggle="collapse" href="#other-serums">
+														其他动物血清
+													</a> 
+												</h5>
+											</div>
+											<div id="other-serums" class="acod-body collapse show">
+												<div class="acod-content">
+													<div class="widget widget_services">
+														<ul class="list-star red">
+															<li><a href="#">猪血清(Pig Serum-Porcine Serum)</a></li>
+															<li><a href="#">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
+															<li><a href="#">供体山羊血清(Donor Goat Serum)</a></li>
+															<li><a href="#">供体人血清(Donor Human Serum)</a></li>
+															<li><a href="#">供体山羊血清(Donor Goat Serum)</a></li>
+															<li><a href="#">Fetalgro®牛生长血清(Bovine Growth Serum)</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</aside>
@@ -144,35 +154,87 @@
 						<div class="col-xl-9 col-lg-8 col-md-7 m-b30">
 							<div class="row">
 								
-								<a href="fetal-bovine-serum.html"><div class="col-lg-6 col-md-12">
-									<div class="dlab-box">
-										<!-- <div class="dlab-media m-b30"> <a href="javascript:void(0);"><img src="images/services/pic4.jpg" class="rounded" alt=""></a></div> -->
-										<div class="dlab-media"> <a href="fetal-bovine-serum.html"><img src="images/blood-serum.jpg" class="rounded" alt=""></a></div>
-										<div class="dlab-info m-t30">
-											<h4 class="dlab-title m-t0">胎牛血清</h4>
-											<p>There are many variations of passages of Lorem Ipsum typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-											
+								<div class="col-lg-12 col-md-12">
+									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
+										<!-- 图片部分 -->
+										<div style="margin-right: 30px; width: 600px; height: auto; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+											<a >
+												<img src="images/product-thumb.png" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+											</a>
 										</div>
-									</div>
-								</div></a>
-                                <div class="col-lg-6 col-md-12">
-									<div class="dlab-box">
-										<!-- <div class="dlab-media m-b30"> <a href="javascript:void(0);"><img src="images/services/pic4.jpg" class="rounded" alt=""></a></div> -->
-										<div class="dlab-media"> <a href="bovine-serum.html"><img src="images/blood-serum.jpg" class="rounded" alt=""></a></div>
-										<div class="dlab-info m-t30">
-											<h4 class="dlab-title m-t0">牛血清</h4>
-											<p>There are many variations of passages of Lorem Ipsum typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+										<!-- 文字内容部分 -->
+										<div class="">
+											<a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php"><h5 class="dlab-title">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5></a>
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+											</div>
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">规格</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">500mL</p>
+											</div>
 										</div>
 									</div>
 								</div>
-                                <div class="col-lg-6 col-md-12" style="padding-top: 20px;">
-									<div class="dlab-box">
-										<!-- <div class="dlab-media m-b30"> <a href="javascript:void(0);"><img src="images/services/pic4.jpg" class="rounded" alt=""></a></div> -->
-										<div class="dlab-media"> <a href="other-bovine-serum.html"><img src="images/blood-serum.jpg" class="rounded" alt=""></a></div>
-										<div class="dlab-info m-t30">
-											<h4 class="dlab-title m-t0">其它动物血清</h4>
-											<p>There are many variations of passages of Lorem Ipsum typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-											
+                                <div class="col-lg-12 col-md-12">
+									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
+										<!-- 图片部分 -->
+										<div style="margin-right: 30px; width: 600px; height: auto; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+											<a href="fetal-bovine-serum.html">
+												<img src="images/product-thumb.png" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+											</a>
+										</div>
+										<!-- 文字内容部分 -->
+										<div class="">
+											<h5 class="dlab-title">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+											</div>
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">规格</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">500mL</p>
+											</div>
+										</div>
+									</div>
+								</div>
+                                <div class="col-lg-12 col-md-12">
+									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
+										<!-- 图片部分 -->
+										<div style="margin-right: 30px; width: 600px; height: auto; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+											<a href="fetal-bovine-serum.html">
+												<img src="images/product-thumb.png" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+											</a>
+										</div>
+										<!-- 文字内容部分 -->
+										<div class="">
+											<h5 class="dlab-title">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+											</div>
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">规格</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">500mL</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -222,5 +284,7 @@
 			footer.innerHTML = data;
 		});
 </script>
+
+
 </body>
 </html>

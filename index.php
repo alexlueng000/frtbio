@@ -511,7 +511,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="" >
 								
-									<img src="images/product-1.jpg" alt="" >
+									<img src="images/home-product1.png" alt="" >
 								
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">Front Biomed 澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h5>
@@ -522,7 +522,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="product-card dlab-post-media" >
 								<a href="javascript:void(0);">
-									<img src="images/product-2.jpg" alt="" >
+									<img src="images/home-product2.png" alt="" >
 								</a>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">Front Biomed 澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h5>
@@ -534,7 +534,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="product-card dlab-post-media" >
 								<a href="javascript:void(0);">
-									<img src="images/product-3.jpg" alt="" >
+									<img src="images/home-product3.png" alt="" >
 								</a>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">Front Biomed 澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h5>
@@ -545,7 +545,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="product-card dlab-post-media" >
 								<a href="javascript:void(0);">
-									<img src="images/product-4.jpg" alt="" >
+									<img src="images/home-product4.png" alt="" >
 								</a>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">其他动物血清</h5>
@@ -564,7 +564,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-9 text-white">
-							<h2 class="title">全球精粹,国产突破,全线赋能</h2>
+							<h2 class="title">全球精粹，国产突破，全线赋能</h2>
 							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；国产胎牛血清高性价比之选，实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中...联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">

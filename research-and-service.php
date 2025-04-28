@@ -143,7 +143,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="sort-title clearfix text-center">
-								<h4>在研项目</h4>
+								<h2>在研项目</h2>
 							</div>
 						</div>
 					</div>
@@ -152,11 +152,11 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/cell.jpg" alt="">
+										<img src="images/project1.jpg" alt="">
 									</div>
-									<div class="testimonial-detail quote-left quote-right">
-										<div class="testimonial-text">
-											<p>工程化间充质干细胞外泌体靶向肝癌递送siMYC-AS1和anti-PD-l1抑制肿瘤研究</p>
+									<div class="testimonial-detail ">
+										<div class="">
+											<h4>工程化间充质干细胞外泌体靶向肝癌递送siMYC-AS1和anti-PD-l1抑制肿瘤研究</h4>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -165,11 +165,11 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/cell.jpg" alt="">
+										<img src="images/project2.jpg" alt="">
 									</div>
-									<div class="testimonial-detail quote-left quote-right">
-										<div class="testimonial-text">
-											<p>亚健康人群细胞精准治疗</p>
+									<div class="testimonial-detail ">
+										<div class="">
+											<h4>亚健康人群细胞精准治疗</h4>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -178,11 +178,11 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/cell.jpg" alt="">
+										<img src="images/project3.png" alt="">
 									</div>
-									<div class="testimonial-detail quote-left quote-right">
-										<div class="testimonial-text">
-											<p>细胞因子在美容产品上的运用</p>
+									<div class="testimonial-detail">
+										<div class="">
+											<h4>细胞因子在美容产品上的运用</h4>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -191,11 +191,11 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/cell.jpg" alt="">
+										<img src="images/project4.png" alt="">
 									</div>
-									<div class="testimonial-detail quote-left quote-right">
-										<div class="testimonial-text">
-											<p>羊膜间充质干细胞及其外泌体治疗脊髓损伤/创伤后膝关节炎修复研究</p>
+									<div class="testimonial-detail">
+										<div class="">
+											<h4>羊膜间充质干细胞及其外泌体治疗脊髓损伤/创伤后膝关节炎修复研究</h4>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -210,35 +210,50 @@
 			<!-- Our Project and Gallery -->
 			<div class="section-full" id="choose-us">
 				<div class="row m-lr0">
-					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1 bg-primary wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-						<div class="align-self-center text-white">
-							<div class="section-head text-white">
+					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1 wow fadeInLeft " 
+					style="position: relative; background-image: url('images/service-lab1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" 
+					data-wow-duration="2s" data-wow-delay="0.3s">
+						<div class="align-self-center text-white" style=" display: flex;
+						flex-direction: column;
+						justify-content: flex-start; 
+						height: 100%; " >
+							<div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:0;"></div>
+							<div class="section-head text-white" style="z-index:1;">
 								<h2 class="title">细胞培养研究中心</h2>
 								
 							</div>
-							<ul class="list-check white list-2 rounded border">
-								<li>
-									<h4 class="m-b10">血清个性化定制</h4>
-									<p>可以根据客户的血清需求，进行个性化处理，包括活性炭处理、透析处理、热灭活处理、聚乙二醇处理、低内毒素水平，超低IgG以及伽马射线照射。此外，血清瓶容量亦可定制。</p>
-								</li>
-								<li>
-									<h4 class="m-b10">胎牛血清筛选标准</h4>
-									<p>弗劳恩生物有一套完善严谨的胎牛血清筛选标准。对于待筛选的血清，我们会根据客户需求分别从传代稳定性、细胞生长速率、生长状态、扩大培养等多方面进行验证，充分判断最适合细胞的血清，并预留足够的存货量。</p>
-								</li>
-								<li>
-									<h4 class="m-b10">无血清培养基研发</h4>
-									<p>弗劳恩生物通过重组蛋白表达系统的技术应用，可以量产细胞培养所需的各种生长因子（表皮生长因子、成纤维生长因子、类胰岛素生长因子等）；与中国科学院广州生物医药与健康研究院顶级干细胞研究团队合作，可以根据各种细胞株的生长特性开发最合适的无血清培养基。</p>
-								</li>
-							</ul>
+							<div style="z-index:1;">
+								<ul class="list-check white list-2 rounded border">
+									<li>
+										<h4 class="m-b10">血清个性化定制</h4>
+										<p style="font-weight: 600;">可以根据客户的血清需求，进行个性化处理，包括活性炭处理、透析处理、热灭活处理、聚乙二醇处理、低内毒素水平，超低IgG以及伽马射线照射。此外，血清瓶容量亦可定制。</p>
+									</li>
+									<li>
+										<h4 class="m-b10">胎牛血清筛选标准</h4>
+										<p style="font-weight: 600;">弗劳恩生物有一套完善严谨的胎牛血清筛选标准。对于待筛选的血清，我们会根据客户需求分别从传代稳定性、细胞生长速率、生长状态、扩大培养等多方面进行验证，充分判断最适合细胞的血清，并预留足够的存货量。</p>
+									</li>
+									<li>
+										<h4 class="m-b10">无血清培养基研发</h4>
+										<p style="font-weight: 600;">弗劳恩生物通过重组蛋白表达系统的技术应用，可以量产细胞培养所需的各种生长因子（表皮生长因子、成纤维生长因子、类胰岛素生长因子等）；与中国科学院广州生物医药与健康研究院顶级干细胞研究团队合作，可以根据各种细胞株的生长特性开发最合适的无血清培养基。</p>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1  wow fadeInLeft" style="background-color: #FF8500;" data-wow-duration="2s" data-wow-delay="0.3s">
-						<div class="align-self-center text-white">
-							<div class="section-head text-white">
+					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1  wow fadeInLeft" 
+					style="position: relative; background-image: url('images/service-lab2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-wow-duration="2s" data-wow-delay="0.3s">
+						<div class="align-self-center text-white" style=" display: flex;
+						flex-direction: column;
+						justify-content: flex-start; 
+						height: 100%; " >		
+							<div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:0;"></div>
+							<div class="section-head text-white" style="z-index:1">
 								<h2 class="title">影像检测实验室</h2>
-								<p>弗劳恩科技与全球最早进行MicroCT开发的行业龙头企业瑞士SCANCO Medical AG建立了深度战略合作关系，是SCANCO在大中华地区（ 大陆、香港、台湾和澳门）的唯一代理机构，同时建立了影像检测实验室-Micro CT扫描中心，为大中华区科教单位、医学院、医疗机构及研发企业提供深度的研究辅助服务，助力客户创新创造能力采用超高分辨率的Micro CT（临床前影像检测分析中心）等实验设备对活体、细胞等样品进行生物检测分析，对生物结构和参数的定性定量分析提供可靠依据。成熟运营7年的Micro CT扫描中心，相关硬件设施及服务技术团队目前在国内属于领先地位，已覆盖国内及港澳近100家医学院、大学实验室、高级别三甲医院等客户。</p>
+								
 							</div>
-							
+							<div  style="z-index:1">
+								<p style="font-weight: 600;" >弗劳恩科技与全球最早进行MicroCT开发的行业龙头企业瑞士SCANCO Medical AG建立了深度战略合作关系，是SCANCO在大中华地区（ 大陆、香港、台湾和澳门）的唯一代理机构，同时建立了影像检测实验室-Micro CT扫描中心，为大中华区科教单位、医学院、医疗机构及研发企业提供深度的研究辅助服务，助力客户创新创造能力采用超高分辨率的Micro CT（临床前影像检测分析中心）等实验设备对活体、细胞等样品进行生物检测分析，对生物结构和参数的定性定量分析提供可靠依据。成熟运营7年的Micro CT扫描中心，相关硬件设施及服务技术团队目前在国内属于领先地位，已覆盖国内及港澳近100家医学院、大学实验室、高级别三甲医院等客户。</p>
+							</div>
 						</div>
 					</div>
 				</div>
