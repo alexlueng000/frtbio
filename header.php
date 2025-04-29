@@ -61,7 +61,7 @@
                                     </ul>
                                 </li>	
                                     
-                                <li> 
+                                <!-- <li> 
                                     <a href="javascript:;">蛋白质组分</a>
                                     <ul style="text-align: left;">		
                                         <li><a href="header-style-dark-1.html">Maxichol®诊断脂质组分</a></li>
@@ -76,25 +76,25 @@
                                         <li><a href="header-style-dark-7.html">牛凝血酶</a></li>
                                         <li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 
                                 
                                 <li> 
                                     <a href="cell-culture-medium.html">细胞培养基</a>
                                 </li>
-                                <li> 
+                                <!-- <li> 
                                     <a href="javascript:;">鉴定试剂</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
 
                         
                         
                         <li style="margin-right: 30px;"> 
-                            <a href="introduction.html">关于我们<i class="fas fa-chevron-down"></i></a>
+                            <a href="introduction.php">关于我们<i class="fas fa-chevron-down"></i></a>
                             <ul class="sub-menu  tab-content">
                                 <li> 
-                                    <a href="introduction.html">公司简介</a>
+                                    <a href="introduction.php">公司简介</a>
                                 </li>
                                 <li> 
                                     <a href="contact.html">联系我们</a>

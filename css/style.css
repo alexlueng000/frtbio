@@ -4945,7 +4945,7 @@ blockquote:before {
     margin-bottom: 5px;
 }
 .dlab-post-title .post-title {
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 .dlab-post-meta {
@@ -8546,7 +8546,7 @@ ul[class*="list-"]{
     border: 1px solid transparent;
 }
 .dlab-tabs .nav-tabs > li > a i {
-    color: var(--color-primary);
+    color: #FF8500;
     margin-right: 5px;
 }
 /*tabs bg  [ tabs background ]*/
@@ -8581,7 +8581,7 @@ ul[class*="list-"]{
 	border-top:0;
 }
 .dlab-tabs.border-top .nav-tabs > li > a.active {
-    border-top: 2px solid var(--color-primary);
+    border-top: 2px solid #FF8500;
     padding: 9px 15px 10px;
 }
 /*tabs style 2 [ content with border outer ]*/
@@ -8671,7 +8671,7 @@ ul[class*="list-"]{
 .tabs-site-button .nav-tabs li a.active:focus,
 .tabs-site-button .nav-tabs li a.active:hover,
 .tabs-site-button .nav-tabs li a.active{
-	background-color: var(--color-primary);
+	background-color: #FF8500;
 	color:#fff;
 	border:0;
 }
@@ -12010,7 +12010,7 @@ footer .widget_services ul li a:hover{
     border-top: 2px solid #efbb20;
 }
 .product-description.dex-tabs .nav-tabs > li > a i {
-    color: #efbb20;
+    color: #FF8500;
 }
 .dex-tabs.bg-tabs .nav-tabs > li > a {
     background-color: #fcfcfc;

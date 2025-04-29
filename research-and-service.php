@@ -211,7 +211,7 @@
 			<div class="section-full" id="choose-us">
 				<div class="row m-lr0">
 					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1 wow fadeInLeft " 
-					style="position: relative; background-image: url('images/service-lab1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" 
+					style="position: relative; background-image: url('images/service-lab2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" 
 					data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="align-self-center text-white" style=" display: flex;
 						flex-direction: column;
@@ -241,7 +241,7 @@
 						</div>
 					</div>
 					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1  wow fadeInLeft" 
-					style="position: relative; background-image: url('images/service-lab2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-wow-duration="2s" data-wow-delay="0.3s">
+					style="position: relative; background-image: url('images/service-lab1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="align-self-center text-white" style=" display: flex;
 						flex-direction: column;
 						justify-content: flex-start; 

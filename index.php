@@ -69,8 +69,6 @@
 			margin-right: 5px;
 		}
 	}
-
-	
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -503,53 +501,54 @@
 			<!-- 热销产品 -->
 			<div class="section-full content-inner bg-white">
 				<div class="best-sell-container">
-					<div class="section-head text-black text-center">
-						<h2 class="title">热销产品</h2>
-						<p>为生命科研工作者和人类健康提供优质的产品和服务</p>
+					<div class="sort-title clearfix text-center">
+						<h2>热销产品</h2>
 					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+					<div class="row" style="margin-top: -20px;">
+						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s"
+						style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; "
+						>
 							<div class="" >
 								
 									<img src="images/home-product1.png" alt="" >
 								
 								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">Front Biomed 澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h5>
-									<a href="javascript:void(0);" class="site-button mt-2" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级进口胎牛血清 (FBS, Optimum)</h5>
+									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<a href="javascript:void(0);">
 									<img src="images/home-product2.png" alt="" >
 								</a>
 								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">Front Biomed 澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h5>
-									<a href="javascript:void(0);" class="site-button mt-2" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
+									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
 						
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<a href="javascript:void(0);">
 									<img src="images/home-product3.png" alt="" >
 								</a>
 								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">Front Biomed 澳洲/新西兰特级胎牛血清 (FBS, Optimum)</h5>
-									<a href="javascript:void(0);" class="site-button mt-2" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
+									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<a href="javascript:void(0);">
 									<img src="images/home-product4.png" alt="" >
 								</a>
 								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 48px;">其他动物血清</h5>
-									<a href="javascript:void(0);" class="site-button mt-2" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">其他动物血清</h5>
+									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -568,7 +567,7 @@
 							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；国产胎牛血清高性价比之选，实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中...联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">
-							<a href="contact-1.html" class="site-button btnhover15 white align-self-center outline ms-auto radius-xl outline-2" style="background-color: #FF8500; color: #fff;">联系我们 </a>
+							<a href="contact-1.html" class="site-button btnhover15 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
 						</div>
 					</div>
 				</div>
@@ -578,9 +577,8 @@
 			<!-- 特色研发与服务 start -->
 			<div class="section-full content-inner bg-white">
 				<div class="container">
-					<div class="section-head text-black text-center">
-						<h2 class="title">特色研发与服务</h2>
-						<p>创新驱动，定制化服务助力科研突破</p>
+					<div class="sort-title clearfix text-center">
+						<h2>特色研发与服务</h2>
 					</div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -592,8 +590,8 @@
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-worker" style="color: #fff"></i></a> 
 									</div>
-									<h4 class="title"><a href="services-details.html">抗肿瘤生物药</a></h4>
-									<p>Lorem Ipsum is simply dummy text of the printing.</p>
+									<h4 class="title">抗肿瘤生物药</h4>
+									<p>Anti-tumor Biological Drugs</p>
 								</div>
 							</div>
 						</div>
@@ -606,8 +604,8 @@
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-settings" style="color: #fff"></i></a> 
 									</div>
-									<h4 class="title"><a href="services-details.html">细胞培养定制</a></h4>
-									<p>Lorem Ipsum is simply dummy text of the printing.</p>
+									<h4 class="title">细胞培养定制</h4>
+									<p>Custom Cell Culture</p>
 								</div>
 							</div>
 						</div>
@@ -620,8 +618,8 @@
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-engineer-1" style="color: #fff"></i></a> 
 									</div>
-									<h4 class="title"><a href="services-details.html">干细胞转化</a></h4>
-									<p>Lorem Ipsum is simply dummy text of the printing.</p>
+									<h4 class="title">干细胞转化</h4>
+									<p>Stem Cell Conversion</p>
 								</div>
 							</div>
 						</div>
@@ -634,8 +632,8 @@
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-factory-1" style="color: #fff"></i></a> 
 									</div>
-									<h4 class="title"><a href="services-details.html">新型化学药物</a></h4>
-									<p>Lorem Ipsum is simply dummy text of the printing.</p>
+									<h4 class="title">新型化学药物</h4>
+									<p>New Chemical Drugs</p>
 								</div>
 							</div>
 						</div>
@@ -648,8 +646,8 @@
 									<div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-worker" style="color: #fff"></i></a> 
 									</div>
-									<h4 class="title"><a href="services-details.html">影像检测服务</a></h4>
-									<p>Lorem Ipsum is simply dummy text of the printing.</p>
+									<h4 class="title">影像检测服务</h4>
+									<p>Imaging Detection Services</p>
 								</div>
 							</div>
 						</div>
@@ -723,9 +721,8 @@
 			<!-- Testimonials -->
 			<div class="section-full content-inner bg-gray">
 				<div class="container">
-					<div class="section-head text-center">
-						<h2 class="title">合作客户</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+					<div class="sort-title clearfix text-center">
+						<h2>合作客户</h2>
 					</div>
 					<div class="row m-b30">
 						<div id="lightgallery" class="dlab-gallery-listing row sp15 gallery">

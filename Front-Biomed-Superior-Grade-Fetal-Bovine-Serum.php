@@ -34,9 +34,26 @@
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<!-- Google Font -->
 	<style>
+
+	.modal-content {
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+    }
+    .modal-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .modal-text {
+      font-size: 18px;
+      color: #333;
+    }
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -54,9 +71,9 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
-							<li><a href="serums.html">血清</a></li>
-                            <li><a href="fetal-bovine-serum.html">胎牛血清</a></li>
+							<li><a href="index.php">首页</a></li>
+							<li><a href="serums.php">血清</a></li>
+                            <li><a href="#">胎牛血清</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -185,11 +202,11 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h4 class="post-title"><a href="javascript:void(0);">Front Biomed优级胎牛血清 (FBS, Premium)</a></h4>
-								<p class="m-b10"> Front Biomed优级胎牛血清采用经过严格筛选的最优质的新西兰或国产胎牛血清。其采集方法，加工过程，检定标准与美国原产优等胎牛血清完全一致。经过3次100 nm过滤，其质量相当或优于Gibco南美/依科赛南美等同类产品。</p>
-								<div class="dlab-divider bg-gray tb15">
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed优级胎牛血清 (FBS, Premium)</a></h3>
+								<p class="m-b10 m-t10"> Front Biomed优级胎牛血清采用经过严格筛选的最优质的新西兰或国产胎牛血清。其采集方法，加工过程，检定标准与美国原产优等胎牛血清完全一致。经过3次100 nm过滤，其质量相当或优于Gibco南美/依科赛南美等同类产品。</p>
+								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
-								</div>
+								</div> -->
 							</div>
 							<!-- <div class="relative">
 								<h3 class="m-tb10">$2,140.00 </h3>
@@ -217,20 +234,7 @@
 								<div class="m-b30 col-md-7 col-sm-8">
 									<h6>产品规格</h6>
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio11" checked="">
-										<label class="btn" for="btnradio11" style="width: 80px; color: #fff; text-align: center;">500mL</label>
-
-										<!-- <input type="radio" class="btn-check" name="btnradio1" id="btnradio21">
-										<label class="btn" for="btnradio21">SM</label>
-
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio31">
-										<label class="btn" for="btnradio31">MD</label>
-									  
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio41">
-										<label class="btn" for="btnradio41">LG</label>
-									  
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio51">
-										<label class="btn" for="btnradio51">XL</label> -->
+										<button class="site-button orange  m-r15" type="button">500mL</button>
 									</div>
 								</div>
 								<!-- <div class="m-b30 col-md-5 col-sm-4">
@@ -259,32 +263,50 @@
 									<label class="btn bg-green" for="btnradio5"></label>
 								</div>
 							</div> -->
-							<button class="site-button radius-no">
-								<i class="ti-shopping-cart"></i> 立即咨询
-							</button>
+							 <!-- Modal (Popup) -->
+							
+							<div class="btn-group product-item-size" data-bs-toggle="buttons">
+								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+							</div>
+							<!-- 模态框 -->
+							<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div style="flex-direction: column;">
+											<h5 class="modal-title m-d30" >扫码获取优惠报价</h5>
+											<img src="images/sales-qrcode.jpg" alt="QR Code" class="modal-img">
+										</div>
+										
+										<div class="modal-footer justify-content-center" style="margin-top: -20px;">
+										<button class="site-button orange m-r15" type="button" data-bs-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 						</form>
 					</div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="dlab-tabs  product-description tabs-site-button">
+                        <div class="dlab-tabs product-description tabs-site-button">
                             <ul class="nav nav-tabs ">
-                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active"><i class="fas fa-globe"></i> 产品详情</a></li>
+                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
                                 <li><a data-bs-toggle="tab" href="#graphic-design-1"><i class="far fa-image"></i> 数据文件</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 应用</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li>
                             </ul>
-                            <div class="tab-content">
-                                <div id="web-design-1" class="tab-pane active">
+                            <div class="tab-content" style="margin-bottom: 300px;">
+                                <!-- <div id="web-design-1" class="tab-pane active">
                                     <p class="m-b10">Suspendisse et justo. Praesent mattis commyolk augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis  commyolk augue aliquam ornare augue.</p>
                                     <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences</p>
                                     <ul class="list-check primary">
                                         <li>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and </li>
                                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
                                     </ul>
-                                </div>
-                                <div id="graphic-design-1" class="tab-pane">
+                                </div> -->
+                                <!-- <div id="graphic-design-1" class="tab-pane">
                                     <table class="table table-bordered" >
                                         <tr>
                                             <td>Size</td>
@@ -331,9 +353,9 @@
                                             <td>33 inches</td>
                                         </tr>
                                     </table>
-                                </div>
+                                </div> -->
                                 <div id="developement-1" class="tab-pane">
-                                    <div id="comments">
+                                    <!-- <div id="comments">
                                         <ol class="commentlist">
                                             <li class="comment">
                                                 <div class="comment_container"> 
@@ -405,56 +427,8 @@
                                                 </div>
                                             </li>
                                         </ol>
-                                    </div>
-                                    <div id="review_form_wrapper">
-                                        <div id="review_form">
-                                            <div id="respond" class="comment-respond">
-                                                <h3 class="comment-reply-title" id="reply-title">Add a review</h3>
-                                                <form class="comment-form" method="post" >
-                                                    <div class="comment-form-author">
-                                                        <label>Name <span class="required">*</span></label>
-                                                        <input type="text" aria-required="true" size="30" value="" name="author" id="author">
-                                                    </div>
-                                                    <div class="comment-form-email">
-                                                        <label>Email <span class="required">*</span></label>
-                                                        <input type="text" aria-required="true" size="30" value="" name="email" id="email">
-                                                    </div>
-                                                    <div class="comment-form-rating">
-                                                        <label class="pull-left m-r20">Your Rating</label>
-														<div class="rating-widget">
-															<!-- Rating Stars Box -->
-															<div class="rating-stars">
-																<ul id="stars">
-																	<li class="star" title="Poor" data-value="1">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="Fair" data-value="2">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="Good" data-value="3">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="Excellent" data-value="4">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="WOW!!!" data-value="5">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																</ul>
-															</div>
-														</div>
-                                                    </div>
-                                                    <div class="comment-form-comment">
-                                                        <label>Your Review</label>
-                                                        <textarea aria-required="true" rows="8" cols="45" name="comment" id="comment"></textarea>
-                                                    </div>
-                                                    <div class="form-submit">
-                                                        <input type="submit" value="Submit" class="site-button" id="submit" name="submit">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -595,6 +569,9 @@
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
 
+<!-- POPOVER JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
+
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
 <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
@@ -614,6 +591,14 @@
 
 
 <script src="js/jquery.star-rating-svg.js"></script>
+
+<script>
+    // 初始化模态框，并禁用背景遮罩层
+    var myModal = new bootstrap.Modal(document.getElementById('infoModal'), {
+        backdrop: false // 禁用背景遮罩
+    });
+</script>
+
 <script>
 $(document).ready(function() {
 

@@ -73,8 +73,8 @@
 							<div class="widget sidebar-widget ext-sidebar-menu widget_nav_menu">
 								<ul class="menu">
 									<li class="active"><a href="#">公司简介</a> </li>
-									<li ><a href="contact.html">联系我们</a></li>
-									<li ><a href="">交流与活动</a></li>
+									<li ><a href="contact.php">联系我们</a></li>
+									<li ><a href="#">交流与活动</a></li>
 								</ul>
 							</div>
 							<!-- <div class="widget">
@@ -100,12 +100,10 @@
 						<div class="col-xl-9 col-lg-8 col-md-7 m-b30">
 							
 							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 m-b30">
-									<img alt="" class="rounded" src="images/our-work/solarplant/pic3.jpg">
-								</div>
+								
 								
 								<div class="col-lg-12 m-b30">
-									<img alt="" class="rounded" src="images/our-work/solarplant/pic7.jpg">
+									<img alt="" class="rounded" src="images/company.jpg">
 									<div class="dlab-info m-t30 ">
 										<h4 class="dlab-title m-t0">公司简介</h4>
 										<p>深圳市弗劳恩生物医学有限公司（以下简称“弗劳恩生物”）是一家立足生物医学领域的高科技企业，以"研引并重"为发展理念，通过自主研发与国际先进技术引进双轮驱动，构建起覆盖药品研发、实验室耗材供应、诊断试剂布局及临床前研究服务的全产业链体系。公司2015年成立于深圳，依托专业的研发团队和国际化技术合作网络，致力于为医疗机构、科研院所及生物制药企业提供高品质产品和创新技术服务，现已成为深圳最大胎牛血清进口企业。</p>

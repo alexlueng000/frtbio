@@ -74,23 +74,23 @@
 							<li class="web design card-container col-lg-6 col-md-6 col-sm-6 p-a0">
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media">
-										<a href="serums.html"><img src="images/blood-serum.jpg" alt="" /></a>
+										<a href="serums.php"><img src="images/blood-serum.jpg" alt="" /></a>
 									</div>
-									<div class="dez-info p-a30 bg-white">
-										<p class="dez-title m-t0" style="font-size: 28px; font-weight: 600;"><a href="serums.php">血清</a></p>
-										<p><small>Serums</small></p>
-									</div>
+									<a href="serums.php"><div class="sort-title clearfix text-center">
+										<h3 style="margin-top: 20px;">血清</h3>
+										<h5 style="margin-top: -20px;">Serums</h5>
+									</div></a>
 								</div>
 							</li>
 							<li class="advertising branding photography card-container col-lg-6 col-md-6 col-sm-6 p-a0">
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media"> 
-										<a href="cell-culture-medium.html"> <img src="images/cell-culture-medium.jpg"  alt="" /> </a>
+										<a href="#"> <img src="images/cell-culture-medium.jpg"  alt="" /> </a>
 									</div>
-									<div class="dez-info p-a30 bg-white">
-										<p class="dez-title m-t0" style="font-size: 28px; font-weight: 600;"><a href="cell-culture-medium.php">细胞培养基</a></p>
-										<p><small>Cell Culture Medium</small></p>
-									</div>
+									<a href="#"><div class="sort-title clearfix text-center">
+										<h3 style="margin-top: 20px;">细胞培养基</h3>
+										<h5 style="margin-top: -20px;">Cell Culture Medium</h5>
+									</div></a>
 								</div>
 							</li>
 							
