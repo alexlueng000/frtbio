@@ -53,7 +53,7 @@
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -105,128 +105,19 @@
 										</div>
 									</div>
 								</div>
-								<!-- <div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item2.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item2.jpg" data-src="images/product/item2/item2.jpg" class="check-km" title="Image 2 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item3.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item3.jpg" data-src="images/product/item2/item3.jpg" class="check-km" title="Image 3 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-												  </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item4.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item4.jpg" data-src="images/product/item2/item4.jpg" class="check-km" title="Image 4 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-												  </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item5.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item5.jpg" data-src="images/product/item2/item5.jpg" class="check-km" title="Image 5 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-												  </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div> -->
 							</div>
-							<!-- <div id="sync2" class="owl-carousel owl-theme owl-none">
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item1.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item2.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item3.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item4.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item5.jpg" alt="">
-									</div>
-								</div>
-							</div> -->
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed优级胎牛血清 (FBS, Premium)</a></h3>
-								<p class="m-b10 m-t10"> Front Biomed优级胎牛血清采用经过严格筛选的最优质的新西兰或国产胎牛血清。其采集方法，加工过程，检定标准与美国原产优等胎牛血清完全一致。经过3次100 nm过滤，其质量相当或优于Gibco南美/依科赛南美等同类产品。</p>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></h3>
+								<p class="m-b10 m-t10"> Front Biomed国产特级胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
 								</div> -->
 							</div>
-							<!-- <div class="relative">
-								<h3 class="m-tb10">$2,140.00 </h3>
-								<div class="shop-item-rating">
-									<span class="rating-bx"> 
-										<i class="fas fa-star"></i> 
-										<i class="fas fa-star"></i> 
-										<i class="fas fa-star"></i> 
-										<i class="far fa-star"></i> 
-										<i class="far fa-star"></i> 
-									</span>
-									<span>4.5 Rating</span>
-								</div>
-							</div> -->
-							<!-- <div class="shop-item-tage">
-								<span>Tags :- </span>
-								<a href="javascript:void(0);">Shoes,</a>
-								<a href="javascript:void(0);">Clothing</a>
-								<a href="javascript:void(0);">T-shirts</a>
-							</div> -->
+							
 							<div class="dlab-divider bg-gray tb15">
 								<i class="icon-dot c-square"></i>
 							</div>

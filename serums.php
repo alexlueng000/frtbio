@@ -170,7 +170,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -199,7 +199,7 @@
 										</div>
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
-											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</a></p>
+											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</a></p>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>

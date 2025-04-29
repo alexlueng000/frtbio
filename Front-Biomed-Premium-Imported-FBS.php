@@ -34,151 +34,45 @@
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<!-- Google Font -->
 	<style>
+
+	.modal-content {
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+    }
+    .modal-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .modal-text {
+      font-size: 18px;
+      color: #333;
+    }
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-area"></div>
     <!-- header -->
-    <header class="site-header mo-left header navstyle1 header-bottom">
-		<!-- main header -->
-		<div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
-			<div class="main-bar clearfix bg-primary">
-				<div class="container clearfix">
-					<!-- website logo -->
-					<div class="logo-header mostion logo-dark">
-						<a href="index.html"><img src="images/logo-4.png" alt=""></a>
-					</div>
-					<!-- nav toggle button -->
-					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-					<!-- extra nav -->
-					<!-- <div class="extra-nav">
-						<div class="extra-cell">
-							<button id="quik-search-btn" type="button" class="site-button-link"><i class="la la-search"></i></button>
-						</div>
-					</div> -->
-					<!-- Quik search -->
-					<!-- <div class="dlab-quik-search ">
-						<form action="#">
-							<input name="search" value="" type="text" class="form-control" placeholder="Type to search">
-							<span id="quik-search-remove"><i class="ti-close"></i></span>
-						</form>
-					</div> -->
-					<!-- main nav -->
-					<div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
-						<div class="logo-header d-md-block d-lg-none">
-							<a href="index.html"><img src="images/logo-4.png" alt=""></a>
-						</div>
-						<ul class="nav navbar-nav">	
-							<li class="active has-mega-menu homedemo">
-								<a href="javascript:;">首页<i class="fas fa-chevron-down"></i></a>
-							</li>
-							
-							<li>
-								<a href="product-center.html">产品中心<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu tab-content">
-									<li>
-										<a href="serums.html">血清 </a>
-										<!-- <ul class="sub-menu">
-											<li><a href="header-style-1.html">特级胎牛血清</a></li>
-											<li><a href="header-style-2.html">优级胎牛血清</a></li>
-											<li><a href="header-style-3.html">新生牛血清</a></li>
-											<li><a href="header-style-4.html">小牛血清</a></li>
-											<li><a href="header-style-5.html">成年牛血清</a></li>
-											<li><a href="header-style-6.html">铁强化牛血清</a></li>
-											<li><a href="header-style-7.html">猪血清</a></li>
-											<li><a href="header-style-8.html">供体马血清</a></li>
-											<li><a href="header-style-9.html">供体山羊血清</a></li>
-											<li><a href="header-style-10.html">供体人血清</a></li>
-											<li><a href="header-style-11.html">Fetalgro®牛生长血清</a></li>
-										</ul> -->
-									</li>	
-									<li> 
-										<a href="javascript:;">蛋白质组分</a>
-										<!-- <ul class="sub-menu">		
-											<li><a href="header-style-dark-1.html">Maxichol®诊断脂质组分</a></li>
-											<li><a href="header-style-dark-2.html">血清替代物</a></li>
-											<li><a href="header-style-dark-3.html">Fetalgro®牛生长血清</a></li>
-											<li><a href="header-style-dark-4.html">牛低密度脂蛋白浓缩胆固醇</a></li>
-											<li><a href="header-style-dark-5.html">猪浓缩胆固醇</a></li>
-											<li><a href="header-style-dark-6.html">牛转铁蛋白APO和HOLO</a></li>
-											<li><a href="header-style-dark-7.html">牛凝血酶</a></li>
-											<li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
-										</ul> -->
-									</li>
-									<li> 
-										<a href="javascript:;">高纯水和工艺液体 </i></a>
-										<!-- <ul class="sub-menu">
-											<li><a href="footer-1.html">RMBIOne通用级注射用水</a></li>
-											<li><a href="footer-2.html">美国药典/欧洲药典级注射用水</a></li>
-											<li><a href="footer-3.html">美国药典级注射用水</a></li>
-										</ul> -->
-									</li>
-									<li> 
-										<a href="cell-culture-medium.html">细胞培养基</a>
-									</li>
-									<li> 
-										<a href="javascript:;">鉴定试剂</a>
-									</li>
-								</ul>
-							</li>
-							
-							<li> 
-								<a href="introduction.html">关于我们<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu  tab-content">
-									<li> 
-										<a href="introduction.html">公司简介</a>
-									</li>
-									<li> 
-										<a href="contact.html">联系我们</a>
-									</li>
-									<li> 
-										<a href="javascript:;">交流与活动</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="research-and-service.html">研发与服务</a>
-							</li>
-							
-							<li>
-								<a href="#">促销活动</a>
-							</li>
-						</ul>
-						<!-- <div class="dlab-social-icon">
-							<ul>
-								<li><a class="site-button facebook sharp-sm fab fa-facebook-f" href="javascript:void(0);"></a></li>
-								<li><a class="site-button twitter sharp-sm fab fa-twitter" href="javascript:void(0);"></a></li>
-								<li><a class="site-button linkedin sharp-sm fab fa-linkedin-in" href="javascript:void(0);"></a></li>
-								<li><a class="site-button instagram sharp-sm fab fa-instagram" href="javascript:void(0);"></a></li>
-							</ul>
-						</div>							 -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- main header END -->
-	</header>
+    <?php include 'header.php'; ?>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
         <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/bnr5.jpg);">
+        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/banner-1.jpg);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">产品详情</h1>
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
-							<li><a href="serums.html">血清</a></li>
-                            <li><a href="fetal-bovine-serum.html">胎牛血清</a></li>
+							<li><a href="index.php">首页</a></li>
+							<li><a href="serums.php">血清</a></li>
+                            <li><a href="#">胎牛血清</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -201,7 +95,7 @@
 												<img src="images/blood-serum.jpg" alt="">
 												<div class="overlay-bx">
 													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item1.jpg" data-src="images/product/item2/item1.jpg" class="check-km" title="Image 1 Title will come here">		
+														<span data-exthumbimage="images/banner/banner-1.jpg" data-src="images/banner/banner-1.jpg" class="check-km" title="Image 1 Title will come here">		
 															<i class="ti-fullscreen"></i>
 														</span>
 													</div>
@@ -210,108 +104,19 @@
 										</div>
 									</div>
 								</div>
-								<!-- <div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item2.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item2.jpg" data-src="images/product/item2/item2.jpg" class="check-km" title="Image 2 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item3.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item3.jpg" data-src="images/product/item2/item3.jpg" class="check-km" title="Image 3 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-												  </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item4.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item4.jpg" data-src="images/product/item2/item4.jpg" class="check-km" title="Image 4 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-												  </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="mfp-gallery">
-										<div class="dlab-box">
-											<div class="dlab-thum-bx">
-												<img src="images/product/item2/item5.jpg" alt="">
-												<div class="overlay-bx">
-													<div class="overlay-icon">
-														<span data-exthumbimage="images/product/item2/item5.jpg" data-src="images/product/item2/item5.jpg" class="check-km" title="Image 5 Title will come here">		
-															<i class="ti-fullscreen"></i>
-														</span>
-												  </div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div> -->
+								
 							</div>
-							<!-- <div id="sync2" class="owl-carousel owl-theme owl-none">
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item1.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item2.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item3.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item4.jpg" alt="">
-									</div>
-								</div>
-								<div class="item">
-									<div class="dlab-media">
-										<img src="images/product/thumb/item5.jpg" alt="">
-									</div>
-								</div>
-							</div> -->
+
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h4 class="post-title"><a href="javascript:void(0);">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></h4>
-								<p class="m-b10">从事科研设备和试剂的研发和销售，拥有长期在欧美工作的科学家团队，在美国马里兰州、加利福利亚州、德克萨斯州等地有研究和物流中心。为了解决国内科研部门和生物医药产业界对高质量的胎牛血清日益增长的需求和高质量血清来源有限的矛盾，我们通过我们在国外的科学家和物流中心，和美国、澳大利亚、新西兰、欧洲以及国内的胎牛血清生产企业建立了委托生产、联合生产和销售代理等各种合作方式，保证了高质量胎牛血清的稳定来源。进口前经Front国外、国内实验室两轮严格的质量检测及评估。其中，国内实验室的质量评估依据很多实验室的干细胞培养和多种肿瘤细胞株培养参数作为评估依据。评估通过后才执行采购和进口。</p>
-								<div class="dlab-divider bg-gray tb15">
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></h3>
+								<p class="m-b10 m-t10"> Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
-								</div>
+								</div> -->
 							</div>
 							<!-- <div class="relative">
 								<h3 class="m-tb10">$2,140.00 </h3>
@@ -339,20 +144,7 @@
 								<div class="m-b30 col-md-7 col-sm-8">
 									<h6>产品规格</h6>
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio11" checked="">
-										<label class="btn" for="btnradio11" style="width: 80px; color: #fff; text-align: center;">500mL</label>
-
-										<!-- <input type="radio" class="btn-check" name="btnradio1" id="btnradio21">
-										<label class="btn" for="btnradio21">SM</label>
-
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio31">
-										<label class="btn" for="btnradio31">MD</label>
-									  
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio41">
-										<label class="btn" for="btnradio41">LG</label>
-									  
-										<input type="radio" class="btn-check" name="btnradio1" id="btnradio51">
-										<label class="btn" for="btnradio51">XL</label> -->
+										<button class="site-button orange  m-r15" type="button">500mL</button>
 									</div>
 								</div>
 								<!-- <div class="m-b30 col-md-5 col-sm-4">
@@ -381,32 +173,50 @@
 									<label class="btn bg-green" for="btnradio5"></label>
 								</div>
 							</div> -->
-							<button class="site-button radius-no">
-								<i class="ti-shopping-cart"></i> 立即咨询
-							</button>
+							 <!-- Modal (Popup) -->
+							
+							<div class="btn-group product-item-size" data-bs-toggle="buttons">
+								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+							</div>
+							<!-- 模态框 -->
+							<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div style="flex-direction: column;">
+											<h5 class="modal-title m-d30" >扫码获取优惠报价</h5>
+											<img src="images/sales-qrcode.jpg" alt="QR Code" class="modal-img">
+										</div>
+										
+										<div class="modal-footer justify-content-center" style="margin-top: -20px;">
+										<button class="site-button orange m-r15" type="button" data-bs-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 						</form>
 					</div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="dlab-tabs  product-description tabs-site-button">
+                        <div class="dlab-tabs product-description tabs-site-button">
                             <ul class="nav nav-tabs ">
-                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active"><i class="fas fa-globe"></i> 产品详情</a></li>
+                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
                                 <li><a data-bs-toggle="tab" href="#graphic-design-1"><i class="far fa-image"></i> 数据文件</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 应用</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li>
                             </ul>
-                            <div class="tab-content">
-                                <div id="web-design-1" class="tab-pane active">
+                            <div class="tab-content" style="margin-bottom: 300px;">
+                                <!-- <div id="web-design-1" class="tab-pane active">
                                     <p class="m-b10">Suspendisse et justo. Praesent mattis commyolk augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis  commyolk augue aliquam ornare augue.</p>
                                     <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences</p>
                                     <ul class="list-check primary">
                                         <li>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and </li>
                                         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
                                     </ul>
-                                </div>
-                                <div id="graphic-design-1" class="tab-pane">
+                                </div> -->
+                                <!-- <div id="graphic-design-1" class="tab-pane">
                                     <table class="table table-bordered" >
                                         <tr>
                                             <td>Size</td>
@@ -453,9 +263,9 @@
                                             <td>33 inches</td>
                                         </tr>
                                     </table>
-                                </div>
+                                </div> -->
                                 <div id="developement-1" class="tab-pane">
-                                    <div id="comments">
+                                    <!-- <div id="comments">
                                         <ol class="commentlist">
                                             <li class="comment">
                                                 <div class="comment_container"> 
@@ -527,56 +337,8 @@
                                                 </div>
                                             </li>
                                         </ol>
-                                    </div>
-                                    <div id="review_form_wrapper">
-                                        <div id="review_form">
-                                            <div id="respond" class="comment-respond">
-                                                <h3 class="comment-reply-title" id="reply-title">Add a review</h3>
-                                                <form class="comment-form" method="post" >
-                                                    <div class="comment-form-author">
-                                                        <label>Name <span class="required">*</span></label>
-                                                        <input type="text" aria-required="true" size="30" value="" name="author" id="author">
-                                                    </div>
-                                                    <div class="comment-form-email">
-                                                        <label>Email <span class="required">*</span></label>
-                                                        <input type="text" aria-required="true" size="30" value="" name="email" id="email">
-                                                    </div>
-                                                    <div class="comment-form-rating">
-                                                        <label class="pull-left m-r20">Your Rating</label>
-														<div class="rating-widget">
-															<!-- Rating Stars Box -->
-															<div class="rating-stars">
-																<ul id="stars">
-																	<li class="star" title="Poor" data-value="1">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="Fair" data-value="2">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="Good" data-value="3">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="Excellent" data-value="4">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																	<li class="star" title="WOW!!!" data-value="5">
-																		<i class="fas fa-star fa-fw"></i>
-																	</li>
-																</ul>
-															</div>
-														</div>
-                                                    </div>
-                                                    <div class="comment-form-comment">
-                                                        <label>Your Review</label>
-                                                        <textarea aria-required="true" rows="8" cols="45" name="comment" id="comment"></textarea>
-                                                    </div>
-                                                    <div class="form-submit">
-                                                        <input type="submit" value="Submit" class="site-button" id="submit" name="submit">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -705,47 +467,7 @@
             <!-- Product details -->
         </div>
         <!-- contact area  END -->
-		<!-- Shop Service info -->
-		<div class="section-full p-t50 p-b20 bg-primary text-white">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-lg-4">
-						<div class="icon-bx-wraper left shop-service-info m-b30">
-							<div class="icon-md text-black radius"> 
-								<a href="javascript:void(0);" class="icon-cell text-white"><i class="fas fa-gift"></i></a> 
-							</div>
-							<div class="icon-content">
-								<h5 class="dlab-tilte">Free shipping on orders $60+</h5>
-								<p>Order more than 60$ and you will get free shippining Worldwide. More info.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-lg-4">
-						<div class="icon-bx-wraper left shop-service-info m-b30">
-							<div class="icon-md text-black radius"> 
-								<a href="javascript:void(0);" class="icon-cell text-white"><i class="fas fa-plane"></i></a> 
-							</div>
-							<div class="icon-content">
-								<h5 class="dlab-tilte">Worldwide delivery</h5>
-								<p>We deliver to the following countries: USA, Canada, Europe, Australia</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-lg-4">
-						<div class="icon-bx-wraper left shop-service-info m-b30">
-							<div class="icon-md text-black radius"> 
-								<a href="javascript:void(0);" class="icon-cell text-white"><i class="fas fa-history"></i></a> 
-							</div>
-							<div class="icon-content">
-								<h5 class="dlab-tilte">60 days money back guranty!</h5>
-								<p>Not happy with our product, feel free to return it, we will refund 100% your money!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Shop Service info End -->
+		
     </div>
     <!-- Content END-->
     <!-- Footer -->
@@ -756,6 +478,9 @@
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
+
+<!-- POPOVER JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
 
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
@@ -776,6 +501,14 @@
 
 
 <script src="js/jquery.star-rating-svg.js"></script>
+
+<script>
+    // 初始化模态框，并禁用背景遮罩层
+    var myModal = new bootstrap.Modal(document.getElementById('infoModal'), {
+        backdrop: false // 禁用背景遮罩
+    });
+</script>
+
 <script>
 $(document).ready(function() {
 
