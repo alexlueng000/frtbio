@@ -154,9 +154,9 @@
 									<div class="testimonial-pic">
 										<img src="images/project1.jpg" alt="">
 									</div>
-									<div class="testimonial-detail ">
-										<div class="">
-											<h4>工程化间充质干细胞外泌体靶向肝癌递送siMYC-AS1和anti-PD-l1抑制肿瘤研究</h4>
+									<div class="">
+										<div class="sort-title clearfix text-center">
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 50px 85px; line-height: 1.5">工程化间充质干细胞外泌体靶向肝癌递送siMYC-AS1和anti-PD-l1抑制肿瘤研究</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -167,9 +167,9 @@
 									<div class="testimonial-pic">
 										<img src="images/project2.jpg" alt="">
 									</div>
-									<div class="testimonial-detail ">
-										<div class="">
-											<h4>亚健康人群细胞精准治疗</h4>
+									<div class="">
+										<div class="sort-title clearfix text-center">
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 50px 85px; line-height: 1.5">亚健康人群细胞精准治疗</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -180,9 +180,9 @@
 									<div class="testimonial-pic">
 										<img src="images/project3.png" alt="">
 									</div>
-									<div class="testimonial-detail">
-										<div class="">
-											<h4>细胞因子在美容产品上的运用</h4>
+									<div class="">
+										<div class="sort-title clearfix text-center">
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 50px 85px; line-height: 1.5">细胞因子在美容产品上的运用</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -193,9 +193,9 @@
 									<div class="testimonial-pic">
 										<img src="images/project4.png" alt="">
 									</div>
-									<div class="testimonial-detail">
-										<div class="">
-											<h4>羊膜间充质干细胞及其外泌体治疗脊髓损伤/创伤后膝关节炎修复研究</h4>
+									<div class="">
+										<div class="sort-title clearfix text-center">
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 50px 85px; line-height: 1.5">羊膜间充质干细胞及其外泌体治疗脊髓损伤/创伤后膝关节炎修复研究</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>

@@ -152,7 +152,7 @@
 									data-x="['center','center','center','center']" data-hoffset="['-90','-150','0','0']" 
 									data-y="['middle','middle','middle','middle']" data-voffset="['-90','-100','-80','-90']" 
 									data-fontsize="['65','50','40','30']"
-									data-lineheight="['75','60','50','40']"
+									data-lineheight="['100','60','50','40']"
 									data-letterspacing="['2','2','2','2']"
 									data-width="['1000','none','768','360']"
 									data-height="none"
@@ -167,8 +167,7 @@
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
-									细胞培养定制专家 <br> 实验室信赖之选                                
-								</div>
+									 实验室信赖之选 <br> 细胞培养定制专家 
 								<!-- LAYER NR. 3 -->
 								<!-- <div class="tp-caption" 
 									id="slide-100-layer-4" 
@@ -276,8 +275,8 @@
 									id="slide-200-layer-3" 
 									data-x="['center','center','center','center']" data-hoffset="['-90','-150','0','0']" 
 									data-y="['middle','middle','middle','middle']" data-voffset="['-90','-100','-80','-90']" 
-									data-fontsize="['65','50','40','30']"
-									data-lineheight="['75','60','50','40']"
+									data-fontsize="['50','50','40','30']"
+									data-lineheight="['100','60','50','40']"
 									data-letterspacing="['2','2','2','2']"
 									data-width="['1000','none','768','360']"
 									data-height="none"
@@ -292,10 +291,10 @@
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
-									胎牛血清
+									产品参数高标准 • 对标国际第一品牌 <br> 新西兰/国产双源产地 • 甄选世界顶级牧场
 								</div>
 								<!-- LAYER NR. 3 -->
-								<div class="tp-caption" 
+								<!-- <div class="tp-caption" 
 									id="slide-200-layer-4" 
 									data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
 									data-y="['middle','middle','middle','middle']" data-voffset="['20','15','20','10']" 
@@ -313,8 +312,8 @@
 									data-paddingright="[0,0,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">新西兰/国产双源产地 • 甄选世界顶级牧场<br>产品参数高标准 • 对标国际第一品牌
-								</div>
+									style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
+								</div> -->
 								<!-- LAYER NR. 5 -->
 								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
 									href="about-1.html" target="_blank"			 
@@ -402,7 +401,7 @@
 									data-x="['center','center','center','center']" data-hoffset="['-90','-150','0','0']" 
 									data-y="['middle','middle','middle','middle']" data-voffset="['-90','-100','-80','-90']" 
 									data-fontsize="['65','50','40','30']"
-									data-lineheight="['75','60','50','40']"
+									data-lineheight="['100','60','50','40']"
 									data-letterspacing="['2','2','2','2']"
 									data-width="['1000','none','768','360']"
 									data-height="none"
@@ -417,7 +416,7 @@
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
-									华南地区最大血清进口商<br>服务200+实验室
+									服务200+实验室 <br> 华南地区最大血清进口商
 								</div>
 								<!-- LAYER NR. 3 -->
 								<!-- <div class="tp-caption" 
@@ -509,46 +508,46 @@
 						style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; "
 						>
 							<div class="" >
-								
+								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
 									<img src="images/home-product1.png" alt="" >
-								
+								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级进口胎牛血清 (FBS, Optimum)</h5>
-									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="Front-Biomed-Premium-Imported-FBS.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
-								<a href="javascript:void(0);">
+								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
 									<img src="images/home-product2.png" alt="" >
-								</a>
+								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
-									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
 						
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
-								<a href="javascript:void(0);">
+								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
 									<img src="images/home-product3.png" alt="" >
-								</a>
+								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
-									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="Front-Biomed-Premium-FBS.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
-								<a href="javascript:void(0);">
+								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
 									<img src="images/home-product4.png" alt="" >
-								</a>
+								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">其他动物血清</h5>
-									<a href="javascript:void(0);" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="serums.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -567,7 +566,7 @@
 							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；国产胎牛血清高性价比之选，实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中...联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">
-							<a href="contact-1.html" class="site-button btnhover15 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
+							<a href="contact.php" class="site-button btnhover15 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
 						</div>
 					</div>
 				</div>
@@ -712,7 +711,7 @@
 						<div class="text-white align-self-center ">
 							<h2>关于弗劳恩生物</h2>
 							<p style="font-weight: bolder; font-size: larger;">深圳市弗劳恩生物医学有限公司（以下简称：弗劳恩生物）成立于2015年，专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务，重点研发针对恶性肿瘤的检测技术和抗肿瘤药物研制，及高效的蛋白因子生产系统。</p>
-							<a href="portfolio-details.html" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;">了解更多</a>
+							<a href="introduction.php" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;">了解更多</a>
 						</div>
 					</div>
 				</div>

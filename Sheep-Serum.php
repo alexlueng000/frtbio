@@ -111,8 +111,8 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed特级国产胎牛血清 (FBS, Optimum)</a></h3>
-								<p class="m-b10 m-t10"> Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">羊血清(Sheep Serum-Porcine Serum)</a></h3>
+								<p class="m-b10 m-t10">Front从严格监控的山羊群中，挑选健康成年羊为供体。我们收集山羊血清并将其过滤，得到的是高品质的高度一致的批次产品。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
 								</div> -->
@@ -135,25 +135,7 @@
 									</div>
 								</div> -->
 							</div>
-							<!-- <div class="m-b30">
-								<h6>Select the color</h6>
-								<div class="btn-group product-item-color" data-bs-toggle="buttons">
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked="">
-									<label class="btn bg-red" for="btnradio1"></label>
-
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-									<label class="btn bg-dark" for="btnradio2"></label>
-
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio3">
-									<label class="btn bg-yellow" for="btnradio3"></label>
-								  
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio4">
-									<label class="btn bg-blue" for="btnradio4"></label>
-								  
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio5">
-									<label class="btn bg-green" for="btnradio5"></label>
-								</div>
-							</div> -->
+							
 							 <!-- Modal (Popup) -->
 							
 							<div class="btn-group product-item-size" data-bs-toggle="buttons">

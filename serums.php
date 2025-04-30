@@ -100,9 +100,9 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="#">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="#">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="#">Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
+															<li><a href="Front-Biomed-Premium-Imported-FBS.php">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="Front-Biomed-Premium-FBS.php">Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
 														</ul>
 													</div>
 												</div>
@@ -141,9 +141,9 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="#">猪血清(Pig Serum-Porcine Serum)</a></li>
-															<li><a href="#">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
-															<li><a href="#">供体山羊血清(Donor Goat Serum)</a></li>
+															<li><a href="Pig-Serum.php">猪血清(Pig Serum-Porcine Serum)</a></li>
+															<li><a href="Horse-Serum.php">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
+															<li><a href="Sheep-Serum.php">供体山羊血清(Donor Goat Serum)</a></li>
 															<li><a href="#">供体人血清(Donor Human Serum)</a></li>
 															<li><a href="#">供体山羊血清(Donor Goat Serum)</a></li>
 															<li><a href="#">Fetalgro®牛生长血清(Bovine Growth Serum)</a></li>
@@ -199,7 +199,7 @@
 										</div>
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
-											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</a></p>
+											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</a></p>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
@@ -227,7 +227,7 @@
 										</div>
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
-											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed优级胎牛血清 (FBS, Premium)</a></p>
+											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed优级胎牛血清 (FBS, Premium)</a></p>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
@@ -250,13 +250,13 @@
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-											<a href="fetal-bovine-serum.html">
+											<a href="Pig-Serum.php">
 												<img src="images/猪血清.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
-											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></p>
+											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Pig-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></p>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
@@ -280,13 +280,13 @@
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-											<a href="fetal-bovine-serum.html">
+											<a href="Horse-Serum.php">
 												<img src="images/马血清.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
-											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">马血清</a></p>
+											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Horse-Serum.php" style="hover: #FF8500;">马血清(Horse Serum-Porcine Serum)</a></p>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
@@ -307,20 +307,20 @@
 								<div class="col-lg-12 col-md-12" style="margin-top: 20px;">
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
-										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-											<a href="fetal-bovine-serum.html">
+										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;"> 
+											<a href="Sheep-Serum.php">
 												<img src="images/羊血清.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
-											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">羊血清</a></p>
+											<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">羊血清(Sheep Serum-Porcine Serum)</a></p>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
 												
 												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">RMBio从严格监控的山羊群中，挑选健康成年羊为供体。我们收集山羊血清并将其过滤，得到的是高品质的高度一致的批次产品。</p>
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front从严格监控的山羊群中，挑选健康成年羊为供体。我们收集山羊血清并将其过滤，得到的是高品质的高度一致的批次产品。</p>
 											</div>
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
