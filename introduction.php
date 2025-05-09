@@ -77,25 +77,7 @@
 									<li ><a href="#">交流与活动</a></li>
 								</ul>
 							</div>
-							<!-- <div class="widget">
-								<div class="download-file">
-									<h4 class="title">Get your brochures</h4>
-									<ul>
-										<li>
-											<a href="javascript:void(0);">
-												<div class="text">Company Brochures</div>
-												<i class="fas fa-download"></i>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<div class="text">Company Info</div>
-												<i class="fas fa-download"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div> -->
+							
 						</div>
 						<div class="col-xl-9 col-lg-8 col-md-7 m-b30">
 							
@@ -114,7 +96,7 @@
 								
 								<div class="dlab-box">
 									<h4 class="dlab-title m-t0">企业愿景</h4>
-									<p>成为生物医学产业发展的一抹彩虹.</p>
+									<p>成为生物医学产业发展的一抹彩虹。</p>
 									
 								</div>
 								<div class="dlab-box">
@@ -124,7 +106,7 @@
 								</div>
 								<div class="dlab-box">
 									<h4 class="dlab-title m-t0">公司使命</h4>
-									<p>为科研机构与药企打造生物医学研究的全要素支持体系</p>
+									<p>为科研机构与药企打造生物医学研究的全要素支持体系。</p>
 									
 								</div>
 							</div>

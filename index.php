@@ -291,7 +291,7 @@
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
-									产品参数高标准 • 对标国际第一品牌 <br> 新西兰/国产双源产地 • 甄选世界顶级牧场
+									产品参数高标准 • 对标国际一线品牌 <br> 新西兰/国产双源产地 • 甄选世界顶级牧场
 								</div>
 								<!-- LAYER NR. 3 -->
 								<!-- <div class="tp-caption" 
@@ -513,7 +513,7 @@
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级进口胎牛血清 (FBS, Optimum)</h5>
-									<a href="Front-Biomed-Premium-Imported-FBS.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="Front-Biomed-Premium-Imported-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -524,7 +524,7 @@
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
-									<a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -536,7 +536,7 @@
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
-									<a href="Front-Biomed-Premium-FBS.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="Front-Biomed-Premium-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -547,7 +547,7 @@
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">其他动物血清</h5>
-									<a href="serums.php" class="site-button mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									<a href="serums.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -563,10 +563,11 @@
 					<div class="row">
 						<div class="col-lg-9 text-white">
 							<h2 class="title">全球精粹，国产突破，全线赋能</h2>
-							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；国产胎牛血清高性价比之选，实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中...联系我们,获取优惠报价!</p>
+							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；国产胎牛血清高性价比之选，实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中！联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">
-							<a href="contact.php" class="site-button btnhover15 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
+							<a href="contact.php" class="site-button btnhover10 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
+							
 						</div>
 					</div>
 				</div>
@@ -664,14 +665,7 @@
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
 										<a href="javascript:void(0);"> <img class="img-cover" src="images/company1.jpg"  alt=""> </a>
-										<!-- <div class="overlay-bx">
-											<div class="overlay-icon"> 
-												<a href="javascript:void(0);"> <i class="fas fa-play icon-bx-xs"></i> </a> 
-												<span data-exthumbimage="images/gallery/food/pic7.jpg" data-src="images/gallery/food/pic7.jpg" class="check-km" title="Cookies">		
-													<i class="fas fa-search icon-bx-xs"></i> 
-												</span>
-											</div>
-										</div> -->
+
 									</div>
 								</div>
 							</div>
@@ -679,14 +673,7 @@
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
 										<a href="javascript:void(0);"> <img class="img-cover" src="images/company2.jpg"  alt=""> </a>
-										<!-- <div class="overlay-bx">
-											<div class="overlay-icon"> 
-												<a href="javascript:void(0);"> <i class="fas fa-play icon-bx-xs"></i> </a> 
-												<span data-exthumbimage="images/gallery/food/pic5.jpg" data-src="images/gallery/food/pic5.jpg" class="check-km" title="Burger">		
-													<i class="fas fa-search icon-bx-xs"></i> 
-												</span>												
-											</div>
-										</div> -->
+
 									</div>
 								</div>
 							</div>
@@ -694,14 +681,7 @@
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
 										<a href="javascript:void(0);"> <img class="img-cover" src="images/company3.jpg"  alt=""> </a>
-										<!-- <div class="overlay-bx">
-											<div class="overlay-icon"> 
-												<a href="javascript:void(0);"> <i class="fas fa-play icon-bx-xs"></i> </a>
-												<span data-exthumbimage="images/gallery/food/pic6.jpg" data-src="images/gallery/food/pic6.jpg" class="check-km" title="Bear cup">		
-													<i class="fas fa-search icon-bx-xs"></i> 
-												</span>	
-											</div>
-										</div> -->
+
 									</div>
 								</div>
 							</div>
@@ -729,7 +709,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0001.webp" alt="">
+											<img src="images/customers/customer-1.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -738,7 +718,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0002.webp" alt="">
+											<img src="images/customers/customer-2.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -747,7 +727,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0003.webp" alt="">
+											<img src="images/customers/customer-3.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -756,7 +736,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0004.webp" alt="">
+											<img src="images/customers/customer-4.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -765,7 +745,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0005.webp" alt="">
+											<img src="images/customers/customer-5.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -774,7 +754,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0006.webp" alt="">
+											<img src="images/customers/customer-6.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -783,7 +763,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0001.webp" alt="">
+											<img src="images/customers/customer-7.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -792,7 +772,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0002.webp" alt="">
+											<img src="images/customers/customer-8.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -801,7 +781,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0003.webp" alt="">
+											<img src="images/customers/customer-9.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -810,7 +790,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0004.webp" alt="">
+											<img src="images/customers/customer-10.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -819,7 +799,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0005.webp" alt="">
+											<img src="images/customers/customer-11.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -828,7 +808,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0006.webp" alt="">
+											<img src="images/customers/customer-12.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -837,7 +817,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0001.webp" alt="">
+											<img src="images/customers/customer-13.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -846,7 +826,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0002.webp" alt="">
+											<img src="images/customers/customer-14.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -855,7 +835,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0003.webp" alt="">
+											<img src="images/customers/customer-15.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -864,7 +844,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0004.webp" alt="">
+											<img src="images/customers/customer-16.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -873,7 +853,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0005.webp" alt="">
+											<img src="images/customers/customer-17.png" alt="">
 										</a>
 									</div>
 								</div>
@@ -882,7 +862,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer_0006.webp" alt="">
+											<img src="images/customers/customer-18.png" alt="">
 										</a>
 									</div>
 								</div>

@@ -27,13 +27,31 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	
-		<!-- STYLESHEETS -->
+	<!-- STYLESHEETS -->
+
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-4.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<!-- Google Font -->
 	<style>
+	.custom-img {
+		width: 6%;           /* 缩小图片为原宽度的 80%，你也可以用具体像素 */
+		border-radius: 24px;  /* 圆角，值越大越圆 */
+		display: block;
+		margin: 0 auto; 
+	}
+	.hover-orange-text h3,
+	.hover-orange-text h5 {
+		color: #000;
+		transition: color 0.3s ease;
+	}
+
+	.hover-orange-text:hover h3,
+	.hover-orange-text:hover h5 {
+		color: #FF8500;
+	}
+
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 	</style>
 	
@@ -74,9 +92,9 @@
 							<li class="web design card-container col-lg-6 col-md-6 col-sm-6 p-a0">
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media">
-										<a href="serums.php"><img src="images/blood-serum.jpg" alt="" /></a>
+										<a href="serums.php"><img class="custom-img" src="images/blood-serum.jpg" alt="" /></a>
 									</div>
-									<a href="serums.php"><div class="sort-title clearfix text-center">
+									<a href="serums.php"><div class="sort-title clearfix text-center hover-orange-text">
 										<h3 style="margin-top: 20px;">血清</h3>
 										<h5 style="margin-top: -20px;">Serums</h5>
 									</div></a>
@@ -85,12 +103,18 @@
 							<li class="advertising branding photography card-container col-lg-6 col-md-6 col-sm-6 p-a0">
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media"> 
-										<a href="#"> <img src="images/cell-culture-medium.jpg"  alt="" /> </a>
+										<a href="#"> 
+											<img class="custom-img" src="images/cell-culture-medium.jpg" alt="" /> 
+										</a>
 									</div>
-									<a href="#"><div class="sort-title clearfix text-center">
-										<h3 style="margin-top: 20px;">细胞培养基</h3>
-										<h5 style="margin-top: -20px;">Cell Culture Medium</h5>
-									</div></a>
+									
+									<!-- 添加 hover-orange-text 类 -->
+									<a href="#">
+										<div class="sort-title clearfix text-center hover-orange-text">
+											<h3 style="margin-top: 20px;">细胞培养基</h3>
+											<h5 style="margin-top: -20px;">Cell Culture Medium</h5>
+										</div>
+									</a>
 								</div>
 							</li>
 							
