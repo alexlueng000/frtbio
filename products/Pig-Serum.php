@@ -28,10 +28,10 @@
 	<![endif]-->
 	
 		<!-- STYLESHEETS -->
-	<link rel="stylesheet" type="text/css" href="css/plugins.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-4.css">
-	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link rel="stylesheet" type="text/css" href="../css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="../css/skin/skin-4.css">
+	<link rel="stylesheet" type="text/css" href="../css/templete.css">
 	<!-- Google Font -->
 	<style>
 
@@ -51,14 +51,15 @@
     }
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 	</style>
-	<link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+	<link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
 
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-area"></div>
     <!-- header -->
-    <?php include 'header.php'; ?>
+    <?php include 'product-header.php'; ?>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
@@ -70,9 +71,9 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.php">首页</a></li>
-							<li><a href="serums.php">血清</a></li>
-                            <li><a href="#">胎牛血清</a></li>
+							<li><a href="../index.php">首页</a></li>
+							<li><a href="../serums.php">产品中心</a></li>
+                            <li><a href="../serums.php">血清</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -92,10 +93,10 @@
 									<div class="mfp-gallery">
 										<div class="dlab-box">
 											<div class="dlab-thum-bx">
-												<img src="images/blood-serum.jpg" alt="">
+												<img src="../images/blood-serum.jpg" alt="">
 												<div class="overlay-bx">
 													<div class="overlay-icon">
-														<span data-exthumbimage="images/banner/banner-1.jpg" data-src="images/banner/banner-1.jpg" class="check-km" title="Image 1 Title will come here">		
+														<span data-exthumbimage="../images/banner/banner-1.jpg" data-src="../images/banner/banner-1.jpg" class="check-km" title="Image 1 Title will come here">		
 															<i class="ti-fullscreen"></i>
 														</span>
 													</div>
@@ -104,39 +105,19 @@
 										</div>
 									</div>
 								</div>
-								
 							</div>
-
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></h3>
-								<p class="m-b10 m-t10"> Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">猪血清(Pig Serum-Porcine Serum)</a></h3>
+								<p class="m-b10 m-t10">作为少数天然猪血清供应商之一，Front的猪血清源自美国农场。Front从未用抗生素或激素处理的动物收集和生产猪血清。这种独特的猪血清用作细胞培养基特别是疫苗生产中非常理想。有机猪血清经过200nm无菌过滤，具有低血红蛋白水平.猪血清非常适合用于疫苗生产以及细胞培养。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
 								</div> -->
 							</div>
-							<!-- <div class="relative">
-								<h3 class="m-tb10">$2,140.00 </h3>
-								<div class="shop-item-rating">
-									<span class="rating-bx"> 
-										<i class="fas fa-star"></i> 
-										<i class="fas fa-star"></i> 
-										<i class="fas fa-star"></i> 
-										<i class="far fa-star"></i> 
-										<i class="far fa-star"></i> 
-									</span>
-									<span>4.5 Rating</span>
-								</div>
-							</div> -->
-							<!-- <div class="shop-item-tage">
-								<span>Tags :- </span>
-								<a href="javascript:void(0);">Shoes,</a>
-								<a href="javascript:void(0);">Clothing</a>
-								<a href="javascript:void(0);">T-shirts</a>
-							</div> -->
+							
 							<div class="dlab-divider bg-gray tb15">
 								<i class="icon-dot c-square"></i>
 							</div>
@@ -154,25 +135,7 @@
 									</div>
 								</div> -->
 							</div>
-							<!-- <div class="m-b30">
-								<h6>Select the color</h6>
-								<div class="btn-group product-item-color" data-bs-toggle="buttons">
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked="">
-									<label class="btn bg-red" for="btnradio1"></label>
-
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-									<label class="btn bg-dark" for="btnradio2"></label>
-
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio3">
-									<label class="btn bg-yellow" for="btnradio3"></label>
-								  
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio4">
-									<label class="btn bg-blue" for="btnradio4"></label>
-								  
-									<input type="radio" class="btn-check" name="btnradio" id="btnradio5">
-									<label class="btn bg-green" for="btnradio5"></label>
-								</div>
-							</div> -->
+							
 							 <!-- Modal (Popup) -->
 							
 							<div class="btn-group product-item-size" data-bs-toggle="buttons">
@@ -471,36 +434,36 @@
     </div>
     <!-- Content END-->
     <!-- Footer -->
-    <div id="footer"></div>
+    <?php include 'product-footer.php'; ?>
     <!-- Footer End -->
     <button class="scroltop fas fa-chevron-up" ></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
-<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
-<script src="plugins/wow/wow.js"></script><!-- WOW JS -->
+<script src="../js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="../plugins/wow/wow.js"></script><!-- WOW JS -->
 
 <!-- POPOVER JS -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
 
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
-<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
-<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
-<script src="plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
-<script src="plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
-<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
-<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
-<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
-<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
-<script src="plugins/scroll/scrollbar.min.js"></script><!-- scroll -->
-<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-<script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
-<script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
-<script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="../plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
+<script src="../plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+<script src="../plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
+<script src="../plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+<script src="../plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script src="../plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
+<script src="../plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
+<script src="../plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
+<script src="../plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
+<script src="../plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
+<script src="../plugins/scroll/scrollbar.min.js"></script><!-- scroll -->
+<script src="../js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="../js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
+<script src="../plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
+<script src="../js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
 
-<script src="js/jquery.star-rating-svg.js"></script>
+<script src="../js/jquery.star-rating-svg.js"></script>
 
 <script>
     // 初始化模态框，并禁用背景遮罩层
@@ -594,15 +557,7 @@ $(document).ready(function() {
 
 </script>
 
-<script>
-	const footer = document.getElementById('footer');
 
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
  
 </body>
 </html>

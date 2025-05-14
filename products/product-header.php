@@ -5,7 +5,7 @@
             <div class="container clearfix">
                 <!-- website logo -->
                 <div class="logo-header mostion logo-dark">
-                    <a href="index.php"><img src="images/frtbio_logo.png" style="scale: 2.0; padding-right: 20px; padding-top: 6px;"  alt=""></a>
+                    <a href="index.php"><img src="../images/frtbio_logo.png" style="scale: 2.0; padding-right: 20px; "  alt=""></a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,19 +29,19 @@
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-center"  id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <a href="index.php"><img src="images/logo-4.png" alt=""></a>
+                        <a href="index.php"><img src="../images/logo-4.png" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav">	
-                        <li class="active">
-                            <a href="index.php">首页</a>
+                        <li style="margin-right: 30px;">
+                            <a href="../index.php">首页</a>
                         </li>
 
-                        <li>
+                        <li style="margin-right: 30px;">
                             <a href="research-and-service.php">研发与服务</a>
                         </li>
                         
-                        <li class="has-mega-menu">
-                            <a href="product-center.html">产品中心<i class="fas fa-chevron-down"></i></a>
+                        <li class="has-mega-menu" style="margin-right: 30px;">
+                            <a href="product-center.php">产品中心<i class="fas fa-chevron-down"></i></a>
                             <ul class="mega-menu">
                                 <li>
                                     <a href="serums.html">血清 </a>
@@ -61,7 +61,7 @@
                                     </ul>
                                 </li>	
                                     
-                                <li> 
+                                <!-- <li> 
                                     <a href="javascript:;">蛋白质组分</a>
                                     <ul style="text-align: left;">		
                                         <li><a href="header-style-dark-1.html">Maxichol®诊断脂质组分</a></li>
@@ -76,23 +76,25 @@
                                         <li><a href="header-style-dark-7.html">牛凝血酶</a></li>
                                         <li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 
                                 
                                 <li> 
                                     <a href="cell-culture-medium.html">细胞培养基</a>
                                 </li>
-                                <li> 
+                                <!-- <li> 
                                     <a href="javascript:;">鉴定试剂</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
+
                         
-                        <li> 
-                            <a href="introduction.html">关于我们<i class="fas fa-chevron-down"></i></a>
+                        
+                        <li style="margin-right: 30px;"> 
+                            <a href="introduction.php">关于我们<i class="fas fa-chevron-down"></i></a>
                             <ul class="sub-menu  tab-content">
                                 <li> 
-                                    <a href="introduction.html">公司简介</a>
+                                    <a href="introduction.php">公司简介</a>
                                 </li>
                                 <li> 
                                     <a href="contact.html">联系我们</a>
@@ -104,7 +106,7 @@
                         </li>
                         
                         
-                        <li>
+                        <li style="margin-right: 30px;">
                             <a href="#">促销活动</a>
                         </li>
                     </ul>

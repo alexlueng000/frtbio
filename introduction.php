@@ -120,7 +120,7 @@
     </div>
     <!-- Content END-->
 	<!-- Footer -->
-    <div id="footer"></div>
+    <?php include 'footer.php'; ?>
     <!-- Footer End -->
     <button class="scroltop fas fa-chevron-up" ></button>
 </div>
@@ -145,15 +145,5 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
-
-<script>
-	const footer = document.getElementById('footer');
-
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
 </body>
 </html>

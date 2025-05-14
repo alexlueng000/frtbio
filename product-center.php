@@ -72,7 +72,7 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
+							<li><a href="index.php">首页</a></li>
 							<li>产品中心</li>
 						</ul>
 					</div>
@@ -127,7 +127,7 @@
     </div>
     <!-- Content END-->
 	<!-- Footer -->
-    <div id="footer"></div>
+    <?php include 'footer.php'; ?>
     <!-- Footer End -->
     <button class="scroltop fas fa-chevron-up" ></button>
 </div>
@@ -152,24 +152,6 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
-<script>
-	// Header
-	const header = document.getElementById('header');
-
-	fetch('components/header.html')
-		.then(response => response.text())
-		.then(data => {
-			header.innerHTML = data;
-		});
-	// Footer
-	const footer = document.getElementById('footer');
-
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
 
 </body>
 </html>

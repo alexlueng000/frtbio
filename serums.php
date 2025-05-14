@@ -35,22 +35,18 @@
 	<!-- Google Font -->
 	<style>
 
-    a:hover {
+    h5 a:hover {
       color: #FF8500;
     }
 
-	li a {
-	display: inline-block;
-	padding: 4px 6px;
-	border-radius: 4px;
-	transition: box-shadow 0.3s ease, color 0.3s ease;
-	color: #007BFF;
-	text-decoration: none;
+
+
+	p a:hover {
+		color: #FF8500;
 	}
 
-	li a:hover {
-	color: #0056b3; /* 加深的蓝色 */
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	.widget ul li a:hover {
+		color: #FF8500;
 	}
 
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
@@ -72,8 +68,8 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
-							<li>产品中心</li>
+							<li><a href="index.php">首页</a></li>
+							<li><a href="product-center.php">产品中心</a></li>
 							<li>血清</li>
 						</ul>
 					</div>
@@ -114,10 +110,10 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="Front-Biomed-Premium-Imported-FBS.php" >Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></li>
-															<li><a href="Front-Biomed-Premium-Imported-FBS.php" >Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" >Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="Front-Biomed-Premium-FBS.php" >Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
+															<li><a href="products/Front-Biomed-Premium-Imported-FBS.php" >Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></li>
+															<li><a href="products/Front-Biomed-Premium-Imported-FBS.php" >Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" >Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="products/Front-Biomed-Premium-FBS.php" >Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
 														</ul>
 													</div>
 												</div>
@@ -174,7 +170,9 @@
 						<div class="col-xl-9 col-lg-8 col-md-7 m-b30">
 							<div class="row">
 								
-								<!-- product 1 Front Biomed超优级胎牛血清 (FBS, Exceptional ) -->
+								
+								
+								<!-- product 1 Front Biomed进口特级胎牛血清 (FBS, Optimum) -->
 								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
@@ -186,14 +184,14 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Exceptional.php" style="hover: #FF8500;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
 												
 												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed超优级胎牛血清来源于我国呼伦贝尔和锡林郭勒等优质天然牧场6-8月龄健康剖腹产胎牛，经过0.1微米过滤，符合国际胎牛血清质量标准。按GMP生产管理规范全自动灌装生产，批量大，批间差小。经过多种细胞验证，有着质量稳定，细胞形态好，细胞活力高等特点。<br >该款血清普适性较强，适用于培养部分干细胞、免疫细胞；常规肿瘤细胞、难培养细胞、原代细胞等。</p>
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">从事科研设备和试剂的研发和销售，拥有长期在欧美工作的科学家团队，在美国马里兰州、加利福利亚州、德克萨斯州等地有研究和物流中心。为了解决国内科研部门和生物医药产业界对高质量的胎牛血清日益增长的需求和高质量血清来源有限的矛盾，我们通过我们在国外的科学家和物流中心，和美国、澳大利亚、新西兰、欧洲以及国内的胎牛血清生产企业建立了委托生产、联合生产和销售代理等各种合作方式，保证了高质量胎牛血清的稳定来源。进口前经Front国外、国内实验室两轮严格的质量检测及评估。其中，国内实验室的质量评估依据很多实验室的干细胞培养和多种肿瘤细胞株培养参数作为评估依据。评估通过后才执行采购和进口。</p>
 											</div>
 											<div style="display: flex;  align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -205,8 +203,8 @@
 										</div>
 									</div>
 								</div>
-								
-								<!-- product 2 Front Biomed进口特级胎牛血清 (FBS, Optimum) -->
+
+								<!-- product 2 Front Biomed超优级胎牛血清 (FBS, Exceptional ) -->
 								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
@@ -218,14 +216,14 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Exceptional.php" style="hover: #FF8500;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
 												
 												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">从事科研设备和试剂的研发和销售，拥有长期在欧美工作的科学家团队，在美国马里兰州、加利福利亚州、德克萨斯州等地有研究和物流中心。为了解决国内科研部门和生物医药产业界对高质量的胎牛血清日益增长的需求和高质量血清来源有限的矛盾，我们通过我们在国外的科学家和物流中心，和美国、澳大利亚、新西兰、欧洲以及国内的胎牛血清生产企业建立了委托生产、联合生产和销售代理等各种合作方式，保证了高质量胎牛血清的稳定来源。进口前经Front国外、国内实验室两轮严格的质量检测及评估。其中，国内实验室的质量评估依据很多实验室的干细胞培养和多种肿瘤细胞株培养参数作为评估依据。评估通过后才执行采购和进口。</p>
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed超优级胎牛血清来源于我国呼伦贝尔和锡林郭勒等优质天然牧场6-8月龄健康剖腹产胎牛，经过0.1微米过滤，符合国际胎牛血清质量标准。按GMP生产管理规范全自动灌装生产，批量大，批间差小。经过多种细胞验证，有着质量稳定，细胞形态好，细胞活力高等特点。<br >该款血清普适性较强，适用于培养部分干细胞、免疫细胞；常规肿瘤细胞、难培养细胞、原代细胞等。</p>
 											</div>
 											<div style="display: flex;  align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -250,7 +248,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -282,7 +280,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">Front Biomed优级胎牛血清 (FBS, Premium)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed优级胎牛血清 (FBS, Premium)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -314,14 +312,14 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Newborn-Calf-Serum.php" style="hover: #FF8500;">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
 												
 												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front提供的新生牛血清（NBCS），可用于各种细胞培养基。我们的NBCS来源于新西兰和中国。对于新西兰的原材料，我们可保证NBCS是来自产后10天甚至更少天数的牛，从而保证最终产品的品质一致性</p>
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front提供的新生牛血清（NBCS），可用于各种细胞培养基。我们的NBCS来源于新西兰和中国。对于新西兰的原材料，我们可保证NBCS是来自产后10天甚至更少天数的牛，从而保证最终产品的品质一致性。</p>
 											</div>
 											<div style="display: flex;  align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -346,7 +344,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Pig-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -380,14 +378,14 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
 												
 												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front的供体马血清是采自中国、美国、澳洲或新西兰，有兽医定期检查及监控的牛群。马血清非常适合用作细胞培养基和兽医生物制品</p>
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front的供体马血清是采自中国、美国、澳洲或新西兰，有兽医定期检查及监控的牛群。马血清非常适合用作细胞培养基和兽医生物制品。</p>
 											</div>
 											<div style="display: flex;  align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -414,7 +412,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Goat-Serum.php" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -450,7 +448,7 @@
     </div>
     <!-- Content END-->
 	<!-- Footer -->
-    <div id="footer"></div>
+    <?php include 'footer.php'; ?>
     <!-- Footer End -->
     <button class="scroltop fas fa-chevron-up" ></button>
 </div>
@@ -475,16 +473,6 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
-
-<script>
-	const footer = document.getElementById('footer');
-
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
 
 
 </body>

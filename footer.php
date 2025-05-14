@@ -1,5 +1,5 @@
 <footer class="site-footer">
-    <div class="section-full p-t50 p-b20 bg-primary text-white overlay-primary-dark footer-info-bar">
+    <!-- <div class="section-full p-t50 p-b20 bg-primary text-white  footer-info-bar">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -69,9 +69,9 @@
                     <div class="widget border-0 widget_services">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">关于我们</h6>
                         <ul >
-                            <li><a href="about-1.html">公司简介</a></li>
-                            <li><a href="blog-grid-2.html">联系我们</a></li>
-                            <li><a href="services-1.html">交流与活动</a></li>
+                            <li><a href="introduction.php">公司简介</a></li>
+                            <li><a href="contact.php">联系我们</a></li>
+                            <li><a href="#">交流与活动</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,11 +79,11 @@
                     <div class="widget border-0">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">研发与服务</h6>
                         <ul class="list-2">
-                            <li><a href="about-1.html">抗肿瘤生物药</a></li>
-                            <li><a href="blog-grid-2.html">细胞培养定制</a></li>
-                            <li><a href="services-1.html">干细胞转化</a></li>
-                            <li><a href="services-1.html">新型化学药物</a></li>
-                            <li><a href="services-1.html">影像检测服务</a></li>
+                            <li>抗肿瘤生物药</li>
+                            <li>细胞培养定制</li>
+                            <li>干细胞转化</li>
+                            <li>新型化学药物</li>
+                            <li>影像检测服务</li>
                         </ul>
                     </div>
                 </div>

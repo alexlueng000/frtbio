@@ -517,6 +517,18 @@
 								</div>
 							</div>
 						</div>
+						
+						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
+							<div class="product-card dlab-post-media" >
+								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
+									<img src="images/home-product4.png" alt="" >
+								</div>
+								<div class="text-center">
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
+									<a href="Front-Biomed-Exceptional.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+								</div>
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
@@ -540,18 +552,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
-							<div class="product-card dlab-post-media" >
-								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product4.png" alt="" >
-								</div>
-								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">其他动物血清</h5>
-									<a href="serums.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
-								</div>
-							</div>
-						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -881,7 +881,7 @@
     </div>
     <!-- Content END -->
 	<!-- Footer -->
-    <div id="footer"></div>
+    <?php include 'footer.php'; ?>
     <!-- Footer END -->
     <button class="scroltop style2 radius" type="button"><i class="fas fa-arrow-up"></i></button>
 </div>
@@ -928,14 +928,5 @@ jQuery(document).ready(function() {
 });	/*ready*/
 </script>
 
-<script>
-	const footer = document.getElementById('footer');
-
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
 </body>
 </html>

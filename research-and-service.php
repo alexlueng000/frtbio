@@ -57,7 +57,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
 
-		<div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/furniture-1.jpg);">
+		<div class="dlab-bnr-inr bg-pt" style="background-image:url(images/banner/banner-5.jpg);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">研发与服务</h1>
@@ -281,7 +281,7 @@
     </div>
     <!-- Content END-->
 	<!-- Footer -->
-    <div id="footer"></div>
+    <?php include 'footer.php'; ?>
     <!-- Footer End -->
     <!-- scroll top button -->
     <button class="scroltop fas fa-chevron-up" ></button>
@@ -307,16 +307,6 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
-
-<script>
-	const footer = document.getElementById('footer');
-
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
 
 </body>
 </html>
