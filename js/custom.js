@@ -1230,7 +1230,7 @@ var Industry = function(){
 			counter();
 			masonryBox();
 			handleCustomScroll();
-			handleSupport();
+			// handleSupport();
 			setCurrentYear();
 		},
 		
