@@ -1209,7 +1209,7 @@ var Industry = function(){
 			handleCountDown(WebsiteLaunchDate);
 			handleCustomScroll();
 			handleSideBarMenu();
-			cartButton();
+			// cartButton();
 			handleBannerResize();
 			setResizeMargin();
 			handelResize();
