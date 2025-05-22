@@ -13,7 +13,7 @@
 	
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
 	
 	<!-- PAGE TITLE HERE -->
 	<title>弗劳恩生物</title>
@@ -90,7 +90,7 @@
 							<!-- SLIDE  -->
 							<li data-index="rs-100" data-transition="slideoververtical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
-								<img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/labs.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+								<img src="images/main-slider/dummy.webp"  alt=""  data-lazyload="images/labs.webp" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
 								<!-- LAYER NR. 1 -->
 								<!-- LAYERS -->
 								<div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer" 
@@ -110,7 +110,7 @@
 									data-paddingright="[0,0,0,0]" 
 									data-paddingbottom="[0,0,0,0]" 
 									data-paddingleft="[0,0,0,0]" 
-									style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)"> </div>
+									style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.webp)"> </div>
 									<!-- LAYER NR. 1 -->
 								<!-- BACKGROUND VIDEO LAYER -->
 								<!-- <div class="rs-background-video-layer" 
@@ -232,7 +232,7 @@
 							</li>
 							<li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
-								<img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/labs-2.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+								<img src="images/main-slider/dummy.webp"  alt=""  data-lazyload="images/labs-2.webp" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
 								<!-- LAYER NR. 1 -->
 								<div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer" 
 									data-x="['center','center','center','center']" 
@@ -251,7 +251,7 @@
 									data-paddingright="[0,0,0,0]" 
 									data-paddingbottom="[0,0,0,0]" 
 									data-paddingleft="[0,0,0,0]" 
-									style="z-index: 2;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)"> </div>
+									style="z-index: 2;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.webp)"> </div>
 								<div class="tp-caption tp-shape tp-shapewrapper ov-tp " 
 									id="slide-200-layer-1" 
 									data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
@@ -357,7 +357,7 @@
 							</li>
 							<li data-index="rs-300" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
-								<img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/labs-3.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+								<img src="images/main-slider/dummy.webp"  alt=""  data-lazyload="images/labs-3.webp" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
 								<!-- LAYER NR. 1 -->
 								<div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer" 
 									data-x="['center','center','center','center']" 
@@ -376,7 +376,7 @@
 									data-paddingright="[0,0,0,0]" 
 									data-paddingbottom="[0,0,0,0]" 
 									data-paddingleft="[0,0,0,0]" 
-									style="z-index: 2;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)"> </div>
+									style="z-index: 2;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.webp)"> </div>
 								<div class="tp-caption tp-shape tp-shapewrapper ov-tp " 
 									id="slide-300-layer-1" 
 									data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
@@ -509,7 +509,7 @@
 						>
 							<div class="" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product1.png" alt="" >
+									<img src="images/home-product1.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级进口胎牛血清 (FBS, Optimum)</h5>
@@ -521,7 +521,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product4.png" alt="" >
+									<img src="images/home-product4.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
@@ -532,7 +532,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product2.png" alt="" >
+									<img src="images/home-product2.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
@@ -544,7 +544,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product3.png" alt="" >
+									<img src="images/home-product3.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
@@ -584,7 +584,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img src="images/service-1.png" alt=""></a> 
+									<a href="services-details.html"><img src="images/service-1.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info" >
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -598,7 +598,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img src="images/service-2.png" alt=""></a> 
+									<a href="services-details.html"><img src="images/service-2.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -612,7 +612,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img src="images/service-3.jpg" alt=""></a> 
+									<a href="services-details.html"><img src="images/service-3.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -626,7 +626,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img src="images/service-4.jpg" alt=""></a> 
+									<a href="services-details.html"><img src="images/service-4.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -640,7 +640,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img src="images/service-5.jpg" alt=""></a> 
+									<a href="services-details.html"><img src="images/service-5.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">
@@ -664,7 +664,7 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" src="images/company1.jpg"  alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" src="images/company1.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -672,7 +672,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" src="images/company2.jpg"  alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" src="images/company2.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -680,7 +680,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" src="images/company3.jpg"  alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" src="images/company3.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -709,7 +709,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-1.png" alt="">
+											<img src="images/customers/customer-1.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -718,7 +718,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-2.png" alt="">
+											<img src="images/customers/customer-2.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -727,7 +727,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-3.png" alt="">
+											<img src="images/customers/customer-3.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -736,7 +736,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-4.png" alt="">
+											<img src="images/customers/customer-4.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -745,7 +745,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-5.png" alt="">
+											<img src="images/customers/customer-5.webp"  alt="">
 										</a>
 									</div>
 								</div>
@@ -754,7 +754,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-6.png" alt="">
+											<img src="images/customers/customer-6.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -763,7 +763,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-7.png" alt="">
+											<img src="images/customers/customer-7.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -772,7 +772,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-8.png" alt="">
+											<img src="images/customers/customer-8.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -781,7 +781,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-9.png" alt="">
+											<img src="images/customers/customer-9.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -790,7 +790,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-10.png" alt="">
+											<img src="images/customers/customer-10.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -799,7 +799,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-11.png" alt="">
+											<img src="images/customers/customer-11.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -808,7 +808,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-12.png" alt="">
+											<img src="images/customers/customer-12.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -817,7 +817,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-13.png" alt="">
+											<img src="images/customers/customer-13.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -826,7 +826,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-14.png" alt="">
+											<img src="images/customers/customer-14.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -835,7 +835,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-15.png" alt="">
+											<img src="images/customers/customer-15.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -844,7 +844,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-16.png" alt="">
+											<img src="images/customers/customer-16.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -853,7 +853,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-17.png" alt="">
+											<img src="images/customers/customer-17.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -862,7 +862,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-18.png" alt="">
+											<img src="images/customers/customer-18.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
