@@ -44,7 +44,7 @@
                             <a href="product-center.php">产品中心<i class="fas fa-chevron-down"></i></a>
                             <ul class="mega-menu">
                                 <li>
-                                    <a href="serums.html">血清 </a>
+                                    <a href="serums.php">血清 </a>
                                     <ul>
                                         <li><a href="header-style-1.html">特级胎牛血清</a></li>
                                         <li><a href="header-style-2.html">优级胎牛血清</a></li>
