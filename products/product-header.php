@@ -29,7 +29,7 @@
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-center"  id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <a href="index.php"><img src="../images/logo-4.png" alt=""></a>
+                        <!-- <a href="../index.php"><img src="../images/logo-4.png" alt=""></a> -->
                     </div>
                     <ul class="nav navbar-nav">	
                         <li style="margin-right: 30px;">
@@ -37,14 +37,14 @@
                         </li>
 
                         <li style="margin-right: 30px;">
-                            <a href="research-and-service.php">研发与服务</a>
+                            <a href="../research-and-service.php">研发与服务</a>
                         </li>
                         
                         <li class="has-mega-menu" style="margin-right: 30px;">
-                            <a href="product-center.php">产品中心<i class="fas fa-chevron-down"></i></a>
+                            <a href="../product-center.php">产品中心<i class="fas fa-chevron-down"></i></a>
                             <ul class="mega-menu">
                                 <li>
-                                    <a href="serums.html">血清 </a>
+                                    <a href="../serums.html">血清 </a>
                                     <ul>
                                         <li><a href="header-style-1.html">特级胎牛血清</a></li>
                                         <li><a href="header-style-2.html">优级胎牛血清</a></li>

@@ -58,7 +58,7 @@
 <div class="page-wraper">
 <div id="loading-area"></div>
     <!-- header -->
-    <?php include '../header.php'; ?>
+    <?php include 'product-header.php'; ?>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
