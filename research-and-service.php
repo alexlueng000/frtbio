@@ -9,12 +9,12 @@
 	<meta name="description" content="Industry - Factory & Industrial HTML Template">
 	<meta property="og:title" content="Industry - Factory & Industrial HTML Template">
 	<meta property="og:description" content="Industry - Factory & Industrial HTML Template">
-	<meta property="og:image" content="https://industry.dexignzone.com/xhtml/social-image.png">
+	<meta property="og:image" content="https://industry.dexignzone.com/xhtml/social-image.webp">
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
 	
 	<!-- PAGE TITLE HERE -->
 	<title>弗劳恩生物</title>
@@ -57,7 +57,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
 
-		<div class="dlab-bnr-inr bg-pt" style="background-image:url(images/banner/banner-5.jpg);">
+		<div class="dlab-bnr-inr bg-pt" style="background-image:url(images/banner/banner-5.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">研发与服务</h1>
@@ -89,7 +89,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-12 m-b30 our-story-thum wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-							<img src="images/research1.jpg" class="radius-sm" alt="">
+							<img src="images/research1.webp" class="radius-sm" alt="">
 						</div>
 					</div>
 				</div>
@@ -100,7 +100,7 @@
 			<div class="section-full box-about-list">
                 <div class="row spno">
 					<div class="col-lg-6 col-md-12"> 
-						<img src="images/research2.jpg" alt="" class="img-cover"> 
+						<img src="images/research2.webp" alt="" class="img-cover"> 
 					</div>
 					<div class="col-lg-6 col-md-12 bg-primary">
 						<div class="max-w700 m-auto p-tb50 p-lr20">
@@ -162,7 +162,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project1.jpg" alt="">
+										<img src="images/project1.webp" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -177,7 +177,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project2.png" alt="">
+										<img src="images/project2.webp" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -192,7 +192,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project3.png" alt="">
+										<img src="images/project3.webp" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -207,7 +207,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project4.png" alt="">
+										<img src="images/project4.webp" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -229,7 +229,7 @@
 			<div class="section-full" id="choose-us">
 				<div class="row m-lr0">
 					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1 wow fadeInLeft " 
-					style="position: relative; background-image: url('images/service-lab2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" 
+					style="position: relative; background-image: url('images/service-lab2.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;" 
 					data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="align-self-center text-white" style=" display: flex;
 						flex-direction: column;
@@ -258,7 +258,7 @@
 						</div>
 					</div>
 					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info style1  wow fadeInLeft" 
-					style="position: relative; background-image: url('images/service-lab1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-wow-duration="2s" data-wow-delay="0.3s">
+					style="position: relative; background-image: url('images/service-lab1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="align-self-center text-white" style=" display: flex;
 						flex-direction: column;
 						justify-content: flex-start; 
