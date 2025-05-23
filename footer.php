@@ -95,13 +95,13 @@
                             <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">
                                 生物公众号
                             </div>
-                            <img src="images/qrcode_bio.jpg" alt="弗劳恩生物" style="width: 100px; height: auto;">
+                            <img src="images/qrcode_bio.webp" alt="弗劳恩生物" style="width: 100px; height: auto;">
                         </div>
                         <div style="text-align: center;">
                             <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">
                                 微信客服
                             </div>
-                            <img src="images/qrcode_cs.png" alt="弗劳恩微信客服" style="width: 100px; height: auto;">
+                            <img src="images/qrcode_cs.webp" alt="弗劳恩微信客服" style="width: 100px; height: auto;">
                         </div>
                     </div>
                     
