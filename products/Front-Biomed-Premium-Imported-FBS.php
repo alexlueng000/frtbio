@@ -92,7 +92,7 @@
 									<div class="mfp-gallery">
 										<div class="dlab-box">
 											<div class="dlab-thum-bx">
-												<img src="../images/blood-serum.jpg" alt="">
+												<img src="../images/products/product1.jpg" alt="">
 												<div class="overlay-bx">
 													<div class="overlay-icon">
 														<span data-exthumbimage="../images/banner/banner-1.jpg" data-src="../images/banner/banner-1.jpg" class="check-km" title="Image 1 Title will come here">		
