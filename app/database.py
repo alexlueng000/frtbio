@@ -2,16 +2,18 @@
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.exc import OperationalError
 
-DATABASE_URL = "sqlite:///./test.db"  # 可替换为你的MySQL/PostgreSQL连接串
+DATABASE_URL = "mysql+pymysql://root:123456@localhost:3306/bidding_emails?charset=utf8mb4"
 
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# 依赖项
+# 用于依赖注入
 def get_db():
     db = SessionLocal()
     try:
         yield db
     finally:
         db.close()
+

@@ -1,7 +1,7 @@
 # app/schemas.py
 
-from pydantic import BaseModel, EmailStr
-from typing import Optional
+from pydantic import BaseModel, EmailStr, ConfigDict
+from typing import Optional, List
 
 class CompanyCreate(BaseModel):
     company_name: str
@@ -17,8 +17,7 @@ class CompanyCreate(BaseModel):
 class CompanyInfoOut(CompanyCreate):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 '''
@@ -27,4 +26,4 @@ class CompanyInfoOut(CompanyCreate):
 class BiddingRegisterRequest(BaseModel):
     buyer_name: str # B公司名称
     project_name: str # 项目名称
-    serial_number: [str] # 流水号
+    serial_number: List[str] # 流水号
