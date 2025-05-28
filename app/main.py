@@ -1,4 +1,6 @@
 # app/main.py
+import os
+
 from fastapi import FastAPI, Depends
 from pydantic import BaseModel, EmailStr
 from app import email_utils, models, database, schemas, tasks
@@ -10,8 +12,19 @@ from jinja2 import Environment, FileSystemLoader
 
 # 获取对应公司邮件模板
 def render_invitation_template(buyer_name: str, project_name: str, template_name: str):
-    env = Environment(loader=FileSystemLoader('email_templates'))
-    template = env.get_template('template_name')
+
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    template_dir = os.path.join(base_dir, "app/email_templates")
+
+    if not os.path.exists(template_dir):
+        return f"目录不存在: {template_dir}"
+
+    # files = os.listdir(template_dir)
+    # return [f for f in files if os.path.isfile(os.path.join(template_dir, f))]
+
+    env = Environment(loader=FileSystemLoader(template_dir))
+
+    template = env.get_template(template_name)
     return template.render(buyer_name=buyer_name, project_name=project_name)
 
 app = FastAPI()
@@ -110,14 +123,48 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 
     if not b_company_info:
         return {"message": "没有找到 B 类型的公司"}
+
+    print("B公司信息：", b_company_info)
         
     # 给三家公司发送邮件
     for company in d_companies:
+
+        print("D公司信息：", company.company_name, company.short_name)
         
         if company.short_name == "LF":
-            subject = f" 《{{ req.project_name }}》- 投標委託 | 《{{ b_company_name }}》| 《25LDF_001》"
+            subject = f" 《{ req.project_name }》- 投標委託 | 《{ b_company_info.company_name }》| 《25LDF_001》"
+            print("LF公司邮件主题：", subject)
             template_name = "a1_lf.txt"
 
+            smtp_config = {
+                "host": "smtp.163.com",
+                "port": 465,
+                "username": "peterlcylove@163.com",
+                "password": "ECRVsnXCe2g2Xauq",
+                "from": "peterlcylove@163.com"
+            }
+
+            #TODO 每个公司有不同的发送模板 
+            content = render_invitation_template(req.buyer_name, req.project_name, template_name)
+            print("LF公司邮件内容：", content)  
+            success, error = await email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
+            
+            # 保存发送记录
+            record = models.EmailRecord(
+                to=b_company_info.email,
+                subject=subject,
+                body=content,
+                status="success" if success else "failed",
+                error_message=error if not success else None
+            )
+            db.add(record)
+            db.commit()
+            db.refresh(record)
+            
+        elif company.short_name == "FR":
+            subject = f"【誠邀合作】《{ req.project_name }》投標《HK-FRONT-25#001》"
+            print("FR公司邮件主题：", subject)
+            template_name = "a1_fraun.txt"
             smtp_config = {
                 "host": "smtp.163.com",
                 "port": 465,
@@ -125,17 +172,15 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 "password": "授权码",
                 "from": company.email
             }
-
             #TODO 每个公司有不同的发送模板 
             content = render_invitation_template(req.buyer_name, req.project_name, template_name)
-            email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
-            
-        elif company.name == "FR":
-            subject = f"【誠邀合作】《{{ req.project_name }}》投標《HK-FRONT-25#001》"
-            template_name = "a1_fraun"
-            #TODO 每个公司有不同的发送模板 
-            content = render_invitation_template(req.buyer_name, req.project_name, template_name)
-            email_utils.send_email(to_email=b_company_email, subject=subject, content=content, smtp_config=smtp_config)
+            print("FR公司邮件内容：", content)
+            try:
+                # email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
+                print("FR公司邮件发送成功")
+            except Exception as e:
+                print("FR公司邮件发送失败：", e)
+            # email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
         else:
             pass
 
@@ -144,21 +189,21 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 
     #TODO 定时任务：5-60分钟后由 B公司 给3家公司回复邮件
     # 假设 B 公司固定使用以下邮箱配置（也可以从 DB 查）
-    b_company_smtp = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "b_user",
-        "password": "授权码",
-        "from": "b@example.com"
-    }
+    # b_company_smtp = {
+    #     "host": "smtp.163.com",
+    #     "port": 465,
+    #     "username": "b_user",
+    #     "password": "授权码",
+    #     "from": "b@example.com"
+    # }
 
     # 延迟 5 分钟后，B 公司回复每个 D 公司
-    for company in d_companies:
-        subject = f"回覆：我們已收到《{req.project_name}》邀請"
-        content = f"感謝 {company.company_name} 的邀請，我們將儘快研究投標事項。"
-        tasks.send_reply_email.apply_async(
-            args=[company.email, subject, content, b_company_smtp],
-            countdown=5 * 60  # 延迟 5 分钟（单位：秒）
-        )
+    # for company in d_companies:
+    #     subject = f"回覆：我們已收到《{req.project_name}》邀請"
+    #     content = f"感謝 {company.company_name} 的邀請，我們將儘快研究投標事項。"
+    #     tasks.send_reply_email.apply_async(
+    #         args=[company.email, subject, content, b_company_smtp],
+    #         countdown=5 * 60  # 延迟 5 分钟（单位：秒）
+    #     )
 
     return {"message": "邮件已成功发送给 B 公司"}
