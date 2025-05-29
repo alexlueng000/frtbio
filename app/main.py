@@ -98,8 +98,26 @@ async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db:
 
     return {"d_companies": [company.company_name for company in d_companies]}
 
-    
 
+"""
+这个接口需要处理的事情：
+1. 向project_info表中插入一条项目信息
+2. 查询3家D公司的信息
+3. 查询B公司的信息（如果没有呢？）
+4. 3家D公司给B公司发送邮件
+5. 保存发送记录，处理异常情况并更新project_info中的A1字段
+6. 生成一个5-60之间的随机数x，在x分钟后由B向3个D公司发送A2邮件
+7. 保存发送记录，处理异常情况并更新project_info中的A2字段
+8. 将发送记录回传给宜搭
+
+接收参数：
+@serials_number: 流水号列表，例如 ['PR202504001', '25LDF_001', 'HK-FRONT-25#001'] （必有）
+@purchase_department: 采购单位 （必有）
+@b_company_name: B公司名称 （必有）
+@project_name: 项目名称 （必有）
+@bidding_code: 招标编号 （可能为空）
+
+"""
 @app.post("/recieve_bidding_register")
 async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
     
