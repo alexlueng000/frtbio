@@ -8,12 +8,13 @@ class EmailRecord(Base):
     __tablename__ = "emails"
 
     id = Column(Integer, primary_key=True, index=True)
-    to = Column(String(255), nullable=False)         # 收件人邮箱
-    subject = Column(String(255))                    # 邮件标题
-    body = Column(Text)                              # 邮件正文
-    status = Column(String(20), default="pending")   # 邮件状态
+    to = Column(String(255), nullable=False)
+    subject = Column(String(255))
+    body = Column(Text)
+    status = Column(String(20), default="pending")  # pending / success / failed
+    task_id = Column(String(100))  # ✅ 新增字段，用于记录 Celery 任务ID
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
-    error_message = Column(Text, nullable=True)      # 错误信息
+    error_message = Column(Text, nullable=True)
 
 
 class CompanyInfo(Base):
@@ -30,3 +31,31 @@ class CompanyInfo(Base):
     email = Column(String(255))                              # 邮箱
     address = Column(String(255))                            # 中文地址
     english_address = Column(String(255))                    # 英文地址
+
+
+class ProjectInfo(Base):
+    __tablename__ = "projects"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    project_name = Column(String(255))
+    contract_number = Column(String(100))
+    tender_number = Column(String(100)) # 招标编号
+    project_type = Column(String(100))
+    p_serial_number = Column(String(100))
+    l_serial_number = Column(String(100))
+    f_serial_number = Column(String(100))
+    purchaser = Column(String(255))
+    company_b_name = Column(String(255))
+    company_c_name = Column(String(255))
+    company_d_name = Column(String(255))
+    a1 = Column(Boolean)
+    a2 = Column(Boolean)
+    b3 = Column(Boolean)
+    b4 = Column(Boolean)
+    b5 = Column(Boolean)
+    b6 = Column(Boolean)
+    c7 = Column(Boolean)
+    c8 = Column(Boolean)
+    c9 = Column(Boolean)
+    c10 = Column(Boolean)
+    created_at = Column(TIMESTAMP, default=datetime.utcnow)
