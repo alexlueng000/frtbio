@@ -108,7 +108,7 @@ async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db:
 5. 保存发送记录，处理异常情况并更新project_info中的A1字段
 6. 生成一个5-60之间的随机数x，在x分钟后由B向3个D公司发送A2邮件
 7. 保存发送记录，处理异常情况并更新project_info中的A2字段
-8. 将发送记录回传给宜搭
+8. 将发送记录回传给宜搭 TODO
 
 接收参数：
 @serials_numbers: 流水号列表，例如 ['PR202504001', '25LDF_001', 'HK-FRONT-25#001'] （必有）
