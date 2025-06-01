@@ -1,6 +1,4 @@
 # app/main.py
-import os
-
 from fastapi import FastAPI, Depends
 from pydantic import BaseModel, EmailStr
 from app import email_utils, models, database, schemas, tasks, utils
@@ -8,24 +6,6 @@ from app import email_utils, models, database, schemas, tasks, utils
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
-from jinja2 import Environment, FileSystemLoader
-
-# 获取对应公司邮件模板
-def render_invitation_template(buyer_name: str, project_name: str, template_name: str):
-
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    template_dir = os.path.join(base_dir, "app/email_templates")
-
-    if not os.path.exists(template_dir):
-        return f"目录不存在: {template_dir}"
-
-    # files = os.listdir(template_dir)
-    # return [f for f in files if os.path.isfile(os.path.join(template_dir, f))]
-
-    env = Environment(loader=FileSystemLoader(template_dir))
-
-    template = env.get_template(template_name)
-    return template.render(buyer_name=buyer_name, project_name=project_name)
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=database.engine)
@@ -394,13 +374,13 @@ def contract_audit():
 
     # BCD 类型项目
     if project_type == 'BCD':
-        pass 
+        email_utils.schedule_bid_conversation_BCD(b_company_name, c_company_name, d_company_name)
     # CCD 类型项目
     elif project_type == 'CCD':
-        pass
+        email_utils.schedule_bid_conversation_CCD(b_company_name, c_company_name, d_company_name)
     # BD 类型项目
     else:
-        pass
+        email_utils.schedule_bid_conversation_BD(b_company_name, d_company_name)
     
     return {"message": "邮件已成功发送"}
     
