@@ -121,17 +121,17 @@ async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db:
 @app.post("/recieve_bidding_register")
 async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
     
-    p_serial_number = next((s for s in req.serial_numbers if s.startswith("PR")), "")
-    f_serial_number = next((s for s in req.serial_numbers if s.startswith("HK")), "")
-    l_serial_number = next((s for s in req.serial_numbers if not (s.startswith("PR") or s.startswith("HK"))), "")
+    # p_serial_number = next((s for s in req.serial_numbers if s.startswith("PR")), "")
+    # f_serial_number = next((s for s in req.serial_numbers if s.startswith("HK")), "")
+    # l_serial_number = next((s for s in req.serial_numbers if not (s.startswith("PR") or s.startswith("HK"))), "")
 
     project_info = models.ProjectInfo(
         project_name=req.project_name,
         contract_number="",
         tender_number=req.bidding_code, # 招标编号
-        p_serial_number=p_serial_number,
-        l_serial_number=l_serial_number,
-        f_serial_number=f_serial_number,
+        p_serial_number=req.p_serial_number,
+        l_serial_number=req.l_serial_number,
+        f_serial_number=req.f_serial_number,
         purchaser=req.purchase_department,
         company_b_name=req.b_company_name,
         company_c_name="",
@@ -308,12 +308,102 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
     return {"message": "邮件已成功发送给 B 公司"}
 
 
+# === 项目中标信息 ===
+# 更新项目中标信息的合同号，招标编号
+# 接收参数：
+#     1. 项目名称
+#     2. L流水号，P流水号，F流水号
+#     3. 招标编号
+#     4. 合同号
+
+@app.post("/project_bidding_winning_information")
+def project_bidding_winning_information():
+    pass
+
+
 """
 合同审批流程通过后，确认是否要发送邮件
 发送条件：
     1. 带有L流水号，P流水号，F流水号
 
 这个函数要做的事情：
-    1. 
+    1. 判断是否首次调用这个接口（D公司修改后会重新触发）
+    2. 判断项目类型：BCD, CCD, BC, BD
+    3. 发送邮件
+    4. 保存发送记录
+    5. 返回信息给宜搭
+
+这个接口接收的参数：
+    1. 项目名称
+    2. L流水号，P流水号，F流水号
+    3. 合同号
+    4. B公司-中标商
+    5. C公司 C=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
+    6. D公司 D=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
+    7. 合同类型
 """
-def after_contract_audit():
+@app.post("/contract_audit")
+def contract_audit():
+    
+    # 如果合同类型不是三方/四方合同，不发送邮件
+    if contract_type != "三方/四方合同":
+        return {"message": "合同类型不是三方/四方合同，不发送邮件"}
+    
+    # 如果没有L流水号，P流水号，F流水号，说明不是委托投标登记项目，不发送邮件
+    if not l_serial_number or not p_serial_number or not f_serial_number:
+        return {"message": "没有L流水号，P流水号，F流水号，不发送邮件"}
+
+    # 判断项目类型
+    project_type = ''
+
+    # 判断是否首次调用这个接口
+    project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
+    if not project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
+        pass
+    
+
+    # 确定B、C、D公司是否内部公司，B、D公司是内部公司才发送邮件
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == req.company_b_name, models.CompanyInfo.company_type == 'B').first()
+    # 如果找到了B公司，说明是内部公司
+    if not b_company:
+        return {"message": "没有找到B公司，不发送邮件"}
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == req.company_d_name, models.CompanyInfo.company_type == 'D').first()
+    # 如果找到了D公司，说明是内部公司
+    if not d_company:
+        return {"message": "没有找到D公司，不发送邮件"}
+
+    c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == req.company_c_name, models.CompanyInfo.company_type == 'C').first()
+    # 如果找到了C公司，说明是内部公司，如果没有找到，说明是外部公司
+    if not c_company:
+        project_type = 'BD'
+    # 如果B公司和D公司是同一家公司，说明是CCD项目
+    elif b_company.company_name == d_company.company_name:
+        project_type = 'CCD'
+    else:
+        project_type = 'BCD'
+
+    # 更新project_info表中的项目类型
+    project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
+    if project:
+        project.project_type = project_type
+        db.add(project)
+        db.commit()
+        db.refresh(project)
+
+    # 发送邮件
+
+    # BCD 类型项目
+    if project_type == 'BCD':
+        pass 
+    # CCD 类型项目
+    elif project_type == 'CCD':
+        pass
+    # BD 类型项目
+    else:
+        pass
+    
+    return {"message": "邮件已成功发送"}
+    
+    
+    
+

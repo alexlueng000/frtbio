@@ -20,18 +20,6 @@ class CompanyInfoOut(CompanyCreate):
     model_config = ConfigDict(from_attributes=True)
 
 
-'''
-委托投标登记请求：采购单位，项目名称，流水号，招标编号, B公司名称
-'''
-class BiddingRegisterRequest(BaseModel):
-    purchase_department: str # 采购单位
-    b_company_name: str # B公司名称
-    project_name: str # 项目名称
-    serial_numbers: List[str] # 流水号
-    bidding_code: Optional[str] = None # 招标编号
-
-
-
 class ProjectInfoOut(BaseModel):
     id: int
     project_name: Optional[str]
@@ -58,3 +46,40 @@ class ProjectInfoOut(BaseModel):
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+'''
+委托投标登记请求：采购单位，项目名称，流水号，招标编号, B公司名称
+'''
+class BiddingRegisterRequest(BaseModel):
+    purchase_department: str # 采购单位
+    b_company_name: str # B公司名称
+    project_name: str # 项目名称
+    l_serial_number: str # L流水号
+    p_serial_number: str # P流水号
+    f_serial_number: str # F流水号
+    bidding_code: Optional[str] = None # 招标编号
+
+
+''' 
+项目中标信息
+'''
+class ProjectWinningInfoRequest(BaseModel):
+    pass 
+
+
+
+''' 
+合同审批
+'''
+class ContractAuditRequest(BaseModel):
+    project_name: str # 项目名称
+    l_serial_number: str # L流水号
+    p_serial_number: str # P流水号
+    f_serial_number: str # F流水号
+    contract_number: str # 合同号
+    company_b_name: str # B公司-中标商
+    company_c_name: str # C公司
+    company_d_name: str # D公司
+    contract_type: str # 合同类型
+
