@@ -387,3 +387,18 @@ def contract_audit():
     
     
 
+# 结算流程后发送邮件
+# 顺序：
+# 1. 发送C-B间结算单
+# 2. 发送B-D间结算单
+# 3. B-D间结算单确认
+# 4. C-D间结算单确认
+@app.post("/settlement")
+def settlement(project_type: str, project_name: str, l_serial_number: str, p_serial_number: str, f_serial_number: str, contract_number: str, b_company_name: str, c_company_name: str, d_company_name: str):
+    if project_type == 'BCD':
+        email_utils.schedule_settlement_BCD(b_company_name, c_company_name, d_company_name)
+    elif project_type == 'CCD':
+        email_utils.schedule_settlement_CCD(b_company_name, c_company_name, d_company_name)
+    elif project_type == 'BD':
+        email_utils.schedule_settlement_BD(b_company_name, d_company_name)
+    return {"message": "邮件已成功发送"}
