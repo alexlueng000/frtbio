@@ -1,0 +1,14 @@
+Hi, {{buyer_name}}
+
+      在此祝贺，由贵我双方携手倾注心力的{{project_name}}，已成功中标！ 该项目中标金额确定为 {{bid_amount}}。
+
+      我司已联系采购方认可并指定的{{c_company_name}}作为外贸服务公司，委托其承接设备进口服务，提供减免税咨询与代办，运用供应链技术开展数据服务，以及负责费用结算工作。以上请知悉！
+
+万丽华 WAN LIHUA
+移动电话PHONE：+86 13316908196
+座机TEL：+86 755-82256522
+邮箱EMAIL：KQ18SETTLma@163.com
+深圳市赛纳精密仪器有限公司
+Shenzhen Seine Precision Instruments Co.,Ltd
+深圳市福田区福田街道福南社区深南中路3039号国际文化大厦1907B1D
+Apartment 1907B1D, International Culture Building, No. 3039, Shennan Middle Road, Funan Community, Futian Subdistrict, Futian District, Shenzhen, China.

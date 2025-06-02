@@ -1,0 +1,12 @@
+致{{b_buyer_name}}先生/女士：
+
+就 {{d_project_name}}（合同編號：{{d_contract_number}}）的結算事宜，經本公司嚴謹細緻地審核，確認此次結算並無任何問題。
+該結算可順利進入後續流程，如有任何需要進一步溝通或協助之處，歡迎隨時與本公司聯繫。
+多謝貴方的關注與配合！
+祝商祺！
+
+lisa
+電 話/TEL:+852 39622353
+郵 箱/E-MAIL:infotech@001precise.com
+公 司/COMPANY:PRECISE INSTRUMENT COMPANY LIMITED
+地 址/ADD:FLAT/RM E19 2/FKOON WO INDUSTRIAL BUILDING  NOS.63-75 TA CHUEN PING STREET KWAI CHUNG NT

@@ -1,0 +1,13 @@
+Hi, {{d_buyer_name}}
+
+      附件为合同号：{{d_contract_number}} {{d_project_name}}的 结算单，请审核！ 
+
+
+万丽华 WAN LIHUA
+移动电话PHONE：+86 13316908196
+座机TEL：+86 755-82256522
+邮箱EMAIL：KQ18SETTLma@163.com
+深圳市赛纳精密仪器有限公司
+Shenzhen Seine Precision Instruments Co.,Ltd
+深圳市福田区福田街道福南社区深南中路3039号国际文化大厦1907B1D
+Apartment 1907B1D, International Culture Building, No. 3039, Shennan Middle Road, Funan Community, Futian Subdistrict, Futian District, Shenzhen, China.
