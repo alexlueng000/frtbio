@@ -509,7 +509,7 @@
 						>
 							<div class="" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product1.webp" loading="lazy" alt="" >
+									<img src="images/products/new-product1.jpg" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级进口胎牛血清 (FBS, Optimum)</h5>
@@ -521,7 +521,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product4.webp" loading="lazy" alt="" >
+									<img src="images/products/new-product2.jpg" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
@@ -532,7 +532,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product2.webp" loading="lazy" alt="" >
+									<img src="images/products/new-product3.jpg" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
@@ -544,7 +544,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/home-product3.webp" loading="lazy" alt="" >
+									<img src="images/products/new-product4.jpg" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
