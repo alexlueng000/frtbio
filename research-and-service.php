@@ -162,7 +162,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project1.webp" alt="">
+										<img src="images/project1.webp" loading="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -177,7 +177,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project2.webp" alt="">
+										<img src="images/project2.webp" loading="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -192,7 +192,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project3.webp" alt="">
+										<img src="images/project3.webp" loading="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -207,7 +207,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project4.webp" alt="">
+										<img src="images/project4.webp" loading="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
