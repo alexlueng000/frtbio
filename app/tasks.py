@@ -14,7 +14,7 @@ celery = Celery(
 
 @celery.task
 def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dict):
-    email_utils.send_email(to_email, subject, content, smtp_config)
+    success, error = email_utils.send_email(to_email, subject, content, smtp_config)
     
     # 需要更新这个邮件发送记录
     record = models.EmailRecord(

@@ -1,0 +1,374 @@
+from app import database, models, email_utils
+
+
+from app.tasks import send_reply_email
+
+
+db = database.get_db()
+
+
+# BCD 项目类型发送邮件
+def schedule_bid_conversation_BCD(b_company_name: str, c_company_name: str, d_company_name: str):
+    
+    # 获取BCD三家公司的信息
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
+    c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == c_company_name).first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+
+    b_smtp = {
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
+    }
+
+    c_smtp = {
+        "host": c_company.smtp_host,
+        "port": c_company.smtp_port,
+        "username": c_company.smtp_username,
+        "password": c_company.smtp_password,
+        "from": c_company.smtp_from
+    }
+
+    d_smtp = {
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
+    }
+
+    b_email = b_company.email
+    c_email = c_company.email
+    d_email = d_company.email
+
+    # 获取对应B公司的邮件模板
+    b_email_subject_b3   = render_email_subject("B3", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b3 = render_invitation_template_content(b_company_name, project_name, "b3_"+b_company.short_name+".txt")
+    # 第一封邮件：B ➝ C（立即）
+    task1 = send_reply_email.apply_async(
+        args=[c_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+        countdown=0  # 立即
+    )
+
+    # 随机延迟 5–60 分钟
+    c_email_subject_b4 = render_email_subject("C3", c_company.short_name, project_name, c_company.serial_number)
+    c_email_content_b4 = render_invitation_template_content(c_company_name, project_name, "c3_"+c_company.short_name+".txt")
+    delay2 = random.randint(5, 60)
+    task2 = send_reply_email.apply_async(
+        args=[b_email, c_email_subject_b4, c_email_content_b4, c_smtp],
+        countdown=delay2 * 60  # 相对第一封
+    )
+
+    # 第三封：B ➝ D（延迟第2封基础上 5–60分钟）
+    b_email_subject_b5 = render_email_subject("B5", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b5 = render_invitation_template_content(b_company_name, project_name, "b5_"+b_company.short_name+".txt")
+    delay3 = delay2 + random.randint(5, 60)
+    task3 = send_reply_email.apply_async(
+        args=[d_email, b_email_subject_b5, b_email_content_b5, b_smtp],
+        countdown=delay3 * 60
+    )
+
+    # 第四封：D ➝ B（在第3封后延迟 5–60分钟）
+    d_email_subject_b6 = render_email_subject("D6", d_company.short_name, project_name, d_company.serial_number)
+    d_email_content_b6 = render_invitation_template_content(d_company_name, project_name, "d6_"+d_company.short_name+".txt")
+    delay4 = delay3 + random.randint(5, 60)
+    task4 = send_reply_email.apply_async(
+        args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
+        countdown=delay4 * 60
+    )
+
+    return {
+        "tasks": [
+            {"step": "B ➝ C", "task_id": task1.id, "delay_min": 0},
+            {"step": "C ➝ B", "task_id": task2.id, "delay_min": delay2},
+            {"step": "B ➝ D", "task_id": task3.id, "delay_min": delay3},
+            {"step": "D ➝ B", "task_id": task4.id, "delay_min": delay4},
+        ]
+    }
+
+
+# CCD 项目类型发送邮件
+# 仅有BD公司之间发送两封邮件
+def schedule_bid_conversation_CCD(b_company_name: str, d_company_name: str):
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+
+    b_smtp = {
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
+    }
+
+    d_smtp = {
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
+    }
+
+    b_email = b_company.email
+    d_email = d_company.email
+
+    # 获取对应B公司的邮件模板
+    b_email_subject_b3   = render_email_subject("B5", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b3 = render_invitation_template_content(b_company_name, project_name, "b5_"+b_company.short_name+".txt")
+    # 第一封邮件：B ➝ D
+    task1 = send_reply_email.apply_async(
+        args=[d_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+        countdown=0  # 立即
+    )
+
+    # 随机延迟 5–60 分钟
+    d_email_subject_b4 = render_email_subject("B6", d_company.short_name, project_name, d_company.serial_number)
+    d_email_content_b4 = render_invitation_template_content(d_company_name, project_name, "b6_"+d_company.short_name+".txt")
+    delay2 = random.randint(5, 60)
+    task2 = send_reply_email.apply_async(
+        args=[b_email, d_email_subject_b4, d_email_content_b4, d_smtp],
+        countdown=delay2 * 60  # 相对第一封
+    )
+
+    return {
+        "tasks": [
+            {"step": "B ➝ D", "task_id": task1.id, "delay_min": 0},
+            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay2},
+        ]
+    }
+
+
+# BD 项目类型发送邮件
+def schedule_bid_conversation_BD(b_company_name: str, d_company_name: str):
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+
+    b_smtp = {
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
+    }
+
+    d_smtp = {
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
+    }
+
+    b_email = b_company.email
+    d_email = d_company.email
+
+    # 获取对应B公司的邮件模板
+    b_email_subject_b3   = render_email_subject("B3", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b3 = render_invitation_template_content(b_company_name, project_name, "b3_"+b_company.short_name+".txt")
+    # 第一封邮件：B ➝ D
+    task1 = send_reply_email.apply_async(
+        args=[d_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+        countdown=0  # 立即
+    )
+
+    # 随机延迟 5–60 分钟
+    d_email_subject_b4 = render_email_subject("D4", d_company.short_name, project_name, d_company.serial_number)
+    d_email_content_b4 = render_invitation_template_content(d_company_name, project_name, "d4_"+d_company.short_name+".txt")
+    delay2 = random.randint(5, 60)
+    task2 = send_reply_email.apply_async(
+        args=[b_email, d_email_subject_b4, d_email_content_b4, d_smtp],
+        countdown=delay2 * 60  # 相对第一封
+    )
+
+    return {
+        "tasks": [
+            {"step": "B ➝ D", "task_id": task1.id, "delay_min": 0},
+            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay2},
+        ]
+    }
+
+
+# BCD 项目类型发送结算单
+# 1. 发送C-B间结算单
+# 2. 上一封邮件发出5-60分钟后，发送B-D间结算单
+# 3. 上一封邮件发出5-60分钟后，B-D间结算单确认
+# 4. 上一封邮件发出5-60分钟后，C-D间结算单确认
+def schedule_settlement_BCD(b_company_name: str, c_company_name: str, d_company_name: str):
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
+    c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == c_company_name).first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+
+    b_email = b_company.email
+    c_email = c_company.email
+    d_email = d_company.email
+
+    c_smtp = {
+        "host": c_company.smtp_host,
+        "port": c_company.smtp_port,
+        "username": c_company.smtp_username,
+        "password": c_company.smtp_password,
+        "from": c_company.smtp_from
+    }
+    b_smtp = {
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
+    }
+    d_smtp = {
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
+    }
+
+    # 获取对应B公司的邮件模板
+    c_email_subject_c1 = render_email_subject("C1", c_company.short_name, project_name, c_company.serial_number)
+    c_email_content_c1 = render_invitation_template_content(c_company_name, project_name, "c1_"+c_company.short_name+".txt")
+    # 第一封邮件：C ➝ B
+    task1 = send_reply_email.apply_async(
+        args=[b_email, c_email_subject_c1, c_email_content_c1, c_smtp],
+        countdown=0  # 立即
+    )
+
+    # 随机延迟 5–60 分钟发出B-D间结算单
+    b_email_subject_b1 = render_email_subject("B1", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b1 = render_invitation_template_content(b_company_name, project_name, "b1_"+b_company.short_name+".txt")
+    delay1 = random.randint(5, 60)
+    task2 = send_reply_email.apply_async(
+        args=[c_email, b_email_subject_b1, b_email_content_b1, b_smtp],
+        countdown=delay1 * 60  # 相对第一封
+    )
+
+    # 随机延迟 5–60 分钟发出C-D间结算单确认
+    b_email_subject_b2 = render_email_subject("B2", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b2 = render_invitation_template_content(b_company_name, project_name, "b2_"+b_company.short_name+".txt")
+    delay2 = random.randint(5, 60)
+    task3 = send_reply_email.apply_async(
+        args=[d_email, b_email_subject_b2, b_email_content_b2, b_smtp],
+        countdown=delay2 * 60  # 相对第一封
+    )
+
+    # 随机延迟 5–60 分钟发出D-B间结算单确认
+    d_email_subject_d1 = render_email_subject("D1", d_company.short_name, project_name, d_company.serial_number)
+    d_email_content_d1 = render_invitation_template_content(d_company_name, project_name, "d1_"+d_company.short_name+".txt")
+    delay3 = random.randint(5, 60)
+    task4 = send_reply_email.apply_async(
+        args=[b_email, d_email_subject_d1, d_email_content_d1, d_smtp],
+        countdown=delay3 * 60  # 相对第一封
+    )
+
+    return {
+        "tasks": [
+            {"step": "C ➝ B", "task_id": task1.id, "delay_min": 0},
+            {"step": "B ➝ C", "task_id": task2.id, "delay_min": delay1},
+            {"step": "B ➝ D", "task_id": task3.id, "delay_min": delay2},
+            {"step": "D ➝ B", "task_id": task4.id, "delay_min": delay3},
+        ]
+    }
+    
+
+# CCD 项目类型发送结算单
+# BD之间发送结算单
+def schedule_settlement_CCD(b_company_name: str, c_company_name: str, d_company_name: str):
+
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+
+    b_email = b_company.email
+    d_email = d_company.email
+
+    b_smtp = {
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
+    }
+    d_smtp = {
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
+    }
+
+    # 获取对应B公司的邮件模板
+    b_email_subject_b1 = render_email_subject("B1", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b1 = render_invitation_template_content(b_company_name, project_name, "b1_"+b_company.short_name+".txt")
+    # 第一封邮件：B ➝ D
+    task1 = send_reply_email.apply_async(
+        args=[d_email, b_email_subject_b1, b_email_content_b1, b_smtp],
+        countdown=0  # 立即
+    )
+
+    # 随机延迟 5–60 分钟
+    d_email_subject_d1 = render_email_subject("D1", d_company.short_name, project_name, d_company.serial_number)
+    d_email_content_d1 = render_invitation_template_content(d_company_name, project_name, "d1_"+d_company.short_name+".txt")
+    delay1 = random.randint(5, 60)
+    task2 = send_reply_email.apply_async(
+        args=[b_email, d_email_subject_d1, d_email_content_d1, d_smtp],
+        countdown=delay1 * 60  # 相对第一封
+    )
+
+    return {
+        "tasks": [
+            {"step": "B ➝ D", "task_id": task1.id, "delay_min": 0},
+            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay1},
+        ]
+    }
+
+# BD 项目类型发送结算单
+def schedule_settlement_BD(b_company_name: str, d_company_name: str):
+    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+
+    b_email = b_company.email
+    d_email = d_company.email
+    
+    b_smtp = {
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
+    }
+    d_smtp = {
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
+    }
+
+    # 获取对应B公司的邮件模板
+    b_email_subject_b1 = render_email_subject("B1", b_company.short_name, project_name, b_company.serial_number)
+    b_email_content_b1 = render_invitation_template_content(b_company_name, project_name, "b1_"+b_company.short_name+".txt")
+    
+    # 第一封邮件：B ➝ D
+    task1 = send_reply_email.apply_async(
+        args=[d_email, b_email_subject_b1, b_email_content_b1, b_smtp],
+        countdown=0  # 立即
+    )
+    
+    # 随机延迟 5–60 分钟
+    d_email_subject_d1 = render_email_subject("D1", d_company.short_name, project_name, d_company.serial_number)
+    d_email_content_d1 = render_invitation_template_content(d_company_name, project_name, "d1_"+d_company.short_name+".txt")
+    delay1 = random.randint(5, 60)
+    task2 = send_reply_email.apply_async(
+        args=[b_email, d_email_subject_d1, d_email_content_d1, d_smtp],
+        countdown=delay1 * 60  # 相对第一封
+    )
+    
+    return {
+        "tasks": [
+            {"step": "B ➝ D", "task_id": task1.id, "delay_min": 0},
+            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay1},
+        ]
+    }
+            
+

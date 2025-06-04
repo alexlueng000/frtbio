@@ -1,11 +1,11 @@
-from sqlalchemy import Column, Integer, String, Text, DateTime
+from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, TIMESTAMP
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime, timezone
 
 Base = declarative_base()
 
 class EmailRecord(Base):
-    __tablename__ = "emails"
+    __tablename__ = "emails_records"
 
     id = Column(Integer, primary_key=True, index=True)
     to = Column(String(255), nullable=False)
@@ -34,13 +34,14 @@ class CompanyInfo(Base):
 
 
 class ProjectInfo(Base):
-    __tablename__ = "projects"
+    __tablename__ = "project_info"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     project_name = Column(String(255))
     contract_number = Column(String(100))
     tender_number = Column(String(100)) # 招标编号
-    project_type = Column(String(100))
+    project_type = Column(String(100))  # BCD, CCD, BD
+    # project_stage = Column(String(12)) # A, B, C
     p_serial_number = Column(String(100))
     l_serial_number = Column(String(100))
     f_serial_number = Column(String(100))
@@ -58,4 +59,4 @@ class ProjectInfo(Base):
     c8 = Column(Boolean)
     c9 = Column(Boolean)
     c10 = Column(Boolean)
-    created_at = Column(TIMESTAMP, default=datetime.utcnow)
+    created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc)) # UTC时间

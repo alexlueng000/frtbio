@@ -5,8 +5,8 @@ from sqlalchemy import create_engine
 # ==== 修改为你的MySQL连接信息 ====
 host = '127.0.0.1'
 port = 3306
-user = 'testuser'
-password = 'test123'
+user = 'root'
+password = '123456'
 database = 'bidding_emails'
 table_name = 'company_info'
 
@@ -92,7 +92,12 @@ CREATE TABLE email_subject (
 ) CHARACTER SET utf8mb4;
 """
 
-insert_email_subject = f"""
+# emails_records表中加一列
+alter_email_records = f"""
+ALTER TABLE emails_records ADD COLUMN task_id VARCHAR(100);
+"""
+
+insert_email_subject = """
 INSERT INTO email_subject (stage, company_name, short_name, subject)
 VALUES
     ('B3', '深圳市深业晋展物料供应有限公司', 'JZ', '{project_name} {serial_number}'),
@@ -183,7 +188,7 @@ VALUES
 
 with engine.connect() as conn:
     from sqlalchemy import text
-    conn.execute(text(create_email_subject))
+    conn.execute(text(alter_email_records))
 
 # ==== 写入数据库 ====
 # df.to_sql(table_name, con=engine, if_exists='append', index=False)
