@@ -178,7 +178,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product1-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/products/new-product1-side.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -210,7 +210,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product2-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/products/new-product2-side.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -242,7 +242,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product3-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/products/new-product3-side.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -274,7 +274,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/serum-product3.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/serum-product3.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -306,7 +306,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product4-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/products/new-product4-side.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -338,7 +338,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/animal-product1.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/animal-product1.jpg" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -372,7 +372,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/animal-product2.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/animal-product2.jpg" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -401,12 +401,11 @@
 								</div>
 
 								<!-- product 8 供体山羊血清(Donor Goat Serum) -->
-								<div class="col-lg-12 col-md-12">
-									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
+								<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/animal-product3.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/animal-product3.jpg" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -455,6 +454,7 @@
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
+<script src="js/jquery.lazy.min.js"></script>
 
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
@@ -473,7 +473,14 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
-
+<script>
+jQuery(document).ready(function() {
+	'use strict';
+	// jQuery("#welcome").show();
+	// dz_rev_slider_1();	
+	$('.lazy').Lazy();
+});	/*ready*/
+</script>
 
 </body>
 </html>

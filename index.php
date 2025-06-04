@@ -664,7 +664,7 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" src="images/company1.webp" loading="lazy" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover lazy" data-src="images/company1.webp" alt=""> </a>
 
 									</div>
 								</div>
@@ -672,7 +672,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" src="images/company2.webp" loading="lazy" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover lazy" data-src="images/company2.webp" alt=""> </a>
 
 									</div>
 								</div>
@@ -680,7 +680,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" src="images/company3.webp" loading="lazy" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover lazy" data-src="images/company3.webp" alt=""> </a>
 
 									</div>
 								</div>
@@ -727,7 +727,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-3.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-3.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -736,7 +736,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-4.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-4.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -745,7 +745,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-5.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-5.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -754,7 +754,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-6.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-6.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -763,7 +763,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-7.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-7.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -772,7 +772,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-8.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-8.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -781,7 +781,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-9.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-9.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -790,7 +790,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-10.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-10.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -799,7 +799,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-11.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-11.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -808,7 +808,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-12.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-12.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -817,7 +817,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-13.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-13.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -826,7 +826,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-14.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-14.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -835,7 +835,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-15.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-15.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -844,7 +844,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-16.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-16.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -853,7 +853,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-17.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-17.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -862,7 +862,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img src="images/customers/customer-18.webp" loading="lazy" alt="">
+											<img data-src="images/customers/customer-18.webp" class="lazy" alt="">
 										</a>
 									</div>
 								</div>

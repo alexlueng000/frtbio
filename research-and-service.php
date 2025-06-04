@@ -64,7 +64,7 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
+							<li><a href="index.php">首页</a></li>
 							<li>研发与服务</li>
 						</ul>
 					</div>
@@ -89,7 +89,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-12 m-b30 our-story-thum wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-							<img src="images/research1.webp" class="radius-sm" alt="">
+							<img class="lazy radius-sm" data-src="images/research1.webp"  alt="">
 						</div>
 					</div>
 				</div>
@@ -100,7 +100,7 @@
 			<div class="section-full box-about-list">
                 <div class="row spno">
 					<div class="col-lg-6 col-md-12"> 
-						<img src="images/research2.webp" alt="" class="img-cover"> 
+						<img data-src="images/research2.webp" class="lazy img-cover" alt=""> 
 					</div>
 					<div class="col-lg-6 col-md-12 bg-primary">
 						<div class="max-w700 m-auto p-tb50 p-lr20">
@@ -162,7 +162,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project1.webp" loading="lazy" alt="">
+										<img data-src="images/project1.webp" class="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -177,7 +177,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project2.webp" loading="lazy" alt="">
+										<img data-src="images/project2.webp" class="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -192,7 +192,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project3.webp" loading="lazy" alt="">
+										<img data-src="images/project3.webp" class="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -207,7 +207,7 @@
 							<div class="item">
 								<div class="testimonial-11 testimonial-box">
 									<div class="testimonial-pic">
-										<img src="images/project4.webp" loading="lazy" alt="">
+										<img data-src="images/project4.webp" class="lazy" alt="">
 									</div>
 									<!-- 新增：中间的大“01” -->
 									<!-- <div class="big-number">01</div> -->
@@ -290,6 +290,8 @@
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
 
+<script src="js/jquery.lazy.min.js"></script>
+
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
 <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
@@ -306,6 +308,15 @@
 <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+
+<script>
+jQuery(document).ready(function() {
+	'use strict';
+	// jQuery("#welcome").show();
+	// dz_rev_slider_1();	
+	$('.lazy').Lazy();
+});	/*ready*/
+</script>
 
 
 </body>

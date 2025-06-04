@@ -92,7 +92,7 @@
 							<li class="web design card-container col-lg-6 col-md-6 col-sm-6 p-a0">
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media">
-										<a href="serums.php"><img class="custom-img" src="images/blood-serum.webp" alt="" /></a>
+										<a href="serums.php"><img class="custom-img lazy" data-src="images/blood-serum.webp" alt="" /></a>
 									</div>
 									<a href="serums.php"><div class="sort-title clearfix text-center hover-orange-text">
 										<h3 style="margin-top: 20px;">血清</h3>
@@ -104,7 +104,7 @@
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media"> 
 										<a href="#"> 
-											<img class="custom-img" src="images/cell-culture-medium.webp" alt="" /> 
+											<img class="custom-img lazy" data-src="images/cell-culture-medium.webp" alt="" /> 
 										</a>
 									</div>
 									
@@ -135,6 +135,8 @@
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
 
+<script src="js/jquery.lazy.min.js"></script>
+
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
 <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
@@ -152,6 +154,14 @@
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
+<script>
+jQuery(document).ready(function() {
+	'use strict';
+	// jQuery("#welcome").show();
+	// dz_rev_slider_1();	
+	$('.lazy').Lazy();
+});	/*ready*/
+</script>
 
 </body>
 </html>
