@@ -178,7 +178,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product1-side.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img src="images/products/new-product1-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -210,7 +210,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product2-side.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img src="images/products/new-product2-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -242,7 +242,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product3-side.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img src="images/products/new-product3-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -274,7 +274,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/serum-product3.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img src="images/serum-product3.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -306,7 +306,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img src="images/products/new-product4-side.jpg" class="rounded" alt="" style="max-width: 100%; height: 100%;">
+												<img src="images/products/new-product4-side.webp" class="rounded" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->

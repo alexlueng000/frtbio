@@ -92,7 +92,7 @@
 							<li class="web design card-container col-lg-6 col-md-6 col-sm-6 p-a0">
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media">
-										<a href="serums.php"><img class="custom-img" src="images/blood-serum.jpg" alt="" /></a>
+										<a href="serums.php"><img class="custom-img" src="images/blood-serum.webp" alt="" /></a>
 									</div>
 									<a href="serums.php"><div class="sort-title clearfix text-center hover-orange-text">
 										<h3 style="margin-top: 20px;">血清</h3>
@@ -104,7 +104,7 @@
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media"> 
 										<a href="#"> 
-											<img class="custom-img" src="images/cell-culture-medium.jpg" alt="" /> 
+											<img class="custom-img" src="images/cell-culture-medium.webp" alt="" /> 
 										</a>
 									</div>
 									
