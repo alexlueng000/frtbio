@@ -922,7 +922,8 @@
 <script src="js/rev.slider.js"></script>
 <script>
 jQuery(document).ready(function() {
-	'use strict';
+	// 'use strict';
+	jQuery("#welcome").show();
 	dz_rev_slider_1();	
 	$('.lazy').Lazy();
 });	/*ready*/
