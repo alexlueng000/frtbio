@@ -102,6 +102,9 @@ ALTER TABLE emails_records
 ADD COLUMN project_id INT,
 ADD COLUMN stage VARCHAR(50);
 """
+# alter_email_records = f"""
+# ALTER TABLE emails_records ADD COLUMN task_id VARCHAR(100), project_id INT, stage VARCHAR(50);
+# """
 
 insert_email_subject = """
 INSERT INTO email_subject (stage, company_name, short_name, subject)
