@@ -52,6 +52,7 @@ class ProjectInfoOut(BaseModel):
 
 
 '''
+Step 1
 委托投标登记请求：采购单位，项目名称，流水号，招标编号, B公司名称
 '''
 class BiddingRegisterRequest(BaseModel):
@@ -65,15 +66,33 @@ class BiddingRegisterRequest(BaseModel):
 
 
 ''' 
+Step 2
 项目中标信息
+# 接收参数：
+#     1. 项目名称
+#     2. L流水号，P流水号，F流水号
+#     3. 招标编号
+#     4. 合同号
 '''
 class ProjectWinningInfoRequest(BaseModel):
-    pass 
-
+    project_name: str # 项目名称
+    l_serial_number: str # L流水号
+    p_serial_number: str # P流水号
+    f_serial_number: str # F流水号
+    bidding_code: str # 招标编号
+    contract_number: str # 合同号
 
 
 ''' 
+Step 3
 合同审批
+    1. 项目名称
+    2. L流水号，P流水号，F流水号
+    3. 合同号
+    4. B公司-中标商
+    5. C公司 C=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
+    6. D公司 D=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
+    7. 合同类型
 '''
 class ContractAuditRequest(BaseModel):
     project_name: str # 项目名称

@@ -302,10 +302,19 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 #     2. L流水号，P流水号，F流水号
 #     3. 招标编号
 #     4. 合同号
-
 @app.post("/project_bidding_winning_information")
-def project_bidding_winning_information():
-    pass
+async def project_bidding_winning_information(req: schemas.ProjectWinningInfoRequest, db: Session = Depends(database.get_db)):
+    
+    project_information = db.query(models.ProjectInfo).filter_by(project_name=req.project_name).first()
+    
+    if not project_information:
+        return {"message": "没有找到项目信息"}
+
+    project_information.contract_number = req.contract_number
+    project_information.tender_number = req.bidding_code
+    db.commit()
+
+    return {"message": "项目中标信息更新成功"}
 
 
 """
@@ -330,20 +339,20 @@ def project_bidding_winning_information():
     7. 合同类型
 """
 @app.post("/contract_audit")
-def contract_audit():
+async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
     
     # 如果合同类型不是三方/四方合同，不发送邮件
-    if contract_type != "三方/四方合同":
+    if req.contract_type != "三方/四方合同":
         return {"message": "合同类型不是三方/四方合同，不发送邮件"}
     
     # 如果没有L流水号，P流水号，F流水号，说明不是委托投标登记项目，不发送邮件
-    if not l_serial_number or not p_serial_number or not f_serial_number:
+    if not req.l_serial_number or not req.p_serial_number or not req.f_serial_number:
         return {"message": "没有L流水号，P流水号，F流水号，不发送邮件"}
 
     # 判断项目类型
     project_type = ''
 
-    # 判断是否首次调用这个接口
+    # TODO 判断是否首次调用这个接口
     project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
     if not project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
         pass
