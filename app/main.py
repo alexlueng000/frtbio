@@ -276,7 +276,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         
         result = tasks.send_reply_email.apply_async(
                 args=["494762262@qq.com", subject, content, b_company_smtp],
-                countdown=1 * 60  # 延迟 5 分钟（单位：秒）
+                countdown=1 * 60  
             )
             # 保存发送记录
         record = models.EmailRecord(
