@@ -8,35 +8,43 @@ db = database.get_db()
 
 
 # BCD 项目类型发送邮件
-def schedule_bid_conversation_BCD(b_company_name: str, c_company_name: str, d_company_name: str):
-    
-    # 获取BCD三家公司的信息
-    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
-    c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == c_company_name).first()
-    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+def schedule_bid_conversation_BCD(
+    b_company: models.CompanyInfo, 
+    c_company: models.CompanyInfo, 
+    d_company: models.CompanyInfo, 
+    contract_serial_number: str,
+    project_name: str):
 
+    # smtp_config = {
+    #             "host": "smtp.163.com",
+    #             "port": 465,
+    #            "username": "peterlcylove@163.com",
+    #             "password": "ECRVsnXCe2g2Xauq",
+    #             "from": "peterlcylove@163.com"
+    #         }
+    
     b_smtp = {
-        "host": b_company.smtp_host,
-        "port": b_company.smtp_port,
-        "username": b_company.smtp_username,
-        "password": b_company.smtp_password,
-        "from": b_company.smtp_from
+        "host": "smtp.163.com",
+        "port": 465,
+        "username": "peterlcylove@163.com",
+        "password": "ECRVsnXCe2g2Xauq",
+        "from": "peterlcylove@163.com"
     }
 
     c_smtp = {
-        "host": c_company.smtp_host,
-        "port": c_company.smtp_port,
-        "username": c_company.smtp_username,
-        "password": c_company.smtp_password,
-        "from": c_company.smtp_from
+        "host": "smtp.qq.com",
+        "port": 465,
+        "username": "494762262@qq.com",
+        "password": "mlnbblbyyvulbhhi",
+        "from": "494762262@qq.com"
     }
 
     d_smtp = {
-        "host": d_company.smtp_host,
-        "port": d_company.smtp_port,
-        "username": d_company.smtp_username,
-        "password": d_company.smtp_password,
-        "from": d_company.smtp_from
+        "host": "smtp.qq.com",
+        "port": 465,
+        "username": "494762262@qq.com",
+        "password": "mlnbblbyyvulbhhi",
+        "from": "494762262@qq.com"
     }
 
     b_email = b_company.email
@@ -44,49 +52,54 @@ def schedule_bid_conversation_BCD(b_company_name: str, c_company_name: str, d_co
     d_email = d_company.email
 
     # 获取对应B公司的邮件模板
-    b_email_subject_b3   = render_email_subject("B3", b_company.short_name, project_name, b_company.serial_number)
-    b_email_content_b3 = render_invitation_template_content(b_company_name, project_name, "b3_"+b_company.short_name+".txt")
-    # 第一封邮件：B ➝ C（立即）
-    task1 = send_reply_email.apply_async(
-        args=[c_email, b_email_subject_b3, b_email_content_b3, b_smtp],
-        countdown=0  # 立即
-    )
+    b_email_subject_b3   = email_utils.render_email_subject("B3", b_company.short_name, project_name, contract_serial_number)
+    # b_email_content_b3 = email_utils.render_invitation_template_content(b_company, project_name, "b3_"+b_company.short_name+".txt")
 
+    print("B公司邮件主题：", b_email_subject_b3)
+    
+    # 第一封邮件：B ➝ C（立即）
+    # task1 = send_reply_email.apply_async(
+    #     args=[c_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+    #     countdown=0  # 立即
+    # )
+
+    # 第二封邮件：C ➝ B 回复
     # 随机延迟 5–60 分钟
-    c_email_subject_b4 = render_email_subject("C3", c_company.short_name, project_name, c_company.serial_number)
-    c_email_content_b4 = render_invitation_template_content(c_company_name, project_name, "c3_"+c_company.short_name+".txt")
-    delay2 = random.randint(5, 60)
-    task2 = send_reply_email.apply_async(
-        args=[b_email, c_email_subject_b4, c_email_content_b4, c_smtp],
-        countdown=delay2 * 60  # 相对第一封
-    )
+    # c_email_subject_b4 = email_utils.render_email_subject("B4", c_company.short_name, project_name, c_company.serial_number)
+    # c_email_content_b4 = email_utils.render_invitation_template_content(c_company, project_name, "B4_"+c_company.short_name+".txt")
+    # delay2 = random.randint(5, 60)
+    # task2 = send_reply_email.apply_async(
+    #     args=[b_email, c_email_subject_b4, c_email_content_b4, c_smtp],
+    #     countdown=delay2 * 60  # 相对第一封
+    # )
 
     # 第三封：B ➝ D（延迟第2封基础上 5–60分钟）
-    b_email_subject_b5 = render_email_subject("B5", b_company.short_name, project_name, b_company.serial_number)
-    b_email_content_b5 = render_invitation_template_content(b_company_name, project_name, "b5_"+b_company.short_name+".txt")
-    delay3 = delay2 + random.randint(5, 60)
-    task3 = send_reply_email.apply_async(
-        args=[d_email, b_email_subject_b5, b_email_content_b5, b_smtp],
-        countdown=delay3 * 60
-    )
+    # b_email_subject_b5 = email_utils.render_email_subject("B5", b_company.short_name, project_name, b_company.serial_number)
+    # b_email_content_b5 = email_utils.render_invitation_template_content(b_company, project_name, "b5_"+b_company.short_name+".txt")
+    # delay3 = delay2 + random.randint(5, 60)
+    # task3 = send_reply_email.apply_async(
+    #     args=[d_email, b_email_subject_b5, b_email_content_b5, b_smtp],
+    #     countdown=delay3 * 60
+    # )
 
     # 第四封：D ➝ B（在第3封后延迟 5–60分钟）
-    d_email_subject_b6 = render_email_subject("D6", d_company.short_name, project_name, d_company.serial_number)
-    d_email_content_b6 = render_invitation_template_content(d_company_name, project_name, "d6_"+d_company.short_name+".txt")
-    delay4 = delay3 + random.randint(5, 60)
-    task4 = send_reply_email.apply_async(
-        args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
-        countdown=delay4 * 60
-    )
+    # d_email_subject_b6 = email_utils.render_email_subject("B6", d_company.short_name, project_name, d_company.serial_number)
+    # d_email_content_b6 = email_utils.render_invitation_template_content(d_company, project_name, "b6_"+d_company.short_name+".txt")
+    # delay4 = delay3 + random.randint(5, 60)
+    # task4 = send_reply_email.apply_async(
+    #     args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
+    #     countdown=delay4 * 60
+    # )
 
-    return {
-        "tasks": [
-            {"step": "B ➝ C", "task_id": task1.id, "delay_min": 0},
-            {"step": "C ➝ B", "task_id": task2.id, "delay_min": delay2},
-            {"step": "B ➝ D", "task_id": task3.id, "delay_min": delay3},
-            {"step": "D ➝ B", "task_id": task4.id, "delay_min": delay4},
-        ]
-    }
+    # return {
+    #     "tasks": [
+    #         {"step": "B ➝ C", "task_id": task1.id, "delay_min": 0},
+    #         {"step": "C ➝ B", "task_id": task2.id, "delay_min": delay2},
+    #         {"step": "B ➝ D", "task_id": task3.id, "delay_min": delay3},
+    #         {"step": "D ➝ B", "task_id": task4.id, "delay_min": delay4},
+    #     ]
+    # }
+    return {"message": "email sent!"}
 
 
 # CCD 项目类型发送邮件

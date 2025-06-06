@@ -60,3 +60,22 @@ class ProjectInfo(Base):
     c9 = Column(Boolean)
     c10 = Column(Boolean)
     created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc)) # UTC时间
+
+
+
+
+# 邮件标题表
+class EmailSubject(Base):
+
+    __tablename__ = "email_subject"
+
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    stage = Column(String(12))
+    company_name = Column(String(255))
+    short_name = Column(String(100))
+    subject = Column(String(255))
+    created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc))
+    # UTC时间
+    subject = Column(String(255))
+    created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc))
+    # UTC时间

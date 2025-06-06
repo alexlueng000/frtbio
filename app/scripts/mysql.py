@@ -93,8 +93,14 @@ CREATE TABLE email_subject (
 """
 
 # emails_records表中加一列
-alter_email_records = f"""
-ALTER TABLE emails_records ADD COLUMN task_id VARCHAR(100);
+# alter_email_records = f"""
+# ALTER TABLE emails_records ADD COLUMN task_id VARCHAR(100);
+# """
+
+alter_email_records = """
+ALTER TABLE emails_records
+ADD COLUMN project_id INT,
+ADD COLUMN stage VARCHAR(50);
 """
 
 insert_email_subject = """

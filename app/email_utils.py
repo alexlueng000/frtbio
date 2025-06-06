@@ -39,8 +39,21 @@ async def send_email(to: str, subject: str, body: str, smtp_config: dict):
 # 4. 对应公司流水号
 def render_email_subject(stage: str, company_short_name: str, project_name: str, serial_number: str) -> str:
     # 从数据库中获取标题模板
-    db = database.get_db()
-    return f"{stage} {company_short_name} {project_name} {serial_number}"
+    
+    subject = db.query(models.EmailSubject).filter(
+        models.EmailSubject.stage == stage,
+        models.EmailSubject.short_name == company_short_name,
+        models.EmailSubject.project_name == project_name,
+    ).first()
+
+    if not subject:
+        return f"{stage}_{company_short_name}_{project_name}"
+    return subject.subject.format(
+        company_name=company_name,
+        short_name=short_name,
+        project_name=project_name,
+        serial_number=serial_number
+    )
 
 # 获取对应公司邮件模板并渲染内容
 def render_invitation_template_content(buyer_name: str, project_name: str, template_name: str):

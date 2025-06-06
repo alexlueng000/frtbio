@@ -1,7 +1,7 @@
 # app/main.py
 from fastapi import FastAPI, Depends
 from pydantic import BaseModel, EmailStr
-from app import email_utils, models, database, schemas, tasks, utils
+from app import email_utils, models, database, schemas, tasks, send_email_tasks
 
 from sqlalchemy.orm import Session
 from sqlalchemy import text
@@ -129,6 +129,9 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
     db.add(project_info)
     db.commit()
 
+    # 获取插入后的主键ID, 用于后续邮件记录
+    project_id = project_info.id
+
     # 查询三家D公司
     d_companies = (
         db.query(models.CompanyInfo)
@@ -186,7 +189,9 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 subject=subject,
                 body=content,
                 status="success" if success else "failed",
-                error_message=error if not success else None
+                error_message=error if not success else None,
+                project_id=project_id,
+                stage="A1"
             )
             db.add(record)
             db.commit()
@@ -221,12 +226,13 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 subject=subject,
                 body=content,
                 status="success" if success else "failed",
-                error_message=error if not success else None
+                error_message=error if not success else None,
+                project_id=project_id,
+                stage="A1"
             )
             db.add(record)
             db.commit()
             db.refresh(record)
-
         # 普利赛斯
         else:
             subject = f"{ req.project_name }投標委託{ req.f_serial_number }"
@@ -251,6 +257,8 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 status="success" if success else "failed",
                 error_message=error if not success else None,
                 task_id="",
+                project_id=project_id,
+                stage="A1"
             )
             db.add(record)
             db.commit()
@@ -284,15 +292,16 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             subject=subject,
             body=content,
             status="pending", 
-            task_id=result.task_id
+            task_id=result.task_id,
+            project_id=project_id,
+            stage="A2"
         )
         db.add(record)
         db.commit()
         db.refresh(record)
             
-
-
     return {"message": "邮件已成功发送给 B 公司"}
+
 
 
 # === 项目中标信息 ===
@@ -333,10 +342,11 @@ async def project_bidding_winning_information(req: schemas.ProjectWinningInfoReq
     1. 项目名称
     2. L流水号，P流水号，F流水号
     3. 合同号
-    4. B公司-中标商
-    5. C公司 C=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
-    6. D公司 D=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
-    7. 合同类型
+    4. 合同流水号
+    5. B公司-中标商
+    6. C公司 C=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
+    7. D公司 D=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
+    8. 合同类型 contract_type
 """
 @app.post("/contract_audit")
 async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
@@ -390,13 +400,13 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     # BCD 类型项目
     if project_type == 'BCD':
-        email_utils.schedule_bid_conversation_BCD(b_company_name, c_company_name, d_company_name)
+        send_email_tasks.schedule_bid_conversation_BCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
     # CCD 类型项目
     elif project_type == 'CCD':
-        email_utils.schedule_bid_conversation_CCD(b_company_name, c_company_name, d_company_name)
+        send_email_tasks.schedule_bid_conversation_CCD(b_company, c_company, d_company)
     # BD 类型项目
     else:
-        email_utils.schedule_bid_conversation_BD(b_company_name, d_company_name)
+        send_email_tasks.schedule_bid_conversation_BD(b_company, d_company)
     
     return {"message": "邮件已成功发送"}
     

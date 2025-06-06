@@ -51,6 +51,19 @@ class ProjectInfoOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
+
+# EmailSubjectOut
+
+class EmailSubjectOut(BaseModel):
+    id: int  # 主键，自增，通常由数据库生成
+    stage: str  # 阶段，如 first, reply 等
+    company_name: str  # 公司全名
+    short_name: str  # 公司简称
+    subject: str  # 可用于 Python 格式化的文本
+    created_at: datetime  # 创建时间，由数据库默认生成
+
+    model_config = ConfigDict(from_attributes=True)
+
 '''
 Step 1
 委托投标登记请求：采购单位，项目名称，流水号，招标编号, B公司名称
@@ -100,6 +113,7 @@ class ContractAuditRequest(BaseModel):
     p_serial_number: str # P流水号
     f_serial_number: str # F流水号
     contract_number: str # 合同号
+    contract_serial_number: str # 合同流水号
     company_b_name: str # B公司-中标商
     company_c_name: str # C公司
     company_d_name: str # D公司
