@@ -1,12 +1,12 @@
-import pandas as pd
-import pymysql
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
+
+from sqlalchemy.exc import SQLAlchemyError
 
 # ==== 修改为你的MySQL连接信息 ====
 host = '127.0.0.1'
 port = 3306
-user = 'root'
-password = '123456'
+user = 'testuser'
+password = 'test123'
 database = 'bidding_emails'
 table_name = 'company_info'
 
@@ -29,10 +29,10 @@ table_name = 'company_info'
 
 engine = create_engine(f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}?charset=utf8mb4')
 
-with pymysql.connect(host=host, user=user, password=password) as conn:
-    with conn.cursor() as cursor:
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database} DEFAULT CHARACTER SET utf8mb4;")
-    conn.commit()
+# with pymysql.connect(host=host, user=user, password=password) as conn:
+#     with conn.cursor() as cursor:
+#         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database} DEFAULT CHARACTER SET utf8mb4;")
+#     conn.commit()
 
 # ==== 创建表结构（不含邮箱密码） ====
 create_table_sql = f"""
@@ -192,15 +192,34 @@ VALUES
     ('C10', '深圳市启慧仪器有限公司', 'QH', '{contract_number} {project_name} {serial_number}'),
     ('C10', '深圳市佰志诚科技发展有限公司', 'BZC', '{contract_number} {project_name} {serial_number}'),
     ('C10', '深圳市礼恒科技有限公司', 'LH', '{tender_number} {project_name} {serial_number}'),
-    ('C10', '深圳市海辰星科技有限公司', 'HCX', '{project_name}（合同号：{contract_number}）结算文件 {serial_number}'),
+    ('C10', '深圳市海辰星科技有限公司', 'HCX', '{project_name}（合同号：{contract_number}）结算文件 {serial_number}');
 """
 
 with engine.connect() as conn:
     from sqlalchemy import text
-    conn.execute(text(alter_email_records))
+    conn.execute(text(insert_email_subject))
 
 # ==== 写入数据库 ====
 # df.to_sql(table_name, con=engine, if_exists='append', index=False)
 
 # print("✅ 已成功导入（不含邮箱密码）！")
-print("创建project_info表成功！")
+# print("创建project_info表成功！")
+
+
+# def test_db_connection(user, password, host, port, database):
+#     try:
+#         engine = create_engine(
+#             f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}?charset=utf8mb4'
+#         )
+#         with engine.connect() as conn:
+#             result = conn.execute(text("SELECT 1"))
+#             print("✅ 数据库连接成功，测试查询结果:", result.scalar())
+#         return True
+#     except SQLAlchemyError as e:
+#         print("❌ 数据库连接失败:", str(e))
+#         return False
+
+
+# if __name__ == "__main__":
+#     test_db_connection(user, password, host, port, database)
+    

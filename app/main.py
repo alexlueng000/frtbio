@@ -128,6 +128,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
     )
     db.add(project_info)
     db.commit()
+    db.refresh(project_info) # 获取插入后的主键ID
 
     # 获取插入后的主键ID, 用于后续邮件记录
     project_id = project_info.id
@@ -364,6 +365,8 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     # TODO 判断是否首次调用这个接口
     project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
+    if not project:
+        return {"message": "没有找到项目信息，不发送邮件"}
     if not project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
         pass
     
@@ -382,8 +385,8 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     # 如果找到了C公司，说明是内部公司，如果没有找到，说明是外部公司
     if not c_company:
         project_type = 'BD'
-    # 如果B公司和D公司是同一家公司，说明是CCD项目
-    elif b_company.company_name == d_company.company_name:
+    # 如果B公司和C公司是同一家公司，说明是CCD项目
+    elif b_company.company_name == c_company.company_name:
         project_type = 'CCD'
     else:
         project_type = 'BCD'

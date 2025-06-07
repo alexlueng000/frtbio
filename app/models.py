@@ -15,6 +15,8 @@ class EmailRecord(Base):
     task_id = Column(String(100))  # ✅ 新增字段，用于记录 Celery 任务ID
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
     error_message = Column(Text, nullable=True)
+    project_id = Column(Integer)
+    stage = Column(String(12))
 
 
 class CompanyInfo(Base):
