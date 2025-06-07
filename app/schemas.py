@@ -119,3 +119,15 @@ class ContractAuditRequest(BaseModel):
     company_d_name: str # D公司
     contract_type: str # 合同类型
 
+
+class SettlementRequest(BaseModel):
+    project_name: str # 项目名称
+    l_serial_number: str # L流水号
+    p_serial_number: str # P流水号
+    f_serial_number: str # F流水号
+    contract_number: str # 合同号
+    contract_serial_number: str # 合同流水号
+    company_b_name: str # B公司-中标商
+    company_c_name: str # C公司
+    company_d_name: str # D公司
+    contract_type: str # 合同类型

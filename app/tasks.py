@@ -35,16 +35,10 @@ def send_sync_email(to_email, subject, content, smtp_config):
 
 
 @celery.task
-def test_task(msg: str):
-    print(f"[Celery 执行任务] {time.strftime('%H:%M:%S')} - 收到消息：{msg}")
-    return {"msg": msg}
-
-
-@celery.task
 def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dict):
 
     db = database.SessionLocal()
-    success, error = email_utils.send_email(to_email, subject, content, smtp_config)
+    success, error = email_utils.send_sync_email(to_email, subject, content, smtp_config)
     
     # 需要更新这个邮件发送记录
     record = models.EmailRecord(
@@ -60,3 +54,22 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
     return {"success": success, "error": error}
 
 
+
+@celery.task
+def send_reply_email_with_attachments(to_email: str, subject: str, content: str, smtp_config: dict, attachments: list[str]):
+
+    db = database.SessionLocal()
+    success, error = email_utils.send_email_with_attachments(to_email, subject, content, smtp_config, attachments)
+    
+    # 需要更新这个邮件发送记录
+    record = models.EmailRecord(
+        to=to_email,
+        subject=subject,
+        body=content,
+        status="success" if success else "failed",
+        error_message=error if not success else None
+    )
+    db.add(record)
+    db.commit()
+    db.refresh(record)
+    return {"success": success, "error": error}

@@ -422,12 +422,43 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 # 2. 发送B-D间结算单
 # 3. B-D间结算单确认
 # 4. C-D间结算单确认
+
+# @参数
+# project_type: str, 项目类型
+# project_name: str, 项目名称
+# l_serial_number: str, L流水号
+# p_serial_number: str, P流水号
+# f_serial_number: str, F流水号
+# contract_number: str, 合同号
+# b_company_name: str, B公司名称
+# c_company_name: str, C公司名称
+# d_company_name: str, D公司名称
+# 还有很多金额
+
 @app.post("/settlement")
-def settlement(project_type: str, project_name: str, l_serial_number: str, p_serial_number: str, f_serial_number: str, contract_number: str, b_company_name: str, c_company_name: str, d_company_name: str):
-    if project_type == 'BCD':
-        email_utils.schedule_settlement_BCD(b_company_name, c_company_name, d_company_name)
-    elif project_type == 'CCD':
-        email_utils.schedule_settlement_CCD(b_company_name, c_company_name, d_company_name)
-    elif project_type == 'BD':
-        email_utils.schedule_settlement_BD(b_company_name, d_company_name)
+def settlement(
+    req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
+
+    project_information = db.query(models.ProjectInfo).filter_by(project_name=req.project_name).first()
+    if not project_information:
+        return {"message": "没有找到项目信息"}
+
+    b_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_b_name).first()
+    if not b_company:
+        return {"message": "没有找到B公司"}
+
+    c_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_c_name).first()
+    if not c_company:
+        return {"message": "没有找到C公司"}
+
+    d_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_d_name).first()
+    if not d_company:
+        return {"message": "没有找到D公司"}
+
+    if project_information.project_type == 'BCD':
+        send_email_tasks.schedule_settlement_BCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
+    elif project_information.project_type == 'CCD':
+        send_email_tasks.schedule_settlement_CCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
+    elif project_information.project_type == 'BD':
+        send_email_tasks.schedule_settlement_BD(b_company, d_company, req.contract_serial_number, req.project_name)
     return {"message": "邮件已成功发送"}
