@@ -25,25 +25,21 @@ def get_db_session():
     finally:
         db.close()
 
-
-def send_email(to: str, subject: str, body: str, smtp_config: dict):
+def send_email(to, subject, body, smtp_config):
+    print("✅ 执行同步 send_email 函数")
     message = EmailMessage()
     message["From"] = smtp_config["from"]
     message["To"] = to
     message["Subject"] = subject
-    # 设置 HTML 正文
     message.add_alternative(body, subtype="html")
 
     try:
-        smtp = SMTP(hostname=smtp_config["host"], port=smtp_config["port"], use_tls=True)
-        smtp.connect()
-        smtp.login(smtp_config["username"], smtp_config["password"])
-        smtp.send_message(message)
-        smtp.quit()
+        with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
+            smtp.login(smtp_config["username"], smtp_config["password"])
+            smtp.send_message(message)
         return True, ""
     except Exception as e:
         return False, str(e)
-
 
 def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
     message = EmailMessage()
@@ -147,6 +143,7 @@ def render_invitation_template_content(
     project_name: str | None = None,
     serial_number: str | None = None,
     first_name: str | None = None,
+    full_name: str | None = None,
     winning_amount: str | None = None,
     contract_number: str | None = None,
     winning_time: str | None = None,
@@ -173,6 +170,7 @@ def render_invitation_template_content(
         project_name=project_name,
         serial_number=serial_number,
         first_name=first_name,
+        full_name=full_name,
         winning_amount=winning_amount,
         contract_number=contract_number)
     

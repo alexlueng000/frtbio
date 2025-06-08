@@ -61,11 +61,11 @@ def schedule_bid_conversation_BCD(
     d_email = d_company.email
 
     # 获取对应B公司的邮件模板
-    b_email_subject_b3   = email_utils.render_email_subject(
+    b_email_subject_b3 = email_utils.render_email_subject(
         stage="B3", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
-        contract_serial_number=contract_serial_number,
+        serial_number=contract_serial_number,
         contract_number="HTLS20250606001",
         winning_amount="1000000",
         winning_time="2025-06-06"
@@ -74,6 +74,7 @@ def schedule_bid_conversation_BCD(
         project_name=project_name,
         serial_number="L123456789",
         first_name=c_company.last_name,
+        full_name=c_company.contact_person,
         winning_amount="1000000",
         contract_number="HTLS20250606001",
         template_name="B3_"+b_company.short_name+".html"
@@ -131,6 +132,7 @@ def schedule_bid_conversation_BCD(
     b_email_content_b5 = email_utils.render_invitation_template_content(
         buyer_name=b_company.company_name, 
         first_name=d_company.last_name,
+        full_name=d_company.contact_person,
         winning_amount="1000000",
         contract_number="HTLS20250606001",
         serial_number="L123456789",
@@ -142,7 +144,7 @@ def schedule_bid_conversation_BCD(
     # delay3 = delay2 + random.randint(5, 60)
     delay3 = delay2 + 1
     task3 = send_reply_email.apply_async(
-        args=[d_email, b_email_subject_b5, b_email_content_b5, b_smtp],
+        args=[d_email, b_email_subject_b5, b_email_content_b5, b_smtp, delay3, "B5", project_info.id],
         countdown=delay3 * 60
     )
 
@@ -162,8 +164,7 @@ def schedule_bid_conversation_BCD(
     d_email_content_b6 = email_utils.render_invitation_template_content(
         buyer_name=d_company.company_name, 
         first_name=b_company.last_name_traditional,
-        winning_amount="1000000",
-        contract_number="HTLS20250606001",
+        full_name=b_company.contact_person, winning_amount="1000000", contract_number="HTLS20250606001",
         serial_number="L123456789",
         project_name=project_name, 
         winning_time="2025-06-06",
@@ -172,7 +173,7 @@ def schedule_bid_conversation_BCD(
     # delay4 = delay3 + random.randint(5, 60)
     delay4 = delay3 + 1
     task4 = send_reply_email.apply_async(
-        args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
+        args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp, delay4, "B6", project_info.id],
         countdown=delay4 * 60
     )
 

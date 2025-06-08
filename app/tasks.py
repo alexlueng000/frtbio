@@ -43,7 +43,15 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
     # 当前时间 + delay 秒 = 实际发送时间
     scheduled_time = datetime.now() + timedelta(seconds=delay)
 
-    success, error = email_utils.send_email(to_email, subject, content, smtp_config)
+    
+
+    try:
+        print("send_reply_email$$$$$$$$$$$$$$$$$")
+        success, error = email_utils.send_email(to_email, subject, content, smtp_config)
+    except Exception as e:
+        success = False
+        error = str(e)
+        print(f"[邮件发送异常] to={to_email}, subject={subject}, error={error}")
     
     # 需要更新这个邮件发送记录
     record = models.EmailRecord(
@@ -52,7 +60,7 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
         body=content,
         status="success" if success else "failed",
         error_message=error if not success else None,
-        actual_send_time=scheduled_time,
+        actual_sending_time=scheduled_time,
         stage=stage,
         project_id=project_id
     )
@@ -80,7 +88,7 @@ def send_reply_email_with_attachments(to_email: str, subject: str, content: str,
         body=content,
         status="success" if success else "failed",
         error_message=error if not success else None,
-        actual_send_time=scheduled_time,
+        actual_sending_time=scheduled_time,
         stage=stage,
         project_id=project_id
     )
