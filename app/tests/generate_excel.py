@@ -5,7 +5,7 @@ from openpyxl.utils import get_column_letter
 # 创建工作簿和工作表
 wb = Workbook()
 ws = wb.active
-ws.title = "结算单"
+ws.title = "test_settlement"
 
 # 样式
 title_font = Font(size=14, bold=True)
@@ -103,7 +103,7 @@ ws["C20"].alignment = Alignment(horizontal="right")
 
 # 设置行高
 for row in range(1, ws.max_row + 1):
-    ws.row_dimensions[row].height = 25
+    ws.row_dimensions[row].height = 20
 
 # 保存
-wb.save("结算单.xlsx")
+wb.save("test_settlement.xlsx")

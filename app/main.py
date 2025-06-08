@@ -461,7 +461,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
 @app.post("/settlement")
 def settlement(
-    req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
+    req: schemas.SettlementRequest, db: Session = Depends(database.get_db)):
 
     project_information = db.query(models.ProjectInfo).filter_by(project_name=req.project_name).first()
     if not project_information:
@@ -471,18 +471,25 @@ def settlement(
     if not b_company:
         return {"message": "没有找到B公司"}
 
-    c_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_c_name).first()
-    if not c_company:
-        return {"message": "没有找到C公司"}
+
 
     d_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_d_name).first()
     if not d_company:
         return {"message": "没有找到D公司"}
 
+    c_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_c_name).first()
+    if not c_company:
+        # 说明是BD项目
+        pass 
+
+    
     if project_information.project_type == 'BCD':
+        #TODO 生成BD、BC结算单
         send_email_tasks.schedule_settlement_BCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
     elif project_information.project_type == 'CCD':
+        #TODO 生成结算单
         send_email_tasks.schedule_settlement_CCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
     elif project_information.project_type == 'BD':
+        #TODO 生成结算单
         send_email_tasks.schedule_settlement_BD(b_company, d_company, req.contract_serial_number, req.project_name)
     return {"message": "邮件已成功发送"}
