@@ -45,6 +45,22 @@ def send_email(to: str, subject: str, body: str, smtp_config: dict):
         return False, str(e)
 
 
+def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
+    message = EmailMessage()
+    message["From"] = smtp_config["from"]
+    message["To"] = to
+    message["Subject"] = subject
+    message.add_alternative(body, subtype="html")
+
+    try:
+        with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
+            smtp.login(smtp_config["username"], smtp_config["password"])
+            smtp.send_message(message)
+        return True, ""
+    except Exception as e:
+        return False, str(e)
+
+
 # 发送带附件的邮件
 def send_email_with_attachments(to_email, subject, content, smtp_config, attachments):
     message = MIMEMultipart()

@@ -186,7 +186,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 template_name=template_name
             )
             print("LF公司邮件内容：", content)  
-            success, error = email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
+            success, error = email_utils.send_email_in_main(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
             
             # 保存发送记录
             record = models.EmailRecord(
@@ -224,7 +224,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             try:
                 # email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
                 # print("FR公司邮件发送成功")
-                success, error = email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
+                success, error = email_utils.send_email_in_main(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
 
             except Exception as e:
                 print("FR公司邮件发送失败：", e)
@@ -261,7 +261,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 template_name=template_name
             )
             # print("普利赛斯公司邮件内容：", content)
-            success, error = email_utils.send_email(to=company.email, subject=subject, body=content, smtp_config=smtp_config)
+            success, error = email_utils.send_email_in_main(to=company.email, subject=subject, body=content, smtp_config=smtp_config)
             # 保存发送记录
             record = models.EmailRecord(
                 to=company.email,
