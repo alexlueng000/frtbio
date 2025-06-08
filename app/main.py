@@ -182,7 +182,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             #TODO 每个公司有不同的发送模板 
             content = email_utils.render_invitation_template_content(req.purchase_department, req.project_name, template_name)
             print("LF公司邮件内容：", content)  
-            success, error = await email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
+            success, error = email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
             
             # 保存发送记录
             record = models.EmailRecord(
@@ -216,7 +216,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             try:
                 # email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
                 # print("FR公司邮件发送成功")
-                success, error = await email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
+                success, error = email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
 
             except Exception as e:
                 print("FR公司邮件发送失败：", e)
@@ -247,9 +247,13 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 "from": "peterlcylove@163.com"
             }
             
-            content = email_utils.render_invitation_template_content(req.purchase_department, req.project_name, template_name)
+            content = email_utils.render_invitation_template_content(
+                buyer_name=req.purchase_department,
+                project_name=req.project_name,
+                template_name=template_name
+            )
             # print("普利赛斯公司邮件内容：", content)
-            success, error = await email_utils.send_email(to=company.email, subject=subject, body=content, smtp_config=smtp_config)
+            success, error = email_utils.send_email(to=company.email, subject=subject, body=content, smtp_config=smtp_config)
             # 保存发送记录
             record = models.EmailRecord(
                 to=company.email,
