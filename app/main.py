@@ -180,7 +180,11 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             }
 
             #TODO 每个公司有不同的发送模板 
-            content = email_utils.render_invitation_template_content(req.purchase_department, req.project_name, template_name)
+            content = email_utils.render_invitation_template_content(
+                buyer_name=req.purchase_department,
+                project_name=req.project_name,
+                template_name=template_name
+            )
             print("LF公司邮件内容：", content)  
             success, error = email_utils.send_email(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
             
@@ -211,7 +215,11 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 "from": "peterlcylove@163.com"
             }
             
-            content = email_utils.render_invitation_template_content(req.purchase_department, req.project_name, template_name)
+            content = email_utils.render_invitation_template_content(
+                buyer_name=req.purchase_department,
+                project_name=req.project_name,
+                template_name=template_name
+            )
             print("FR公司邮件内容：", content)
             try:
                 # email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
