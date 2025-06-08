@@ -6,6 +6,8 @@ from app import email_utils, models, database, schemas, tasks, send_email_tasks
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
+from datetime import datetime
+
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=database.engine)
@@ -56,11 +58,6 @@ email_templates_name = {
     "a1_fraun": "a1_fraun.txt"
 }
 
-'''
-1. 委托投标
-第一封邮件：三家D公司给B公司发送邮件    
-接收流水号：['PR202504001', '25LDF_001', 'HK-FRONT-25#001']
-'''
 
 @app.post("/test_recieve_bidding_register")
 async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
@@ -79,6 +76,12 @@ async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db:
     return {"d_companies": [company.company_name for company in d_companies]}
 
 
+'''
+1. 委托投标
+第一封邮件：三家D公司给B公司发送邮件    
+接收流水号：['PR202504001', '25LDF_001', 'HK-FRONT-25#001']
+'''
+
 """
 这个接口需要处理的事情：
 1. 向project_info表中插入一条项目信息
@@ -96,7 +99,6 @@ async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db:
 @b_company_name: B公司名称 （必有）
 @project_name: 项目名称 （必有）
 @bidding_code: 招标编号 （可能为空）
-
 """
 @app.post("/recieve_bidding_register")
 async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
@@ -196,7 +198,9 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 status="success" if success else "failed",
                 error_message=error if not success else None,
                 project_id=project_id,
-                stage="A1"
+                task_id="",
+                stage="A1",
+                actual_sending_time=datetime.now()
             )
             db.add(record)
             db.commit()
@@ -237,7 +241,8 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 status="success" if success else "failed",
                 error_message=error if not success else None,
                 project_id=project_id,
-                stage="A1"
+                stage="A1",
+                actual_sending_time=datetime.now()
             )
             db.add(record)
             db.commit()
@@ -271,7 +276,8 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 error_message=error if not success else None,
                 task_id="",
                 project_id=project_id,
-                stage="A1"
+                stage="A1",
+                actual_sending_time=datetime.now()
             )
             db.add(record)
             db.commit()
@@ -290,6 +296,8 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
     }
 
     # # JZ 测试，后替换为实际的B公司
+
+    
     if b_company_info.short_name == "DG":
         subject = f"{req.project_name} {req.l_serial_number}"
         template_name = "A2_DG.html"
@@ -312,6 +320,10 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         db.add(record)
         db.commit()
         db.refresh(record)
+
+    # 更新project_info表中的a1状态为1
+    project_info.a1 = True
+    db.commit()
             
     return {"message": "邮件已成功发送给 B 公司"}
 

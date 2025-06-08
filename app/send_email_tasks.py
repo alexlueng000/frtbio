@@ -1,10 +1,16 @@
+from contextlib import contextmanager
+
 from app import database, models, email_utils
-
-
 from app.tasks import send_reply_email, send_reply_email_with_attachments
 
 
-db = database.get_db()
+@contextmanager
+def get_db_session():
+    db = database.SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 
 # BCD 项目类型发送邮件
@@ -22,7 +28,10 @@ def schedule_bid_conversation_BCD(
     #             "password": "ECRVsnXCe2g2Xauq",
     #             "from": "peterlcylove@163.com"
     #         }
-    
+
+    with get_db_session() as db:
+        project_info = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == project_name).first()
+        
     b_smtp = {
         "host": "smtp.163.com",
         "port": 465,
@@ -52,7 +61,15 @@ def schedule_bid_conversation_BCD(
     d_email = d_company.email
 
     # 获取对应B公司的邮件模板
-    b_email_subject_b3   = email_utils.render_email_subject("B3", b_company.short_name, project_name, contract_serial_number)
+    b_email_subject_b3   = email_utils.render_email_subject(
+        stage="B3", 
+        company_short_name=b_company.short_name, 
+        project_name=project_name, 
+        contract_serial_number=contract_serial_number,
+        contract_number="HTLS20250606001",
+        winning_amount="1000000",
+        winning_time="2025-06-06"
+    )
     b_email_content_b3 = email_utils.render_invitation_template_content(
         project_name=project_name,
         serial_number="L123456789",
@@ -66,7 +83,7 @@ def schedule_bid_conversation_BCD(
     
     # 第一封邮件：B ➝ C（立即）
     task1 = send_reply_email.apply_async(
-        args=[c_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+        args=[c_email, b_email_subject_b3, b_email_content_b3, b_smtp, 0, "B3", project_info.id],
         countdown=0  # 立即
     )
 
@@ -94,7 +111,7 @@ def schedule_bid_conversation_BCD(
     # delay2 = random.randint(5, 60)
     delay2 =  1
     task2 = send_reply_email.apply_async(
-        args=[b_email, c_email_subject_b4, c_email_content_b4, c_smtp],
+        args=[b_email, c_email_subject_b4, c_email_content_b4, c_smtp, delay2, "B4", project_info.id],
         countdown=delay2 * 60  # 相对第一封
     )
 

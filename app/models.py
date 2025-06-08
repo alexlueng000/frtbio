@@ -16,8 +16,9 @@ class EmailRecord(Base):
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
     error_message = Column(Text, nullable=True)
     project_id = Column(Integer)
-    stage = Column(String(12))
-
+    stage = Column(String(12))  
+    actual_sending_time = Column(DateTime, nullable=True)
+    
 
 class CompanyInfo(Base):
     __tablename__ = "company_info"

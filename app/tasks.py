@@ -3,6 +3,7 @@
 # 处理B公司回复邮件的任务
 
 import time
+from datetime import datetime, timedelta
 import smtplib
 from email.mime.text import MIMEText
 
@@ -35,10 +36,14 @@ def send_sync_email(to_email, subject, content, smtp_config):
 
 
 @celery.task
-def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dict):
+def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dict, delay: int, stage: str, project_id: int):
 
     db = database.SessionLocal()
-    success, error = email_utils.send_sync_email(to_email, subject, content, smtp_config)
+
+    # 当前时间 + delay 秒 = 实际发送时间
+    scheduled_time = datetime.now() + timedelta(seconds=delay)
+
+    success, error = email_utils.send_email(to_email, subject, content, smtp_config)
     
     # 需要更新这个邮件发送记录
     record = models.EmailRecord(
@@ -46,7 +51,10 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
         subject=subject,
         body=content,
         status="success" if success else "failed",
-        error_message=error if not success else None
+        error_message=error if not success else None,
+        actual_send_time=scheduled_time,
+        stage=stage,
+        project_id=project_id
     )
     db.add(record)
     db.commit()
@@ -56,9 +64,13 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
 
 
 @celery.task
-def send_reply_email_with_attachments(to_email: str, subject: str, content: str, smtp_config: dict, attachments: list[str]):
+def send_reply_email_with_attachments(to_email: str, subject: str, content: str, smtp_config: dict, attachments: list[str], stage: str, project_id: int):
 
     db = database.SessionLocal()
+
+    # 当前时间 + delay 秒 = 实际发送时间
+    scheduled_time = datetime.now() + timedelta(seconds=delay)
+
     success, error = email_utils.send_email_with_attachments(to_email, subject, content, smtp_config, attachments)
     
     # 需要更新这个邮件发送记录
@@ -67,7 +79,10 @@ def send_reply_email_with_attachments(to_email: str, subject: str, content: str,
         subject=subject,
         body=content,
         status="success" if success else "failed",
-        error_message=error if not success else None
+        error_message=error if not success else None,
+        actual_send_time=scheduled_time,
+        stage=stage,
+        project_id=project_id
     )
     db.add(record)
     db.commit()
