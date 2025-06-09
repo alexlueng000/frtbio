@@ -1,7 +1,7 @@
 # app/main.py
 from fastapi import FastAPI, Depends
 from pydantic import BaseModel, EmailStr
-from app import email_utils, models, database, schemas, tasks, send_email_tasks
+from app import email_utils, models, database, schemas, tasks, send_email_tasks, utils
 
 from sqlalchemy.orm import Session
 from sqlalchemy import text
@@ -471,8 +471,6 @@ def settlement(
     if not b_company:
         return {"message": "没有找到B公司"}
 
-
-
     d_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_d_name).first()
     if not d_company:
         return {"message": "没有找到D公司"}
@@ -481,11 +479,23 @@ def settlement(
     if not c_company:
         # 说明是BD项目
         pass 
-
-    
     if project_information.project_type == 'BCD':
         #TODO 生成BD、BC结算单
-        send_email_tasks.schedule_settlement_BCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
+        send_email_tasks.schedule_settlement_BCD(
+            b_company=b_company,
+            c_company=c_company,
+            d_company=d_company,
+            contract_serial_number=req.contract_serial_number,
+            project_name=req.project_name,
+            amount=req.amount,
+            three_fourth=req.three_fourth,
+            import_service_fee=req.import_service_fee,
+            third_party_fee=req.third_party_fee,
+            service_fee=req.service_fee,
+            win_bidding_fee=req.win_bidding_fee,
+            bidding_document_fee=req.bidding_document_fee,
+            bidding_service_fee=req.bidding_service_fee
+        )
     elif project_information.project_type == 'CCD':
         #TODO 生成结算单
         send_email_tasks.schedule_settlement_CCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)

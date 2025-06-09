@@ -72,7 +72,16 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
 
 
 @celery.task
-def send_reply_email_with_attachments(to_email: str, subject: str, content: str, smtp_config: dict, attachments: list[str], stage: str, project_id: int):
+def send_reply_email_with_attachments(
+    to_email: str, 
+    subject: str, 
+    content: str, 
+    smtp_config: dict, 
+    attachments: list[str], 
+    delay: int, 
+    stage: str, 
+    project_id: int
+    ):
 
     db = database.SessionLocal()
 

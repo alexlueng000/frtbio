@@ -1,6 +1,6 @@
 from contextlib import contextmanager
 
-from app import database, models, email_utils
+from app import database, models, email_utils, excel_utils
 from app.tasks import send_reply_email, send_reply_email_with_attachments
 
 
@@ -325,12 +325,32 @@ def schedule_bid_conversation_BD(b_company_name: str, d_company_name: str):
 # 2. 上一封邮件发出5-60分钟后，发送B-D间结算单
 # 3. 上一封邮件发出5-60分钟后，B-D间结算单确认
 # 4. 上一封邮件发出5-60分钟后，C-D间结算单确认
+
+'''
+    amount: str # 收款金额
+    three_fourth: str # 三方/四方货款
+    import_service_fee: str # C进口服务费
+    third_party_fee: str # 第三方费用
+    service_fee: str # 费用结算服务费
+    win_bidding_fee: str # 中标服务费
+    bidding_document_fee: str # 购买标书费
+    bidding_service_fee: str # 投标服务费
+'''
+
 def schedule_settlement_BCD(
-    b_company: models.CompanyInfo, 
-    c_company: models.CompanyInfo, 
-    d_company: models.CompanyInfo, 
+    b_company: models.CompanyInfo,
+    c_company: models.CompanyInfo,
+    d_company: models.CompanyInfo,
     contract_serial_number: str,
-    project_name: str
+    project_name: str,
+    amount: str,  # 收款金额（总额）
+    three_fourth: str,  # 三方/四方货款
+    import_service_fee: str,  # C公司进口服务费
+    third_party_fee: str,  # 第三方费用
+    service_fee: str,  # 费用结算服务费
+    win_bidding_fee: str,  # 中标服务费
+    bidding_document_fee: str,  # 标书费
+    bidding_service_fee: str  # 投标服务费
 ):
 
     # c_smtp = {
@@ -391,96 +411,114 @@ def schedule_settlement_BCD(
         contract_number="HTLS20250606001",
         template_name="C7_"+c_company.short_name+".html"
     )
+
+    # 生成C->B结算单
+
+    CB_settlement_path = excel_utils.generate_common_settlement_excel(
+        filename="C7_"+contract_serial_number + ".xlsx",  # 可根据项目名称动态命名
+        stage="C7",
+        project_type="BCD",
+        received_amount=100000,
+        receivable_items=[
+            ("三方/四方货款", 50000),
+            ('进口服务费', 10086),
+            ("第三方费用", 10000),
+            ("费用结算服务费", 20000),
+        ],
+        head_company_name=b_company.company_name,
+        bottom_company_name=c_company.company_name
+    )
+
     # 第一封邮件：C ➝ B
     task1 = send_reply_email_with_attachments.apply_async(
-        args=[b_email, c_email_subject_c7, c_email_content_c7, c_smtp, ["E:\\code_projects\\syjz_emails\\backend\\test_settlement.xlsx"]], # TODO 换成真实的附件路径
+        args=[b_email, c_email_subject_c7, c_email_content_c7, c_smtp, [CB_settlement_path], 0, "C7", 1], # TODO 换成真实的附件路径
         countdown=0  # 立即
     )
 
     # 第二封邮件：B ➝ D
     # 随机延迟 5–60 分钟发出B-D间结算单
-    b_email_subject_c8 = email_utils.render_email_subject(
-        stage="C8", 
-        company_short_name=b_company.short_name, 
-        project_name=project_name, 
-        serial_number="L123456789",
-        contract_number="HTLS20250606001",
-        winning_amount="100000",
-        winning_time="2025-06-01"
-    )
-    print("b_email_subject_c8: ", b_email_subject_c8)
-    b_email_content_c8 = email_utils.render_invitation_template_content(
-        buyer_name="", 
-        project_name=project_name, 
-        first_name=d_company.last_name,
-        serial_number="L123456789",
-        contract_number="HTLS20250606001",
-        winning_amount="100000",
-        winning_time="2025-06-01",
-        template_name="C8_"+b_company.short_name+".html"
-    )
+    # b_email_subject_c8 = email_utils.render_email_subject(
+    #     stage="C8", 
+    #     company_short_name=b_company.short_name, 
+    #     project_name=project_name, 
+    #     serial_number="L123456789",
+    #     contract_number="HTLS20250606001",
+    #     winning_amount="100000",
+    #     winning_time="2025-06-01"
+    # )
+    # print("b_email_subject_c8: ", b_email_subject_c8)
+    # b_email_content_c8 = email_utils.render_invitation_template_content(
+    #     buyer_name="", 
+    #     project_name=project_name, 
+    #     first_name=d_company.last_name,
+    #     serial_number="L123456789",
+    #     contract_number="HTLS20250606001",
+    #     winning_amount="100000",
+    #     winning_time="2025-06-01",
+    #     template_name="C8_"+b_company.short_name+".html"
+    # )
     # delay1 = random.randint(5, 60)
-    delay1 = 1
-    task2 = send_reply_email_with_attachments.apply_async(
-        args=[d_email, b_email_subject_c8, b_email_content_c8, c_smtp, ["E\\code_projects\\syjz_emails\\backend\\test_settlement.xlsx"]], # TODO 换成真实的附件路径
-        countdown=delay1 * 60  # 相对第一封
-    )
+    # delay1 = 1
+    # task2 = send_reply_email_with_attachments.apply_async(
+    #     args=[d_email, b_email_subject_c8, b_email_content_c8, c_smtp, ["E\\code_projects\\syjz_emails\\backend\\test_settlement.xlsx"]], # TODO 换成真实的附件路径
+    #     countdown=delay1 * 60  # 相对第一封
+    # )
 
     # 第三封邮件：D ➝ B
     # 随机延迟 5–60 分钟发出D-B间结算单确认
-    d_email_subject_c9 = email_utils.render_email_subject(
-        stage="C9", 
-        company_short_name=d_company.short_name, 
-        project_name=project_name, 
-        serial_number="L123456789", 
-        contract_number="HTLS20250606001", 
-        winning_amount="100000", 
-        winning_time="2025-06-01"
-    )
-    print("d_email_subject_c9: ", d_email_subject_c9)
-    d_email_content_c9 = email_utils.render_invitation_template_content(
-        buyer_name="", 
-        project_name=project_name, 
-        first_name=b_company.last_name,
-        serial_number="L123456789",
-        contract_number="HTLS20250606001",
-        winning_amount="100000",
-        winning_time="2025-06-01",
-        template_name="C9_"+d_company.short_name+".html"
-    )
-    delay2 = delay1 + 1
-    task3 = send_reply_email.apply_async(
-        args=[d_email, d_email_subject_c9, d_email_content_c9, d_smtp],
-        countdown=delay2 * 60  # 相对第一封
-    )
+    # d_email_subject_c9 = email_utils.render_email_subject(
+    #     stage="C9", 
+    #     company_short_name=d_company.short_name, 
+    #     project_name=project_name, 
+    #     serial_number="L123456789", 
+    #     contract_number="HTLS20250606001", 
+    #     winning_amount="100000", 
+    #     winning_time="2025-06-01"
+    # )
+    # print("d_email_subject_c9: ", d_email_subject_c9)
+    # d_email_content_c9 = email_utils.render_invitation_template_content(
+    #     buyer_name="", 
+    #     project_name=project_name, 
+    #     first_name=b_company.last_name,
+    #     serial_number="L123456789",
+    #     contract_number="HTLS20250606001",
+    #     winning_amount="100000",
+    #     winning_time="2025-06-01",
+    #     template_name="C9_"+d_company.short_name+".html"
+    # )
+    # delay2 = delay1 + 1
+    # task3 = send_reply_email.apply_async(
+    #     args=[d_email, d_email_subject_c9, d_email_content_c9, d_smtp],
+    #     countdown=delay2 * 60  # 相对第一封
+    # )
 
     # 第四封邮件：B ➝ D
     # 随机延迟 5–60 分钟发出B-D间结算单确认
-    b_email_subject_c10 = email_utils.render_email_subject(
-        stage="C10", 
-        company_short_name=b_company.short_name, 
-        project_name=project_name, 
-        serial_number="L123456789", 
-        contract_number="HTLS20250606001", 
-        winning_amount="100000", 
-        winning_time="2025-06-01"
-    )
-    print("b_email_subject_c10: ", b_email_subject_c10)
-    b_email_content_c10 = email_utils.render_invitation_template_content(
-        buyer_name="", 
-        project_name=project_name, 
-        first_name=c_company.last_name,
-        serial_number="L123456789",
-        contract_number="HTLS20250606001",
-        winning_amount="100000",
-        winning_time="2025-06-01",
-        template_name="C10_"+b_company.short_name+".html"
-    )
-    delay3 = delay2 + 1
-    task4 = send_reply_email.apply_async(
-        args=[b_email, b_email_subject_c10, b_email_content_c10, b_smtp],
-        countdown=delay3 * 60  # 相对第一封
-    )
+    # b_email_subject_c10 = email_utils.render_email_subject(
+    #     stage="C10", 
+    #     company_short_name=b_company.short_name, 
+    #     project_name=project_name, 
+    #     serial_number="L123456789", 
+    #     contract_number="HTLS20250606001", 
+    #     winning_amount="100000", 
+    #     winning_time="2025-06-01"
+    # )
+    # print("b_email_subject_c10: ", b_email_subject_c10)
+    # b_email_content_c10 = email_utils.render_invitation_template_content(
+    #     buyer_name="", 
+    #     project_name=project_name, 
+    #     first_name=c_company.last_name,
+    #     serial_number="L123456789",
+    #     contract_number="HTLS20250606001",
+    #     winning_amount="100000",
+    #     winning_time="2025-06-01",
+    #     template_name="C10_"+b_company.short_name+".html"
+    # )
+    # delay3 = delay2 + 1
+    # task4 = send_reply_email.apply_async(
+    #     args=[b_email, b_email_subject_c10, b_email_content_c10, b_smtp],
+    #     countdown=delay3 * 60  # 相对第一封
+    # )
 
     # return {
     #     "tasks": [
