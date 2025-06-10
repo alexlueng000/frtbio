@@ -210,7 +210,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         elif company.short_name == "FR":
             subject = f"【誠邀合作】{ req.project_name }投標{req.f_serial_number}"
             print("FR公司邮件主题：", subject)
-            template_name = "A1_FRAUN.html"
+            template_name = "A1_FR.html"
             smtp_config = {
                 "host": "smtp.163.com",
                 "port": 465,
@@ -287,12 +287,20 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
     # random_numbers = utils.generate_random_number()
 
     # # 假设 B 公司固定使用以下邮箱配置（也可以从 DB 查）
-    b_company_smtp = {
-        "host": "smtp.163.com",
+    # b_company_smtp = {
+    #     "host": "smtp.163.com",
+    #     "port": 465,
+    #     "username": "peterlcylove@163.com",
+    #     "password": "ECRVsnXCe2g2Xauq",
+    #     "from": "peterlcylove@163.com"
+    # }
+
+    d_smtp = {
+        "host": "smtp.qq.com",
         "port": 465,
-        "username": "peterlcylove@163.com",
-        "password": "ECRVsnXCe2g2Xauq",
-        "from": "peterlcylove@163.com"
+        "username": "494762262@qq.com",
+        "password": "mlnbblbyyvulbhhi",
+        "from": "494762262@qq.com"
     }
 
     A2_subject = email_utils.render_email_subject(
@@ -300,7 +308,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         company_short_name=b_company_info.short_name, 
         project_name=req.project_name
     )
-    template_name = ""
+    template_name = "A2_" + b_company_info.short_name + ".html"
 
     # # JZ 测试，后替换为实际的B公司
     for company in d_companies:
@@ -308,24 +316,28 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         if company.short_name == "FR":
 
             A2_subject = f"{req.f_serial_number}"
-            template_name = "A2_FR.html"
-
+            print("FR公司邮件主题：", A2_subject)
+            
         elif company.short_name == "LF":
             A2_subject = f"{req.l_serial_number}"
-            template_name = "A2_LF.html"
+            print("LF公司邮件主题：", A2_subject)
+            
         
         else:
             A2_subject = f"{req.p_serial_number}"
-            template_name = "A2_PRECISE.html"
+            print("Precise公司邮件主题：", A2_subject)
+            
+        
         
         content = email_utils.render_invitation_template_content(
-            purchase_department=req.purchase_department,
+            # purchase_department=req.purchase_department,
             project_name=req.project_name,
-            template_name=template_name
+            template_name=template_name,
+            full_name=company.contact_person,
         )
             
         result = tasks.send_reply_email.apply_async(
-            args=[company.email, A2_subject, content, b_company_smtp, 1 * 60, "A2", project_id],
+            args=[company.email, A2_subject, content, d_smtp, 1 * 60, "A2", project_id],
             countdown=1 * 60  
         )
         # 保存发送记录
