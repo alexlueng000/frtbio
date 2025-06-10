@@ -171,7 +171,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         if company.short_name == "LF":
             subject = f" { req.project_name }- 投標委託 | { b_company_info.company_name }| { req.f_serial_number }"
             # print("LF公司邮件主题：", subject)
-            template_name = "a1_lf.txt"
+            template_name = "A1_LF.html"
 
             smtp_config = {
                 "host": "smtp.163.com",
@@ -214,7 +214,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             smtp_config = {
                 "host": "smtp.163.com",
                 "port": 465,
-               "username": "peterlcylove@163.com",
+                "username": "peterlcylove@163.com",
                 "password": "ECRVsnXCe2g2Xauq",
                 "from": "peterlcylove@163.com"
             }
@@ -295,22 +295,43 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         "from": "peterlcylove@163.com"
     }
 
-    # # JZ 测试，后替换为实际的B公司
+    A2_subject = email_utils.render_email_subject(
+        stage="A2", 
+        company_short_name=b_company_info.short_name, 
+        project_name=req.project_name
+    )
+    template_name = ""
 
-    
-    if b_company_info.short_name == "DG":
-        subject = f"{req.project_name} {req.l_serial_number}"
-        template_name = "A2_DG.html"
-        content = email_utils.render_invitation_template_content(req.purchase_department, req.project_name, template_name)
+    # # JZ 测试，后替换为实际的B公司
+    for company in d_companies:
+
+        if company.short_name == "FR":
+
+            A2_subject = f"{req.f_serial_number}"
+            template_name = "A2_FR.html"
+
+        elif company.short_name == "LF":
+            A2_subject = f"{req.l_serial_number}"
+            template_name = "A2_LF.html"
         
+        else:
+            A2_subject = f"{req.p_serial_number}"
+            template_name = "A2_PRECISE.html"
+        
+        content = email_utils.render_invitation_template_content(
+            purchase_department=req.purchase_department,
+            project_name=req.project_name,
+            template_name=template_name
+        )
+            
         result = tasks.send_reply_email.apply_async(
-                args=["494762262@qq.com", subject, content, b_company_smtp],
-                countdown=1 * 60  
-            )
-            # 保存发送记录
+            args=[company.email, A2_subject, content, b_company_smtp, 1 * 60, "A2", project_id],
+            countdown=1 * 60  
+        )
+        # 保存发送记录
         record = models.EmailRecord(
-            to="494762262@qq.com",
-            subject=subject,
+            to=company.email,
+            subject=A2_subject,
             body=content,
             status="pending", 
             task_id=result.task_id,

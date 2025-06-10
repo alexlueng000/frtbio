@@ -66,7 +66,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="1000000",
         winning_time="2025-06-06"
     )
@@ -76,7 +76,7 @@ def schedule_bid_conversation_BCD(
         first_name=c_company.last_name,
         full_name=c_company.contact_person,
         winning_amount="1000000",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         template_name="B3_"+b_company.short_name+".html"
     )
     
@@ -95,7 +95,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
     )
     
     print("B4-C公司邮件主题：", c_email_subject_b4)
@@ -106,7 +106,7 @@ def schedule_bid_conversation_BCD(
         serial_number="L123456789",
         first_name=b_company.last_name,
         winning_amount="1000000",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         template_name="B4_"+c_company.short_name+".html")
     
     # delay2 = random.randint(5, 60)
@@ -122,7 +122,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="1000000",
         winning_time="2025-06-06"
     )
@@ -134,7 +134,7 @@ def schedule_bid_conversation_BCD(
         first_name=d_company.last_name,
         full_name=d_company.contact_person,
         winning_amount="1000000",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         serial_number="L123456789",
         project_name=project_name, 
         winning_time="2025-06-06",
@@ -154,7 +154,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=d_company.short_name,
         project_name=project_name,
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="1000000",
         winning_time="2025-06-06"
     )
@@ -164,7 +164,7 @@ def schedule_bid_conversation_BCD(
     d_email_content_b6 = email_utils.render_invitation_template_content(
         buyer_name=d_company.company_name, 
         first_name=b_company.last_name_traditional,
-        full_name=b_company.contact_person, winning_amount="1000000", contract_number="HTLS20250606001",
+        full_name=b_company.contact_person, winning_amount="1000000", contract_number="HTLS20250606002",
         serial_number="L123456789",
         project_name=project_name, 
         winning_time="2025-06-06",
@@ -397,7 +397,7 @@ def schedule_settlement_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="100000",
         winning_time="2025-06-01"
     )
@@ -408,7 +408,7 @@ def schedule_settlement_BCD(
         serial_number="",
         first_name=b_company.last_name,
         winning_amount="100000",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         template_name="C7_"+c_company.short_name+".html"
     )
 
@@ -445,9 +445,9 @@ def schedule_settlement_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="100000",
-        winning_time="2025-06-01"
+        winning_time="2025-06-09"
     )
     print("b_email_subject_c8: ", b_email_subject_c8)
     b_email_content_c8 = email_utils.render_invitation_template_content(
@@ -455,7 +455,7 @@ def schedule_settlement_BCD(
         project_name=project_name, 
         first_name=d_company.last_name,
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="100000",
         winning_time="2025-06-01",
         template_name="C8_"+b_company.short_name+".html"
@@ -494,7 +494,7 @@ def schedule_settlement_BCD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number="L123456789", 
-        contract_number="HTLS20250606001", 
+        contract_number="HTLS20250606002", 
         winning_amount="100000", 
         winning_time="2025-06-01"
     )
@@ -504,7 +504,7 @@ def schedule_settlement_BCD(
         project_name=project_name, 
         first_name=b_company.last_name,
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="100000",
         winning_time="2025-06-01",
         template_name="C9_"+d_company.short_name+".html"
@@ -522,7 +522,7 @@ def schedule_settlement_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number="L123456789", 
-        contract_number="HTLS20250606001", 
+        contract_number="HTLS20250606002", 
         winning_amount="100000", 
         winning_time="2025-06-01"
     )
@@ -532,7 +532,7 @@ def schedule_settlement_BCD(
         project_name=project_name, 
         first_name=c_company.last_name,
         serial_number="L123456789",
-        contract_number="HTLS20250606001",
+        contract_number="HTLS20250606002",
         winning_amount="100000",
         winning_time="2025-06-01",
         template_name="C10_"+b_company.short_name+".html"

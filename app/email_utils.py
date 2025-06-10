@@ -122,7 +122,7 @@ def render_email_subject(
             project_name=project_name,
             serial_number=serial_number,
             contract_number=contract_number,
-            winning_amount=winning_amount,
+            contract_amount=winning_amount,
             winning_time=winning_time,
         )
 
