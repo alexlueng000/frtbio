@@ -100,8 +100,8 @@ async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db:
 @project_name: 项目名称 （必有）
 @bidding_code: 招标编号 （可能为空）
 """
-@app.post("/recieve_bidding_register")
-async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
+@app.post("/receive_bidding_register")
+async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
 
     # 新增一条项目信息
     project_info = models.ProjectInfo(
