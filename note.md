@@ -33,3 +33,38 @@ VALUES
     ('A2', '深圳市佰志诚科技发展有限公司', 'BZC', '{project_name} {serial_number}'),
     ('A2', '深圳市礼恒科技有限公司', 'LH', '{project_name} {serial_number}'),
     ('A2', '深圳市海辰星科技有限公司', 'HCX', '{project_name} 投标委托确认 {serial_number}');
+
+
+project_fee_details:
+id,
+project_id (foreign key),
+中标时间
+中标金额,
+三方/四方货款，
+进口服务费，
+第三方费用，
+费用结算服务费，
+中标服务费，
+购买标书费，
+投标服务费，
+
+
+CREATE TABLE project_fee_details (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    project_id INT NOT NULL,
+    winning_time DATE,                        -- 中标时间
+    winning_amount DECIMAL(15,2),             -- 中标金额
+    three_fourth_amount DECIMAL(15,2),        -- 三方/四方货款
+    import_service_fee DECIMAL(15,2),         -- 进口服务费
+    third_party_fee DECIMAL(15,2),            -- 第三方费用
+    settlement_service_fee DECIMAL(15,2),     -- 费用结算服务费
+    bidding_service_fee DECIMAL(15,2),        -- 中标服务费
+    document_purchase_fee DECIMAL(15,2),      -- 购买标书费
+    tender_service_fee DECIMAL(15,2),         -- 投标服务费
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (project_id) REFERENCES project_info(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

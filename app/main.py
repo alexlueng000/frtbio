@@ -1,46 +1,17 @@
 # app/main.py
-from fastapi import FastAPI, Depends
-from pydantic import BaseModel, EmailStr
+from fastapi import FastAPI, Depends, HTTPException
+
 from app import email_utils, models, database, schemas, tasks, send_email_tasks, utils
+
 
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
 from datetime import datetime
-
+from decimal import Decimal
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=database.engine)
-
-class EmailSchema(BaseModel):
-    to: EmailStr
-    subject: str
-    body: str
-
-@app.post("/send-email")
-async def send(email: EmailSchema, db: Session = Depends(database.get_db)):
-    smtp_config = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "你的邮箱",
-        "password": "授权码",
-        "from": "你的邮箱"
-    }
-
-    success, error = await email_utils.send_email(email.to, email.subject, email.body, smtp_config)
-    
-    # 保存发送记录
-    record = models.EmailRecord(
-        to=email.to,
-        subject=email.subject,
-        body=email.body,
-        status="success" if success else "failed",
-        error_message=error if not success else None
-    )
-    db.add(record)
-    db.commit()
-    db.refresh(record)
-    return {"success": success, "error": error}
 
 
 @app.get("/ping-db")
@@ -51,30 +22,6 @@ def ping_db():
         return {"status": "success", "message": "pong ✅ 数据库连接成功"}
     except Exception as e:
         return {"status": "error", "message": "❌ 数据库连接失败", "detail": str(e)}
-
-
-email_templates_name = {
-    "a1_ld": "a1_ld.txt",
-    "a1_fraun": "a1_fraun.txt"
-}
-
-
-@app.post("/test_recieve_bidding_register")
-async def test_recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
-    
-    # 查询三家D公司
-    d_companies = (
-        db.query(models.CompanyInfo)
-        .filter(models.CompanyInfo.company_type == "D")
-        .limit(3)
-        .all()
-    )
-
-    if not d_companies:
-        return {"message": "没有找到 D 类型的公司"}
-
-    return {"d_companies": [company.company_name for company in d_companies]}
-
 
 '''
 1. 委托投标
@@ -386,13 +333,33 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 @app.post("/project_bidding_winning_information")
 async def project_bidding_winning_information(req: schemas.ProjectWinningInfoRequest, db: Session = Depends(database.get_db)):
     
-    project_information = db.query(models.ProjectInfo).filter_by(project_name=req.project_name).first()
+    project_information = db.query(models.ProjectInfo).filter_by(p_serial_number=req.p_serial_number, l_serial_number=req.l_serial_number, f_serial_number=req.f_serial_number).first()
     
     if not project_information:
         return {"message": "没有找到项目信息"}
 
     project_information.contract_number = req.contract_number
     project_information.tender_number = req.bidding_code
+
+    # 3. 尝试将中标金额转换为 Decimal
+    try:
+        winning_amount = Decimal(req.winning_amount)
+    except:
+        raise HTTPException(status_code=400, detail="中标金额格式错误，应为数字")
+
+    # 4. 尝试将中标时间转换为 Date
+    try:
+        winning_time = datetime.strptime(req.winning_time, "%Y-%m-%d").date()
+    except:
+        raise HTTPException(status_code=400, detail="中标时间格式错误，应为 YYYY-MM-DD")
+
+    # 5. 创建并插入中标费用详情记录
+    fee_detail = models.ProjectFeeDetails(
+        project_id=project_information.id,
+        winning_time=winning_time,
+        winning_amount=winning_amount
+    )
+    db.add(fee_detail)
     db.commit()
 
     return {"message": "项目中标信息更新成功"}

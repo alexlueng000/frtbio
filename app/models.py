@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, TIMESTAMP
+from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, TIMESTAMP, DECIMAL, Date, ForeignKey, func
+from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime, timezone
 
@@ -64,6 +65,8 @@ class ProjectInfo(Base):
     c10 = Column(Boolean)
     created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc)) # UTC时间
 
+    fee_details = relationship("ProjectFeeDetails", back_populates="project")
+
 
 
 
@@ -82,3 +85,33 @@ class EmailSubject(Base):
     subject = Column(String(255))
     created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc))
     # UTC时间
+
+
+# 项目费用明细表
+class ProjectFeeDetails(Base):
+    __tablename__ = "project_fee_details"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+
+    # 外键：关联项目表
+    project_id = Column(Integer, ForeignKey("project_info.id", ondelete="CASCADE", onupdate="CASCADE"), nullable=False)
+
+    # 中标信息
+    winning_time = Column(Date, nullable=True)                      # 中标时间
+    winning_amount = Column(DECIMAL(15, 2), nullable=True)          # 中标金额
+
+    # 各类费用
+    three_fourth_amount = Column(DECIMAL(15, 2), nullable=True)     # 三方/四方货款
+    import_service_fee = Column(DECIMAL(15, 2), nullable=True)      # 进口服务费
+    third_party_fee = Column(DECIMAL(15, 2), nullable=True)         # 第三方费用
+    settlement_service_fee = Column(DECIMAL(15, 2), nullable=True)  # 费用结算服务费
+    bidding_service_fee = Column(DECIMAL(15, 2), nullable=True)     # 中标服务费
+    document_purchase_fee = Column(DECIMAL(15, 2), nullable=True)   # 购买标书费
+    tender_service_fee = Column(DECIMAL(15, 2), nullable=True)      # 投标服务费
+
+    # 时间戳
+    created_at = Column(TIMESTAMP, server_default=func.now())
+    updated_at = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
+
+    # 可选：反向关系（如果你在 ProjectInfo 模型中定义了 relationship）
+    project = relationship("ProjectInfo", back_populates="fee_details")

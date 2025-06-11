@@ -94,6 +94,8 @@ class ProjectWinningInfoRequest(BaseModel):
     f_serial_number: str # F流水号
     bidding_code: str # 招标编号
     contract_number: str # 合同号
+    winning_amount: str # 中标金额
+    winning_time: str # 中标时间
 
 
 ''' 
