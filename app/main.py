@@ -430,6 +430,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         project_type = 'BCD'
 
     # 更新project_info表中的项目类型
+    #TODO 这里应该根据合同号来更新项目类型
     project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
     if project:
         project.project_type = project_type
@@ -449,7 +450,10 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     else:
         send_email_tasks.schedule_bid_conversation_BD(b_company, d_company)
     
-    return {"message": "邮件已成功发送"}
+    return {
+        "message": "合同审批阶段邮件已成功发送",
+        "project_type": project_type
+    }
     
     
     

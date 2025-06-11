@@ -18,8 +18,12 @@ def schedule_bid_conversation_BCD(
     b_company: models.CompanyInfo, 
     c_company: models.CompanyInfo, 
     d_company: models.CompanyInfo, 
-    contract_serial_number: str,
-    project_name: str):
+    contract_number: str, # 合同号
+    winning_amount: str,  # 中标金额
+    winning_time: str,    # 中标时间
+    contract_serial_number: str, #流水号
+    project_name: str 
+):
 
     # smtp_config = {
     #             "host": "smtp.163.com",
@@ -66,17 +70,17 @@ def schedule_bid_conversation_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number="HTLS20250606002",
-        winning_amount="1000000",
-        winning_time="2025-06-06"
+        contract_number=contract_number,
+        winning_amount=winning_amount,
+        winning_time=winning_time
     )
     b_email_content_b3 = email_utils.render_invitation_template_content(
         project_name=project_name,
-        serial_number="L123456789",
+        serial_number=contract_serial_number,
         first_name=c_company.last_name,
         full_name=c_company.contact_person,
-        winning_amount="1000000",
-        contract_number="HTLS20250606002",
+        winning_amount=winning_amount,
+        contract_number=contract_number,
         template_name="B3_"+b_company.short_name+".html"
     )
     
@@ -94,8 +98,8 @@ def schedule_bid_conversation_BCD(
         stage="B4", 
         company_short_name=c_company.short_name, 
         project_name=project_name, 
-        serial_number="L123456789",
-        contract_number="HTLS20250606002",
+        serial_number=contract_serial_number,
+        contract_number=contract_number,
     )
     
     print("B4-C公司邮件主题：", c_email_subject_b4)
@@ -103,10 +107,10 @@ def schedule_bid_conversation_BCD(
     c_email_content_b4 = email_utils.render_invitation_template_content(
         buyer_name=c_company.company_name, 
         project_name=project_name, 
-        serial_number="L123456789",
+        serial_number=contract_serial_number,
         first_name=b_company.last_name,
-        winning_amount="1000000",
-        contract_number="HTLS20250606002",
+        winning_amount=winning_amount,
+        contract_number=contract_number,
         template_name="B4_"+c_company.short_name+".html")
     
     # delay2 = random.randint(5, 60)
@@ -121,10 +125,10 @@ def schedule_bid_conversation_BCD(
         stage="B5", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
-        serial_number="L123456789",
-        contract_number="HTLS20250606002",
-        winning_amount="1000000",
-        winning_time="2025-06-06"
+        serial_number=contract_serial_number,
+        contract_number=contract_number,
+        winning_amount=winning_amount,
+        winning_time=winning_time
     )
     
     print("B5-B公司邮件主题：", b_email_subject_b5)
@@ -133,11 +137,11 @@ def schedule_bid_conversation_BCD(
         buyer_name=b_company.company_name, 
         first_name=d_company.last_name,
         full_name=d_company.contact_person,
-        winning_amount="1000000",
-        contract_number="HTLS20250606002",
-        serial_number="L123456789",
+        winning_amount=winning_amount,
+        contract_number=contract_number,
+        serial_number=contract_serial_number,
         project_name=project_name, 
-        winning_time="2025-06-06",
+        winning_time=winning_time,
         template_name="B5_"+b_company.short_name+".html"
     )
 
@@ -153,10 +157,10 @@ def schedule_bid_conversation_BCD(
         stage="B6",
         company_short_name=d_company.short_name,
         project_name=project_name,
-        serial_number="L123456789",
-        contract_number="HTLS20250606002",
-        winning_amount="1000000",
-        winning_time="2025-06-06"
+        serial_number=contract_serial_number,
+        contract_number=contract_number,
+        winning_amount=winning_amount,
+        winning_time=winning_time
     )
     
     print("B6-D公司邮件主题：", d_email_subject_b6)
@@ -164,10 +168,12 @@ def schedule_bid_conversation_BCD(
     d_email_content_b6 = email_utils.render_invitation_template_content(
         buyer_name=d_company.company_name, 
         first_name=b_company.last_name_traditional,
-        full_name=b_company.contact_person, winning_amount="1000000", contract_number="HTLS20250606002",
-        serial_number="L123456789",
+        full_name=b_company.contact_person, 
+        winning_amount=winning_amount, 
+        contract_number=contract_number,
+        serial_number=contract_serial_number,
         project_name=project_name, 
-        winning_time="2025-06-06",
+        winning_time=winning_time,
         template_name="B6_"+d_company.short_name+".html"
     )
     # delay4 = delay3 + random.randint(5, 60)
@@ -190,6 +196,7 @@ def schedule_bid_conversation_BCD(
 
 # CCD 项目类型发送邮件
 # 仅有BD公司之间发送两封邮件
+# 特殊B5模板
 def schedule_bid_conversation_CCD(
     b_company: models.CompanyInfo, 
     d_company: models.CompanyInfo, 
