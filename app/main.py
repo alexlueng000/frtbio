@@ -169,7 +169,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         
         # 领先
         if company.short_name == "LF":
-            subject = f" { req.project_name }- 投標委託 | { b_company_info.company_name }| { req.f_serial_number }"
+            subject = f" { req.project_name }- 投標委託 | { b_company_info.company_name }| { req.l_serial_number }"
             # print("LF公司邮件主题：", subject)
             template_name = "A1_LF.html"
 
@@ -249,7 +249,7 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             db.refresh(record)
         # 普利赛斯
         else:
-            subject = f"{ req.project_name }投標委託{ req.f_serial_number }"
+            subject = f"{ req.project_name }投標委託{ req.p_serial_number }"
             print("普利赛斯公司邮件主题：", subject)
             template_name = "A1_PRESICE.html"
             smtp_config = {
@@ -303,28 +303,42 @@ async def recieve_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         "from": "494762262@qq.com"
     }
 
-    A2_subject = email_utils.render_email_subject(
-        stage="A2", 
-        company_short_name=b_company_info.short_name, 
-        project_name=req.project_name
-    )
+   
+    
     template_name = "A2_" + b_company_info.short_name + ".html"
 
     # # JZ 测试，后替换为实际的B公司
     for company in d_companies:
 
+        A2_subject = ''
+
         if company.short_name == "FR":
 
-            A2_subject = f"{req.f_serial_number}"
+            A2_subject = email_utils.render_email_subject(
+                stage="A2", 
+                company_short_name=b_company_info.short_name, 
+                project_name=req.project_name,
+                serial_number=req.f_serial_number
+            )
             print("FR公司邮件主题：", A2_subject)
             
         elif company.short_name == "LF":
-            A2_subject = f"{req.l_serial_number}"
+            A2_subject = email_utils.render_email_subject(
+                stage="A2", 
+                company_short_name=b_company_info.short_name, 
+                project_name=req.project_name,
+                serial_number=req.l_serial_number
+            )
             print("LF公司邮件主题：", A2_subject)
             
         
         else:
-            A2_subject = f"{req.p_serial_number}"
+            A2_subject = email_utils.render_email_subject(
+                stage="A2", 
+                company_short_name=b_company_info.short_name, 
+                project_name=req.project_name,
+                serial_number=req.p_serial_number
+            )
             print("Precise公司邮件主题：", A2_subject)
             
         
