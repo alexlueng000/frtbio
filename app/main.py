@@ -401,7 +401,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     # 判断项目类型
     project_type = ''
 
-    # TODO 判断是否首次调用这个接口
+    # TODO 判断是否首次调用这个接口, 需要根据合同号来判断
     project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
     if not project:
         return {"message": "没有找到项目信息，不发送邮件"}
@@ -442,7 +442,16 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     # BCD 类型项目
     if project_type == 'BCD':
-        send_email_tasks.schedule_bid_conversation_BCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
+        send_email_tasks.schedule_bid_conversation_BCD(
+            b_company=b_company,
+            c_company=c_company,
+            d_company=d_company,
+            contract_serial_number=req.contract_serial_number,
+            project_name=req.project_name,
+            winning_amount=req.winning_amount,
+            winning_time=req.winning_time,
+            contract_number=req.contract_number
+        )
     # CCD 类型项目
     elif project_type == 'CCD':
         send_email_tasks.schedule_bid_conversation_CCD(b_company, c_company, d_company)

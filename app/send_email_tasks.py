@@ -1,3 +1,4 @@
+import random 
 from contextlib import contextmanager
 
 from app import database, models, email_utils, excel_utils
@@ -201,109 +202,139 @@ def schedule_bid_conversation_CCD(
     b_company: models.CompanyInfo, 
     d_company: models.CompanyInfo, 
     contract_serial_number: str,
+    winning_amount: str,
+    winning_time: str,
+    contract_number: str,
     project_name: str):
 
 
     b_smtp = {
-        "host": b_company.smtp_host,
-        "port": b_company.smtp_port,
-        "username": b_company.smtp_username,
-        "password": b_company.smtp_password,
-        "from": b_company.smtp_from
+        "host": "smtp.163.com",
+        "port": 465,
+        "username": "peterlcylove@163.com",
+        "password": "ECRVsnXCe2g2Xauq",
+        "from": "peterlcylove@163.com"
     }
+
 
     d_smtp = {
-        "host": d_company.smtp_host,
-        "port": d_company.smtp_port,
-        "username": d_company.smtp_username,
-        "password": d_company.smtp_password,
-        "from": d_company.smtp_from
+        "host": "smtp.qq.com",
+        "port": 465,
+        "username": "494762262@qq.com",
+        "password": "mlnbblbyyvulbhhi",
+        "from": "494762262@qq.com"
     }
-
     b_email = b_company.email
     d_email = d_company.email
 
-    # 获取对应B公司的邮件模板
-    b_email_subject_b3   = email_utils.render_email_subject("B3", b_company.short_name, project_name, contract_serial_number)
-    b_email_content_b3 = email_utils.render_invitation_template_content(
+    # C公司的特殊B5邮件模板
+    c_email_subject_b5 = email_utils.render_email_subject(
+        stage="B5", 
+        company_short_name=b_company.short_name, 
+        project_name=project_name, 
+        contract_serial_number=contract_serial_number
+
+    )
+    c_email_content_b5 = email_utils.render_invitation_template_content(
         project_name=project_name,
-        serial_number="L123456789",
-        first_name=c_company.last_name,
-        winning_amount="1000000",
-        contract_number="HTLS20250606001",
-        template_name="B3_"+b_company.short_name+".html"
+        serial_number=contract_serial_number,
+        first_name=d_company.last_name,
+        winning_amount=winning_amount,
+        contract_number=contract_number,
+        template_name="B5_"+b_company.short_name+".html"
     )
     
-    print("B3-B公司邮件主题：", b_email_subject_b3)
+    print("CCB B5-C公司邮件主题：", c_email_subject_b5)
     
     # 第一封邮件：B ➝ D（立即）
     task1 = send_reply_email.apply_async(
-        args=[d_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+        args=[d_email, c_email_subject_b5, c_email_content_b5, b_smtp],
         countdown=0  # 立即
     )
 
     # 第二封邮件：D ➝ B（随机延迟 5–60 分钟）
     # 随机延迟 5–60 分钟
-    d_email_subject_b4 = email_utils.render_email_subject(
-        stage="B4",
+    d_email_subject_b6 = email_utils.render_email_subject(
+        stage="B6",
         company_short_name=d_company.short_name,
         project_name=project_name,
-        serial_number="L123456789",
-        contract_number="HTLS20250606001",
-        winning_amount="1000000",
-        winning_time="2025-06-06"
+        serial_number=contract_serial_number,
+        contract_number=contract_number,
+        winning_amount=winning_amount,
+        winning_time=winning_time
     )
-    d_email_content_b4 = email_utils.render_invitation_template_content(
+    d_email_content_b6 = email_utils.render_invitation_template_content(
         buyer_name=d_company.company_name, 
         first_name=b_company.last_name_traditional,
-        winning_amount="1000000",
-        contract_number="HTLS20250606001",
-        serial_number="L123456789",
+        winning_amount=winning_amount,
+        contract_number=contract_number,
+        serial_number=contract_serial_number,
         project_name=project_name, 
-        winning_time="2025-06-06",
+        winning_time=winning_time,
         template_name="B6_"+d_company.short_name+".html"
     )
     delay = random.randint(5, 60)
-    task4 = send_reply_email.apply_async(
-        args=[d_email, d_email_subject_b4, d_email_content_b4, d_smtp],
+    task2 = send_reply_email.apply_async(
+        args=[d_email, d_email_subject_b6, d_email_content_b6, d_smtp],
         countdown=delay * 60
     )
 
     return {
         "tasks": [
             {"step": "B ➝ D", "task_id": task1.id, "delay_min": 0},
-            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay2},
+            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay},
         ]
     }
 
 
 # BD 项目类型发送邮件
-def schedule_bid_conversation_BD(b_company_name: str, d_company_name: str):
-    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == b_company_name).first()
-    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name).first()
+def schedule_bid_conversation_BD(
+    b_company: models.CompanyInfo, 
+    d_company: models.CompanyInfo,
+    contract_serial_number: str,
+    winning_amount: str,
+    winning_time: str,
+    contract_number: str,
+    project_name: str
+):
 
     b_smtp = {
-        "host": b_company.smtp_host,
-        "port": b_company.smtp_port,
-        "username": b_company.smtp_username,
-        "password": b_company.smtp_password,
-        "from": b_company.smtp_from
+        "host": "smtp.163.com",
+        "port": 465,
+        "username": "peterlcylove@163.com",
+        "password": "ECRVsnXCe2g2Xauq",
+        "from": "peterlcylove@163.com"
     }
 
     d_smtp = {
-        "host": d_company.smtp_host,
-        "port": d_company.smtp_port,
-        "username": d_company.smtp_username,
-        "password": d_company.smtp_password,
-        "from": d_company.smtp_from
+        "host": "smtp.qq.com",
+        "port": 465,
+        "username": "494762262@qq.com",
+        "password": "mlnbblbyyvulbhhi",
+        "from": "494762262@qq.com"
     }
 
     b_email = b_company.email
     d_email = d_company.email
 
     # 获取对应B公司的邮件模板
-    b_email_subject_b3   = render_email_subject("B3", b_company.short_name, project_name, b_company.serial_number)
-    b_email_content_b3 = render_invitation_template_content(b_company_name, project_name, "b3_"+b_company.short_name+".txt")
+    b_email_subject_b3   = email_utils.render_email_subject(
+        stage="B5", 
+        company_short_name=b_company.short_name, 
+        project_name=project_name, 
+        serial_number=contract_serial_number,
+        contract_number=contract_number,
+        winning_amount=winning_amount,
+        winning_time=winning_time
+    )
+    b_email_content_b3 = email_utils.render_invitation_template_content(
+        project_name=project_name,
+        serial_number=contract_serial_number,
+        first_name=d_company.last_name,
+        winning_amount=winning_amount,
+        contract_number=contract_number,
+        template_name="B3_"+b_company.short_name+".html"
+    )
     # 第一封邮件：B ➝ D
     task1 = send_reply_email.apply_async(
         args=[d_email, b_email_subject_b3, b_email_content_b3, b_smtp],
@@ -311,9 +342,24 @@ def schedule_bid_conversation_BD(b_company_name: str, d_company_name: str):
     )
 
     # 随机延迟 5–60 分钟
-    d_email_subject_b4 = render_email_subject("D4", d_company.short_name, project_name, d_company.serial_number)
-    d_email_content_b4 = render_invitation_template_content(d_company_name, project_name, "d4_"+d_company.short_name+".txt")
-    delay2 = random.randint(5, 60)
+    d_email_subject_b4 = email_utils.render_email_subject(
+        stage="B6", 
+        company_short_name=d_company.short_name, 
+        project_name=project_name, 
+        serial_number=contract_serial_number,
+        contract_number=contract_number,
+        winning_amount=winning_amount,
+        winning_time=winning_time
+    )
+    d_email_content_b4 = email_utils.render_invitation_template_content(
+        project_name=project_name,
+        serial_number=contract_serial_number,
+        first_name=b_company.last_name,
+        winning_amount=winning_amount,
+        contract_number=contract_number,
+        template_name="B6_"+d_company.short_name+".html"
+    )
+    delay = random.randint(5, 60)
     task2 = send_reply_email.apply_async(
         args=[b_email, d_email_subject_b4, d_email_content_b4, d_smtp],
         countdown=delay2 * 60  # 相对第一封
@@ -322,7 +368,7 @@ def schedule_bid_conversation_BD(b_company_name: str, d_company_name: str):
     return {
         "tasks": [
             {"step": "B ➝ D", "task_id": task1.id, "delay_min": 0},
-            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay2},
+            {"step": "D ➝ B", "task_id": task2.id, "delay_min": delay},
         ]
     }
 

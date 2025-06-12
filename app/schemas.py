@@ -120,6 +120,8 @@ class ContractAuditRequest(BaseModel):
     company_c_name: str # C公司
     company_d_name: str # D公司
     contract_type: str # 合同类型
+    winning_amount: str # 中标金额
+    winning_time: str # 中标时间
 
 
 class SettlementRequest(BaseModel):
