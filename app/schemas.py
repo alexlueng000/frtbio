@@ -94,8 +94,18 @@ class ProjectWinningInfoRequest(BaseModel):
     f_serial_number: str # F流水号
     bidding_code: str # 招标编号
     contract_number: str # 合同号
-    winning_amount: str # 中标金额
-    winning_time: str # 中标时间
+    winning_amount: float # 中标金额
+    winning_time: datetime  # 毫秒时间戳将被转为 datetime
+
+    @validator("winning_time", pre=True)
+    def parse_millisecond_timestamp(cls, v):
+        try:
+            ts = float(v)
+            if ts > 1e12:  # 判断是否为毫秒级时间戳
+                ts /= 1000
+            return datetime.fromtimestamp(ts)
+        except Exception:
+            raise ValueError("winning_time 必须是有效的毫秒时间戳")
 
 
 ''' 
