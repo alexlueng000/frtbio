@@ -346,23 +346,19 @@ async def project_bidding_winning_information(req: schemas.ProjectWinningInfoReq
         winning_amount = Decimal(req.winning_amount)
     except:
         raise HTTPException(status_code=400, detail="中标金额格式错误，应为数字")
-
-    # 4. 尝试将中标时间转换为 Date
-    try:
-        winning_time = datetime.strptime(req.winning_time, "%Y-%m-%d").date()
-    except:
-        raise HTTPException(status_code=400, detail="中标时间格式错误，应为 YYYY-MM-DD")
-
+    
     # 5. 创建并插入中标费用详情记录
     fee_detail = models.ProjectFeeDetails(
         project_id=project_information.id,
-        winning_time=winning_time,
+        winning_time=req.winning_time,
         winning_amount=winning_amount
     )
     db.add(fee_detail)
     db.commit()
-
+    db.refresh(fee_detail)
+    
     return {"message": "项目中标信息更新成功"}
+
 
 
 """
