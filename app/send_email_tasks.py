@@ -318,7 +318,7 @@ def schedule_bid_conversation_BD(
     d_email = d_company.email
 
     # 获取对应B公司的邮件模板
-    b_email_subject_b3   = email_utils.render_email_subject(
+    b_email_subject_b5   = email_utils.render_email_subject(
         stage="B5", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
@@ -327,22 +327,22 @@ def schedule_bid_conversation_BD(
         winning_amount=winning_amount,
         winning_time=winning_time
     )
-    b_email_content_b3 = email_utils.render_invitation_template_content(
+    b_email_content_b5 = email_utils.render_invitation_template_content(
         project_name=project_name,
         serial_number=contract_serial_number,
         first_name=d_company.last_name,
         winning_amount=winning_amount,
         contract_number=contract_number,
-        template_name="B3_"+b_company.short_name+".html"
+        template_name="B5_"+b_company.short_name+".html"
     )
     # 第一封邮件：B ➝ D
     task1 = send_reply_email.apply_async(
-        args=[d_email, b_email_subject_b3, b_email_content_b3, b_smtp],
+        args=[d_email, b_email_subject_b5, b_email_content_b5, b_smtp],
         countdown=0  # 立即
     )
 
     # 随机延迟 5–60 分钟
-    d_email_subject_b4 = email_utils.render_email_subject(
+    d_email_subject_b6 = email_utils.render_email_subject(
         stage="B6", 
         company_short_name=d_company.short_name, 
         project_name=project_name, 
@@ -351,7 +351,7 @@ def schedule_bid_conversation_BD(
         winning_amount=winning_amount,
         winning_time=winning_time
     )
-    d_email_content_b4 = email_utils.render_invitation_template_content(
+    d_email_content_b6 = email_utils.render_invitation_template_content(
         project_name=project_name,
         serial_number=contract_serial_number,
         first_name=b_company.last_name,
@@ -361,8 +361,8 @@ def schedule_bid_conversation_BD(
     )
     delay = random.randint(5, 60)
     task2 = send_reply_email.apply_async(
-        args=[b_email, d_email_subject_b4, d_email_content_b4, d_smtp],
-        countdown=delay2 * 60  # 相对第一封
+        args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
+        countdown=delay * 60  # 相对第一封
     )
 
     return {
