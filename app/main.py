@@ -10,6 +10,10 @@ from sqlalchemy import text
 from datetime import datetime
 from decimal import Decimal
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 app = FastAPI()
 models.Base.metadata.create_all(bind=database.engine)
 
@@ -385,6 +389,8 @@ async def project_bidding_winning_information(req: schemas.ProjectWinningInfoReq
 """
 @app.post("/contract_audit")
 async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
+
+    logger.info("收到合同审核请求参数: %s", req.dict())
     
     # 如果合同类型不是三方/四方合同，不发送邮件
     if req.contract_type != "三方/四方合同":
