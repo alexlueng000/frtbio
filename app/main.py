@@ -397,18 +397,20 @@ async def project_bidding_winning_information(req: schemas.ProjectWinningInfoReq
 @app.post("/contract_audit")
 async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
 
-    logger.info("收到合同审核请求参数: %s", req.dict())
+    logger.info("收到合同审核请求参数: %s", req.model_dump())
     
     # 🔍 判断是否包含“三方/四方合同”
     has_target_contract_type = any(
-    contract.selectField_l7ps2ca3 == "三方/四方合同" for contract in req.contracts
-)
+        contract.selectField_l7ps2ca3 == "三方/四方合同" for contract in req.contracts
+    )
 
     if not has_target_contract_type:
+        logger.info("没有找到三方/四方合同，不发送邮件")
         return {"message": "没有找到三方/四方合同，不发送邮件"}
     
     # 如果没有L流水号，P流水号，F流水号，说明不是委托投标登记项目，不发送邮件
     if not req.l_serial_number or not req.p_serial_number or not req.f_serial_number:
+        logger.info("没有L流水号，P流水号，F流水号，不发送邮件")
         return {"message": "没有L流水号，P流水号，F流水号，不发送邮件"}
 
     # 项目类型
@@ -417,22 +419,30 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     # TODO 判断是否首次调用这个接口, 需要根据合同号来判断
     project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
     if not project:
+        logger.info("没有找到项目信息，不发送邮件")
         return {"message": "没有找到项目信息，不发送邮件"}
     if not project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
         pass
     
+    
+    # C公司名字是 selectField_l7ps2ca6 的值
+    c_company_name = req.contracts[0].selectField_l7ps2ca6
+    # D公司名字是 selectField_l7ps2ca7 的值
+    d_company_name = req.contracts[0].selectField_l7ps2ca7
 
     # 确定B、C、D公司是否内部公司，B、D公司是内部公司才发送邮件
-    b_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == req.company_b_name, models.CompanyInfo.company_type == 'B').first()
+    b_company = db.query(models.CompanyInfo).filter(
+        models.CompanyInfo.company_name == req.company_b_name, models.CompanyInfo.company_type == 'B'
+    ).first()
     # 如果找到了B公司，说明是内部公司
     if not b_company:
         return {"message": "没有找到B公司，不发送邮件"}
-    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == req.company_d_name, models.CompanyInfo.company_type == 'D').first()
+    d_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == d_company_name, models.CompanyInfo.company_type == 'D').first()
     # 如果找到了D公司，说明是内部公司
     if not d_company:
         return {"message": "没有找到D公司，不发送邮件"}
 
-    c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == req.company_c_name, models.CompanyInfo.company_type == 'C').first()
+    c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == c_company_name, models.CompanyInfo.company_type == 'C').first()
     # 如果找到了C公司，说明是内部公司，如果没有找到，说明是外部公司
     if not c_company:
         project_type = 'BD'
@@ -443,8 +453,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         project_type = 'BCD'
 
     # 更新project_info表中的项目类型
-    #TODO 这里应该根据合同号来更新项目类型
-    project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
+    project = db.query(models.ProjectInfo).filter(models.ProjectInfo.contract_number == req.contract_number).first()
     if project:
         project.project_type = project_type
         db.add(project)
@@ -472,6 +481,10 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     else:
         send_email_tasks.schedule_bid_conversation_BD(b_company, d_company)
     
+    logger.info("合同审批阶段邮件已成功发送，合同号为%s", req.contract_number)
+
+
+    #TODO 返回邮件实际发送时间
     return {
         "message": "合同审批阶段邮件已成功发送",
         "project_type": project_type

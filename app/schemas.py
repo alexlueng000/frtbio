@@ -133,6 +133,9 @@ class ContractItem(BaseModel):
     numberField_lfafvypq: Optional[str]
     selectField_l7ps2ca5: Optional[str]
 
+
+
+
 class ContractAuditRequest(BaseModel):
     project_name: str  # 项目名称
     l_serial_number: str  # L流水号
@@ -143,8 +146,8 @@ class ContractAuditRequest(BaseModel):
     company_b_name: str  # B公司-中标商
     company_c_name: str  # C公司
     company_d_name: str  # D公司
-    winning_amount: str  # 中标金额
-    winning_time: str  # 中标时间
+    winning_amount: float  # 中标金额
+    winning_time: datetime  # 中标时间
     contracts: List[ContractItem]  # 合同数组
 
 
