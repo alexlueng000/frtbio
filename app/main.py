@@ -411,7 +411,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     if not req.l_serial_number or not req.p_serial_number or not req.f_serial_number:
         return {"message": "没有L流水号，P流水号，F流水号，不发送邮件"}
 
-    # 判断项目类型
+    # 项目类型
     project_type = ''
 
     # TODO 判断是否首次调用这个接口, 需要根据合同号来判断
