@@ -68,3 +68,8 @@ CREATE TABLE project_fee_details (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+"body": "{\"contract_type\":\"1\",\"f_serial_number\":\"1\",\"company_b_name\":\"1\",\"contract_number\":\"1\",\"company_c_name\":\"1\",\"winning_time\":\"1\",\"contract_serial_number\":\"1\",\"company_d_name\":\"1\",\"project_name\":[{\"numberField_l7ps2caa\":\"954687321\",\"radioField_lfafvypp\":\"否\",\"selectField_la4orihe\":\"ANTON PAAR GMBH\",\"selectField_l7ps2ca3\":\"三方/四方合同\",\"numberField_leqpuqk4\":\"\",\"selectField_l7ps2ca8\":\"CNY\",\"numberField_l7ps2ca9\":\"1\",\"selectField_l7ps2ca7\":\"FRAUN SCIENCE AND TECHNOLOGY SERVICE COMPANY LIMITED\",\"selectField_l7ps2ca6\":\"深圳市立达方圆物料供应有限公司\",\"numberField_lfafvypq\":\"\",\"selectField_l7ps2ca5\":\"付\"}],\"l_serial_number\":\"1\",\"winning_amount\":\"1\",\"p_serial_number\":\"1\"}",

@@ -119,21 +119,38 @@ Step 3
     6. D公司 D=列表-合同类型（货款收付控制---不含供应商两方采购合同）中，合同类型=三方/四方合同，且收付控制=付的付款方
     7. 合同类型
 '''
+
+class ContractItem(BaseModel):
+    numberField_l7ps2caa: Optional[str]
+    radioField_lfafvypp: Optional[str]
+    selectField_la4orihe: Optional[str]
+    selectField_l7ps2ca3: Optional[str]
+    numberField_leqpuqk4: Optional[str]
+    selectField_l7ps2ca8: Optional[str]
+    numberField_l7ps2ca9: Optional[str]
+    selectField_l7ps2ca7: Optional[str]
+    selectField_l7ps2ca6: Optional[str]
+    numberField_lfafvypq: Optional[str]
+    selectField_l7ps2ca5: Optional[str]
+
 class ContractAuditRequest(BaseModel):
-    project_name: str # 项目名称
-    l_serial_number: str # L流水号
-    p_serial_number: str # P流水号
-    f_serial_number: str # F流水号
-    contract_number: str # 合同号
-    contract_serial_number: str # 合同流水号
-    company_b_name: str # B公司-中标商
-    company_c_name: str # C公司
-    company_d_name: str # D公司
-    contract_type: str # 合同类型
-    winning_amount: str # 中标金额
-    winning_time: str # 中标时间
+    project_name: str  # 项目名称
+    l_serial_number: str  # L流水号
+    p_serial_number: str  # P流水号
+    f_serial_number: str  # F流水号
+    contract_number: str  # 合同号
+    contract_serial_number: str  # 合同流水号
+    company_b_name: str  # B公司-中标商
+    company_c_name: str  # C公司
+    company_d_name: str  # D公司
+    winning_amount: str  # 中标金额
+    winning_time: str  # 中标时间
+    contracts: List[ContractItem]  # 合同数组
 
 
+
+
+# 结算
 class SettlementRequest(BaseModel):
     project_name: str # 项目名称
     l_serial_number: str # L流水号

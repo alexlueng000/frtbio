@@ -12,6 +12,13 @@ from decimal import Decimal
 
 import logging
 
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+
 logger = logging.getLogger(__name__)
 
 app = FastAPI()
@@ -392,9 +399,13 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     logger.info("收到合同审核请求参数: %s", req.dict())
     
-    # 如果合同类型不是三方/四方合同，不发送邮件
-    if req.contract_type != "三方/四方合同":
-        return {"message": "合同类型不是三方/四方合同，不发送邮件"}
+    # 🔍 判断是否包含“三方/四方合同”
+    has_target_contract_type = any(
+    contract.selectField_l7ps2ca3 == "三方/四方合同" for contract in req.contracts
+)
+
+    if not has_target_contract_type:
+        return {"message": "没有找到三方/四方合同，不发送邮件"}
     
     # 如果没有L流水号，P流水号，F流水号，说明不是委托投标登记项目，不发送邮件
     if not req.l_serial_number or not req.p_serial_number or not req.f_serial_number:
