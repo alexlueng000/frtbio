@@ -516,19 +516,20 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 def settlement(
     req: schemas.SettlementRequest, db: Session = Depends(database.get_db)):
 
-    project_information = db.query(models.ProjectInfo).filter_by(project_name=req.project_name).first()
+    project_information = db.query(models.ProjectInfo).filter_by(contract_number=req.contract_number).first()
     if not project_information:
+        logger.info("没有找到项目信息，不发送邮件")
         return {"message": "没有找到项目信息"}
 
-    b_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_b_name).first()
+    b_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_b_name).first()
     if not b_company:
         return {"message": "没有找到B公司"}
 
-    d_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_d_name).first()
+    d_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_d_name).first()
     if not d_company:
         return {"message": "没有找到D公司"}
 
-    c_company = db.query(models.CompanyInfo).filter_by(company_name=req.company_c_name).first()
+    c_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_c_name).first()
     if not c_company:
         # 说明是BD项目
         pass 
