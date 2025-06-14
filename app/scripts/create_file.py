@@ -2,7 +2,7 @@ import os
 
 # 定义 short_name 列表
 short_names = [
-    'JZ', 'FW', 'LD', 'DG', 'SN', 'TT', 'ZH', 'QF', 'ZY',
+    'FW', 'LD', 'DG', 'SN', 'ZH', 'QF', 'ZY',
     'JY', 'YY', 'QH', 'BZC', 'LH', 'HCX'
 ]
 
@@ -11,7 +11,7 @@ output_dir = "app/email_templates"
 
 # 执行创建文件
 for short_name in short_names:
-    filename = f"C9_{short_name}.html"
+    filename = f"C10_{short_name}.html"
     filepath = os.path.join(output_dir, filename)
 
     # 创建空文件
