@@ -63,6 +63,8 @@ def ping_db():
 @app.post("/receive_bidding_register")
 async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Session = Depends(database.get_db)):
 
+    logger.info("1委托投标登记|请求参数：%s", req.model_dump())
+
     # 新增一条项目信息
     project_info = models.ProjectInfo(
         project_name=req.project_name,
@@ -105,11 +107,12 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 
     if not d_companies:
         # TODO 回传错误信息到宜搭
+        logger.error("没有找到 D 类型的公司")
         return {"message": "没有找到 D 类型的公司"}
 
     # B公司邮箱（可从数据库中查，也可固定写）
 
-    print("B公司名称：", req.b_company_name)
+    logger.info("B公司名称：", req.b_company_name)
     b_company_info = (
         db.query(models.CompanyInfo)
         .filter(models.CompanyInfo.company_name == req.b_company_name)
@@ -118,9 +121,10 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 
     if not b_company_info:
         # TODO 回传错误信息到宜搭
+        logger.error("没有找到 B 公司")
         return {"message": "没有找到 B 公司"}
 
-    print("B公司信息：", b_company_info)
+    logger.info("B公司信息：", b_company_info)
         
     # 三家D公司给B公司发送A1邮件
     for company in d_companies:
@@ -147,7 +151,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 project_name=req.project_name,
                 template_name=template_name
             )
-            print("LF公司邮件内容：", content)  
+            # print("LF公司邮件内容：", content)  
             success, error = email_utils.send_email_in_main(to=b_company_info.email, subject=subject, body=content, smtp_config=smtp_config)
             
             # 保存发送记录
@@ -184,7 +188,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 project_name=req.project_name,
                 template_name=template_name
             )
-            print("FR公司邮件内容：", content)
+            # print("FR公司邮件内容：", content)
             try:
                 # email_utils.send_email(to_email=b_company_info.email, subject=subject, content=content, smtp_config=smtp_config)
                 # print("FR公司邮件发送成功")
@@ -345,10 +349,13 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 #     4. 合同号
 @app.post("/project_bidding_winning_information")
 async def project_bidding_winning_information(req: schemas.ProjectWinningInfoRequest, db: Session = Depends(database.get_db)):
+
+    logger.info("2项目中标信息|请求参数：%s", req.model_dump())
     
     project_information = db.query(models.ProjectInfo).filter_by(p_serial_number=req.p_serial_number, l_serial_number=req.l_serial_number, f_serial_number=req.f_serial_number).first()
     
     if not project_information:
+        logger.error("2项目中标信息|没有找到项目信息，流水号为：", req.l_serial_number, req.p_serial_number, req.f_serial_number)
         return {"message": "没有找到项目信息"}
 
     project_information.contract_number = req.contract_number
@@ -399,7 +406,7 @@ async def project_bidding_winning_information(req: schemas.ProjectWinningInfoReq
 @app.post("/contract_audit")
 async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depends(database.get_db)):
 
-    logger.info("收到合同审核请求参数: %s", req.model_dump())
+    logger.info("3合同审核|请求参数: %s", req.model_dump())
     
     # 🔍 判断是否包含“三方/四方合同”
     has_target_contract_type = any(
@@ -488,7 +495,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     #TODO 返回邮件实际发送时间
     return {
-        "message": "合同审批阶段邮件已成功发送",
+        "message": f"合同审批阶段邮件已成功发送，合同号为{req.contract_number}",
         "project_type": project_type
     }
     
@@ -518,26 +525,34 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 def settlement(
     req: schemas.SettlementRequest, db: Session = Depends(database.get_db)):
 
+    logger.info("4结算|请求参数：%s", req.model_dump())
+
     project_information = db.query(models.ProjectInfo).filter_by(contract_number=req.contract_number).first()
     if not project_information:
-        logger.info("没有找到项目信息，不发送邮件")
+        logger.info("没有找到项目信息，不发送邮件，合同号为: %s", req.contract_number)
         return {"message": "没有找到项目信息"}
 
     b_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_b_name).first()
     if not b_company:
+        logger.info("没有找到B公司，不发送邮件，合同号为: %s", req.contract_number)
         return {"message": "没有找到B公司"}
 
     d_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_d_name).first()
     if not d_company:
+        logger.info("没有找到D公司，不发送邮件，合同号为: %s", req.contract_number)
         return {"message": "没有找到D公司"}
 
     c_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_c_name).first()
     if not c_company:
+        logger.info("没有找到C公司，不发送邮件，合同号为: %s", req.contract_number)
         # 说明是BD项目
         pass 
+
+    BC_download_url = ""
+    BD_download_url = ""
+
     if project_information.project_type == 'BCD':
-        #TODO 生成BD、BC结算单
-        send_email_tasks.schedule_settlement_BCD(
+        BC_download_url, BD_download_url = send_email_tasks.schedule_settlement_BCD(
             b_company=b_company,
             c_company=c_company,
             d_company=d_company,
@@ -552,10 +567,24 @@ def settlement(
             bidding_document_fee=req.bidding_document_fee,
             bidding_service_fee=req.bidding_service_fee
         )
-    elif project_information.project_type == 'CCD':
-        #TODO 生成结算单
-        send_email_tasks.schedule_settlement_CCD(b_company, c_company, d_company, req.contract_serial_number, req.project_name)
-    elif project_information.project_type == 'BD':
-        #TODO 生成结算单
-        send_email_tasks.schedule_settlement_BD(b_company, d_company, req.contract_serial_number, req.project_name)
-    return {"message": "邮件已成功发送"}
+    else:
+        BD_download_url = send_email_tasks.schedule_settlement_CCD_BD(
+            b_company=b_company,
+            c_company=c_company,
+            d_company=d_company,
+            contract_serial_number=req.contract_serial_number,
+            project_name=req.project_name,
+            amount=req.amount,
+            three_fourth=req.three_fourth,
+            import_service_fee=req.import_service_fee,
+            third_party_fee=req.third_party_fee,
+            service_fee=req.service_fee,
+            win_bidding_fee=req.win_bidding_fee,
+            bidding_document_fee=req.bidding_document_fee,
+            bidding_service_fee=req.bidding_service_fee
+        )
+    return {
+        "message": f"结算邮件已成功发送，合同号为{req.contract_number}",
+        "BC_download_url": BC_download_url,
+        "BD_download_url": BD_download_url
+    }

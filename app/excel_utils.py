@@ -140,12 +140,9 @@ def generate_common_settlement_excel(
 
     wb.save(file_path)
 
-    # 文件名：项目号-流水号-BCD模式-BC结算单.xlsx
-    filename = f"{project_serial_number}_{contract_serial_number}_BCD_BC结算单.xlsx"
-
     download_base_url = "http://yourdomain.com/download"  # 换成你的真实域名或IP
     download_url = f"{download_base_url}/{filename}"
     
     #TODO 上传文件到共享服务器
 
-    return file_path, download_url, None
+    return file_path, download_url

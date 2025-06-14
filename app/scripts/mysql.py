@@ -10,24 +10,25 @@ password = 'test123'
 database = 'bidding_emails'
 table_name = 'company_info'
 
-# ==== 读取CSV文件 ====
-# csv_path = 'company_info.xlsx'  # 替换为你的文件路径
-# df = pd.read_excel(csv_path)  # 如果是Excel导出的CSV用GBK试试
-
-# print(df)
-
-# if '邮箱密码' in df.columns:
-#     df = df.drop(columns=['邮箱密码'])
-
-# df.columns = [
-#     'company_type', 'company_name', 'short_name', 'contact_person',
-#     'last_name', 'last_name_traditional', 'phone',
-#     'email', 'address', 'english_address'
-# ]
-
-# print(df)
 
 engine = create_engine(f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}?charset=utf8mb4')
+
+adding_c_company = """
+INSERT INTO `company_info` (`company_type`, `company_name`, `short_name`, `contact_person`, `last_name`, `last_name_traditional`, `phone`, `email`, `address`, `english_address`) VALUES
+('C', '深圳市弗劳恩科技服务有限公司', 'FW', '向南 ', '向', '向', '13902431183', 'szflekjfw@yeah.net', '深圳市罗湖区南湖街道新南社区深南东路2001号鸿昌广场1301', 'Room1301, Hong Chang Plaza ,No.2001 Shennan East Road, Xinnan Community, Nanhu Street ,Luohu  District, Shenzhen, China'),
+('C', '深圳市赛纳精密仪器有限公司', 'SN', '万丽华 ', '万', '萬', '+86 13316908196', 'KQ18SETTLma@163.com', '深圳市福田区深南中路2070号电子科技大厦C座10D 2-9', 'Apartment 1907B1D, International Culture Building, No. 3039, Shennan Middle Road, Funan Community, Futian Subdistrict, Futian District, Shenzhen, China.'),
+('C', '深圳市启慧仪器有限公司', 'QH', '李晓娜 ', '李', '李', '13316883640', 'y04nmyhsi5ngznw@163.com', '深圳市福田区福田街道福山社区滨河大道5022号联合广场A座4410B60', NULL);
+
+"""
+
+# 执行 SQL 并提交
+try:
+    with engine.connect() as conn:
+        with conn.begin():  # ✅ 开启事务并自动提交
+            conn.execute(text(adding_c_company))
+    print("插入成功！")
+except SQLAlchemyError as e:
+    print("执行失败：", e)
 
 # with pymysql.connect(host=host, user=user, password=password) as conn:
 #     with conn.cursor() as cursor:
@@ -195,9 +196,6 @@ VALUES
     ('C10', '深圳市海辰星科技有限公司', 'HCX', '{project_name}（合同号：{contract_number}）结算文件 {serial_number}');
 """
 
-with engine.connect() as conn:
-    from sqlalchemy import text
-    conn.execute(text(insert_email_subject))
 
 # ==== 写入数据库 ====
 # df.to_sql(table_name, con=engine, if_exists='append', index=False)
