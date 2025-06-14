@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, Border, Side
@@ -22,8 +23,9 @@ def generate_common_settlement_excel(
         company_name: 底部公司名称
     """
 
-     # 指定保存目录为 ./settlements/
-    save_dir = os.path.join(os.getcwd(), "settlements")
+    # 使用用户主目录作为基础路径
+    home_dir = str(Path.home())
+    save_dir = os.path.join(home_dir, "settlements")
     os.makedirs(save_dir, exist_ok=True)
     file_path = os.path.join(save_dir, filename)
 
@@ -138,4 +140,12 @@ def generate_common_settlement_excel(
 
     wb.save(file_path)
 
-    return file_path
+    # 文件名：项目号-流水号-BCD模式-BC结算单.xlsx
+    filename = f"{project_serial_number}_{contract_serial_number}_BCD_BC结算单.xlsx"
+
+    download_base_url = "http://yourdomain.com/download"  # 换成你的真实域名或IP
+    download_url = f"{download_base_url}/{filename}"
+    
+    #TODO 上传文件到共享服务器
+
+    return file_path, download_url, None

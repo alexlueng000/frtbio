@@ -1,17 +1,15 @@
 # app/main.py
+from pathlib import Path
+from datetime import datetime
+from decimal import Decimal
+import logging
+
 from fastapi import FastAPI, Depends, HTTPException
-
-from app import email_utils, models, database, schemas, tasks, send_email_tasks, utils
-
-
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
-from datetime import datetime
-from decimal import Decimal
-
-import logging
-
+from app import email_utils, models, database, schemas, tasks, send_email_tasks
 
 logging.basicConfig(
     level=logging.INFO,
@@ -23,6 +21,10 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=database.engine)
+
+# 将 ~/settlements 目录挂载为 /download 路由
+settlement_dir = Path.home() / "settlements"
+app.mount("/download", StaticFiles(directory=settlement_dir), name="download")
 
 
 @app.get("/ping-db")
