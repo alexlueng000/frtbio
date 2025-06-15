@@ -145,4 +145,4 @@ def generate_common_settlement_excel(
     
     #TODO 上传文件到共享服务器
 
-    return file_path, download_url
+    return file_path

@@ -37,7 +37,7 @@ def send_sync_email(to_email, subject, content, smtp_config):
 
 @celery.task
 def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dict, delay: int, stage: str, project_id: int):
-
+    from app import database
     db = database.SessionLocal()
 
     # 当前时间 + delay 秒 = 实际发送时间
@@ -82,7 +82,7 @@ def send_reply_email_with_attachments(
     stage: str, 
     project_id: int
     ):
-
+    from app import database
     db = database.SessionLocal()
 
     # 当前时间 + delay 秒 = 实际发送时间

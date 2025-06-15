@@ -556,7 +556,7 @@ def settlement(
     BD_download_url = ""
 
     if project_information.project_type == 'BCD':
-        BC_download_url, BD_download_url = send_email_tasks.schedule_settlement_BCD(
+        result = send_email_tasks.schedule_settlement_BCD(
             b_company=b_company,
             c_company=c_company,
             d_company=d_company,
@@ -573,8 +573,10 @@ def settlement(
             bidding_service_fee=req.bidding_service_fee,
             winning_time=winning_time
         )
+        BC_download_url = result["BC_download_url"]
+        BD_download_url = result["BD_download_url"]
     else:
-        BD_download_url = send_email_tasks.schedule_settlement_CCD_BD(
+        result = send_email_tasks.schedule_settlement_CCD_BD(
             b_company=b_company,
             c_company=c_company,
             d_company=d_company,
@@ -591,6 +593,11 @@ def settlement(
             bidding_service_fee=req.bidding_service_fee,
             winning_time=winning_time
         )
+        # BC_download_url = result["BC_download_url"]
+        BD_download_url = result["BD_download_url"]
+
+    logger.info("BC_download_url: %s, BD_download_url: %s", BC_download_url, BD_download_url)
+
     return {
         "message": f"结算邮件已成功发送，合同号为{req.contract_number}",
         "BC_download_url": BC_download_url,

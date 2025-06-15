@@ -73,3 +73,7 @@ CREATE TABLE project_fee_details (
 
 
 "body": "{\"contract_type\":\"1\",\"f_serial_number\":\"1\",\"company_b_name\":\"1\",\"contract_number\":\"1\",\"company_c_name\":\"1\",\"winning_time\":\"1\",\"contract_serial_number\":\"1\",\"company_d_name\":\"1\",\"project_name\":[{\"numberField_l7ps2caa\":\"954687321\",\"radioField_lfafvypp\":\"否\",\"selectField_la4orihe\":\"ANTON PAAR GMBH\",\"selectField_l7ps2ca3\":\"三方/四方合同\",\"numberField_leqpuqk4\":\"\",\"selectField_l7ps2ca8\":\"CNY\",\"numberField_l7ps2ca9\":\"1\",\"selectField_l7ps2ca7\":\"FRAUN SCIENCE AND TECHNOLOGY SERVICE COMPANY LIMITED\",\"selectField_l7ps2ca6\":\"深圳市立达方圆物料供应有限公司\",\"numberField_lfafvypq\":\"\",\"selectField_l7ps2ca5\":\"付\"}],\"l_serial_number\":\"1\",\"winning_amount\":\"1\",\"p_serial_number\":\"1\"}",
+
+
+INSERT INTO `project_info` (`project_name`, `contract_number`, `tender_number`, `project_type`, `p_serial_number`, `l_serial_number`, `f_serial_number`, `purchaser`, `company_b_name`, `company_c_name`, `company_d_name`, `a1`, `a2`, `b3`, `b4`, `b5`, `b6`, `c7`, `c8`, `c9`, `c10`, `created_at`) VALUES
+('光明高等研究院通勤班车租赁项目', 'ceshi004', 'ZB20250611006', 'BCD', 'PR202506006', '2025LDF_006', 'HK-FRONT-2025#006', '深圳中国计量科学研究院技术创新研究院', '深圳市雅怡科技仪器有限公司', '深圳市立达方圆物料供应有限公司', 'PRECISE INSTRUMENT COMPANY LIMITED', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2025-06-12 08:24:06');

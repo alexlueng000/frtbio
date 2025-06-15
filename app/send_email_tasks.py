@@ -402,7 +402,7 @@ def schedule_settlement_BCD(
     bidding_document_fee: float,  # 标书费
     bidding_service_fee: float,  # 投标服务费
     winning_time: str
-):
+) -> tuple[str, str]:
 
     b_smtp = {
         "host": "smtp.163.com",
@@ -458,7 +458,9 @@ def schedule_settlement_BCD(
     # 文件名：项目号-流水号-BCD模式-BC结算单.xlsx
     BC_filename = f"{contract_number}_{contract_serial_number}_BCD模式_BC结算单.xlsx"
 
-    CB_settlement_path, BC_download_url = excel_utils.generate_common_settlement_excel(
+    BC_download_url = f"http://103.30.78.107:8000/download/{BC_filename}"
+
+    CB_settlement_path = excel_utils.generate_common_settlement_excel(
         filename=BC_filename,  # 可根据项目名称动态命名
         stage="C7",
         project_type="BCD",
@@ -472,7 +474,7 @@ def schedule_settlement_BCD(
         head_company_name=b_company.company_name,
         bottom_company_name=c_company.company_name
     )
-
+    logger.info("CB_settlement_path&&&: ", CB_settlement_path)
     #TODO 1. FTP将生成的文件回传到归档服务器
     #TODO 2. 需要生成一个链接传回到宜搭
 
@@ -508,8 +510,10 @@ def schedule_settlement_BCD(
 
     BD_filename = f"{contract_number}_{contract_serial_number}_BCD模式_BD结算单.xlsx"
 
+    BD_download_url = f"http://103.30.78.107:8000/downloads/{BD_filename}"
+
     # 生成B-D结算单
-    BD_settlement_path, BD_download_url = excel_utils.generate_common_settlement_excel(
+    BD_settlement_path = excel_utils.generate_common_settlement_excel(
         filename=BD_filename,  # 可根据项目名称动态命名
         stage="C8",
         project_type="BCD",
@@ -526,7 +530,7 @@ def schedule_settlement_BCD(
         head_company_name=b_company.company_name,
         bottom_company_name=d_company.company_name
     )
-
+    logger.info("BD_settlement_path&&&: ", BD_settlement_path)
     # delay1 = random.randint(5, 60)
     delay1 = 1
     task2 = send_reply_email_with_attachments.apply_async(
@@ -589,6 +593,7 @@ def schedule_settlement_BCD(
         args=[b_email, b_email_subject_c10, b_email_content_c10, b_smtp, delay3, "C10", 1],
         countdown=delay3 * 60  # 相对第一封
     )
+    logger.info("%^&*&^%$: %s, %s", BC_download_url, BD_download_url)
     return {
         "BC_download_url": BC_download_url,
         "BD_download_url": BD_download_url
@@ -681,7 +686,7 @@ def schedule_settlement_CCD_BD(
     # delay1 = random.randint(5, 60)
     delay1 = 1
     task2 = send_reply_email_with_attachments.apply_async(
-        args=[d_email, b_email_subject_c8, b_email_content_c8, c_smtp, [BD_settlement_path], delay1, "C8", 1], # TODO 换成真实的附件路径
+        args=[d_email, b_email_subject_c8, b_email_content_c8, b_smtp, [BD_settlement_path], delay1, "C8", 1], # TODO 换成真实的附件路径
         countdown=0 # 立即
     )
 
