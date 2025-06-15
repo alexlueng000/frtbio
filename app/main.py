@@ -408,18 +408,18 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     logger.info("3合同审核|请求参数: %s", req.model_dump())
     
-    # 🔍 判断是否包含“三方/四方合同”
+    # 判断是否包含“三方/四方合同”
     has_target_contract_type = any(
         contract.selectField_l7ps2ca3 == "三方/四方合同" for contract in req.contracts
     )
 
     if not has_target_contract_type:
-        logger.info("没有找到三方/四方合同，不发送邮件")
+        logger.info("没有找到三方/四方合同，不发送邮件，合同号为%s", req.contract_number)
         return {"message": "没有找到三方/四方合同，不发送邮件"}
     
     # 如果没有L流水号，P流水号，F流水号，说明不是委托投标登记项目，不发送邮件
     if not req.l_serial_number or not req.p_serial_number or not req.f_serial_number:
-        logger.info("没有L流水号，P流水号，F流水号，不发送邮件")
+        logger.info("没有L流水号，P流水号，F流水号，不发送邮件，合同号为%s", req.contract_number)
         return {"message": "没有L流水号，P流水号，F流水号，不发送邮件"}
 
     # 项目类型
@@ -500,8 +500,6 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     }
     
     
-    
-
 # 结算流程后发送邮件
 # 顺序：
 # 1. 发送C-B间结算单

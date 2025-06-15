@@ -237,7 +237,7 @@ def schedule_bid_conversation_CCD(
         first_name=d_company.last_name,
         winning_amount=winning_amount,
         contract_number=contract_number,
-        template_name="B5_"+b_company.short_name+".html"
+        template_name="B5_"+b_company.short_name+"_SPEC.html"
     )
     
     print("CCB B5-C公司邮件主题：", c_email_subject_b5)

@@ -6,12 +6,16 @@ short_names = [
     'JY', 'YY', 'QH', 'BZC', 'LH', 'HCX'
 ]
 
+c_company_short_names = [
+    'JZ', 'FW', 'LD', 'SN', 'DG', 'QH'
+]
+
 # 要创建文件的目录（当前目录）
 output_dir = "app/email_templates"
 
 # 执行创建文件
-for short_name in short_names:
-    filename = f"C10_{short_name}.html"
+for short_name in c_company_short_names:
+    filename = f"B5_{short_name}_SPEC.html"
     filepath = os.path.join(output_dir, filename)
 
     # 创建空文件
