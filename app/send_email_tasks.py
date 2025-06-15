@@ -459,7 +459,7 @@ def schedule_settlement_BCD(
     BC_filename = f"{contract_number}_{contract_serial_number}_BCD模式_BC结算单.xlsx"
 
     CB_settlement_path, BC_download_url = excel_utils.generate_common_settlement_excel(
-        filename=filename,  # 可根据项目名称动态命名
+        filename=BC_filename,  # 可根据项目名称动态命名
         stage="C7",
         project_type="BCD",
         received_amount=amount,
