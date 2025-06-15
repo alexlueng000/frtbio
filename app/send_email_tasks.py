@@ -439,7 +439,7 @@ def schedule_settlement_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        contract_number=contract_number,
         winning_amount=str(amount),
         winning_time=winning_time
     )
@@ -488,7 +488,7 @@ def schedule_settlement_BCD(
         stage="C8", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
-        tender_number=contract_number,
+        contract_number=contract_number,
         serial_number=contract_serial_number,
         # contract_number=contract_number,
         winning_amount=str(amount),
