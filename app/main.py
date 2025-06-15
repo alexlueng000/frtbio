@@ -431,7 +431,66 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         logger.info("没有找到项目信息，不发送邮件")
         return {"message": "没有找到项目信息，不发送邮件"}
     if not project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
-        pass
+        # D值有修改时再次触发发邮件（如从领先修改为PLSS），但是为CD值互换的时候不触发
+        if project.company_d_name == req.company_c_name and project.company_c_name == req.company_d_name:
+            logger.info("CD值互换的时候不触发发邮件，CD公司名称分别为%s和%s", project.company_c_name, project.company_d_name)
+            return {"message": "CD值互换的时候不触发发邮件"}
+        else:
+            logger.info("D公司信息有修改，再次触发发邮件，D公司名称分别为%s", req.company_d_name)
+            # 更新project_info的D公司信息
+            project.company_d_name = req.company_d_name
+            db.add(project)
+            db.commit()
+            db.refresh(project)
+
+            # 再次触发发邮件
+            b_company = db.query(models.CompanyInfo).filter(
+                models.CompanyInfo.company_name == project.company_b_name
+            ).first()
+            c_company = db.query(models.CompanyInfo).filter(
+                models.CompanyInfo.company_name == project.company_c_name
+            ).first()
+            d_company = db.query(models.CompanyInfo).filter(
+                models.CompanyInfo.company_name == project.company_d_name
+            ).first()
+
+            if project_type == 'BCD':
+                send_email_tasks.schedule_bid_conversation_BCD(
+                    b_company=b_company,
+                    c_company=c_company,
+                    d_company=d_company,
+                    contract_serial_number=req.contract_serial_number,
+                    project_name=req.project_name,
+                    winning_amount=req.winning_amount,
+                    winning_time=req.winning_time,
+                    contract_number=req.contract_number
+                )
+            elif project_type == 'CCD':
+                send_email_tasks.schedule_bid_conversation_CCD(
+                    b_company=b_company,
+                    c_company=c_company,
+                    d_company=d_company,
+                    contract_serial_number=req.contract_serial_number,
+                    project_name=req.project_name,
+                    winning_amount=req.winning_amount,
+                    winning_time=req.winning_time,
+                    contract_number=req.contract_number
+                )
+            elif project_type == 'BD':
+                send_email_tasks.schedule_bid_conversation_BD(
+                    b_company=b_company,
+                    d_company=d_company,
+                    contract_serial_number=req.contract_serial_number,
+                    project_name=req.project_name,
+                    winning_amount=req.winning_amount,
+                    winning_time=req.winning_time,
+                    contract_number=req.contract_number
+                )
+            return {
+                "message": f"合同审批阶段邮件已成功发送，合同号为{req.contract_number}",
+                "project_type": project_type
+            }
+            
     
     
     # C公司名字是 selectField_l7ps2ca6 的值
@@ -485,10 +544,27 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         )
     # CCD 类型项目
     elif project_type == 'CCD':
-        send_email_tasks.schedule_bid_conversation_CCD(b_company, c_company, d_company)
+        send_email_tasks.schedule_bid_conversation_CCD(
+            b_company=b_company,
+            # c_company=c_company,
+            d_company=d_company,
+            contract_serial_number=req.contract_serial_number,
+            project_name=req.project_name,
+            winning_amount=req.winning_amount,
+            winning_time=req.winning_time,
+            contract_number=req.contract_number
+        )
     # BD 类型项目
     else:
-        send_email_tasks.schedule_bid_conversation_BD(b_company, d_company)
+        send_email_tasks.schedule_bid_conversation_BD(
+            b_company=b_company,
+            d_company=d_company,
+            contract_serial_number=req.contract_serial_number,
+            project_name=req.project_name,
+            winning_amount=req.winning_amount,
+            winning_time=req.winning_time,
+            contract_number=req.contract_number
+        )
     
     logger.info("合同审批阶段邮件已成功发送，合同号为%s", req.contract_number)
 
@@ -589,7 +665,8 @@ def settlement(
             win_bidding_fee=req.win_bidding_fee,
             bidding_document_fee=req.bidding_document_fee,
             bidding_service_fee=req.bidding_service_fee,
-            winning_time=winning_time
+            winning_time=winning_time,
+            project_type=project_information.project_type
         )
         # BC_download_url = result["BC_download_url"]
         BD_download_url = result["BD_download_url"]

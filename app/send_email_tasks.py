@@ -617,7 +617,8 @@ def schedule_settlement_CCD_BD(
     win_bidding_fee: float,  # 中标服务费
     bidding_document_fee: float,  # 标书费
     bidding_service_fee: float,  # 投标服务费
-    winning_time: str
+    winning_time: str,
+    project_type: str # BD/CCD
 ):
 
     b_email = b_company.email
@@ -662,11 +663,17 @@ def schedule_settlement_CCD_BD(
         template_name="C8_"+b_company.short_name+".html"
     )
 
-    BD_filename = f"{contract_number}_{contract_serial_number}_BD模式_BD结算单.xlsx"
+    BD_filename = ""
+
+    # filename
+    if project_type == "BD":
+        BD_filename = f"{contract_number}_{contract_serial_number}_BD模式_BD结算单.xlsx"
+    elif project_type == "CCD":
+        BD_filename = f"{contract_number}_{contract_serial_number}_CCD模式_BD结算单.xlsx"
 
     # 生成B-D结算单
     BD_settlement_path, BD_download_url = excel_utils.generate_common_settlement_excel(
-        filename=BD_filename,  # 可根据项目名称动态命名
+        filename=BD_filename,  
         stage="C8",
         project_type="BD",
         received_amount=amount,
