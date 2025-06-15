@@ -560,6 +560,7 @@ def settlement(
             b_company=b_company,
             c_company=c_company,
             d_company=d_company,
+            contract_number=project_information.contract_number,
             contract_serial_number=req.contract_serial_number,
             project_name=req.project_name,
             amount=req.amount,
