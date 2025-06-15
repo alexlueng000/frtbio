@@ -589,7 +589,6 @@ def schedule_settlement_BCD(
         countdown=delay3 * 60  # 相对第一封
     )
     return {
-        "message": f"已发送BCD结算单，合同号为：{contract_serial_number}",
         "BC_download_url": BC_download_url,
         "BD_download_url": BD_download_url
     }

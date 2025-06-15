@@ -532,6 +532,10 @@ def settlement(
         logger.info("没有找到项目信息，不发送邮件，合同号为: %s", req.contract_number)
         return {"message": "没有找到项目信息"}
 
+    winning_time = "2025-06-15"
+    #TODO 更新project_fee_details表
+    
+
     b_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_b_name).first()
     if not b_company:
         logger.info("没有找到B公司，不发送邮件，合同号为: %s", req.contract_number)
@@ -565,13 +569,15 @@ def settlement(
             service_fee=req.service_fee,
             win_bidding_fee=req.win_bidding_fee,
             bidding_document_fee=req.bidding_document_fee,
-            bidding_service_fee=req.bidding_service_fee
+            bidding_service_fee=req.bidding_service_fee,
+            winning_time=winning_time
         )
     else:
         BD_download_url = send_email_tasks.schedule_settlement_CCD_BD(
             b_company=b_company,
             c_company=c_company,
             d_company=d_company,
+            contract_number=project_information.contract_number,
             contract_serial_number=req.contract_serial_number,
             project_name=req.project_name,
             amount=req.amount,
@@ -581,7 +587,8 @@ def settlement(
             service_fee=req.service_fee,
             win_bidding_fee=req.win_bidding_fee,
             bidding_document_fee=req.bidding_document_fee,
-            bidding_service_fee=req.bidding_service_fee
+            bidding_service_fee=req.bidding_service_fee,
+            winning_time=winning_time
         )
     return {
         "message": f"结算邮件已成功发送，合同号为{req.contract_number}",
