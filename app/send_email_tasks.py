@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from contextlib import contextmanager
 
 from app import database, models, email_utils, excel_utils
-from utils import get_dingtalk_access_token, create_yida_form_instance
+from app.utils import get_dingtalk_access_token, create_yida_form_instance
 from app.tasks import send_reply_email, send_reply_email_with_attachments
 
 import logging

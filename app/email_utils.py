@@ -10,7 +10,7 @@ from email.mime.application import MIMEApplication
 
 # from app.tasks import send_reply_email
 from app import database, models
-from utils import get_dingtalk_access_token, create_yida_form_instance
+from app.utils import get_dingtalk_access_token, create_yida_form_instance
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 

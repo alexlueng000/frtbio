@@ -13,7 +13,7 @@ from sqlalchemy import text
 
 from app import email_utils, models, database, schemas, tasks, send_email_tasks
 
-from utils import get_dingtalk_access_token, create_yida_form_instance
+from app.utils import get_dingtalk_access_token, create_yida_form_instance
 
 logging.basicConfig(
     level=logging.INFO,
