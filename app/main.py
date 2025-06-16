@@ -552,10 +552,19 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
             }
             
 
-    # C公司名字是 selectField_l7ps2ca6 的值
-    c_company_name = req.contracts[0].selectField_l7ps2ca6
+    # C公司名字是有三方/四方合同的 selectField_l7ps2ca6 的值
+    # c_company_name = req.contracts[0].selectField_l7ps2ca6
+    c_company_name = next(
+        (contract.selectField_l7ps2ca6 for contract in req.contracts if contract.selectField_l7ps2ca3 == "三方/四方合同"),
+        None
+    )
+    
+        # return {"message": "找不到C公司名称，不发送邮件"}
     # D公司名字是 selectField_l7ps2ca7 的值
-    d_company_name = req.contracts[0].selectField_l7ps2ca7
+    d_company_name = next(
+        (contract.selectField_l7ps2ca7 for contract in req.contracts if contract.selectField_l7ps2ca3 == "三方/四方合同"),
+        None
+    )
 
     # 确定B、C、D公司是否内部公司，B、D公司是内部公司才发送邮件
     b_company = db.query(models.CompanyInfo).filter(
@@ -665,6 +674,8 @@ def settlement(
         logger.info("没有找到项目信息，不发送邮件，合同号为: %s", req.contract_number)
         return {"message": "没有找到项目信息"}
 
+
+    #TODO 中标时间 看是否是通过参数传递还是从数据库读取
     winning_time = "2025-06-15"
     #TODO 更新project_fee_details表
     
