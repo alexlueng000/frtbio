@@ -40,27 +40,27 @@ def schedule_bid_conversation_BCD(
         project_info = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == project_name).first()
         
     b_smtp = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "peterlcylove@163.com",
-        "password": "ECRVsnXCe2g2Xauq",
-        "from": "peterlcylove@163.com"
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
     }
 
     c_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": c_company.smtp_host,
+        "port": c_company.smtp_port,
+        "username": c_company.smtp_username,
+        "password": c_company.smtp_password,
+        "from": c_company.smtp_from
     }
 
     d_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
     }
 
     b_email = b_company.email
@@ -287,20 +287,20 @@ def schedule_bid_conversation_CCD(
 
 
     b_smtp = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "peterlcylove@163.com",
-        "password": "ECRVsnXCe2g2Xauq",
-        "from": "peterlcylove@163.com"
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
     }
 
 
     d_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
     }
     b_email = b_company.email
     d_email = d_company.email
@@ -415,19 +415,19 @@ def schedule_bid_conversation_BD(
 ):
 
     b_smtp = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "peterlcylove@163.com",
-        "password": "ECRVsnXCe2g2Xauq",
-        "from": "peterlcylove@163.com"
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
     }
 
     d_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
     }
 
     b_email = b_company.email
@@ -556,27 +556,27 @@ def schedule_settlement_BCD(
 ) -> tuple[str, str]:
 
     b_smtp = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "peterlcylove@163.com",
-        "password": "ECRVsnXCe2g2Xauq",
-        "from": "peterlcylove@163.com"
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
     }
 
     c_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": c_company.smtp_host,
+        "port": c_company.smtp_port,
+        "username": c_company.smtp_username,
+        "password": c_company.smtp_password,
+        "from": c_company.smtp_from
     }
 
     d_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
     }
 
     b_email = b_company.email
@@ -851,19 +851,19 @@ def schedule_settlement_CCD_BD(
     d_email = d_company.email
 
     b_smtp = {
-        "host": "smtp.163.com",
-        "port": 465,
-        "username": "peterlcylove@163.com",
-        "password": "ECRVsnXCe2g2Xauq",
-        "from": "peterlcylove@163.com"
+        "host": b_company.smtp_host,
+        "port": b_company.smtp_port,
+        "username": b_company.smtp_username,
+        "password": b_company.smtp_password,
+        "from": b_company.smtp_from
     }
 
     d_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+        "host": d_company.smtp_host,
+        "port": d_company.smtp_port,
+        "username": d_company.smtp_username,
+        "password": d_company.smtp_password,
+        "from": d_company.smtp_from
     }
 
     # 第一封邮件：B ➝ D

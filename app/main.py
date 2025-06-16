@@ -146,11 +146,11 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             template_name = "A1_LF.html"
 
             smtp_config = {
-                "host": "smtp.163.com",
-                "port": 465,
-                "username": "peterlcylove@163.com",
-                "password": "ECRVsnXCe2g2Xauq",
-                "from": "peterlcylove@163.com"
+                "host": company.smtp_host,
+                "port": company.smtp_port,
+                "username": company.smtp_username,
+                "password": company.smtp_password,
+                "from": company.smtp_from
             }
 
             #TODO 每个公司有不同的发送模板 
@@ -202,11 +202,11 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             print("FR公司邮件主题：", subject)
             template_name = "A1_FR.html"
             smtp_config = {
-                "host": "smtp.163.com",
-                "port": 465,
-                "username": "peterlcylove@163.com",
-                "password": "ECRVsnXCe2g2Xauq",
-                "from": "peterlcylove@163.com"
+                "host": company.smtp_host,
+                "port": company.smtp_port,
+                "username": company.smtp_username,
+                "password": company.smtp_password,
+                "from": company.smtp_from
             }
             
             content = email_utils.render_invitation_template_content(
@@ -260,11 +260,11 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             print("普利赛斯公司邮件主题：", subject)
             template_name = "A1_PRESICE.html"
             smtp_config = {
-                "host": "smtp.163.com",
-                "port": 465,
-                "username": "peterlcylove@163.com",
-                "password": "ECRVsnXCe2g2Xauq",
-                "from": "peterlcylove@163.com"
+                "host": company.smtp_host,
+                "port": company.smtp_port,
+                "username": company.smtp_username,
+                "password": company.smtp_password,
+                "from": company.smtp_from
             }
             
             content = email_utils.render_invitation_template_content(
@@ -310,12 +310,12 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
     # 定时任务：5-60分钟后由 B公司 给3家公司回复邮件
     # random_numbers = utils.generate_random_number()
 
-    d_smtp = {
-        "host": "smtp.qq.com",
-        "port": 465,
-        "username": "494762262@qq.com",
-        "password": "mlnbblbyyvulbhhi",
-        "from": "494762262@qq.com"
+    b_smtp = {
+        "host": b_company_info.smtp_host,
+        "port": b_company_info.smtp_port,
+        "username": b_company_info.smtp_username,
+        "password": b_company_info.smtp_password,
+        "from": b_company_info.smtp_from
     }
 
     template_name = "A2_" + b_company_info.short_name + ".html"
@@ -359,7 +359,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         )
             
         result = tasks.send_reply_email.apply_async(
-            args=[company.email, A2_subject, content, d_smtp, 1 * 60, "A2", project_id],
+            args=[company.email, A2_subject, content, b_smtp, 1 * 60, "A2", project_id],
             countdown=1 * 60  
         )
         # 保存发送记录

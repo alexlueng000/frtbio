@@ -35,6 +35,11 @@ class CompanyInfo(Base):
     email = Column(String(255))                              # 邮箱
     address = Column(String(255))                            # 中文地址
     english_address = Column(String(255))                    # 英文地址
+    smtp_host = Column(String(255))                          # SMTP 服务器
+    smtp_port = Column(Integer)                              # SMTP 端口
+    smtp_username = Column(String(255))                      # SMTP 用户名
+    smtp_password = Column(String(255))                      # SMTP 密码
+    smtp_from = Column(String(255))                          # SMTP 发件人
 
 
 class ProjectInfo(Base):
