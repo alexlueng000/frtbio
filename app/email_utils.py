@@ -1,21 +1,26 @@
 # app/email_utils.py
 import os
+from datetime import datetime
 
-from aiosmtplib import SMTP
 import smtplib
-import mimetypes
 from email.message import EmailMessage
-
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 # from app.tasks import send_reply_email
 from app import database, models
+from utils import get_dingtalk_access_token, create_yida_form_instance
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from contextlib import contextmanager
+
+import logging
+
+logger = logging.getLogger(__name__)
+
+now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
 @contextmanager
 def get_db_session():
@@ -37,6 +42,7 @@ def send_email(to, subject, body, smtp_config):
         with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
             smtp.login(smtp_config["username"], smtp_config["password"])
             smtp.send_message(message)
+
         return True, ""
     except Exception as e:
         return False, str(e)
@@ -52,7 +58,25 @@ def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
         with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
             smtp.login(smtp_config["username"], smtp_config["password"])
             smtp.send_message(message)
-        return True, ""
+
+            create_yida_form_instance(
+                access_token=get_dingtalk_access_token(),
+                user_id=os.getenv("USER_ID"),
+                app_type=os.getenv("APP_TYPE"),
+                system_token=os.getenv("SYSTEM_TOKEN"),
+                form_uuid=os.getenv("FORM_UUID"),
+                form_data={
+                    "textField_m8sdofy7": smtp_config["from"],
+                    "textField_m8sdofy8": to,
+                    "textfield_G00FCbMy": subject,
+                    "editorField_m8sdofy9": body,
+                    "radioField_manpa6yh": "发送成功",
+                    "textField_mbyk13kz": now_str,
+                    "textField_mbyk13l0": now_str,
+                }
+            )
+
+            return True, ""
     except Exception as e:
         return False, str(e)
 
@@ -82,6 +106,24 @@ def send_email_with_attachments(to_email, subject, content, smtp_config, attachm
         server.login(smtp_config["username"], smtp_config["password"])
         server.sendmail(smtp_config["from"], [to_email], message.as_string())
         server.quit()
+
+        create_yida_form_instance(
+            access_token=get_dingtalk_access_token(),
+            user_id=os.getenv("USER_ID"),
+            app_type=os.getenv("APP_TYPE"),
+            system_token=os.getenv("SYSTEM_TOKEN"),
+            form_uuid=os.getenv("FORM_UUID"),
+            form_data={
+                "textField_m8sdofy7": message["From"],
+                "textField_m8sdofy8": to_email,
+                "textfield_G00FCbMy": subject,
+                "editorField_m8sdofy9": content,
+                "radioField_manpa6yh": "发送成功",
+                "textField_mbyk13kz": now_str,
+                "textField_mbyk13l0": now_str,
+            }
+        )
+
         return True, ""
     except Exception as e:
         return False, str(e)

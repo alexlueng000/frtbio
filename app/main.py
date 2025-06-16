@@ -1,4 +1,6 @@
 # app/main.py
+import os
+
 from pathlib import Path
 from datetime import datetime
 from decimal import Decimal
@@ -11,10 +13,15 @@ from sqlalchemy import text
 
 from app import email_utils, models, database, schemas, tasks, send_email_tasks
 
+from utils import get_dingtalk_access_token, create_yida_form_instance
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
+
+from dotenv import load_dotenv
+load_dotenv()
 
 
 logger = logging.getLogger(__name__)
@@ -26,6 +33,7 @@ models.Base.metadata.create_all(bind=database.engine)
 settlement_dir = Path.home() / "settlements"
 app.mount("/download", StaticFiles(directory=settlement_dir), name="download")
 
+now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
 @app.get("/ping-db")
 def ping_db():
@@ -169,6 +177,24 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             db.add(record)
             db.commit()
             db.refresh(record)
+
+            # 更新宜搭表单实例
+            create_yida_form_instance(
+                app_type=os.getenv("APP_TYPE"),
+                system_token=os.getenv("SYSTEM_TOKEN"),
+                access_token=get_dingtalk_access_token(),
+                user_id=os.getenv("USER_ID"),
+                form_uuid=os.getenv("FORM_UUID"),
+                form_data={
+                    "textField_m8sdofy7": b_company_info.company_name,
+                    "textField_m8sdofy8": company.company_name,
+                    "textfield_G00FCbMy": subject,
+                    "editorField_m8sdofy9": content,
+                    "radioField_manpa6yh": "发送成功",
+                    "textField_mbyq9ksm": now_str,
+                    "textField_mbyq9ksn": now_str,
+                }
+            )
             
         # 弗劳恩
         elif company.short_name == "FR":
@@ -211,6 +237,23 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             db.add(record)
             db.commit()
             db.refresh(record)
+
+            create_yida_form_instance(
+                access_token=get_dingtalk_access_token(),
+                user_id=os.getenv("USER_ID"),
+                app_type=os.getenv("APP_TYPE"),
+                system_token=os.getenv("SYSTEM_TOKEN"),
+                form_uuid=os.getenv("FORM_UUID"),
+                form_data={
+                    "textField_m8sdofy7": b_company_info.company_name,
+                    "textField_m8sdofy8": company.company_name,
+                    "textfield_G00FCbMy": subject,
+                    "editorField_m8sdofy9": content,
+                    "radioField_manpa6yh": "发送成功",
+                    "textField_mbyq9ksm": now_str,
+                    "textField_mbyq9ksn": now_str,
+                }
+            )
         # 普利赛斯
         else:
             subject = f"{ req.project_name }投標委託{ req.p_serial_number }"
@@ -247,17 +290,25 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             db.commit()
             db.refresh(record)
 
-    #TODO 定时任务：5-60分钟后由 B公司 给3家公司回复邮件
-    # random_numbers = utils.generate_random_number()
+            create_yida_form_instance(
+                access_token=get_dingtalk_access_token(),
+                user_id=os.getenv("USER_ID"),
+                app_type=os.getenv("APP_TYPE"),
+                system_token=os.getenv("SYSTEM_TOKEN"),
+                form_uuid=os.getenv("FORM_UUID"),
+                form_data={
+                    "textField_m8sdofy7": b_company_info.company_name,
+                    "textField_m8sdofy8": company.company_name,
+                    "textfield_G00FCbMy": subject,
+                    "editorField_m8sdofy9": content,
+                    "radioField_manpa6yh": "发送成功",
+                    "textField_mbyq9ksm": now_str,
+                    "textField_mbyq9ksn": now_str,
+                }
+            )
 
-    # # 假设 B 公司固定使用以下邮箱配置（也可以从 DB 查）
-    # b_company_smtp = {
-    #     "host": "smtp.163.com",
-    #     "port": 465,
-    #     "username": "peterlcylove@163.com",
-    #     "password": "ECRVsnXCe2g2Xauq",
-    #     "from": "peterlcylove@163.com"
-    # }
+    # 定时任务：5-60分钟后由 B公司 给3家公司回复邮件
+    # random_numbers = utils.generate_random_number()
 
     d_smtp = {
         "host": "smtp.qq.com",
@@ -267,8 +318,6 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         "from": "494762262@qq.com"
     }
 
-   
-    
     template_name = "A2_" + b_company_info.short_name + ".html"
 
     # # JZ 测试，后替换为实际的B公司
@@ -284,7 +333,6 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 project_name=req.project_name,
                 serial_number=req.f_serial_number
             )
-            print("FR公司邮件主题：", A2_subject)
             
         elif company.short_name == "LF":
             A2_subject = email_utils.render_email_subject(
@@ -293,7 +341,6 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 project_name=req.project_name,
                 serial_number=req.l_serial_number
             )
-            print("LF公司邮件主题：", A2_subject)
             
         
         else:
@@ -303,10 +350,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
                 project_name=req.project_name,
                 serial_number=req.p_serial_number
             )
-            print("Precise公司邮件主题：", A2_subject)
             
-        
-        
         content = email_utils.render_invitation_template_content(
             # purchase_department=req.purchase_department,
             project_name=req.project_name,
@@ -332,10 +376,26 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         db.commit()
         db.refresh(record)
 
+        create_yida_form_instance(
+            access_token=get_dingtalk_access_token(),
+            user_id=os.getenv("USER_ID"),
+            app_type=os.getenv("APP_TYPE"),
+            system_token=os.getenv("SYSTEM_TOKEN"),
+            form_uuid=os.getenv("FORM_UUID"),
+            form_data={
+                "textField_m8sdofy7": b_company_info.company_name,
+                "textField_m8sdofy8": company.company_name,
+                "textfield_G00FCbMy": A2_subject,
+                "editorField_m8sdofy9": content,
+                "radioField_manpa6yh": "待发送",
+                "textField_mbyq9ksm": now_str,
+                "textField_mbyq9ksn": now_str,
+            }
+        )
     # 更新project_info表中的a1状态为1
     project_info.a1 = True
     db.commit()
-            
+
     return {"message": "邮件已成功发送给 B 公司"}
 
 
@@ -442,7 +502,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
             db.add(project)
             db.commit()
             db.refresh(project)
-
+ 
             # 再次触发发邮件
             b_company = db.query(models.CompanyInfo).filter(
                 models.CompanyInfo.company_name == project.company_b_name
@@ -491,8 +551,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                 "project_type": project_type
             }
             
-    
-    
+
     # C公司名字是 selectField_l7ps2ca6 的值
     c_company_name = req.contracts[0].selectField_l7ps2ca6
     # D公司名字是 selectField_l7ps2ca7 的值
