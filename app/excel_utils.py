@@ -4,6 +4,21 @@ from pathlib import Path
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, Border, Side
 
+import paramiko
+
+import os 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+sftp_host = os.getenv("SFTP_HOST")       # 如 szsyjz.vicp.io
+sftp_port = os.getenv("SFTP_PORT")                      # 如果你通过 FRP 映射的是其他端口，比如 10022，就写对应端口
+sftp_user = os.getenv("SFTP_USER")       # 注意是 SSH 用户，通常是 admin 或你创建的用户
+sftp_pass = os.getenv("SFTP_PASS")
+# local_file = r"E:\code_projects\syjz_emails\backend\app\scripts\test.txt"        # 本地要上传的文件
+remote_path = "JZ/中港模式结算单/"  # 群晖上目标路径，注意要有写权限
+
+
 def generate_common_settlement_excel(
     filename: str,
     stage: str,
@@ -144,5 +159,24 @@ def generate_common_settlement_excel(
     download_url = f"{download_base_url}/{filename}"
     
     #TODO 上传文件到共享服务器
+    try:
+        transport = paramiko.Transport((sftp_host, sftp_port))
+        transport.connect(username=sftp_user, password=sftp_pass)
+        print("✅ FTP连接成功")
+        sftp = paramiko.SFTPClient.from_transport(transport)
+        remote_pathfile = f"{remote_path}/{filename}"
+        print("local file: ", file_path)
+        print("remote path: ", remote_pathfile)
+
+        sftp.put(file_path, remote_pathfile)
+
+        print("✅ 文件上传成功")
+        sftp.close()
+        transport.close()
+
+    except Exception as e:
+        print("❌ 上传失败:", str(e))
+
+
 
     return file_path
