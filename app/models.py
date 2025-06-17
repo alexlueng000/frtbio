@@ -72,9 +72,6 @@ class ProjectInfo(Base):
 
     fee_details = relationship("ProjectFeeDetails", back_populates="project")
 
-
-
-
 # 邮件标题表
 class EmailSubject(Base):
 

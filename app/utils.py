@@ -75,8 +75,6 @@ def create_yida_form_instance(
     user_id: str,
     form_uuid: str,
     form_data: dict,
-    # use_alias: bool = False,
-    # language: str = "zh_CN"
 ) -> dict:
     url = "https://api.dingtalk.com/v2.0/yida/forms/instances"
     headers = {
@@ -92,13 +90,9 @@ def create_yida_form_instance(
         "formDataJson": json.dumps(form_data, ensure_ascii=False),
     }
 
-    print(payload)
-
     try:
         response = requests.post(url, json=payload, headers=headers)
         data = response.json()
-
-        print(data)
 
         # 判断是否成功（钉钉返回的业务字段）
         if response.status_code == 200 and data.get("result"):
@@ -112,21 +106,3 @@ def create_yida_form_instance(
         logger.error("❌ 网络请求失败：", e)
         return {"success": False, "error": str(e)}
 
-
-if __name__ == "__main__":
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id="571848422",
-        form_data={
-            "textField_m8sdofy7": "test",
-            "textField_m8sdofy8": "test",
-            "textfield_G00FCbMy": "test",
-            "editorField_m8sdofy9": "test",
-            "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": now_str,
-        },
-        app_type="APP_CO8KQ06DK6RV8P21ZQGM",
-        system_token="P1A66RD1E73U50OZE98UWA2GB10L2GIVKDS8M4S",
-        form_uuid="FORM-49866E71Y53UDC1MCPD8D587FTQD3OCPNDS8M3"
-    )
