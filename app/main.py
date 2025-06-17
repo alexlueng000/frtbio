@@ -474,6 +474,17 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         logger.info("没有L流水号，P流水号，F流水号，不发送邮件，合同号为%s", req.contract_number)
         return {"message": "没有L流水号，P流水号，F流水号，不发送邮件"}
 
+    
+    # 项目信息
+    project = db.query(models.ProjectInfo).filter(
+        models.ProjectInfo.contract_number == req.contract_number
+    ).first()
+
+    if not project:
+        logger.info("没有找到项目信息，不发送邮件")
+        return {"message": "没有找到项目信息，不发送邮件"}
+
+
     # C公司名字是有三方/四方合同的 selectField_l7ps2ca6 的值
     c_company_name = next(
         (contract.selectField_l7ps2ca6 for contract in req.contracts if contract.selectField_l7ps2ca3 == "三方/四方合同"),
@@ -488,20 +499,13 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     # 从project_fee_details表中获取中标金额，中标时间
     winning_amount = db.query(models.ProjectFeeDetails).filter(
-        models.ProjectFeeDetails.project_id == req.project_id
+        models.ProjectFeeDetails.project_id == project.id
     ).first().winning_amount
     winning_time = db.query(models.ProjectFeeDetails).filter(
-        models.ProjectFeeDetails.project_id == req.project_id
+        models.ProjectFeeDetails.project_id == project.id
     ).first().winning_time
 
-    # 项目类型
-    project_type = ''
 
-    # TODO 判断是否首次调用这个接口, 需要根据合同号来判断
-    project = db.query(models.ProjectInfo).filter(models.ProjectInfo.project_name == req.project_name).first()
-    if not project:
-        logger.info("没有找到项目信息，不发送邮件")
-        return {"message": "没有找到项目信息，不发送邮件"}
     if not project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
         # D值有修改时再次触发发邮件（如从领先修改为PLSS），但是为CD值互换的时候不触发
         if project.company_d_name == c_company_name and project.company_c_name == d_company_name:
@@ -531,38 +535,41 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                     b_company=b_company,
                     c_company=c_company,
                     d_company=d_company,
-                    contract_serial_number=req.contract_serial_number,
-                    project_name=req.project_name,
-                    winning_amount=req.winning_amount,
-                    winning_time=req.winning_time,
-                    contract_number=req.contract_number
+                    contract_serial_number=project.tender_number,
+                    project_name=project.project_name,
+                    winning_amount=winning_amount,
+                    winning_time=winning_time,
+                    contract_number=project.contract_number
                 )
             elif project_type == 'CCD':
                 send_email_tasks.schedule_bid_conversation_CCD(
                     b_company=b_company,
                     c_company=c_company,
                     d_company=d_company,
-                    contract_serial_number=req.contract_serial_number,
-                    project_name=req.project_name,
-                    winning_amount=req.winning_amount,
-                    winning_time=req.winning_time,
-                    contract_number=req.contract_number
+                    contract_serial_number=project.tender_number,
+                    project_name=project.project_name,
+                    winning_amount=winning_amount,
+                    winning_time=winning_time,
+                    contract_number=project.contract_number
                 )
             elif project_type == 'BD':
                 send_email_tasks.schedule_bid_conversation_BD(
                     b_company=b_company,
                     d_company=d_company,
                     contract_serial_number=req.contract_serial_number,
-                    project_name=req.project_name,
-                    winning_amount=req.winning_amount,
-                    winning_time=req.winning_time,
-                    contract_number=req.contract_number
+                    project_name=project.project_name,
+                    winning_amount=winning_amount,
+                    winning_time=winning_time,
+                    contract_number=project.contract_number
                 )
             return {
                 "message": f"合同审批阶段邮件已成功发送，合同号为{req.contract_number}",
                 "project_type": project_type
             }
-            
+
+
+    # 项目类型
+    project_type = ''           
     # 确定B、C、D公司是否内部公司，B、D公司是内部公司才发送邮件
     b_company = db.query(models.CompanyInfo).filter(
         models.CompanyInfo.company_name == req.company_b_name, models.CompanyInfo.company_type == 'B'
@@ -601,11 +608,11 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
             b_company=b_company,
             c_company=c_company,
             d_company=d_company,
-            contract_serial_number=req.contract_serial_number,
-            project_name=req.project_name,
-            winning_amount=req.winning_amount,
-            winning_time=req.winning_time,
-            contract_number=req.contract_number
+            contract_serial_number=project.tender_number,
+            project_name=project.project_name,
+            winning_amount=winning_amount,
+            winning_time=winning_time,
+            contract_number=project.contract_number
         )
     # CCD 类型项目
     elif project_type == 'CCD':
@@ -613,30 +620,30 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
             b_company=b_company,
             # c_company=c_company,
             d_company=d_company,
-            contract_serial_number=req.contract_serial_number,
-            project_name=req.project_name,
-            winning_amount=req.winning_amount,
-            winning_time=req.winning_time,
-            contract_number=req.contract_number
+            contract_serial_number=project.tender_number,
+            project_name=project.project_name,
+            winning_amount=winning_amount,
+            winning_time=winning_time,
+            contract_number=project.contract_number
         )
     # BD 类型项目
     else:
         send_email_tasks.schedule_bid_conversation_BD(
             b_company=b_company,
             d_company=d_company,
-            contract_serial_number=req.contract_serial_number,
-            project_name=req.project_name,
-            winning_amount=req.winning_amount,
-            winning_time=req.winning_time,
-            contract_number=req.contract_number
+            contract_serial_number=project.tender_number,
+            project_name=project.project_name,
+            winning_amount=winning_amount,
+            winning_time=winning_time,
+            contract_number=project.contract_number
         )
     
-    logger.info("合同审批阶段邮件已成功发送，合同号为%s", req.contract_number)
+    logger.info("合同审批阶段邮件已成功发送，合同号为%s", project.contract_number)
 
 
     #TODO 返回邮件实际发送时间
     return {
-        "message": f"合同审批阶段邮件已成功发送，合同号为{req.contract_number}",
+        "message": f"合同审批阶段邮件已成功发送，合同号为{project.contract_number}",
         "project_type": project_type
     }
     
@@ -672,10 +679,20 @@ def settlement(
         return {"message": "没有找到项目信息"}
 
 
-    #TODO 中标时间 看是否是通过参数传递还是从数据库读取
-    winning_time = "2025-06-15"
-    #TODO 更新project_fee_details表
-    
+    # 中标时间 
+    winning_time = project_information.fee_details.winning_time if project_information.fee_details else None
+
+    # 更新project_fee_details表
+    project_information.fee_details.three_fourth_amount = req.three_fourth
+    project_information.fee_details.import_service_fee = req.import_service_fee
+    project_information.fee_details.third_party_fee = req.third_party_fee
+    project_information.fee_details.settlement_service_fee = req.service_fee
+    project_information.fee_details.bidding_service_fee = req.win_bidding_fee
+    project_information.fee_details.document_purchase_fee = req.bidding_document_fee
+    project_information.fee_details.tender_service_fee = req.bidding_service_fee
+    db.add(project_information.fee_details)
+    db.commit()
+    db.refresh(project_information.fee_details)
 
     b_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_b_name).first()
     if not b_company:
