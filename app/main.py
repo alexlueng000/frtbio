@@ -530,7 +530,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                 models.CompanyInfo.company_name == d_company_name
             ).first()
 
-            if project_type == 'BCD':
+            if project.project_type == 'BCD':
                 send_email_tasks.schedule_bid_conversation_BCD(
                     b_company=b_company,
                     c_company=c_company,
@@ -541,7 +541,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                     winning_time=winning_time,
                     contract_number=project.contract_number
                 )
-            elif project_type == 'CCD':
+            elif project.project_type == 'CCD':
                 send_email_tasks.schedule_bid_conversation_CCD(
                     b_company=b_company,
                     c_company=c_company,
@@ -552,7 +552,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                     winning_time=winning_time,
                     contract_number=project.contract_number
                 )
-            elif project_type == 'BD':
+            elif project.project_type == 'BD':
                 send_email_tasks.schedule_bid_conversation_BD(
                     b_company=b_company,
                     d_company=d_company,
@@ -564,7 +564,7 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                 )
             return {
                 "message": f"合同审批阶段邮件已成功发送，合同号为{req.contract_number}",
-                "project_type": project_type
+                "project_type": project.project_type
             }
 
 
