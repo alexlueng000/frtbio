@@ -49,6 +49,7 @@ class ProjectInfo(Base):
     project_name = Column(String(255))
     contract_number = Column(String(100))
     tender_number = Column(String(100)) # 招标编号
+    serial_number = Column(String(100)) # 流水号
     project_type = Column(String(100))  # BCD, CCD, BD
     # project_stage = Column(String(12)) # A, B, C
     p_serial_number = Column(String(100))

@@ -33,7 +33,9 @@ def schedule_bid_conversation_BCD(
     winning_amount: str,  # 中标金额
     winning_time: str,    # 中标时间
     contract_serial_number: str, #流水号
-    project_name: str 
+    project_name: str,
+    tender_number: str,    # 招标编号
+    purchase_department: str # 采购单位
 ):
 
     with get_db_session() as db:
@@ -75,7 +77,9 @@ def schedule_bid_conversation_BCD(
         serial_number=contract_serial_number,
         tender_number=contract_number,
         winning_amount=winning_amount,
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        tender_number=tender_number
     )
     b_email_content_b3 = email_utils.render_invitation_template_content(
         project_name=project_name,
@@ -119,7 +123,11 @@ def schedule_bid_conversation_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        tender_number=tender_number,
+        purchase_department=purchase_department,
+        winning_amount=winning_amount,
+        winning_time=winning_time,
+        contract_number=contract_number
     )
     
     print("B4-C公司邮件主题：", c_email_subject_b4)
@@ -179,9 +187,11 @@ def schedule_bid_conversation_BCD(
         company_short_name=d_company.short_name,
         project_name=project_name,
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        tender_number=tender_number,
         winning_amount=winning_amount,
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        contract_number=contract_number
     )
     
     print("B6-D公司邮件主题：", d_email_subject_b6)
@@ -217,7 +227,10 @@ def schedule_bid_conversation_CCD(
     winning_amount: str,
     winning_time: str,
     contract_number: str,
-    project_name: str):
+    project_name: str,
+    purchase_department: str,
+    tender_number: str
+):
 
 
     b_smtp = {
@@ -244,8 +257,12 @@ def schedule_bid_conversation_CCD(
         stage="B5", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
-        contract_serial_number=contract_serial_number
-
+        contract_serial_number=contract_serial_number,
+        tender_number=tender_number,
+        purchase_department=purchase_department,
+        winning_amount=winning_amount,
+        winning_time=winning_time,
+        contract_number=contract_number
     )
     c_email_content_b5 = email_utils.render_invitation_template_content(
         buyer_name=b_company.company_name,
@@ -291,7 +308,9 @@ def schedule_bid_conversation_CCD(
         serial_number=contract_serial_number,
         contract_number=contract_number,
         winning_amount=winning_amount,
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        tender_number=tender_number
     )
     d_email_content_b6 = email_utils.render_invitation_template_content(
         buyer_name=d_company.company_name, 
@@ -329,7 +348,9 @@ def schedule_bid_conversation_BD(
     winning_amount: str,
     winning_time: str,
     contract_number: str,
-    project_name: str
+    project_name: str,
+    purchase_department: str,
+    tender_number: str
 ):
 
     b_smtp = {
@@ -357,9 +378,11 @@ def schedule_bid_conversation_BD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        contract_number=contract_number,
         winning_amount=winning_amount,
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        tender_number=tender_number
     )
     b_email_content_b5 = email_utils.render_invitation_template_content(
         buyer_name=b_company.company_name,
@@ -398,9 +421,11 @@ def schedule_bid_conversation_BD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        tender_number=tender_number,
         winning_amount=winning_amount,
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        contract_number=contract_number
     )
     d_email_content_b6 = email_utils.render_invitation_template_content(
         project_name=project_name,
@@ -457,7 +482,9 @@ def schedule_settlement_BCD(
     win_bidding_fee: float,  # 中标服务费
     bidding_document_fee: float,  # 标书费
     bidding_service_fee: float,  # 投标服务费
-    winning_time: str
+    winning_time: str, # 中标时间
+    purchase_department: str, # 购买部门
+    tender_number: str # 招标编号
 ) -> tuple[str, str]:
 
     b_smtp = {
@@ -497,7 +524,9 @@ def schedule_settlement_BCD(
         serial_number=contract_serial_number,
         tender_number=contract_number,
         winning_amount=str(amount),
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        contract_number=contract_number
     )
     logger.info("c_email_subject_c7: ", contract_serial_number, c_email_subject_c7)
     c_email_content_c7 = email_utils.render_invitation_template_content(
@@ -565,13 +594,14 @@ def schedule_settlement_BCD(
         project_name=project_name, 
         tender_number=contract_number,
         serial_number=contract_serial_number,
-        # contract_number=contract_number,
+        contract_number=contract_number,
         winning_amount=str(amount),
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department
     )
     print("b_email_subject_c8: ", b_email_subject_c8)
     b_email_content_c8 = email_utils.render_invitation_template_content(
-        buyer_name="", 
+        buyer_name=purchase_department, 
         project_name=project_name, 
         first_name=d_company.last_name,
         serial_number=contract_serial_number,
@@ -619,9 +649,11 @@ def schedule_settlement_BCD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number, 
-        tender_number=contract_number, 
+        tender_number=tender_number, 
         winning_amount=str(amount), 
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        contract_number=contract_number
     )
     logger.info("d_email_subject_c9: ", d_email_subject_c9)
     d_email_content_c9 = email_utils.render_invitation_template_content(
@@ -650,7 +682,9 @@ def schedule_settlement_BCD(
         serial_number=contract_serial_number, 
         contract_number=contract_number, 
         winning_amount=str(amount), 
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        contract_number=contract_number
     )
     logger.info("b_email_subject_c10: ", b_email_subject_c10)
     b_email_content_c10 = email_utils.render_invitation_template_content(
@@ -693,7 +727,9 @@ def schedule_settlement_CCD_BD(
     bidding_document_fee: float,  # 标书费
     bidding_service_fee: float,  # 投标服务费
     winning_time: str,
-    project_type: str # BD/CCD
+    project_type: str, # BD/CCD
+    purchase_department: str, # 购买部门
+    tender_number: str # 招标编号
 ):
 
     b_email = b_company.email
@@ -722,9 +758,11 @@ def schedule_settlement_CCD_BD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        contract_number=contract_number,
         winning_amount=str(amount),
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        tender_number=tender_number
     )
     print("b_email_subject_c8: ", b_email_subject_c8)
     b_email_content_c8 = email_utils.render_invitation_template_content(
@@ -796,9 +834,11 @@ def schedule_settlement_CCD_BD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number, 
-        tender_number=contract_number, 
+        tender_number=tender_number, 
         winning_amount=str(amount), 
-        winning_time=winning_time
+        winning_time=winning_time,
+        purchase_department=purchase_department,
+        contract_number=contract_number
     )
     logger.info("d_email_subject_c9: ", d_email_subject_c9)
     d_email_content_c9 = email_utils.render_invitation_template_content(

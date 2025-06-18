@@ -145,13 +145,16 @@ def send_email_with_attachments(to_email, subject, content, smtp_config, attachm
 # 6. 具体合同号
 # 7. 中标时间
 def render_email_subject(
-    stage: str | None = None, 
-    company_short_name: str | None = None, 
-    project_name: str | None = None, 
-    serial_number: str | None = None,
-    contract_number: str | None = None,
-    winning_amount: str | None = None,
-    winning_time: str | None = None) -> str:
+    stage: str | None = None,  # 阶段
+    company_short_name: str | None = None, # 公司简称
+    project_name: str | None = None, # 项目名称
+    serial_number: str | None = None, # 流水号
+    contract_number: str | None = None, # 具体合同号
+    winning_amount: str | None = None, # 中标金额
+    winning_time: str | None = None, # 中标时间
+    tender_number: str | None = None, # 招标编号
+    purchase_department: str | None = None # 采购单位
+) -> str: # 中标时间
     # 从数据库中获取标题模板
     
     with get_db_session() as db:
@@ -169,9 +172,11 @@ def render_email_subject(
             short_name=subject.short_name,
             project_name=project_name,
             serial_number=serial_number,
-            tender_number=contract_number,
+            contract_number=contract_number,
             contract_amount=winning_amount,
             winning_time=winning_time,
+            tender_number=tender_number,
+            purchase_department=purchase_department
         )
 
 
