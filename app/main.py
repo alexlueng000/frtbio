@@ -118,10 +118,11 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         return {"message": "没有找到 D 公司"}
 
     # B公司邮箱
-    logger.info("B公司名称：", req.b_company_name)
+    company_name = req.b_company_name.replace('\xa0', '').strip()
+    logger.info("B公司名称：", company_name)
     b_company_info = (
         db.query(models.CompanyInfo)
-        .filter(models.CompanyInfo.company_name == req.b_company_name)
+        .filter(models.CompanyInfo.company_name == company_name)
         .first()
     )
 
