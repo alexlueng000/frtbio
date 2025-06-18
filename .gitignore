@@ -4,3 +4,4 @@ __pycache__
 .env
 *.cnf
 note.md
+dingtalk_token.json
