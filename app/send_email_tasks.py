@@ -262,14 +262,6 @@ def schedule_bid_conversation_BCD(
         }
     )
 
-    # return {
-    #     "tasks": [
-    #         {"step": "B ➝ C", "task_id": task1.id, "delay_min": 0},
-    #         {"step": "C ➝ B", "task_id": task2.id, "delay_min": delay2},
-    #         {"step": "B ➝ D", "task_id": task3.id, "delay_min": delay3},
-    #         {"step": "D ➝ B", "task_id": task4.id, "delay_min": delay4},
-    #     ]
-    # }
     return {"message": "email sent!"}
 
 
@@ -314,6 +306,7 @@ def schedule_bid_conversation_CCD(
 
     )
     c_email_content_b5 = email_utils.render_invitation_template_content(
+        buyer_name=b_company.company_name,
         project_name=project_name,
         serial_number=contract_serial_number,
         first_name=d_company.last_name,
@@ -371,7 +364,7 @@ def schedule_bid_conversation_CCD(
     # delay = random.randint(5, 60)
     delay = 1
     task2 = send_reply_email.apply_async(
-        args=[d_email, d_email_subject_b6, d_email_content_b6, d_smtp],
+        args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
         countdown=delay * 60
     )
 
@@ -434,7 +427,7 @@ def schedule_bid_conversation_BD(
     d_email = d_company.email
 
     # 获取对应B公司的邮件模板
-    b_email_subject_b5   = email_utils.render_email_subject(
+    b_email_subject_b5 = email_utils.render_email_subject(
         stage="B5", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
@@ -444,6 +437,7 @@ def schedule_bid_conversation_BD(
         winning_time=winning_time
     )
     b_email_content_b5 = email_utils.render_invitation_template_content(
+        buyer_name=b_company.company_name,
         project_name=project_name,
         serial_number=contract_serial_number,
         first_name=d_company.last_name,

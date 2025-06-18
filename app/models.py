@@ -70,10 +70,7 @@ class ProjectInfo(Base):
     c10 = Column(Boolean)
     created_at = Column(TIMESTAMP, default=datetime.now(timezone.utc)) # UTC时间
 
-    fee_details = relationship("ProjectFeeDetails", back_populates="project")
-
-
-
+    fee_details = relationship("ProjectFeeDetails", back_populates="project", uselist=False, cascade="all, delete")
 
 # 邮件标题表
 class EmailSubject(Base):
@@ -99,7 +96,7 @@ class ProjectFeeDetails(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
 
     # 外键：关联项目表
-    project_id = Column(Integer, ForeignKey("project_info.id", ondelete="CASCADE", onupdate="CASCADE"), nullable=False)
+    project_id = Column(Integer, ForeignKey("project_info.id", ondelete="CASCADE", onupdate="CASCADE"), nullable=False, unique=True)
 
     # 中标信息
     winning_time = Column(Date, nullable=True)                      # 中标时间
