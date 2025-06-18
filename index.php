@@ -562,8 +562,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-9 text-white">
-							<h2 class="title">全球精粹，国产突破，全线赋能</h2>
-							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；国产胎牛血清高性价比之选，实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中！联系我们,获取优惠报价!</p>
+							<h2 class="title">全球精粹 全线赋能</h2>
+							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中！联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">
 							<a href="contact.php" class="site-button btnhover10 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
@@ -578,7 +578,7 @@
 			<div class="section-full content-inner bg-white">
 				<div class="container">
 					<div class="sort-title clearfix text-center">
-						<h2>特色研发与服务</h2>
+						<h2>质控及售后</h2>
 					</div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -587,11 +587,11 @@
 									<a href="services-details.html"><img data-src="images/service-1.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info" >
-									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
+									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-worker" style="color: #fff"></i></a> 
-									</div>
-									<h4 class="title">抗肿瘤生物药</h4>
-									<p>Anti-tumor Biological Drugs</p>
+									</div> -->
+									<h4 class="title" style="text-align: center;">源头把控</h4>
+									<p>精选无疫病牧场，所血源地均需通过资质审核与实地考察。</p>
 								</div>
 							</div>
 						</div>
@@ -601,11 +601,11 @@
 									<a href="services-details.html"><img data-src="images/service-2.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
+									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-settings" style="color: #fff"></i></a> 
-									</div>
-									<h4 class="title">细胞培养定制</h4>
-									<p>Custom Cell Culture</p>
+									</div> -->
+									<h4 class="title" style="text-align: center;">国际认证</h4>
+									<p>产品符合国际血清行业协会（ISIA）标准，并通过ISO 9001、ISO 13485认证。</p>
 								</div>
 							</div>
 						</div>
@@ -615,11 +615,11 @@
 									<a href="services-details.html"><img data-src="images/service-3.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
+									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-engineer-1" style="color: #fff"></i></a> 
-									</div>
-									<h4 class="title">干细胞转化</h4>
-									<p>Stem Cell Conversion</p>
+									</div> -->
+									<h4 class="title" style="text-align: center;">多重检测评估</h4>
+									<p>①国内外血清出厂前必须出具可靠的检验证书（Certificate of Analysis）。<br>②国外胎牛血清在进口前经弗劳恩生物国外、国内实验室两轮严格的质量检测及评估。</p>
 								</div>
 							</div>
 						</div>
@@ -629,11 +629,11 @@
 									<a href="services-details.html"><img data-src="images/service-4.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
+									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-factory-1" style="color: #fff"></i></a> 
-									</div>
-									<h4 class="title">新型化学药物</h4>
-									<p>New Chemical Drugs</p>
+									</div> -->
+									<h4 class="title" style="text-align: center;">生物学效能验证</h4>
+									<p>通过细胞增殖率、克隆形成率等实验确保产品效能。</p>
 								</div>
 							</div>
 						</div>
@@ -643,11 +643,11 @@
 									<a href="services-details.html"><img data-src="images/service-5.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">
+									<!-- <div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">
 										<a href="services-details.html" class="icon-cell"><i class="flaticon-worker" style="color: #fff"></i></a> 
-									</div>
-									<h4 class="title">影像检测服务</h4>
-									<p>Imaging Detection Services</p>
+									</div> -->
+									<h4 class="title" style="text-align: center;">完善售后服务</h4>
+									<p>弗劳恩生物有严格的商品管理，连续多年顺利通过深圳海关的“进境生物材料使用单位核查”,并密切监管产品流向，定期询问用户库存,如有质量问题，包退包换。</p>
 								</div>
 							</div>
 						</div>
@@ -690,7 +690,7 @@
 					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="text-white align-self-center ">
 							<h2>关于弗劳恩生物</h2>
-							<p style="font-weight: bolder; font-size: larger;">深圳市弗劳恩生物医学有限公司（以下简称：弗劳恩生物）成立于2015年，专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务，重点研发针对恶性肿瘤的检测技术和抗肿瘤药物研制，及高效的蛋白因子生产系统。</p>
+							<p style="font-size: larger; line-height: 2; font-weight: bold;">深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。</p>
 							<a href="introduction.php" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;">了解更多</a>
 						</div>
 					</div>
