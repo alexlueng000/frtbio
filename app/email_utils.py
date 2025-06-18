@@ -36,25 +36,8 @@ def send_email(to, subject, body, smtp_config):
     message["Subject"] = subject
     message.add_alternative(body, subtype="html")
 
-    try:
-        with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
-            smtp.login(smtp_config["username"], smtp_config["password"])
-            smtp.send_message(message)
-
-        return True, ""
-    except Exception as e:
-        return False, str(e)
-
-def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
-    message = EmailMessage()
-    message["From"] = smtp_config["from"]
-    message["To"] = to
-    message["Subject"] = subject
-    message.add_alternative(body, subtype="html")
-
     from app import database
     db = database.SessionLocal()
-
     from_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == smtp_config["from"]).first()
     to_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == to).first()
 
@@ -64,6 +47,7 @@ def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
             smtp.send_message(message)
 
             now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+            logger.info("✅ #########发送邮件成功，时间：%s", now_str)
 
             create_yida_form_instance(
                 access_token=get_dingtalk_access_token(),
@@ -81,6 +65,22 @@ def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
                     "textField_mbyk13l0": now_str,
                 }
             )
+
+        return True, ""
+    except Exception as e:
+        return False, str(e)
+
+def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
+    message = EmailMessage()
+    message["From"] = smtp_config["from"]
+    message["To"] = to
+    message["Subject"] = subject
+    message.add_alternative(body, subtype="html")
+
+    try:
+        with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
+            smtp.login(smtp_config["username"], smtp_config["password"])
+            smtp.send_message(message)
 
             return True, ""
     except Exception as e:
