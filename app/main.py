@@ -139,7 +139,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         
         # 领先
         if company.short_name == "LF":
-            subject = f" { req.project_name }- 投標委託 | { b_company_info.company_name }| { req.l_serial_number }"
+            subject = f" { req.project_name }- 投標委託 | { req.purchase_department }| { req.l_serial_number }"
             template_name = "A1_LF.html"
 
             smtp_config = {
