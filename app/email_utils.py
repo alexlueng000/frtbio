@@ -38,8 +38,8 @@ def send_email(to, subject, body, smtp_config):
 
     from app import database
     db = database.SessionLocal()
-    from_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == smtp_config["from"]).first()
-    to_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == to).first()
+    from_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.email == smtp_config["from"]).first()
+    to_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.email == to).first()
 
     try:
         with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
