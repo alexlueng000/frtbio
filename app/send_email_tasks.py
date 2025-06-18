@@ -73,7 +73,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=winning_amount,
         winning_time=winning_time
     )
@@ -119,7 +119,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
     )
     
     print("B4-C公司邮件主题：", c_email_subject_b4)
@@ -165,7 +165,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=winning_amount,
         winning_time=winning_time
     )
@@ -217,7 +217,7 @@ def schedule_bid_conversation_BCD(
         company_short_name=d_company.short_name,
         project_name=project_name,
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=winning_amount,
         winning_time=winning_time
     )
@@ -432,7 +432,7 @@ def schedule_bid_conversation_BD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=winning_amount,
         winning_time=winning_time
     )
@@ -473,7 +473,7 @@ def schedule_bid_conversation_BD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=winning_amount,
         winning_time=winning_time
     )
@@ -584,7 +584,7 @@ def schedule_settlement_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=str(amount),
         winning_time=winning_time
     )
@@ -652,7 +652,7 @@ def schedule_settlement_BCD(
         stage="C8", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
-        contract_number=contract_number,
+        tender_number=contract_number,
         serial_number=contract_serial_number,
         # contract_number=contract_number,
         winning_amount=str(amount),
@@ -727,7 +727,7 @@ def schedule_settlement_BCD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number, 
-        contract_number=contract_number, 
+        tender_number=contract_number, 
         winning_amount=str(amount), 
         winning_time=winning_time
     )
@@ -867,7 +867,7 @@ def schedule_settlement_CCD_BD(
         company_short_name=b_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        contract_number=contract_number,
+        tender_number=contract_number,
         winning_amount=str(amount),
         winning_time=winning_time
     )
@@ -941,7 +941,7 @@ def schedule_settlement_CCD_BD(
         company_short_name=d_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number, 
-        contract_number=contract_number, 
+        tender_number=contract_number, 
         winning_amount=str(amount), 
         winning_time=winning_time
     )
