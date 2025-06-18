@@ -20,8 +20,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
-
 @contextmanager
 def get_db_session():
     db = database.SessionLocal()
@@ -54,27 +52,35 @@ def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
     message["Subject"] = subject
     message.add_alternative(body, subtype="html")
 
+    from app import database
+    db = database.SessionLocal()
+
+    from_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == smtp_config["from"]).first()
+    to_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == to).first()
+
     try:
         with smtplib.SMTP_SSL(smtp_config["host"], smtp_config["port"]) as smtp:
             smtp.login(smtp_config["username"], smtp_config["password"])
             smtp.send_message(message)
 
-            # create_yida_form_instance(
-            #     access_token=get_dingtalk_access_token(),
-            #     user_id=os.getenv("USER_ID"),
-            #     app_type=os.getenv("APP_TYPE"),
-            #     system_token=os.getenv("SYSTEM_TOKEN"),
-            #     form_uuid=os.getenv("FORM_UUID"),
-            #     form_data={
-            #         "textField_m8sdofy7": smtp_config["from"],
-            #         "textField_m8sdofy8": to,
-            #         "textfield_G00FCbMy": subject,
-            #         "editorField_m8sdofy9": body,
-            #         "radioField_manpa6yh": "发送成功",
-            #         "textField_mbyk13kz": now_str,
-            #         "textField_mbyk13l0": now_str,
-            #     }
-            # )
+            now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+            create_yida_form_instance(
+                access_token=get_dingtalk_access_token(),
+                user_id=os.getenv("USER_ID"),
+                app_type=os.getenv("APP_TYPE"),
+                system_token=os.getenv("SYSTEM_TOKEN"),
+                form_uuid=os.getenv("FORM_UUID"),
+                form_data={
+                    "textField_m8sdofy7": from_company.company_name,
+                    "textField_m8sdofy8": to_company.company_name,
+                    "textfield_G00FCbMy": subject,
+                    "editorField_m8sdofy9": body,
+                    "radioField_manpa6yh": "发送成功",
+                    "textField_mbyk13kz": now_str,
+                    "textField_mbyk13l0": now_str,
+                }
+            )
 
             return True, ""
     except Exception as e:
