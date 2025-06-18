@@ -61,8 +61,8 @@ def send_email(to, subject, body, smtp_config):
                     "textfield_G00FCbMy": subject,
                     "editorField_m8sdofy9": body,
                     "radioField_manpa6yh": "发送成功",
-                    "textField_mbyk13kz": now_str,
-                    "textField_mbyk13l0": now_str,
+                    "textField_mbyq9ksm": now_str,
+                    "textField_mbyq9ksn": now_str,
                 }
             )
 
