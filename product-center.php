@@ -130,7 +130,7 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="#">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
+															<li><a href="products/Newborn-Calf-Serum.php">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
 														</ul>
 													</div>
 												</div>
@@ -148,9 +148,9 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="Pig-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></li>
-															<li><a href="Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
-															<li><a href="Sheep-Serum.php" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></li>
+															<li><a href="products/Pig-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></li>
+															<li><a href="products/Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
+															<li><a href="products/Goat-Serum.php" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></li>
 														</ul>
 													</div>
 												</div>
@@ -168,9 +168,9 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="Pig-Serum.php" style="hover: #FF8500;">DMEM培养基</a></li>
-															<li><a href="Horse-Serum.php" style="hover: #FF8500;">MEM培养基</a></li>
-															<li><a href="Sheep-Serum.php" style="hover: #FF8500;">RPMI 1640培养基</a></li>
+															<li><a href="products/DMEM-Cell-Culture-Medium.php" style="hover: #FF8500;">DMEM培养基</a></li>
+															<li><a href="products/MEM-Cell-Culture-Medium.php" style="hover: #FF8500;">MEM培养基</a></li>
+															<li><a href="products/RPMI-Cell-Culture-Medium.php" style="hover: #FF8500;">RPMI 1640培养基</a></li>
 															
 														</ul>
 													</div>
@@ -189,10 +189,10 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="Pig-Serum.php" style="hover: #FF8500;">胰蛋白酶</a></li>
-															<li><a href="Horse-Serum.php" style="hover: #FF8500;">胰蛋白酶</a></li>
-															<li><a href="Sheep-Serum.php" style="hover: #FF8500;">青霉素-链霉素100X（双抗）</a></li>
-															<li><a href="#">细胞冻存液</a></li>
+															<li><a href="products/Trypsin-0.05.php" style="hover: #FF8500;">胰蛋白酶(浓度0.05%)</a></li>
+															<li><a href="products/Trypsin-0.25.php" style="hover: #FF8500;">胰蛋白酶(浓度0.25%)</a></li>
+															<li><a href="products/Double-Antibiotic.php" style="hover: #FF8500;">青霉素-链霉素100X（双抗）</a></li>
+															<li><a href="products/Frozen-Cell-Suspension.php" style="hover: #FF8500;">细胞冻存液</a></li>
 														</ul>
 													</div>
 												</div>

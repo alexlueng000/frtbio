@@ -110,8 +110,8 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></h3>
-								<p class="m-b10 m-t10">Front Biomed超优级胎牛血清来源于我国呼伦贝尔和锡林郭勒等优质天然牧场6-8月龄健康剖腹产胎牛，经过0.1微米过滤，符合国际胎牛血清质量标准。按GMP生产管理规范全自动灌装生产，批量大，批间差小。经过多种细胞验证，有着质量稳定，细胞形态好，细胞活力高等特点。<br >该款血清普适性较强，适用于培养部分干细胞、免疫细胞；常规肿瘤细胞、难培养细胞、原代细胞等。</p>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">胰蛋白酶</a></h3>
+								<p class="m-b10 m-t10">浓度0.05%，含有EDTA 和酚红，不含有钙、镁离子。该产品 经过严格的过滤除菌，适用于组织和单层细胞的分离。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
 								</div> -->

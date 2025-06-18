@@ -110,8 +110,8 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></h3>
-								<p class="m-b10 m-t10">Front Biomed超优级胎牛血清来源于我国呼伦贝尔和锡林郭勒等优质天然牧场6-8月龄健康剖腹产胎牛，经过0.1微米过滤，符合国际胎牛血清质量标准。按GMP生产管理规范全自动灌装生产，批量大，批间差小。经过多种细胞验证，有着质量稳定，细胞形态好，细胞活力高等特点。<br >该款血清普适性较强，适用于培养部分干细胞、免疫细胞；常规肿瘤细胞、难培养细胞、原代细胞等。</p>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">DMEM培养基</a></h3>
+								<p class="m-b10 m-t10">是一种广泛使用的细胞培养基，比 MEM 营养更丰富，经实证可用于多种哺乳动物细胞类型。 </p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
 								</div> -->

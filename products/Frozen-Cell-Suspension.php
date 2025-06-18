@@ -110,8 +110,8 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></h3>
-								<p class="m-b10 m-t10">Front Biomed超优级胎牛血清来源于我国呼伦贝尔和锡林郭勒等优质天然牧场6-8月龄健康剖腹产胎牛，经过0.1微米过滤，符合国际胎牛血清质量标准。按GMP生产管理规范全自动灌装生产，批量大，批间差小。经过多种细胞验证，有着质量稳定，细胞形态好，细胞活力高等特点。<br >该款血清普适性较强，适用于培养部分干细胞、免疫细胞；常规肿瘤细胞、难培养细胞、原代细胞等。</p>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">细胞冻存液</a></h3>
+								<p class="m-b10 m-t10">是一种无血清，通用于各种动物细胞株（肿瘤细胞和常规细胞）， 冻存细胞可在-80℃长期保存（>5 年）。配方成分明确，不含动物来源性蛋白， 不含血清，可减少各类细菌、病毒和支原体等污染，保证冻存细胞的安全。该冻存液含 DMSO、 葡萄糖等各种细胞营养成分，提高细胞存活率和活力，亦适合于无血清培养细胞和蛋白表达细胞。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
 								</div> -->
@@ -146,7 +146,7 @@
 									<div class="modal-content">
 										<div style="flex-direction: column;">
 											<h5 class="modal-title m-d30" >扫码获取优惠报价</h5>
-											<img src="images/sales-qrcode.webp" alt="QR Code" class="modal-img">
+											<img src="images/sales-qrcode.jpg" alt="QR Code" class="modal-img">
 										</div>
 										
 										<div class="modal-footer justify-content-center" style="margin-top: -20px;">
