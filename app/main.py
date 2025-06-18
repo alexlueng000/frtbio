@@ -119,7 +119,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
 
     # B公司邮箱
     company_name = req.b_company_name.replace('\xa0', '').strip()
-    logger.info("B公司名称：", company_name)
+    logger.info("B公司名称：%s", company_name)
     b_company_info = (
         db.query(models.CompanyInfo)
         .filter(models.CompanyInfo.company_name == company_name)
