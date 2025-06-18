@@ -59,22 +59,22 @@ def send_email_in_main(to: str, subject: str, body: str, smtp_config: dict):
             smtp.login(smtp_config["username"], smtp_config["password"])
             smtp.send_message(message)
 
-            create_yida_form_instance(
-                access_token=get_dingtalk_access_token(),
-                user_id=os.getenv("USER_ID"),
-                app_type=os.getenv("APP_TYPE"),
-                system_token=os.getenv("SYSTEM_TOKEN"),
-                form_uuid=os.getenv("FORM_UUID"),
-                form_data={
-                    "textField_m8sdofy7": smtp_config["from"],
-                    "textField_m8sdofy8": to,
-                    "textfield_G00FCbMy": subject,
-                    "editorField_m8sdofy9": body,
-                    "radioField_manpa6yh": "发送成功",
-                    "textField_mbyk13kz": now_str,
-                    "textField_mbyk13l0": now_str,
-                }
-            )
+            # create_yida_form_instance(
+            #     access_token=get_dingtalk_access_token(),
+            #     user_id=os.getenv("USER_ID"),
+            #     app_type=os.getenv("APP_TYPE"),
+            #     system_token=os.getenv("SYSTEM_TOKEN"),
+            #     form_uuid=os.getenv("FORM_UUID"),
+            #     form_data={
+            #         "textField_m8sdofy7": smtp_config["from"],
+            #         "textField_m8sdofy8": to,
+            #         "textfield_G00FCbMy": subject,
+            #         "editorField_m8sdofy9": body,
+            #         "radioField_manpa6yh": "发送成功",
+            #         "textField_mbyk13kz": now_str,
+            #         "textField_mbyk13l0": now_str,
+            #     }
+            # )
 
             return True, ""
     except Exception as e:
