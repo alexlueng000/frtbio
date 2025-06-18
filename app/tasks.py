@@ -42,9 +42,6 @@ def send_reply_email(to_email: str, subject: str, content: str, smtp_config: dic
 
     # 当前时间 + delay 秒 = 实际发送时间
     scheduled_time = datetime.now() + timedelta(seconds=delay)
-
-    
-
     try:
         print("send_reply_email$$$$$$$$$$$$$$$$$")
         success, error = email_utils.send_email(to_email, subject, content, smtp_config)

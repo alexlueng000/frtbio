@@ -96,13 +96,13 @@ def create_yida_form_instance(
 
         # 判断是否成功（钉钉返回的业务字段）
         if response.status_code == 200 and data.get("result"):
-            logger.info("✅ 表单创建成功，ID：", data["result"])
+            logger.info("✅ 表单创建成功，ID：%s", data["result"])
             return {"success": True, "formInstanceId": data["result"]}
         else:
-            logger.error("⚠️ 表单创建失败，响应内容：", data)
+            logger.error("⚠️ 表单创建失败，响应内容：%s", data)
             return {"success": False, "detail": data}
 
     except requests.exceptions.RequestException as e:
-        logger.error("❌ 网络请求失败：", e)
+        logger.error("❌ 网络请求失败：%s", e)
         return {"success": False, "error": str(e)}
 

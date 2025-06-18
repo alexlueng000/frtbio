@@ -140,25 +140,6 @@ def schedule_bid_conversation_BCD(
         countdown=delay2 * 60  # 相对第一封
     )
 
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay2)).strftime("%Y-%m-%d %H:%M")
-
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": c_company.company_name,
-            "textfield_G00FCbMy": c_email_subject_b4,
-            "editorField_m8sdofy9": c_email_content_b4,
-            "radioField_manpa6yh": "发送成功",
-            "textField_mbyq9ksm": now_str,
-            "textField_mbyq9ksn": actual_send_time_str,
-        }
-    )
     # 第三封：B ➝ D（延迟第2封基础上 5–60分钟）
     b_email_subject_b5 = email_utils.render_email_subject(
         stage="B5", 
@@ -191,25 +172,6 @@ def schedule_bid_conversation_BCD(
         countdown=delay3 * 60
     )
 
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay3)).strftime("%Y-%m-%d %H:%M")
-
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": b_email_subject_b5,
-            "editorField_m8sdofy9": b_email_content_b5,
-            "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
-    )
 
     # 第四封：D ➝ B（在第3封后延迟 5–60分钟）
     d_email_subject_b6 = email_utils.render_email_subject(
@@ -240,26 +202,6 @@ def schedule_bid_conversation_BCD(
     task4 = send_reply_email.apply_async(
         args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp, delay4, "B6", project_info.id],
         countdown=delay4 * 60
-    )
-
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay4)).strftime("%Y-%m-%d %H:%M")
-
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": d_email_subject_b6,
-            "editorField_m8sdofy9": d_email_content_b6,
-            "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
     )
 
     return {"message": "email sent!"}
@@ -335,8 +277,8 @@ def schedule_bid_conversation_CCD(
             "textfield_G00FCbMy": c_email_subject_b5,
             "editorField_m8sdofy9": c_email_content_b5,
             "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": now_str,
+            "textField_mbyq9ksm": now_str,
+            "textField_mbyq9ksn": now_str,
         }
     )
 
@@ -370,23 +312,6 @@ def schedule_bid_conversation_CCD(
 
     now = datetime.now()
     actual_send_time_str = (now + timedelta(minutes=delay)).strftime("%Y-%m-%d %H:%M")
-
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": d_email_subject_b6,
-            "editorField_m8sdofy9": d_email_content_b6,
-            "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
-    )
 
     return {
         "tasks": [
@@ -463,8 +388,8 @@ def schedule_bid_conversation_BD(
             "textfield_G00FCbMy": b_email_subject_b5,
             "editorField_m8sdofy9": b_email_content_b5,
             "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": now_str,
+            "textField_mbyq9ksm": now_str,
+            "textField_mbyq9ksn": now_str,
         }
     )
     # 随机延迟 5–60 分钟
@@ -490,20 +415,6 @@ def schedule_bid_conversation_BD(
     task2 = send_reply_email.apply_async(
         args=[b_email, d_email_subject_b6, d_email_content_b6, d_smtp],
         countdown=delay * 60  # 相对第一封
-    )
-
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id="1734919546434544",
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": d_email_subject_b6,
-            "editorField_m8sdofy9": d_email_content_b6,
-            "radioField_manpa6yh": "待发送",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": now_str,
-        }
     )
 
     return {
@@ -641,8 +552,8 @@ def schedule_settlement_BCD(
             "textfield_G00FCbMy": c_email_subject_c7,
             "editorField_m8sdofy9": c_email_content_c7,
             "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": now_str,
+            "textField_mbyq9ksm": now_str,
+            "textField_mbyq9ksn": now_str,
         }
     )
 
@@ -700,25 +611,6 @@ def schedule_settlement_BCD(
         countdown=delay1 * 60  # 相对第一封
     )
 
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay1)).strftime("%Y-%m-%d %H:%M")
-
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": b_email_subject_c8,
-            "editorField_m8sdofy9": b_email_content_c8,
-            "radioField_manpa6yh": "发送成功",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
-    )
 
     # 第三封邮件：D ➝ B
     # 随机延迟 5–60 分钟发出D-B间结算单确认
@@ -748,24 +640,6 @@ def schedule_settlement_BCD(
         countdown=delay2 * 60  # 相对第一封
     )
 
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay2)).strftime("%Y-%m-%d %H:%M")
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": d_email_subject_c9,
-            "editorField_m8sdofy9": d_email_content_c9,
-            "radioField_manpa6yh": "待发送",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
-    )
 
     # 第四封邮件：B ➝ D
     # 随机延迟 5–60 分钟发出B-D间结算单确认
@@ -795,25 +669,6 @@ def schedule_settlement_BCD(
         countdown=delay3 * 60  # 相对第一封
     )
 
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay3)).strftime("%Y-%m-%d %H:%M")
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": c_company.company_name,
-            "textfield_G00FCbMy": b_email_subject_c10,
-            "editorField_m8sdofy9": b_email_content_c10,
-            "radioField_manpa6yh": "待发送",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
-    )
-    logger.info("%^&*&^%$: %s, %s", BC_download_url, BD_download_url)
     return {
         "BC_download_url": BC_download_url,
         "BD_download_url": BD_download_url
@@ -961,25 +816,7 @@ def schedule_settlement_CCD_BD(
         args=[d_email, d_email_subject_c9, d_email_content_c9, d_smtp, delay2, "C9", 1],
         countdown=delay2 * 60  # 相对第一封
     )
-    
-    now = datetime.now()
-    actual_send_time_str = (now + timedelta(minutes=delay2)).strftime("%Y-%m-%d %H:%M")
-    create_yida_form_instance(
-        access_token=get_dingtalk_access_token(),
-        user_id=os.getenv("USER_ID"),
-        app_type=os.getenv("APP_TYPE"),
-        system_token=os.getenv("SYSTEM_TOKEN"),
-        form_uuid=os.getenv("FORM_UUID"),
-        form_data={
-            "textField_m8sdofy7": b_company.company_name,
-            "textField_m8sdofy8": d_company.company_name,
-            "textfield_G00FCbMy": d_email_subject_c9,
-            "editorField_m8sdofy9": d_email_content_c9,
-            "radioField_manpa6yh": "待发送",
-            "textField_mbyk13kz": now_str,
-            "textField_mbyk13l0": actual_send_time_str,
-        }
-    )
+
 
     return {
         "message": f"已发送BD结算单，合同号为：{contract_serial_number}",
