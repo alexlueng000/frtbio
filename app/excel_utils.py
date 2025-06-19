@@ -79,9 +79,6 @@ def generate_common_settlement_excel(
     ws.merge_cells("A2:C2")
     ws["A2"] = head_company_name
 
-    # apply_border("A2:C2")
-    # apply_border("A3:C3")
-
     # 实收款项标题
     ws.merge_cells("A4:C4")
     ws["A4"] = "实收款项："
@@ -129,11 +126,21 @@ def generate_common_settlement_excel(
         ws[f"C{row}"].number_format = "#,##0.00"
         apply_border(f"A{row}:C{row}")
 
+    # 小计行
     subtotal_row = 9 + len(receivable_items) + 1
+    receivable_start_row = 10
+    receivable_end_row = 9 + len(receivable_items)
+
     ws.merge_cells(f"A{subtotal_row}:B{subtotal_row}")
     ws[f"A{subtotal_row}"] = "小计："
     ws[f"A{subtotal_row}"].alignment = Alignment(horizontal="right")
-    ws[f"C{subtotal_row}"] = f"=SUM(C10:C{subtotal_row - 1})"
+
+    # 修复：确保SUM范围准确
+    if receivable_items:
+        ws[f"C{subtotal_row}"] = f"=SUM(C{receivable_start_row}:C{receivable_end_row})"
+    else:
+        ws[f"C{subtotal_row}"] = 0
+
     ws[f"C{subtotal_row}"].number_format = "#,##0.00"
     apply_border(f"A{subtotal_row}:C{subtotal_row}")
 
@@ -142,7 +149,8 @@ def generate_common_settlement_excel(
     ws.merge_cells(f"A{balance_row}:B{balance_row}")
     ws[f"A{balance_row}"] = "结算款(RMB)："
     ws[f"A{balance_row}"].alignment = Alignment(horizontal="right")
-    ws[f"C{balance_row}"] = f"=B6 - C{subtotal_row}"
+    ws[f"C{balance_row}"] = f"=B6 - C{subtotal_row}"  # 正确的结算公式
+    ws[f"C{balance_row}"].number_format = "#,##0.00"
     apply_border(f"A{balance_row}:C{balance_row}")
 
     # 公司名称
