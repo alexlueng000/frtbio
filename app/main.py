@@ -480,14 +480,24 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         (contract.selectField_l7ps2ca6 for contract in req.contracts if contract.selectField_l7ps2ca3 == "三方/四方合同"),
         None
     )
+
+    # 更新project_info表中的C公司信息
+    project.company_c_name = c_company_name
+    db.add(project)
+    db.commit()
+    db.refresh(project)
     
     # D公司名字是 selectField_l7ps2ca7 的值
     d_company_name = next(
         (contract.selectField_l7ps2ca7 for contract in req.contracts if contract.selectField_l7ps2ca3 == "三方/四方合同"),
         None
     )
-
-    logger.info("projectID: %s", project.id)
+    
+    # 更新project_info表中的D公司信息
+    project.company_d_name = d_company_name
+    db.add(project)
+    db.commit()
+    db.refresh(project)
 
     # 从project_fee_details表中获取中标金额，中标时间
     winning_amount = db.query(models.ProjectFeeDetails).filter(
@@ -496,7 +506,6 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
     winning_time = db.query(models.ProjectFeeDetails).filter(
         models.ProjectFeeDetails.project_id == project.id
     ).first().winning_time
-
 
     if project.project_type != '': # 说明之前已经判断过了项目类型，是D公司信息有修改的情况
         # D值有修改时再次触发发邮件（如从领先修改为PLSS），但是为CD值互换的时候不触发
@@ -565,7 +574,6 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
                 "project_type": project.project_type
             }
 
-
     # 项目类型
     project_type = ''           
     # 确定B、C、D公司是否内部公司，B、D公司是内部公司才发送邮件
@@ -582,13 +590,6 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == c_company_name, models.CompanyInfo.company_type == 'C').first()
     # 如果找到了C公司，说明是内部公司，如果没有找到，说明是外部公司
-
-    # 更新project_info表中的C，D公司信息
-    project.company_c_name = c_company_name
-    project.company_d_name = d_company_name
-    db.add(project)
-    db.commit()
-    db.refresh(project)
 
     if not c_company:
         project_type = 'BD'
