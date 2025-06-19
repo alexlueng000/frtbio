@@ -444,14 +444,15 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     logger.info("3合同审核|请求参数: %s", req.model_dump())
     
-    # 判断是否包含“三方/四方合同”
+    # 判断是否包含“三方/四方合同”  且 收付控制（selectField_l7ps2ca5） == "付"
     has_target_contract_type = any(
-        contract.selectField_l7ps2ca3 == "三方/四方合同" for contract in req.contracts
-    )
+    contract.selectField_l7ps2ca3 == "三方/四方合同" and contract.selectField_l7ps2ca5 == "付"
+    for contract in req.contracts
+)
 
     if not has_target_contract_type:
-        logger.info("没有找到三方/四方合同，不发送邮件，合同号为%s", req.contract_number)
-        return {"message": "没有找到三方/四方合同，不发送邮件"}
+        logger.info("没有找到三方/四方合同且收付控制=付的合同，不发送邮件，合同号为%s", req.contract_number)
+        return {"message": "没有找到三方/四方合同且收付控制=付的合同，不发送邮件"}
     
     # 如果没有L流水号，P流水号，F流水号，说明不是委托投标登记项目，不发送邮件
     if not req.l_serial_number or not req.p_serial_number or not req.f_serial_number:
