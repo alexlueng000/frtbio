@@ -487,6 +487,8 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
         None
     )
 
+    logger.info("projectID: %s", project.id)
+
     # 从project_fee_details表中获取中标金额，中标时间
     winning_amount = db.query(models.ProjectFeeDetails).filter(
         models.ProjectFeeDetails.project_id == project.id
@@ -580,6 +582,14 @@ async def contract_audit(req: schemas.ContractAuditRequest, db: Session = Depend
 
     c_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.company_name == c_company_name, models.CompanyInfo.company_type == 'C').first()
     # 如果找到了C公司，说明是内部公司，如果没有找到，说明是外部公司
+
+    # 更新project_info表中的C，D公司信息
+    project.company_c_name = c_company_name
+    project.company_d_name = d_company_name
+    db.add(project)
+    db.commit()
+    db.refresh(project)
+
     if not c_company:
         project_type = 'BD'
     # 如果B公司和C公司是同一家公司，说明是CCD项目
@@ -680,21 +690,25 @@ def settlement(
         logger.info("没有找到项目信息，不发送邮件，合同号为: %s", req.contract_number)
         return {"message": "没有找到项目信息"}
 
+    def clean_decimal(val):
+        return None if val == "" else float(val)
+
 
     # 中标时间 
     winning_time = project_information.fee_details.winning_time if project_information.fee_details else None
 
-    # 更新project_fee_details表
-    project_information.fee_details.three_fourth_amount = req.three_fourth
-    project_information.fee_details.import_service_fee = req.import_service_fee
-    project_information.fee_details.third_party_fee = req.third_party_fee
-    project_information.fee_details.settlement_service_fee = req.service_fee
-    project_information.fee_details.bidding_service_fee = req.win_bidding_fee
-    project_information.fee_details.document_purchase_fee = req.bidding_document_fee
-    project_information.fee_details.tender_service_fee = req.bidding_service_fee
-    db.add(project_information.fee_details)
+    # 更新 project_fee_details 表
+    fee = project_information.fee_details
+    fee.three_fourth_amount = clean_decimal(req.three_fourth)
+    fee.import_service_fee = clean_decimal(req.import_service_fee)
+    fee.third_party_fee = clean_decimal(req.third_party_fee)
+    fee.settlement_service_fee = clean_decimal(req.service_fee)
+    fee.bidding_service_fee = clean_decimal(req.win_bidding_fee)
+    fee.document_purchase_fee = clean_decimal(req.bidding_document_fee)
+    fee.tender_service_fee = clean_decimal(req.bidding_service_fee)
+    db.add(fee)
     db.commit()
-    db.refresh(project_information.fee_details)
+    db.refresh(fee)
 
     b_company = db.query(models.CompanyInfo).filter_by(company_name=project_information.company_b_name).first()
     if not b_company:
