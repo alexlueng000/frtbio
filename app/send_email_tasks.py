@@ -528,7 +528,7 @@ def schedule_settlement_BCD(
         purchase_department=purchase_department,
         contract_number=contract_number
     )
-    logger.info("c_email_subject_c7: ", contract_serial_number, c_email_subject_c7)
+    logger.info("c_email_subject_c7:%s, %s ", contract_serial_number, c_email_subject_c7)
     c_email_content_c7 = email_utils.render_invitation_template_content(
         buyer_name="", 
         project_name=project_name, 
@@ -633,7 +633,7 @@ def schedule_settlement_BCD(
         head_company_name=b_company.company_name,
         bottom_company_name=d_company.company_name
     )
-    logger.info("BD_settlement_path&&&: ", BD_settlement_path)
+    logger.info("BD_settlement_path&&&: %s", BD_settlement_path)
     # delay1 = random.randint(5, 60)
     delay1 = 1
     task2 = send_reply_email_with_attachments.apply_async(
@@ -655,7 +655,7 @@ def schedule_settlement_BCD(
         purchase_department=purchase_department,
         contract_number=contract_number
     )
-    logger.info("d_email_subject_c9: ", d_email_subject_c9)
+    logger.info("d_email_subject_c9: %s", d_email_subject_c9)
     d_email_content_c9 = email_utils.render_invitation_template_content(
         buyer_name="", 
         project_name=project_name, 
@@ -686,7 +686,7 @@ def schedule_settlement_BCD(
         purchase_department=purchase_department,
         tender_number=tender_number
     )
-    logger.info("b_email_subject_c10: ", b_email_subject_c10)
+    logger.info("b_email_subject_c10: %s", b_email_subject_c10)
     b_email_content_c10 = email_utils.render_invitation_template_content(
         buyer_name="", 
         project_name=project_name, 
@@ -840,7 +840,7 @@ def schedule_settlement_CCD_BD(
         purchase_department=purchase_department,
         contract_number=contract_number
     )
-    logger.info("d_email_subject_c9: ", d_email_subject_c9)
+    logger.info("d_email_subject_c9: %s", d_email_subject_c9)
     d_email_content_c9 = email_utils.render_invitation_template_content(
         buyer_name="", 
         project_name=project_name, 

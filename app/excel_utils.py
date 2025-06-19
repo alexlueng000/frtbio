@@ -122,7 +122,10 @@ def generate_common_settlement_excel(
         row = 9 + i
         ws[f"A{row}"] = i
         ws[f"B{row}"] = item
-        ws[f"C{row}"] = amount
+        try:
+            ws[f"C{row}"] = float(amount) if amount not in ("", None) else 0
+        except ValueError:
+            ws[f"C{row}"] = 0
         ws[f"C{row}"].number_format = "#,##0.00"
         apply_border(f"A{row}:C{row}")
 
