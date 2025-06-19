@@ -692,7 +692,7 @@ def settlement(
         return {"message": "没有找到项目信息"}
 
     def clean_decimal(val):
-        return None if val == "" else float(val)
+        return 0 if val == "" else float(val)
 
 
     # 中标时间 

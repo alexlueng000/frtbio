@@ -154,9 +154,6 @@ def generate_common_settlement_excel(
         ws.row_dimensions[row].height = 20
 
     wb.save(file_path)
-
-    download_base_url = "http://yourdomain.com/download"  # 换成你的真实域名或IP
-    download_url = f"{download_base_url}/{filename}"
     
     #TODO 上传文件到共享服务器
     try:
