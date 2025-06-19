@@ -97,6 +97,12 @@ def send_email_with_attachments(to_email, subject, content, smtp_config, attachm
     # 添加正文
     message.attach(MIMEText(content, "html", "utf-8"))
 
+    from app import database
+    db = database.SessionLocal()
+    from_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.email == smtp_config["from"]).first()
+    to_company = db.query(models.CompanyInfo).filter(models.CompanyInfo.email == to).first()
+
+
     # 添加附件
     for file_path in attachments:
         try:
@@ -113,6 +119,9 @@ def send_email_with_attachments(to_email, subject, content, smtp_config, attachm
         server.sendmail(smtp_config["from"], [to_email], message.as_string())
         server.quit()
 
+        now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+        logger.info("✅ #########发送邮件成功，时间：%s", now_str)
+
         create_yida_form_instance(
             access_token=get_dingtalk_access_token(),
             user_id=os.getenv("USER_ID"),
@@ -120,8 +129,8 @@ def send_email_with_attachments(to_email, subject, content, smtp_config, attachm
             system_token=os.getenv("SYSTEM_TOKEN"),
             form_uuid=os.getenv("FORM_UUID"),
             form_data={
-                "textField_m8sdofy7": message["From"],
-                "textField_m8sdofy8": to_email,
+                "textField_m8sdofy7": from_company.company_name,
+                "textField_m8sdofy8": to_company.company_name,
                 "textfield_G00FCbMy": subject,
                 "editorField_m8sdofy9": content,
                 "radioField_manpa6yh": "发送成功",
