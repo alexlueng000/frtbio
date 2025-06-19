@@ -684,7 +684,7 @@ def schedule_settlement_BCD(
         winning_amount=str(amount), 
         winning_time=winning_time,
         purchase_department=purchase_department,
-        contract_number=contract_number
+        tender_number=tender_number
     )
     logger.info("b_email_subject_c10: ", b_email_subject_c10)
     b_email_content_c10 = email_utils.render_invitation_template_content(
