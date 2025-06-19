@@ -613,7 +613,7 @@ def schedule_settlement_BCD(
 
     BD_filename = f"{contract_number}_{contract_serial_number}_BCD模式_BD结算单.xlsx"
 
-    BD_download_url = f"http://103.30.78.107:8000/downloads/{BD_filename}"
+    BD_download_url = f"http://103.30.78.107:8000/download/{BD_filename}"
 
     # 生成B-D结算单
     BD_settlement_path = excel_utils.generate_common_settlement_excel(
