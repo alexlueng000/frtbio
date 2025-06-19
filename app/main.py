@@ -370,23 +370,6 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         db.add(record)
         db.commit()
         db.refresh(record)
-
-        create_yida_form_instance(
-            access_token=get_dingtalk_access_token(),
-            user_id=os.getenv("USER_ID"),
-            app_type=os.getenv("APP_TYPE"),
-            system_token=os.getenv("SYSTEM_TOKEN"),
-            form_uuid=os.getenv("FORM_UUID"),
-            form_data={
-                "textField_m8sdofy7": company.company_name,
-                "textField_m8sdofy8": b_company_info.company_name,
-                "textfield_G00FCbMy": A2_subject,
-                "editorField_m8sdofy9": content,
-                "radioField_manpa6yh": "待发送",
-                "textField_mbyq9ksm": now_str,
-                "textField_mbyq9ksn": now_str,
-            }
-        )
     # 更新project_info表中的a1状态为1
     project_info.a1 = True
     db.commit()

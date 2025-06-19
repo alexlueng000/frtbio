@@ -2,7 +2,7 @@
 from datetime import datetime
 
 from pydantic import BaseModel, EmailStr, ConfigDict, validator     
-from typing import Optional, List
+from typing import Optional, List, Union
 
 
 
@@ -174,14 +174,14 @@ class SettlementRequest(BaseModel):
     company_c_name: str # C公司
     company_d_name: str # D公司
     contract_type: str # 合同类型
-    amount: float # 收款金额
-    three_fourth: float # 三方/四方货款
-    import_service_fee: float # C进口服务费
-    third_party_fee: float # 第三方费用
-    service_fee: float # 费用结算服务费
-    win_bidding_fee: float # 中标服务费
-    bidding_document_fee: float # 购买标书费
-    bidding_service_fee: float # 投标服务费
+    amount: Union[str, float]
+    three_fourth: Union[str, float]
+    import_service_fee: Union[str, float]
+    third_party_fee: Union[str, float]
+    service_fee: Union[str, float]
+    win_bidding_fee: Union[str, float]
+    bidding_document_fee: Union[str, float]
+    bidding_service_fee: Union[str, float]
 
 
     
