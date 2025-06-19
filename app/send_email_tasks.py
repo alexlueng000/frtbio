@@ -522,7 +522,7 @@ def schedule_settlement_BCD(
         company_short_name=c_company.short_name, 
         project_name=project_name, 
         serial_number=contract_serial_number,
-        tender_number=contract_number,
+        tender_number=tender_number,
         winning_amount=str(amount),
         winning_time=winning_time,
         purchase_department=purchase_department,
@@ -559,7 +559,7 @@ def schedule_settlement_BCD(
         head_company_name=b_company.company_name,
         bottom_company_name=c_company.company_name
     )
-    logger.info("CB_settlement_path&&&: ", CB_settlement_path)
+    logger.info("CB_settlement_path&&&: %s", CB_settlement_path)
     #TODO 1. FTP将生成的文件回传到归档服务器
     #TODO 2. 需要生成一个链接传回到宜搭
 
@@ -592,7 +592,7 @@ def schedule_settlement_BCD(
         stage="C8", 
         company_short_name=b_company.short_name, 
         project_name=project_name, 
-        tender_number=contract_number,
+        tender_number=tender_number,
         serial_number=contract_serial_number,
         contract_number=contract_number,
         winning_amount=str(amount),
