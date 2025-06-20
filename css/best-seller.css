@@ -1,0 +1,5 @@
+.best-sell-container {
+    max-width: calc(100% - 300px); /* 左右各100px */
+    margin: 0 auto;
+}
+

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  apache:
+    image: php:7.4-apache
+    container_name: apache-php
+    ports:
+      - "8090:80"
+    volumes:
+      - /Users/alexlueng/Code/work/frtbio:/var/www/html
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    driver: bridge
