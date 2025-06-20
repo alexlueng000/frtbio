@@ -111,7 +111,7 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed特级国产胎牛血清 (FBS, Optimum)</a></h3>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></h3>
 								<p class="m-b10 m-t10"> Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>
@@ -164,8 +164,8 @@
 								<div class="modal-dialog modal-sm">
 									<div class="modal-content">
 										<div style="flex-direction: column;">
-											<h5 class="modal-title m-d30" >扫码获取优惠报价</h5>
-											<img src="images/sales-qrcode.jpg" alt="QR Code" class="modal-img">
+											<h5 class="modal-title m-d30" >扫码免费领样</h5>
+											<img src="../images/sales-qrcode.webp" alt="QR Code" class="modal-img">
 										</div>
 										
 										<div class="modal-footer justify-content-center" style="margin-top: -20px;">

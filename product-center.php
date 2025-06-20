@@ -109,10 +109,10 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="products/Front-Biomed-Premium-Imported-FBS.php" >Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></li>
-															<li><a href="products/Front-Biomed-Premium-Imported-FBS.php" >Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" >Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="products/Front-Biomed-Premium-FBS.php" >Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
+															<li><a href="products/Front-Biomed-Premium-Imported-FBS.php" >Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" >Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="products/Front-Biomed-Exceptional.php" >Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></li>
+															<li><a href="products/Front-Biomed-Premium-FBS.php" >Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
 														</ul>
 													</div>
 												</div>
@@ -240,7 +240,39 @@
 									</div>
 								</div>
 
-								<!-- product 2 Front Biomed超优级胎牛血清 (FBS, Exceptional ) -->
+								<!-- product 2 Front Biomed国产特级胎牛血清 (FBS, Optimum)-->
+								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
+									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
+										<!-- 图片部分 -->
+										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+											<a >
+												<img class="lazy rounded" data-src="images/products/new-product3-side.webp" alt="" style="max-width: 100%; height: 100%;">
+											</a>
+										</div>
+										<!-- 文字内容部分 -->
+										<div class="dlab-post-title" style="flex: 1;">
+											
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></p>
+											
+											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
+												
+												<!-- 文字部分 -->
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
+											</div>
+											<div style="display: flex;  align-items: flex-start;">
+												<!-- 按钮部分 -->
+												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">规格</button>
+												
+												<!-- 文字部分 -->
+												<button class="site-button bg-primary gradient m-r15 sharp-md" style="margin-left: 20px; padding: 5px 20px; font-size: 14px;" type="button">500mL</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- product 3 Front Biomed超优级胎牛血清 (FBS, Exceptional ) -->
 								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
 										<!-- 图片部分 -->
@@ -272,37 +304,7 @@
 									</div>
 								</div>
 								
-								<!-- product 3 Front Biomed国产特级胎牛血清 (FBS, Optimum)-->
-								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
-									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
-										<!-- 图片部分 -->
-										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-											<a >
-												<img class="lazy rounded" data-src="images/products/new-product3-side.webp" alt="" style="max-width: 100%; height: 100%;">
-											</a>
-										</div>
-										<!-- 文字内容部分 -->
-										<div class="dlab-post-title" style="flex: 1;">
-											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></p>
-											
-											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-												<!-- 按钮部分 -->
-												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
-												
-												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
-											</div>
-											<div style="display: flex;  align-items: flex-start;">
-												<!-- 按钮部分 -->
-												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">规格</button>
-												
-												<!-- 文字部分 -->
-												<button class="site-button bg-primary gradient m-r15 sharp-md" style="margin-left: 20px; padding: 5px 20px; font-size: 14px;" type="button">500mL</button>
-											</div>
-										</div>
-									</div>
-								</div>
+								
 								
 								<!-- product 4 Front Biomed优级胎牛血清 (FBS, Premium) -->
 								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
@@ -310,7 +312,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img class="lazy rounded" data-src="images/serum-product3.webp" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/products/guochanteji-side.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
