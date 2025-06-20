@@ -76,14 +76,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.2s">
-                    <div class="widget border-0">
-                        <h6 class="m-b20 text-white font-weight-300 text-uppercase">研发与服务</h6>
-                        <ul class="list-2">
-                            <li>抗肿瘤生物药</li>
-                            <li>细胞培养定制</li>
-                            <li>干细胞转化</li>
-                            <li>新型化学药物</li>
-                            <li>影像检测服务</li>
+                    <div class="widget widget_getintuch">
+                        <h5 class="footer-title text-white">联系我们</h5>
+                        <ul>
+                            <li><i class="ti-location-pin"></i><strong>公司地址</strong>深圳市罗湖区南湖街道新南社区<br />深南东路2001号鸿昌广场1301 </li>
+                            <li><i class="ti-mobile"></i><strong>联系电话</strong><a href="tel:+4733378901">0755-82233228</li>
+                            <li><i class="ti-email"></i><strong>电子邮件</strong><a href="mailto:someone@example.com">front903@163.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -116,10 +114,11 @@
                 <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © <span class="current-year">2025</span> <a href="https://dexignzone.com/" target="_blank">弗劳恩生物</a>. all rights reserved.</span> </div>
                 <div class="col-md-6 col-sm-6 text-right "> 
                     <div class="widget-link "> 
-                        <ul>
-                            <!-- <li><a href="help-desk.html"> Help Desk</a></li>
-                            <li><a href="privacy-policy.html">  Refund Policy</a></li>  -->
-                        </ul>
+                        <div class="col-md-6 col-sm-6 text-right "> 
+                            <img src="images/beian.png" style="width: 20px; height: 20px;" alt="">
+                            <a href="https://beian.miit.gov.cn/" target="_blank">
+                            粤ICP备18028387号-2</a>
+                        </div>
                     </div>
                 </div>
             </div>

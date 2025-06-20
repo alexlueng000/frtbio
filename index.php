@@ -418,67 +418,7 @@
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
 									服务200+实验室 <br> 华南地区最大血清进口商
 								</div>
-								<!-- LAYER NR. 3 -->
-								<!-- <div class="tp-caption" 
-									id="slide-300-layer-4" 
-									data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['50','15','20','10']" 
-									data-fontsize="['18','16','14','14']"
-									data-lineheight="['30','30','26','26']"
-									data-width="['640','481','500','300']"
-									data-height="none"
-									data-whitespace="normal"
-									data-type="text" 
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-									data-textAlign="['left','left','center','center']"
-									data-paddingtop="[0,0,0,0]"
-									data-paddingright="[0,0,0,0]"
-									data-paddingbottom="[0,0,0,0]"
-									data-paddingleft="[0,0,0,0]"
-									style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-								</div> -->
-								<!-- LAYER NR. 5 -->
-								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
-									href="about-1.html" target="_blank"			 
-									id="slide-300-layer-5" 
-									data-x="['center','center','center','center']" data-hoffset="['-515','-340','-85','-65']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']" 
-									data-lineheight="['18','18','18','18']"
-									data-whitespace="nowrap"
-									data-type="button" 
-									data-actions=''
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-									data-textAlign="['center','center','center','center']"
-									data-paddingtop="[15,15,15,10]"
-									data-paddingright="[30,30,30,20]"
-									data-paddingbottom="[15,15,15,10]"
-									data-paddingleft="[30,30,30,20]"
-									style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> About Us
-								</a> -->
-								<!-- LAYER NR. 5 -->
-								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
-									href="services-details.html" target="_blank"			 
-									id="slide-300-layer-6"  
-									data-x="['center','center','center','center']" data-hoffset="['-360','-180','70','65']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']"
-									data-lineheight="['18','18','18','18']"
-									data-whitespace="nowrap"
-									data-type="button" 
-									data-actions=''
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-									data-textAlign="['center','center','center','center']"
-									data-paddingtop="[15,15,15,10]"
-									data-paddingright="[30,30,30,20]"
-									data-paddingbottom="[15,15,15,10]"
-									data-paddingleft="[30,30,30,20]"
-									style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> Services 
-								</a> -->
+								
 							</li>
 						</ul>
 						<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
@@ -532,7 +472,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img data-src="images/products/gochanteji-front.webp" class="lazy" alt="" >
+									<img data-src="images/products/gouchanteji-front.webp" class="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
