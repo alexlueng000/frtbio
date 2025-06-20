@@ -9,6 +9,7 @@ import requests
 
 from dotenv import load_dotenv
 import logging
+from opencc import OpenCC
 
 load_dotenv()
 
@@ -106,3 +107,16 @@ def create_yida_form_instance(
         logger.error("❌ 网络请求失败：%s", e)
         return {"success": False, "error": str(e)}
 
+
+def simplify_to_traditional(text: str) -> str:
+    """
+    将简体中文转换为繁体中文。
+    
+    参数：
+        text (str): 简体中文字符串。
+        
+    返回：
+        str: 转换后的繁体中文字符串。
+    """
+    cc = OpenCC('s2t')  # s2t 表示 Simplified to Traditional
+    return cc.convert(text)

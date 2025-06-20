@@ -13,7 +13,8 @@ from sqlalchemy import text
 
 from app import email_utils, models, database, schemas, tasks, send_email_tasks
 
-from app.utils import get_dingtalk_access_token, create_yida_form_instance
+from app.utils import get_dingtalk_access_token, create_yida_form_instance, simplify_to_traditional
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -139,7 +140,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
         
         # 领先
         if company.short_name == "LF":
-            subject = f" { req.project_name }- 投標委託 | { req.purchase_department }| { req.l_serial_number }"
+            subject = f" { simplify_to_traditional(req.project_name) }- 投標委託 | { simplify_to_traditional(req.purchase_department) }| { req.l_serial_number }"
             template_name = "A1_LF.html"
 
             smtp_config = {
@@ -195,7 +196,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             
         # 弗劳恩
         elif company.short_name == "FR":
-            subject = f"【誠邀合作】{ req.project_name }投標{req.f_serial_number}"
+            subject = f"【誠邀合作】{ simplify_to_traditional(req.project_name) }投標{req.f_serial_number}"
             print("FR公司邮件主题：", subject)
             template_name = "A1_FR.html"
             smtp_config = {
@@ -251,7 +252,7 @@ async def receive_bidding_register(req: schemas.BiddingRegisterRequest, db: Sess
             )
         # 普利赛斯
         else:
-            subject = f"{ req.project_name }投標委託{ req.p_serial_number }"
+            subject = f"{ simplify_to_traditional(req.project_name) }投標委託{ req.p_serial_number }"
             print("普利赛斯公司邮件主题：", subject)
             template_name = "A1_PRESICE.html"
             smtp_config = {

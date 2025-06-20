@@ -8,6 +8,7 @@ from contextlib import contextmanager
 from app import database, models, email_utils, excel_utils
 from app.utils import get_dingtalk_access_token, create_yida_form_instance
 from app.tasks import send_reply_email, send_reply_email_with_attachments
+from app.utils import simplify_to_traditional
 
 import logging
 
@@ -185,12 +186,12 @@ def schedule_bid_conversation_BCD(
     d_email_subject_b6 = email_utils.render_email_subject(
         stage="B6",
         company_short_name=d_company.short_name,
-        project_name=project_name,
+        project_name=simplify_to_traditional(project_name),
         serial_number=contract_serial_number,
         tender_number=tender_number,
         winning_amount=winning_amount,
         winning_time=winning_time,
-        purchase_department=purchase_department,
+        purchase_department=simplify_to_traditional(purchase_department),
         contract_number=contract_number
     )
     
@@ -304,12 +305,12 @@ def schedule_bid_conversation_CCD(
     d_email_subject_b6 = email_utils.render_email_subject(
         stage="B6",
         company_short_name=d_company.short_name,
-        project_name=project_name,
+        project_name=simplify_to_traditional(project_name),
         serial_number=contract_serial_number,
         contract_number=contract_number,
         winning_amount=winning_amount,
         winning_time=winning_time,
-        purchase_department=purchase_department,
+        purchase_department=simplify_to_traditional(purchase_department),
         tender_number=tender_number
     )
     d_email_content_b6 = email_utils.render_invitation_template_content(
@@ -419,12 +420,12 @@ def schedule_bid_conversation_BD(
     d_email_subject_b6 = email_utils.render_email_subject(
         stage="B6", 
         company_short_name=d_company.short_name, 
-        project_name=project_name, 
+        project_name=simplify_to_traditional(project_name), 
         serial_number=contract_serial_number,
         tender_number=tender_number,
         winning_amount=winning_amount,
         winning_time=winning_time,
-        purchase_department=purchase_department,
+        purchase_department=simplify_to_traditional(purchase_department),
         contract_number=contract_number
     )
     d_email_content_b6 = email_utils.render_invitation_template_content(
@@ -647,12 +648,12 @@ def schedule_settlement_BCD(
     d_email_subject_c9 = email_utils.render_email_subject(
         stage="C9", 
         company_short_name=d_company.short_name, 
-        project_name=project_name, 
+        project_name=simplify_to_traditional(project_name), 
         serial_number=contract_serial_number, 
         tender_number=tender_number, 
         winning_amount=str(amount), 
         winning_time=winning_time,
-        purchase_department=purchase_department,
+        purchase_department=simplify_to_traditional(purchase_department),
         contract_number=contract_number
     )
     logger.info("d_email_subject_c9: %s", d_email_subject_c9)
@@ -832,12 +833,12 @@ def schedule_settlement_CCD_BD(
     d_email_subject_c9 = email_utils.render_email_subject(
         stage="C9", 
         company_short_name=d_company.short_name, 
-        project_name=project_name, 
+        project_name=simplify_to_traditional(project_name), 
         serial_number=contract_serial_number, 
         tender_number=tender_number, 
         winning_amount=str(amount), 
         winning_time=winning_time,
-        purchase_department=purchase_department,
+        purchase_department=simplify_to_traditional(purchase_department),
         contract_number=contract_number
     )
     logger.info("d_email_subject_c9: %s", d_email_subject_c9)
