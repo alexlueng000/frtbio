@@ -146,8 +146,8 @@
 								<div class="modal-dialog modal-sm">
 									<div class="modal-content">
 										<div style="flex-direction: column;">
-											<h5 class="modal-title m-d30" >扫码获取优惠报价</h5>
-											<img src="images/sales-qrcode.jpg" alt="QR Code" class="modal-img">
+											<h5 class="modal-title m-d30" >扫码免费领样</h5>
+											<img src="../images/sales-qrcode.webp" alt="QR Code" class="modal-img">
 										</div>
 										
 										<div class="modal-footer justify-content-center" style="margin-top: -20px;">

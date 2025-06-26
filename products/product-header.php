@@ -44,47 +44,41 @@
                             <a href="../product-center.php">产品中心<i class="fas fa-chevron-down"></i></a>
                             <ul class="mega-menu">
                                 <li>
-                                    <a href="../serums.html">血清 </a>
+                                    <a href="#">血清 </a>
                                     <ul>
-                                        <li><a href="header-style-1.html">特级胎牛血清</a></li>
-                                        <li><a href="header-style-2.html">优级胎牛血清</a></li>
-                                        <li><a href="header-style-3.html">新生牛血清</a></li>
-                                        <li><a href="header-style-4.html">小牛血清</a></li>
-                                        <li><a href="header-style-5.html">成年牛血清</a></li>
-                                        <li><a href="header-style-6.html">铁强化牛血清</a></li>
-                                        <li><a href="header-style-7.html">猪血清</a></li>
-                                        <li><a href="header-style-8.html">供体马血清</a></li>
-                                        <li><a href="header-style-9.html">供体山羊血清</a></li>
-                                        <li><a href="header-style-10.html">供体人血清</a></li>
-                                        <li><a href="header-style-11.html">Fetalgro®牛生长血清</a></li>
-                                        
+                                        <li><a href="Front-Biomed-Premium-Imported-FBS.php">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
+                                        <li><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php">Front Biomed超优级胎牛血清 (FBS, Exceptional)</a></li>
+                                        <li><a href="Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
+                                        <li><a href="Front-Biomed-Premium-FBS.php">Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
+                                        <li><a href="Newborn-Calf-Serum.php">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
+                                        <li><a href="Pig-Serum.php">猪血清(Pig Serum-Porcine Serum)</a></li>
+                                        <li><a href="Horse-Serum.php">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
+                                        <li><a href="Goat-Serum.php">供体山羊血清(Donor Goat Serum)</a></li>
                                     </ul>
-                                </li>	
-                                    
-                                <!-- <li> 
-                                    <a href="javascript:;">蛋白质组分</a>
-                                    <ul style="text-align: left;">		
-                                        <li><a href="header-style-dark-1.html">Maxichol®诊断脂质组分</a></li>
-                                        <li><a href="header-style-dark-2.html">血清替代物</a></li>
-                                        <li><a href="header-style-dark-3.html">Fetalgro®牛生长血清</a></li>
-                                        <li><a href="header-style-dark-4.html">牛低密度脂蛋白浓缩胆固醇</a></li>
-                                        <li><a href="header-style-dark-5.html">猪浓缩胆固醇</a></li>
-                                        <li><a href="header-style-dark-6.html">牛转铁蛋白APO和HOLO</a></li>
-                                        <li><a href="header-style-dark-7.html">牛凝血酶</a></li>
-                                        <li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
-                                        <li><a href="header-style-dark-6.html">牛转铁蛋白APO和HOLO</a></li>
-                                        <li><a href="header-style-dark-7.html">牛凝血酶</a></li>
-                                        <li><a href="header-style-dark-8.html">猪胰蛋白酶</a></li>
-                                    </ul>
-                                </li> -->
+                                </li>
                                 
                                 
                                 <li> 
-                                    <a href="cell-culture-medium.html">细胞培养基</a>
+                                    <a href="#">细胞培养基</a>
+                                    
+                                    <ul>
+                                        <li><a href="DMEM-Cell-Culture-Medium.php">DMEM培养基</a></li>
+                                        <li><a href="MEM-Cell-Culture-Medium.php">MEM培养基</a></li>
+                                        <li><a href="RPMI-Cell-Culture-Medium.php">RPMI 1640培养基</a></li>
+                                        
+                                    </ul>
                                 </li>
-                                <!-- <li> 
-                                    <a href="javascript:;">鉴定试剂</a>
-                                </li> -->
+                                <li> 
+                                    <a href="#">其他</a>
+                                    
+                                    <ul>
+                                        <li><a href="Trypsin-0.05.php">胰蛋白酶(浓度0.05%)</a></li>
+                                        <li><a href="Trypsin-0.25.php">胰蛋白酶(浓度0.25%)</a></li>
+                                        <li><a href="Double-Antibiotic.php">青霉素-链霉素100X（双抗）</a></li>
+                                        <li><a href="Frozen-Cell-Suspension.php">细胞冻存液</a></li>
+                                        
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
 
