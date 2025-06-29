@@ -35,6 +35,16 @@
     <link rel="stylesheet" type="text/css" href="css/event.css">
 	<!-- Google Font -->	
 	<style>
+
+		.dlab-bnr-inr-entry-service {
+		height: 100%;
+		display: flex;
+		align-items: center;          /* 垂直居中 */
+		justify-content: center;      /* 水平居中 */
+		text-align: center;
+		}
+
+
 		.big-number {
 			font-size: 168px;
 			font-weight: bold;
@@ -44,6 +54,22 @@
 			opacity: 0;
 			animation: fadeInUp 1s ease-out forwards;
 		}
+
+		.list-two-columns {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			max-width: 960px;     /* 控制内容宽度，不让太靠边 */
+			margin: 0 auto;       /* 关键：水平居中 */
+			padding: 0 15px;      /* 加点内边距，避免贴边 */
+		}
+
+		.list-two-columns li {
+			width: 45%; /* 控制列宽度 */
+			list-style: none;
+		}
+
 
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 	</style>
@@ -55,165 +81,125 @@
     <!-- header -->
     <?php include 'header.php'; ?>
     <!-- header END -->
+
     <!-- Content -->
     <div class="page-content bg-white">
 
-		<div class="dlab-bnr-inr bg-pt" style="background-image:url(images/banner/banner-2.jpg); padding-top: 120px;">
-            <div class="container">
-                <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">研发与服务</h1>
-					<!-- Breadcrumb row -->
-					<div class="breadcrumb-row">
-						<ul class="list-inline">
-							<li><a href="index.php">首页</a></li>
-							<li>研发与服务</li>
-						</ul>
-					</div>
-					<!-- Breadcrumb row END -->
-                </div>
-            </div>
-        </div>
+		<div style="background-image: url('/images/banner/banner-2.jpg'); height: 300px; background-size: cover; background-position: center; position: relative;">
+			<div class="container h-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
+				<div>
+				<h1 style="font-size: 48px;">细胞培养研究中心</h1>
+				<h3 style="font-size: 24px; margin-top: 20px;">精准定制 · 严选品质 · 突破创新</h3>
+				</div>
+			</div>
+		</div>
 
 		<!-- contact area -->
-        <div class="content-area">
+        <div>
 
-            <section class="content-inner-4" style="background-position: center;">
-                <div class="container">
+			<!-- 7大核心处理技术 -->
+			<div class="col-xl-12 col-lg-12 p-lr0 d-flex justify-content-center align-items-center" 
+				style="position: relative; background-image: url('images/service-lab2.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-                    <div class="sort-title clearfix text-center">
-                        <h2>血清个性化定制解决方案</h2>
-                        <p>让血清适配细胞，而非细胞适应血清</p>
-                    </div>
+				
 
-                    <div class="section-full content-inner-1 frame-sr-list-area">
-					<div class="section-head text-center">
-						<h2 class="title">Our Services</h2>
-						<div class="dlab-separator bg-primary m-b0"></div>
-					</div>
-					<div class="row align-items-center">
-						<div class="col-lg-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-							<ul class="service-list">
-								<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</li>
-								<li>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
-								<li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</li>
-								<li>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-								<li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
-							</ul>
+				<div class="align-self-center text-white" style=" 
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+				">
+
+					<!-- 遮罩 -->
+					<div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:0;"></div>
+
+					
+
+					<!-- 中心内容容器 -->
+					<div style="z-index: 1; max-width: 960px; margin: 0 auto; width: 100%; text-align: center; padding: 20px;">
+
+						<div class="text-white">
+							<h2 class="title">血清个性化定制解决方案</h2>
+							<p>让血清适配细胞，而非细胞适应血清，我们提供领先的血清深度处理工艺，根据实验特异性需求进行灵活定制</p>
 						</div>
-						<div class="col-lg-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-							<ul class="service-list">
-								<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</li>
-								<li>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
-								<li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</li>
-								<li>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-								<li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
-							</ul>
+
+						<div class="text-white" style="margin-top: 30px;">
+							<h4 class="sort-title">7大核心处理技术</h4>
 						</div>
-					</div>
-					<div class="m-t40 text-center">
-						<a href="services.html" class="site-button btnhover14">View All Services</a> 
+						<!-- 你后面的列表继续 -->
+						<ul class="list-check white list-2 rounded border list-two-columns" style="
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: center;
+							gap: 20px;
+							margin: 0 auto;
+							max-width: 1140px;  /* 原来是 960px，现在扩大 */
+							padding: 0 0px;
+							text-align: left;
+						">
+							<li><h5 class="title">活性炭处理——高效吸附小分子杂质</h5></li>
+							<li><h5 class="title">透析处理——精准去除无机盐及代谢废物</h5></li>
+							<li><h5 class="title">聚乙二醇浓缩——提升目标蛋白浓度</h5></li>
+							<li><h5 class="title">超低IgG处理（≤5μg/ml）——降低免疫干扰</h5></li>
+							<li><h5 class="title">γ射线照射——无菌保障</h5></li>
+							<li><h5 class="title">低内毒素水平（≤3EU/ml）——保障细胞活性</h5></li>
+							<li><h5 class="title">热灭活处理（56℃/30min）——彻底灭活补体系统</h5></li>
+						</ul>
+
+						<div class="text-white" style="margin-top: 30px">
+							<h4 class="sort-title">应用场景</h4>
+						</div>
+
+						<div class="section-content box-sort-in p-b0 button-example">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 m-b30">
+										<div class="icon-bx-wraper center">
+											<div class="icon-bx-sm bg-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-user"></i></a> </div>
+											<div class="icon-content">
+												<h5 class="dlab-tilte text-capitalize">疫苗开发</h5>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 m-b30">
+										<div class="icon-bx-wraper center">
+											<div class="icon-bx-sm radius bg-blue m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-ruler-pencil"></i></a> </div>
+											<div class="icon-content">
+												<h5 class="dlab-tilte text-capitalize">基因治疗</h5>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 m-b30">
+										<div class="icon-bx-wraper center">
+											<div class="icon-bx-sm radius text-red border-2 m-b20"> <a href="javascript:void(0);" class="icon-cell text-red"><i class="ti-brush-alt"></i></a> </div>
+											<div class="icon-content">
+												<h5 class="dlab-tilte text-capitalize">干细胞治疗</h5>
+												
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 col-lg- m-b30">
+										<div class="icon-bx-wraper center">
+											<div class="icon-bx-sm radius bg-blue m-b20"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-ruler-pencil"></i></a> </div>
+											<div class="icon-content">
+												<h5 class="dlab-tilte text-capitalize">单克隆抗体生产</h5>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 
-                    <div class="section-full content-inner-1 frame-sr-list-area">
-					<div class="section-head text-center">
-                        <h2>血清个性化定制解决方案</h2>
-                        <p>让血清适配细胞，而非细胞适应血清</p>
-						<div class="dlab-separator bg-primary m-b0"></div>
-					</div>
-					<div class="row align-items-center">
-						<div class="col-lg-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-							<ul class="service-list" style="font-size: 20px;">
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>活性炭处理——高效吸附小分子杂质</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>透析处理——精准去除无机盐及代谢废物</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>热灭活处理（56℃/30min）——彻底灭活补体系统</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>超低IgG处理（≤5μg/ml）——降低免疫干扰</li>
-							</ul>
-						</div>
-						<div class="col-lg-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-							<ul class="service-list" style="font-size: 20px;">
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>低内毒素水平（≤3EU/ml）——保障细胞活性</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>聚乙二醇浓缩——提升目标蛋白浓度</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500; font-size: 20px; margin-bottom: 20px;"></i>γ射线照射——无菌保障</li>
-							</ul>
-						</div>
-					</div>
-					<div class="m-t40 text-center">
-						<a href="services.html" class="site-button btnhover14">View All Services</a> 
-					</div>
-				</div>
+				
+			</div>
 
-                    <div class="row">
-                        <div class="col-lg-6">
-                        <div class="row">
-							<div class="col-md-6">
-								<div class="icon-bx-wraper style-19 m-b30">
-									<div class="icon-bx-md m-b20"> 
-										<span class="icon-cell">
-											<img src="images/icon/event/icon1.png" alt="">
-										</span> 
-									</div>
-									<h3 class="title"><a href="services-details.html">Networking</a></h3>
-									<div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteratio.</p>
-								</div>
-								<div class="icon-bx-wraper style-19 m-b30">
-									<div class="icon-bx-md m-b20"> 
-										<span class="icon-cell">
-											<img src="images/icon/event/icon2.png" alt="">
-										</span> 
-									</div>
-									<h3 class="title"><a href="services-details.html">Have Fun</a></h3>
-									<div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteratio.</p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="icon-bx-wraper style-19 m-b30 mt-md-5 mt-0">
-									<div class="icon-bx-md m-b20"> 
-										<span class="icon-cell">
-											<img src="images/icon/event/icon3.png" alt="">
-										</span> 
-									</div>
-									<h3 class="title"><a href="services-details.html">Great Speakers</a></h3>
-									<div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteratio.</p>
-								</div>
-								<div class="icon-bx-wraper style-19 m-b30">
-									<div class="icon-bx-md m-b20"> 
-										<span class="icon-cell">
-											<img src="images/icon/event/icon4.png" alt="">
-										</span> 
-									</div>
-									<h3 class="title"><a href="services-details.html">New People</a></h3>
-									<div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteratio.</p>
-								</div>
-							</div>
-						</div>
-                        </div>
-                        <div class="col-lg-6 ev-about-content text-black">
-                            <div class="">
-                                <h4>7大核心处理技术</h4>
-                            </div>	
-                            <ul class="ev-list mb-4">
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>活性炭处理——高效吸附小分子杂质</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>透析处理——精准去除无机盐及代谢废物</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>热灭活处理（56℃/30min）——彻底灭活补体系统</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>超低IgG处理（≤5μg/ml）——降低免疫干扰</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>低内毒素水平（≤3EU/ml）——保障细胞活性</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>聚乙二醇浓缩——提升目标蛋白浓度</li>
-                                <li><i class="fas fa-certificate" style="color: #FF8500;"></i>γ射线照射——无菌保障</li>
-                            </ul>
-                            <p class="mb-5">我们提供领先的血清深度处理工艺，根据实验特异性需求进行灵活定制</p>
-                            <!-- <a href="#" class="site-button-secondry btnhover20 radius-xl">About Us<i class="fas fa-angle-double-right ms-2"></i></a> -->
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            			<!-- Abouts -->
+			<!-- Abouts -->
 			<div class="section-full box-about-list">
                 <div class="row spno">
 					<div class="col-lg-6 col-md-12"> 
@@ -223,7 +209,7 @@
 						<div class="max-w700 m-auto p-tb50 p-lr20">
 							<div class="text-white">
                                 <span style="color: #FF8500;">用细胞表现定义优质血清</span>
-								<h2>胎牛血清严选体系</h2>
+								<h2 class="title">胎牛血清严选体系</h2>
                                 <p>我们建立四级生物学验证标准，确保每批次血清满足高端研究需求</p>
 							</div>
 							<div class="icon-bx-wraper m-b30 left bg-white" >
@@ -233,9 +219,9 @@
 									</a> 
 								</div>
 								<div class="icon-content">
-									<h4 class="dlab-tilte">细胞水平四维验证</h4>
+									<h4 class="dlab-tilte text-black">细胞水平四维验证</h4>
 									<div class="col-md-12 col-lg-12 col-sm-12">
-										<ul class="list-chevron-circle orange text-white" style="font-size: 20px;">
+										<ul class="list-chevron-circle orange text-black" style="font-size: 20px;">
 											<li>传代稳定性</li>
 											<li>倍增速率</li>
 											<li>克隆形成率</li>
@@ -251,8 +237,8 @@
 									</a> 
 								</div>
 								<div class="icon-content">
-									<h4 class="dlab-tilte">四重保障机制</h4>
-									<ul class="list-chevron-circle orange text-white" style="font-size: 20px;">
+									<h4 class="dlab-tilte text-black">四重保障机制</h4>
+									<ul class="list-chevron-circle orange text-black" style="font-size: 20px;">
                                         <li>澳新/国内源头牧场直采</li>
                                         <li>预留3批次安全库存</li>
                                         <li>全周期冷链追溯（-20℃至液氮气相环境）</li>
