@@ -37,7 +37,7 @@
                         </li>
 
                         <li style="margin-right: 30px;">
-                            <a href="../research-and-service.php">研发与服务</a>
+                            <a href="../service.php">研发与服务</a>
                         </li>
                         
                         <li class="has-mega-menu" style="margin-right: 30px;">
