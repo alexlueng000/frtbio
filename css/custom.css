@@ -67,7 +67,7 @@
     font-weight: 700;
     font-size: 32px;
     font-family: var(--font-secondary);
-    color: #001f8d;
+    color: var(--color-primary);
   }
   
   .about .content ul {
@@ -78,12 +78,12 @@
   .about .content ul li {
     display: flex;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 10px;
   }
   
   .about .content ul i {
     flex-shrink: 0;
-    font-size: 48px;
+    font-size: 24px;
     color: var(--color-primary);
     margin-right: 20px;
     line-height: 0;
@@ -92,7 +92,7 @@
   .about .content ul h5 {
     font-size: 18px;
     font-weight: 700;
-    color: #19335c;
+    color: black;
   }
   
   .about .content ul p {

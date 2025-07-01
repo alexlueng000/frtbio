@@ -36,6 +36,7 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 	<!-- Google Font -->	
 	<style>
 
@@ -102,128 +103,133 @@
         <div>
 
 			<!-- ======= About Us Section ======= -->
-			<section id="about" class="about pt-0" style="margin-top: 50px;">
+			<section id="about" class="about pt-0" style="margin-top: 50px; margin-bottom: 50px;">
 				<div class="container" data-aos="fade-up">
 					<div class="sort-title clearfix text-center">
 						<h2>血清个性化定制解决方案</h2>
+						<p style="font-size: 20px; color: black">
+							我们提供领先的血清深度处理工艺，根据实验特异性需求进行灵活定制
+							</p>
 					</div>
 
 					<div class="row gy-4">
-					<div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-						<img src="images/bio-labs.jpg" class="img-fluid" alt="">
-						<a href="#" class="glightbox"></a>
-					</div>
-					<div class="col-lg-6 content order-last order-lg-first">
-						<h3>7大核心处理技术</h3>
-						<p>
-						我们提供领先的血清深度处理工艺，根据实验特异性需求进行灵活定制
-						</p>
-						<ul>
-							<li data-aos="fade-up" data-aos-delay="100">
-								<i class="bi bi-diagram-3"></i>
-								<div>
-								<h5>活性炭处理——高效吸附小分子杂质</h5>
-								<!-- <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p> -->
+						<div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+							<img src="images/bio-labs.jpg" class="img-fluid" alt="">
+							<a href="#" class="glightbox"></a>
+						</div>
+						
+						<div class="col-lg-6 content order-last order-lg-first">
+							<div class="container">
+							<h3 style="margin-bottom: 20px;">七大核心处理技术</h3>
+							<ul style="margin-top: 20px;">
+								<li data-aos="fade-up" data-aos-delay="100">
+									<i class="bi bi-diagram-3"></i>
+									<div>
+									<h5>活性炭处理——高效吸附小分子杂质</h5>
+									<!-- <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p> -->
+									</div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="200">
+									<i class="bi bi-fullscreen-exit"></i>
+									<div>
+									<h5>透析处理——精准去除无机盐及代谢废物</h5>
+									<!-- <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p> -->
+									</div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="300">
+									<i class="bi bi-broadcast"></i>
+									<div>
+									<h5>热灭活处理（56℃/30min）——彻底灭活补体系统</h5>
+									<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
+									</div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="300">
+									<i class="bi bi-broadcast"></i>
+									<div>
+									<h5>超低IgG处理（≤5μg/ml）——降低免疫干扰</h5>
+									<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
+									</div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="300">
+									<i class="bi bi-broadcast"></i>
+									<div>
+									<h5>低内毒素水平（≤3EU/ml）——保障细胞活性</h5>
+									<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
+									</div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="300">
+									<i class="bi bi-broadcast"></i>
+									<div>
+									<h5>聚乙二醇浓缩——提升目标蛋白浓度</h5>
+									<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
+									</div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="300">
+									<i class="bi bi-broadcast"></i>
+									<div>
+									<h5>γ射线照射——无菌保障</h5>
+									<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
+									</div>
+								</li>
+							</ul>
+							</div>
+						
+							<!-- ======= Featured Services Section ======= -->
+							<section id="featured-services" class="featured-services" style="margin-top: 50px; margin-bottom: 50px;">
+								<div class="container">
+									<h3>四大应用场景</h3>
+									<div class="row gy-4" style="margin-top: 20px;">
+
+										<div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up">
+											<div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+											<div>
+											<h4 class="title" style="text-color: black;">疫苗开发</h4>
+											<!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+											<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up">
+											<div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+											<div>
+											<h4 class="title">基因治疗</h4>
+											<!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+											<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
+											</div>
+										</div>
+										<!-- End Service Item -->
+
+										<div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+											<div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+											<div>
+											<h4 class="title">干细胞治疗</h4>
+											<!-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+											<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
+											</div>
+										</div><!-- End Service Item -->
+
+										<div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+											<div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+											<div>
+											<h4 class="title">单克隆抗体生产</h4>
+											<!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+											<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
+											</div>
+										</div><!-- End Service Item -->
+
+									</div>
+
 								</div>
-							</li>
-							<li data-aos="fade-up" data-aos-delay="200">
-								<i class="bi bi-fullscreen-exit"></i>
-								<div>
-								<h5>透析处理——精准去除无机盐及代谢废物</h5>
-								<!-- <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p> -->
-								</div>
-							</li>
-							<li data-aos="fade-up" data-aos-delay="300">
-								<i class="bi bi-broadcast"></i>
-								<div>
-								<h5>热灭活处理（56℃/30min）——彻底灭活补体系统</h5>
-								<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
-								</div>
-							</li>
-							<li data-aos="fade-up" data-aos-delay="300">
-								<i class="bi bi-broadcast"></i>
-								<div>
-								<h5>超低IgG处理（≤5μg/ml）——降低免疫干扰</h5>
-								<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
-								</div>
-							</li>
-							<li data-aos="fade-up" data-aos-delay="300">
-								<i class="bi bi-broadcast"></i>
-								<div>
-								<h5>低内毒素水平（≤3EU/ml）——保障细胞活性</h5>
-								<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
-								</div>
-							</li>
-							<li data-aos="fade-up" data-aos-delay="300">
-								<i class="bi bi-broadcast"></i>
-								<div>
-								<h5>聚乙二醇浓缩——提升目标蛋白浓度</h5>
-								<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
-								</div>
-							</li>
-							<li data-aos="fade-up" data-aos-delay="300">
-								<i class="bi bi-broadcast"></i>
-								<div>
-								<h5>γ射线照射——无菌保障</h5>
-								<!-- <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p> -->
-								</div>
-							</li>
-						</ul>
-					</div>
+							</section>
+							<!-- End Featured Services Section -->
+						</div>
 					</div>
 
 				</div>
 				</section>
 				<!-- End About Us Section -->
 
-			<!-- ======= Featured Services Section ======= -->
-			<section id="featured-services" class="featured-services" style="margin-top: 50px; margin-bottom: 50px;">
-				<div class="container">
-
-					<div class="row gy-4">
-
-						<div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up">
-							<div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
-							<div>
-							<h4 class="title" style="text-color: black;">疫苗开发</h4>
-							<!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-							<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up">
-							<div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
-							<div>
-							<h4 class="title">基因治疗</h4>
-							<!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-							<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
-							</div>
-						</div>
-						<!-- End Service Item -->
-
-						<div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-							<div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
-							<div>
-							<h4 class="title">干细胞治疗</h4>
-							<!-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-							<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
-							</div>
-						</div><!-- End Service Item -->
-
-						<div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-							<div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
-							<div>
-							<h4 class="title">单克隆抗体生产</h4>
-							<!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-							<a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a> -->
-							</div>
-						</div><!-- End Service Item -->
-
-					</div>
-
-				</div>
-			</section>
-			<!-- End Featured Services Section -->
+			
 
 
 			<!-- Abouts -->
