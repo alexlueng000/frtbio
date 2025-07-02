@@ -59,9 +59,9 @@
                     <div class="widget border-0 widget_services">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">产品中心</h6>
                         <ul >
-                            <li><a href="about-1.html">血清</a></li>
-                            <li><a href="blog-grid-2.html">细胞培养基</a></li>
-                            <li><a href="services-1.html">鉴定试剂</a></li>
+                            <li><a href="../product-center.php">血清</a></li>
+                            <li><a href="../product-center.php">细胞培养基</a></li>
+                            <li><a href="../product-center.php">其他</a></li>
                         </ul>
                     </div>
                 </div>
