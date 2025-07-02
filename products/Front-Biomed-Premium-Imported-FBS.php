@@ -72,7 +72,6 @@
 						<ul class="list-inline">
 							<li><a href="../index.php">首页</a></li>
 							<li><a href="../product-center.php">产品中心</a></li>
-                            <li><a href="../serums.php">血清</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->

@@ -59,9 +59,9 @@
                     <div class="widget border-0 widget_services">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">产品中心</h6>
                         <ul >
-                            <li><a href="about-1.html">血清</a></li>
-                            <li><a href="blog-grid-2.html">细胞培养基</a></li>
-                            <li><a href="services-1.html">鉴定试剂</a></li>
+                            <li><a href="../product-center.php">血清</a></li>
+                            <li><a href="../product-center.php">细胞培养基</a></li>
+                            <li><a href="../product-center.php">其他</a></li>
                         </ul>
                     </div>
                 </div>
@@ -93,13 +93,13 @@
                             <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">
                                 生物公众号
                             </div>
-                            <img src="../images/qrcode_bio.jpg" alt="弗劳恩生物" style="width: 100px; height: auto;">
+                            <img src="../images/qrcode_bio.webp" alt="弗劳恩生物" style="width: 100px; height: auto;">
                         </div>
                         <div style="text-align: center;">
                             <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">
                                 微信客服
                             </div>
-                            <img src="../images/qrcode_cs.png" alt="弗劳恩微信客服" style="width: 100px; height: auto;">
+                            <img src="../images/qrcode_cs.webp" alt="弗劳恩微信客服" style="width: 100px; height: auto;">
                         </div>
                     </div>
                     
