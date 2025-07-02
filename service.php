@@ -90,7 +90,7 @@
 	
     <div class="page-content bg-white">
 
-		<div style="background-image: url('images/service-banner.jpg'); height: 500px; background-size: cover; background-position: center; position: relative;">
+		<div style="background-image: url('images/service-banner.webp'); height: 500px; background-size: cover; background-position: center; position: relative;">
 			<div class="container h-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
 				<div>
 				<h1 style="font-size: 48px; font-family: 'Poppins',sans-serif; font-weight: 600;">细胞培养研究中心</h1>
@@ -114,7 +114,7 @@
 
 					<div class="row gy-4">
 						<div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-							<img src="images/bio-labs.jpg" class="img-fluid" alt="">
+							<img src="images/bio-labs.webp" class="img-fluid" alt="">
 							<a href="#" class="glightbox"></a>
 						</div>
 						
@@ -123,14 +123,14 @@
 							<h3 style="margin-bottom: 20px;">七大核心处理技术</h3>
 							<ul style="margin-top: 20px;">
 								<li data-aos="fade-up" data-aos-delay="100">
-									<i class="bi bi-diagram-3"></i>
+									<i class="bi bi-broadcast"></i>
 									<div>
 									<h5>活性炭处理——高效吸附小分子杂质</h5>
 									<!-- <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p> -->
 									</div>
 								</li>
 								<li data-aos="fade-up" data-aos-delay="200">
-									<i class="bi bi-fullscreen-exit"></i>
+									<i class="bi bi-broadcast"></i>
 									<div>
 									<h5>透析处理——精准去除无机盐及代谢废物</h5>
 									<!-- <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p> -->
@@ -190,7 +190,7 @@
 										</div>
 
 										<div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up">
-											<div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+											<div class="icon flex-shrink-0"><i class="fa-regular fa-font-awesome"></i></div>
 											<div>
 											<h4 class="title">基因治疗</h4>
 											<!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
