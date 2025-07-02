@@ -115,7 +115,7 @@
                 <div class="col-md-6 col-sm-6 text-right "> 
                     <div class="widget-link "> 
                         <div class="col-md-6 col-sm-6 text-right "> 
-                            <img src="images/beian.png" style="width: 20px; height: 20px;" alt="">
+                            <img src="../images/beian.png" style="width: 20px; height: 20px;" alt="">
                             <a href="https://beian.miit.gov.cn/" target="_blank">
                             粤ICP备18028387号-2</a>
                         </div>
