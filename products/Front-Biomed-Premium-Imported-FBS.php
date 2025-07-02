@@ -63,7 +63,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
         <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/banner-1.jpg);">
+        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(../images/banner/banner-1.jpg);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">产品详情</h1>
@@ -92,10 +92,10 @@
 									<div class="mfp-gallery">
 										<div class="dlab-box">
 											<div class="dlab-thum-bx">
-												<img src="../images/products/product1.jpg" alt="">
+												<img src="../images/products/new-product1-side.webp" alt="">
 												<div class="overlay-bx">
 													<div class="overlay-icon">
-														<span data-exthumbimage="../images/banner/banner-1.jpg" data-src="../images/banner/banner-1.jpg" class="check-km" title="Image 1 Title will come here">		
+														<span data-exthumbimage="../images/banner/banner-1.webp" data-src="../images/banner/banner-1.webp" class="check-km" title="Image 1 Title will come here">		
 															<i class="ti-fullscreen"></i>
 														</span>
 													</div>
@@ -112,7 +112,7 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></h3>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed进口特级胎牛血清(FBS, Optimum)</a></h3>
 								<p class="m-b10 m-t10"> Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
 								<!-- <div class="dlab-divider bg-gray tb15">
 									<i class="icon-dot c-square"></i>

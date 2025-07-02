@@ -540,7 +540,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/iso.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/iso-1.jpg" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -568,7 +568,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/生物学效能验证.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/frtbio-2.jpg" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -582,7 +582,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/完善售后服务.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/frtbio-3.jpg" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<!-- <div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">

@@ -5,7 +5,7 @@
             <div class="container clearfix">
                 <!-- website logo -->
                 <div class="logo-header mostion logo-dark">
-                    <a href="../index.php"><img src="../images/frtbio_logo.png" style="scale: 2.0; padding-right: 20px; "  alt=""></a>
+                    <a href="../index.php"><img src="../images/logo-4.png" style="scale: 2.0; padding-right: 20px; "  alt=""></a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

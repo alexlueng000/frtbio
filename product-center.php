@@ -252,7 +252,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清(FBS, Optimum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -284,7 +284,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Exceptional.php" style="hover: #FF8500;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Exceptional.php" style="hover: #FF8500;">Front Biomed超优级胎牛血清(FBS, Exceptional)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -304,8 +304,6 @@
 									</div>
 								</div>
 								
-								
-								
 								<!-- product 4 Front Biomed优级胎牛血清 (FBS, Premium) -->
 								<div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
 									<div class="d-flex align-items-start">  <!-- align-items-start 保证顶部对齐 -->
@@ -318,7 +316,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed优级胎牛血清 (FBS, Premium)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed优级胎牛血清(FBS, Premium)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -357,7 +355,7 @@
 												<button class="site-button orange radius-xl m-r15" type="button" style="padding: 5px 15px; font-size: 14px;">概述</button>
 												
 												<!-- 文字部分 -->
-												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front提供的新生牛血清（NBCS），可用于各种细胞培养基。我们的NBCS来源于新西兰和中国。对于新西兰的原材料，我们可保证NBCS是来自产后10天甚至更少天数的牛，从而保证最终产品的品质一致性。</p>
+												<p style="flex: 1; margin-left: 20px; font-size: 14px">Front提供的新生牛血清(NBCS)，可用于各种细胞培养基。我们的NBCS来源于新西兰和中国。对于新西兰的原材料，我们可保证NBCS是来自产后10天甚至更少天数的牛，从而保证最终产品的品质一致性。</p>
 											</div>
 											<div style="display: flex;  align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -416,7 +414,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum-Equine Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -472,8 +470,6 @@
 								</div>
 								
 							</div>
-
-
 							
 						</div>
 					</div>
