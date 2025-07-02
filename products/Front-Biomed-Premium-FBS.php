@@ -64,7 +64,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
         <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/banner-1.jpg);">
+        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(../images/banner/banner-1.jpg);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">产品详情</h1>
@@ -72,8 +72,7 @@
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
 							<li><a href="../index.php">首页</a></li>
-							<li><a href="../serums.php">产品中心</a></li>
-                            <li><a href="../serums.php">血清</a></li>
+							<li><a href="../product-center.php">产品中心</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -93,7 +92,7 @@
 									<div class="mfp-gallery">
 										<div class="dlab-box">
 											<div class="dlab-thum-bx">
-												<img src="../images/products/product4.jpg" alt="">
+												<img src="../images/products/guochanteji-side.webp" alt="">
 												<div class="overlay-bx">
 													<div class="overlay-icon">
 														<span data-exthumbimage="../images/banner/banner-1.jpg" data-src="../images/banner/banner-1.jpg" class="check-km" title="Image 1 Title will come here">		
