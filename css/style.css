@@ -13861,11 +13861,11 @@ ol.commentlist li .star-rating {
 .icon-bx-wraper:hover .hwp,
 .hwp:hover{
 	background-color:var(--color-primary);
-	color:#fff;
+	color:#000;
 }
 .icon-bx-wraper:hover .hwp a,
 .hwp:hover a{
-	color:#fff;
+	color:#000;
 }
 .faa-horizontal.animated{
     -webkit-animation:horizontal 5s ease infinite;

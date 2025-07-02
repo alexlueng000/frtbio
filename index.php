@@ -452,8 +452,20 @@
 									<img data-src="images/products/new-product1.webp" class="lazy" alt="" >
 								</div>
 								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级进口胎牛血清 (FBS, Optimum)</h5>
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5>
 									<a href="products/Front-Biomed-Premium-Imported-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
+							<div class="product-card dlab-post-media" >
+								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
+									<img data-src="images/products/gouchanteji-front.webp" class="lazy" alt="" >
+								</div>
+								<div class="text-center">
+									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
+									<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 								</div>
 							</div>
 						</div>
@@ -469,17 +481,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
-							<div class="product-card dlab-post-media" >
-								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img data-src="images/products/gouchanteji-front.webp" class="lazy" alt="" >
-								</div>
-								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed特级国产胎牛血清 (FBS, Optimum)</h5>
-									<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
-								</div>
-							</div>
-						</div>
+						
 						
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
@@ -524,7 +526,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/service-1.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/源头把控.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info" >
 									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -538,7 +540,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/service-2.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/iso.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -566,7 +568,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/service-4.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/生物学效能验证.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
@@ -580,7 +582,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm dlab-img-overlay1"> 
-									<a href="services-details.html"><img data-src="images/service-5.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/完善售后服务.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<!-- <div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">

@@ -80,8 +80,8 @@
                         <h5 class="footer-title text-white">联系我们</h5>
                         <ul>
                             <li><i class="ti-location-pin"></i><strong>公司地址</strong>深圳市罗湖区南湖街道新南社区<br />深南东路2001号鸿昌广场1301 </li>
-                            <li><i class="ti-mobile"></i><strong>联系电话</strong><a href="tel:+4733378901">0755-82233228</li>
-                            <li><i class="ti-email"></i><strong>电子邮件</strong><a href="mailto:someone@example.com">front903@163.com</a></li>
+                            <li><i class="ti-mobile"></i><strong>联系电话</strong><a href="tel:+4733378901">0755-86955516</a></li>
+                            <li><i class="ti-email"></i><strong>电子邮件</strong><a href="mailto:someone@example.com">sales@frontbiomedical.com</a></li>
                         </ul>
                     </div>
                 </div>

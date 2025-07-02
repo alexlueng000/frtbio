@@ -376,7 +376,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img class="lazy rounded" data-src="images/animal-product1.jpg" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/animal-product1.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -410,7 +410,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img class="lazy rounded" data-src="images/animal-product2.jpg" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/animal-product2.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
@@ -443,7 +443,7 @@
 										<!-- 图片部分 -->
 										<div style="margin-right: 30px; width: 200px; height: 200px; border: 2px solid #ddd; display: flex; justify-content: center; align-items: center; overflow: hidden;">
 											<a >
-												<img class="lazy rounded" data-src="images/animal-product3.jpg" alt="" style="max-width: 100%; height: 100%;">
+												<img class="lazy rounded" data-src="images/animal-product3.webp" alt="" style="max-width: 100%; height: 100%;">
 											</a>
 										</div>
 										<!-- 文字内容部分 -->
