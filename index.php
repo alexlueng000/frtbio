@@ -525,13 +525,10 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
-								<div class="dlab-media radius-sm dlab-img-overlay1"> 
+								<div class="dlab-media radius-sm "> 
 									<a href="services-details.html"><img data-src="images/源头把控.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info" >
-									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
-										<a href="services-details.html" class="icon-cell"><i class="flaticon-worker" style="color: #fff"></i></a> 
-									</div> -->
 									<h4 class="title" style="text-align: center;">源头把控</h4>
 									<p>精选无疫病牧场，所血源地均需通过资质审核与实地考察。</p>
 								</div>
@@ -539,13 +536,10 @@
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
-								<div class="dlab-media radius-sm dlab-img-overlay1"> 
+								<div class="dlab-media radius-sm "> 
 									<a href="services-details.html"><img data-src="images/iso-1.jpg" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
-										<a href="services-details.html" class="icon-cell"><i class="flaticon-settings" style="color: #fff"></i></a> 
-									</div> -->
 									<h4 class="title" style="text-align: center;">国际认证</h4>
 									<p>产品符合国际血清行业协会（ISIA）标准，并通过ISO 9001、ISO 13485认证。</p>
 								</div>
@@ -553,13 +547,10 @@
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
-								<div class="dlab-media radius-sm dlab-img-overlay1"> 
+								<div class="dlab-media radius-sm "> 
 									<a href="services-details.html"><img data-src="images/service-3.webp" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
-										<a href="services-details.html" class="icon-cell"><i class="flaticon-engineer-1" style="color: #fff"></i></a> 
-									</div> -->
 									<h4 class="title" style="text-align: center;">多重检测评估</h4>
 									<p>①国内外血清出厂前必须出具可靠的检验证书（Certificate of Analysis）。<br>②国外胎牛血清在进口前经弗劳恩生物国外、国内实验室两轮严格的质量检测及评估。</p>
 								</div>
@@ -567,13 +558,10 @@
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
-								<div class="dlab-media radius-sm dlab-img-overlay1"> 
+								<div class="dlab-media radius-sm "> 
 									<a href="services-details.html"><img data-src="images/frtbio-2.jpg" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<!-- <div class="icon-bx-sm icon-bx icon-up" style="background-color: #FF8500">
-										<a href="services-details.html" class="icon-cell"><i class="flaticon-factory-1" style="color: #fff"></i></a> 
-									</div> -->
 									<h4 class="title" style="text-align: center;">生物学效能验证</h4>
 									<p>通过细胞增殖率、克隆形成率等实验确保产品效能。</p>
 								</div>
@@ -581,13 +569,10 @@
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
-								<div class="dlab-media radius-sm dlab-img-overlay1"> 
+								<div class="dlab-media radius-sm "> 
 									<a href="services-details.html"><img data-src="images/frtbio-3.jpg" class="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
-									<!-- <div class="icon-bx-sm icon-bx  icon-up" style="background-color: #FF8500">
-										<a href="services-details.html" class="icon-cell"><i class="flaticon-worker" style="color: #fff"></i></a> 
-									</div> -->
 									<h4 class="title" style="text-align: center;">完善售后服务</h4>
 									<p>弗劳恩生物有严格的商品管理，连续多年顺利通过深圳海关的“进境生物材料使用单位核查”,并密切监管产品流向，定期询问用户库存,如有质量问题，包退包换。</p>
 								</div>
