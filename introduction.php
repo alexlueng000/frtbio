@@ -85,7 +85,7 @@
 								
 								
 								<div class="col-lg-12 m-b30">
-									<img alt="" class="rounded" src="images/company.jpg">
+									<img alt="" class="rounded" src="images/company.webp">
 									<div class="dlab-info m-t30 ">
 										<h4 class="dlab-title m-t0">公司简介</h4>
 										<p>深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。 </p>
