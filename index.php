@@ -69,6 +69,13 @@
 			margin-right: 5px;
 		}
 	}
+
+	@media (max-width: 768px) {
+    .best-sell-container {
+        max-width: 100%; /* 小屏时取消左右边距 */
+        padding: 0 16px;  /* 可选，加一点内边距更舒服 */
+    }
+}
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -443,54 +450,56 @@
 					<div class="sort-title clearfix text-center">
 						<h2>热销产品</h2>
 					</div>
-					<div class="row" style="margin-top: -20px;">
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s"
-						style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; "
-						>
-							<div class="" >
-								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/products/new-product1.webp" loading="lazy" alt="" >
-								</div>
-								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5>
-									<a href="products/Front-Biomed-Premium-Imported-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+					<div class="container">
+						<div class="row" style="margin-top: -20px;">
+							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s"
+							style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; "
+							>
+								<div class="" >
+									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
+										<img src="images/products/new-product1.webp" loading="lazy" alt="" class="img-fluid" >
+									</div>
+									<div class="text-center">
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5>
+										<a href="products/Front-Biomed-Premium-Imported-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
-							<div class="product-card dlab-post-media" >
-								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/products/gouchanteji-front.webp" loading="lazy" alt="" >
-								</div>
-								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
-									<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
-							<div class="product-card dlab-post-media" >
-								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/products/new-product2.webp" loading="lazy" alt="" >
-								</div>
-								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
-									<a href="products/Front-Biomed-Exceptional.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
+								<div class="product-card dlab-post-media" >
+									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
+										<img src="images/products/gouchanteji-front.webp" loading="lazy" alt="" class="img-fluid" >
+									</div>
+									<div class="text-center">
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
+										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						
-						
-						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
-							<div class="product-card dlab-post-media" >
-								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img src="images/products/new-product3.webp" loading="lazy" alt="" >
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
+								<div class="product-card dlab-post-media" >
+									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
+										<img src="images/products/new-product2.webp" loading="lazy" alt="" class="img-fluid" >
+									</div>
+									<div class="text-center">
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
+										<a href="products/Front-Biomed-Exceptional.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									</div>
 								</div>
-								<div class="text-center">
-									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
-									<a href="products/Front-Biomed-Premium-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+							</div>
+							
+							
+							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
+								<div class="product-card dlab-post-media" >
+									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
+										<img src="images/products/new-product3.webp" loading="lazy" alt="" class="img-fluid" >
+									</div>
+									<div class="text-center">
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
+										<a href="products/Front-Biomed-Premium-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+									</div>
 								</div>
 							</div>
 						</div>
