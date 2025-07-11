@@ -526,7 +526,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/源头把控.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/源头把控.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info" >
 									<h4 class="title" style="text-align: center;">源头把控</h4>
@@ -537,7 +537,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/iso-1.jpg" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/iso-1.jpg" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">国际认证</h4>
@@ -548,7 +548,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/service-3.webp" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/service-3.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">多重检测评估</h4>
@@ -559,7 +559,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/frtbio-2.jpg" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/frtbio-2.jpg" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">生物学效能验证</h4>
@@ -570,7 +570,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/frtbio-3.jpg" class="lazy" alt=""></a> 
+									<a href="services-details.html"><img data-src="images/frtbio-3.jpg" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">完善售后服务</h4>
@@ -591,7 +591,7 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover lazy" data-src="images/company1.webp" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" data-src="images/company1.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -599,7 +599,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover lazy" data-src="images/company2.webp" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" data-src="images/company2.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -607,7 +607,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover lazy" data-src="images/company3.webp" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" data-src="images/company3.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
