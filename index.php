@@ -717,7 +717,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-10.webp" class="lazy" alt="">
+											<img src="images/customers/customer-10.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
