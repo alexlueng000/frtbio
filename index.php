@@ -449,7 +449,7 @@
 						>
 							<div class="" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img data-src="images/products/new-product1.webp" class="lazy" alt="" >
+									<img src="images/products/new-product1.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5>
@@ -461,7 +461,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img data-src="images/products/gouchanteji-front.webp" class="lazy" alt="" >
+									<img src="images/products/gouchanteji-front.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
@@ -473,7 +473,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img data-src="images/products/new-product2.webp" class="lazy" alt="" >
+									<img src="images/products/new-product2.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
@@ -486,7 +486,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-6 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 							<div class="product-card dlab-post-media" >
 								<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-									<img data-src="images/products/new-product3.webp" class="lazy" alt="" >
+									<img src="images/products/new-product3.webp" loading="lazy" alt="" >
 								</div>
 								<div class="text-center">
 									<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
@@ -526,7 +526,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/源头把控.webp" loading="lazy" alt=""></a> 
+									<a href="services-details.html"><img src="images/源头把控.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info" >
 									<h4 class="title" style="text-align: center;">源头把控</h4>
@@ -537,7 +537,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/iso-1.jpg" loading="lazy" alt=""></a> 
+									<a href="services-details.html"><img src="images/iso-1.jpg" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">国际认证</h4>
@@ -548,7 +548,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/service-3.webp" loading="lazy" alt=""></a> 
+									<a href="services-details.html"><img src="images/service-3.webp" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">多重检测评估</h4>
@@ -559,7 +559,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/frtbio-2.jpg" loading="lazy" alt=""></a> 
+									<a href="services-details.html"><img src="images/frtbio-2.jpg" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">生物学效能验证</h4>
@@ -570,7 +570,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img data-src="images/frtbio-3.jpg" loading="lazy" alt=""></a> 
+									<a href="services-details.html"><img src="images/frtbio-3.jpg" loading="lazy" alt=""></a> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">完善售后服务</h4>
@@ -591,7 +591,7 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" data-src="images/company1.webp" loading="lazy" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" src="images/company1.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -599,7 +599,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" data-src="images/company2.webp" loading="lazy" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" src="images/company2.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -607,7 +607,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="dlab-box overlay-gallery-bx1">
 									<div class="dlab-thum dlab-img-overlay1 primary dlab-img-effect zoom"> 
-										<a href="javascript:void(0);"> <img class="img-cover" data-src="images/company3.webp" loading="lazy" alt=""> </a>
+										<a href="javascript:void(0);"> <img class="img-cover" src="images/company3.webp" loading="lazy" alt=""> </a>
 
 									</div>
 								</div>
@@ -654,7 +654,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-3.webp" class="lazy" alt="">
+											<img src="images/customers/customer-3.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -663,7 +663,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-4.webp" class="lazy" alt="">
+											<img src="images/customers/customer-4.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -672,7 +672,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-5.webp" class="lazy" alt="">
+											<img src="images/customers/customer-5.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -681,7 +681,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-6.webp" class="lazy" alt="">
+											<img src="images/customers/customer-6.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -690,7 +690,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-7.webp" class="lazy" alt="">
+											<img src="images/customers/customer-7.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -699,7 +699,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-8.webp" class="lazy" alt="">
+											<img src="images/customers/customer-8.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -708,7 +708,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-9.webp" class="lazy" alt="">
+											<img src="images/customers/customer-9.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -726,7 +726,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-11.webp" class="lazy" alt="">
+											<img src="images/customers/customer-11.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -735,7 +735,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-12.webp" class="lazy" alt="">
+											<img src="images/customers/customer-12.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -744,7 +744,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-13.webp" class="lazy" alt="">
+											<img src="images/customers/customer-13.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -753,7 +753,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-14.webp" class="lazy" alt="">
+											<img src="images/customers/customer-14.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -762,7 +762,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-15.webp" class="lazy" alt="">
+											<img src="images/customers/customer-15.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -771,7 +771,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-16.webp" class="lazy" alt="">
+											<img src="images/customers/customer-16.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -780,7 +780,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-17.webp" class="lazy" alt="">
+											<img src="images/customers/customer-17.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
@@ -789,7 +789,7 @@
 								<div class="dlab-box m-b15">
 									<div class="dlab-img-overlay4 dlab-img-effect zoom"> 
 										<a href="javascript:void(0);">
-											<img data-src="images/customers/customer-18.webp" class="lazy" alt="">
+											<img src="images/customers/customer-18.webp" loading="lazy" alt="">
 										</a>
 									</div>
 								</div>
