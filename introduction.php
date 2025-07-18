@@ -46,7 +46,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
         <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/bnr2.jpg);">
+        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/banner-1.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">公司简介</h1>
