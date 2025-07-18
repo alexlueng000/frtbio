@@ -16,7 +16,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>弗劳恩生物</title>
+	<title>弗劳恩生物 - 细胞培养定制专家</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
