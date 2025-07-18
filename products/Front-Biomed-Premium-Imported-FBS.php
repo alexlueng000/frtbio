@@ -13,8 +13,8 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
 	
 	<!-- PAGE TITLE HERE -->
 	<title>弗劳恩生物</title>
@@ -63,7 +63,7 @@
     <!-- Content -->
     <div class="page-content bg-white">
         <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(../images/banner/banner-1.jpg);">
+        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(../images/banner/banner-1.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
                     <h1 class="text-white">产品详情</h1>
