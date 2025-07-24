@@ -1,4 +1,8 @@
 RewriteEngine On
+
+# 如果请求的是实际文件或目录，不处理
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# 把任意路径 /x/y/z 重写为 /x/y/z.php
+RewriteRule ^(.+?)/?$ $1.php [L]

@@ -71,8 +71,8 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="../index.php">首页</a></li>
-							<li><a href="../serums.php">产品中心</a></li>
+							<li><a href="../index">首页</a></li>
+							<li><a href="../serums">产品中心</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
