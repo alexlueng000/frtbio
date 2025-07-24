@@ -119,21 +119,6 @@
 									data-paddingleft="[0,0,0,0]" 
 									style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.webp)"> </div>
 									<!-- LAYER NR. 1 -->
-								<!-- BACKGROUND VIDEO LAYER -->
-								<!-- <div class="rs-background-video-layer" 
-									data-forcerewind="on" 
-									data-volume="mute" 
-									data-videowidth="100%" 
-									data-videoheight="100%" 
-									data-videomp4="video/video2.mp4" 
-									data-videopreload="auto" 
-									data-videoloop="none" 
-									data-aspectratio="16:9" 
-									data-autoplay="true" 
-									data-autoplayonlyfirsttime="false" 
-									data-forceCover="1" 
-									data-nextslideatend="true" 
-								></div> -->
 
 								<div class="tp-caption tp-shape tp-shapewrapper ov-tp " 
 									id="slide-100-layer-1" 
@@ -175,67 +160,7 @@
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
 									 实验室信赖之选 <br> 细胞培养定制专家 
-								<!-- LAYER NR. 3 -->
-								<!-- <div class="tp-caption" 
-									id="slide-100-layer-4" 
-									data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['50','15','20','10']" 
-									data-fontsize="['18','16','14','14']"
-									data-lineheight="['30','30','26','26']"
-									data-width="['640','481','500','300']"
-									data-height="none"
-									data-whitespace="normal"
-									data-type="text" 
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-									data-textAlign="['left','left','center','center']"
-									data-paddingtop="[0,0,0,0]"
-									data-paddingright="[0,0,0,0]"
-									data-paddingbottom="[0,0,0,0]"
-									data-paddingleft="[0,0,0,0]"
-									style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-								</div> -->
-								<!-- LAYER NR. 5 -->
-								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
-									href="about-1.html" target="_blank"			 
-									id="slide-100-layer-5" 
-									data-x="['center','center','center','center']" data-hoffset="['-515','-340','-85','-65']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']" 
-									data-lineheight="['18','18','18','18']"
-									data-whitespace="nowrap"
-									data-type="button" 
-									data-actions=''
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-									data-textAlign="['center','center','center','center']"
-									data-paddingtop="[15,15,15,10]"
-									data-paddingright="[30,30,30,20]"
-									data-paddingbottom="[15,15,15,10]"
-									data-paddingleft="[30,30,30,20]"
-									style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> About Us
-								</a> -->
-								<!-- LAYER NR. 5 -->
-								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
-									href="services-details.html" target="_blank"			 
-									id="slide-100-layer-6"  
-									data-x="['center','center','center','center']" data-hoffset="['-360','-180','70','65']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']"  
-									data-lineheight="['18','18','18','18']"
-									data-whitespace="nowrap"
-									data-type="button" 
-									data-actions=''
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-									data-textAlign="['center','center','center','center']"
-									data-paddingtop="[15,15,15,10]"
-									data-paddingright="[30,30,30,20]"
-									data-paddingbottom="[15,15,15,10]"
-									data-paddingleft="[30,30,30,20]"
-									style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> Services 
-								</a> -->
+								
 							</li>
 							<li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
@@ -300,67 +225,6 @@
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
 									产品参数高标准 • 对标国际一线品牌 <br> 新西兰/国产双源产地 • 甄选世界顶级牧场
 								</div>
-								<!-- LAYER NR. 3 -->
-								<!-- <div class="tp-caption" 
-									id="slide-200-layer-4" 
-									data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['20','15','20','10']" 
-									data-fontsize="['18','16','14','14']"
-									data-lineheight="['30','30','26','26']"
-									data-width="['640','481','500','300']"
-									data-height="none"
-									data-whitespace="normal"
-									data-type="text" 
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-									data-textAlign="['left','left','center','center']"
-									data-paddingtop="[0,0,0,0]"
-									data-paddingright="[0,0,0,0]"
-									data-paddingbottom="[0,0,0,0]"
-									data-paddingleft="[0,0,0,0]"
-									style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
-								</div> -->
-								<!-- LAYER NR. 5 -->
-								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
-									href="about-1.html" target="_blank"			 
-									id="slide-200-layer-5" 
-									data-x="['center','center','center','center']" data-hoffset="['-515','-340','-85','-65']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']" 
-									data-lineheight="['18','18','18','18']"
-									data-whitespace="nowrap"
-									data-type="button" 
-									data-actions=''
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-									data-textAlign="['center','center','center','center']"
-									data-paddingtop="[15,15,15,10]"
-									data-paddingright="[30,30,30,20]"
-									data-paddingbottom="[15,15,15,10]"
-									data-paddingleft="[30,30,30,20]"
-									style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> About Us
-								</a> -->
-								<!-- LAYER NR. 5 -->
-								<!-- <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary" 
-									href="services-details.html" target="_blank"			 
-									id="slide-200-layer-6"  
-									data-x="['center','center','center','center']" data-hoffset="['-360','-180','70','65']" 
-									data-y="['middle','middle','middle','middle']" data-voffset="['140','100','100','100']"
-									data-lineheight="['18','18','18','18']"
-									data-whitespace="nowrap"
-									data-type="button" 
-									data-actions=''
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-									data-textAlign="['center','center','center','center']"
-									data-paddingtop="[15,15,15,10]"
-									data-paddingright="[30,30,30,20]"
-									data-paddingbottom="[15,15,15,10]"
-									data-paddingleft="[30,30,30,20]"
-									style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> Services 
-								</a> -->
 							</li>
 							<li data-index="rs-300" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
@@ -535,7 +399,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img src="images/frtbio-1.webp" loading="lazy" alt=""></a> 
+									<img src="images/frtbio-1.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info" >
 									<h4 class="title" style="text-align: center;">源头把控</h4>
@@ -546,7 +410,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img src="images/iso-1.webp" loading="lazy" alt=""></a> 
+									<img src="images/iso-1.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">国际认证</h4>
@@ -557,7 +421,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img src="images/service-3.webp" loading="lazy" alt=""></a> 
+									<img src="images/service-3.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">多重检测评估</h4>
@@ -568,7 +432,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 offset-lg-2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img src="images/frtbio-2.webp" loading="lazy" alt=""></a> 
+									<img src="images/frtbio-2.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">生物学效能验证</h4>
@@ -579,11 +443,11 @@
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="dlab-box service-box-5">
 								<div class="dlab-media radius-sm "> 
-									<a href="services-details.html"><img src="images/frtbio-3.webp" loading="lazy" alt=""></a> 
+									<img src="images/frtbio-3.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
 									<h4 class="title" style="text-align: center;">完善售后服务</h4>
-									<p>弗劳恩生物有严格的商品管理，连续多年顺利通过深圳海关的“进境生物材料使用单位核查”,并密切监管产品流向，定期询问用户库存,如有质量问题，包退包换。</p>
+									<p style="text-align: justify;">弗劳恩生物有严格的商品管理，连续多年顺利通过深圳海关的“进境生物材料使用单位核查”,并密切监管产品流向，定期询问用户库存,如有质量问题，包退包换。</p>
 								</div>
 							</div>
 						</div>
