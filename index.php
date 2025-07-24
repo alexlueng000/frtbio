@@ -84,7 +84,7 @@
 </head>
 <body id="bg">
 <div class="page-wraper">
-<div id="loading-area" class="solar-loading"></div>
+<div id="loading-area"></div>
 		
 	<!-- Slider -->
 	<div class="main-slider style-two default-banner" id="home">
