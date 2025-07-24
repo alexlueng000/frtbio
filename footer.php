@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.2s">
                     <div class="widget border-0 widget_services">
-                        <h6 class="m-b20 text-white font-weight-300 text-uppercase">产品中心</h6>
+                        <h5 class="footer-title text-white">产品中心</h5>
                         <ul >
                             <li><a href="product-center">血清</a></li>
                             <li><a href="product-center">细胞培养基</a></li>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.2s">
                     <div class="widget border-0 widget_services">
-                        <h6 class="m-b20 text-white font-weight-300 text-uppercase">关于我们</h6>
+                        <h5 class="footer-title text-white">关于我们</h5>
                         <ul >
                             <li><a href="introduction">公司简介</a></li>
                             <li><a href="contact">联系我们</a></li>

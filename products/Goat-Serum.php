@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>弗劳恩生物</title>
+	<title>弗劳恩生物 - 产品详情</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,9 +112,7 @@
 							<div class="dlab-post-title">
 								<h3 class="post-title m-b10"><a href="javascript:void(0);">供体山羊血清(Donor Goat Serum)</a></h3>
 								<p class="m-b10 m-t10">Front从严格监控的山羊群中，挑选健康成年羊为供体。我们收集山羊血清并将其过滤，得到的是高品质的高度一致的批次产品。</p>
-								<!-- <div class="dlab-divider bg-gray tb15">
-									<i class="icon-dot c-square"></i>
-								</div> -->
+								
 							</div>
 							
 							<div class="dlab-divider bg-gray tb15">
@@ -127,12 +125,7 @@
 										<button class="site-button orange  m-r15" type="button">500mL</button>
 									</div>
 								</div>
-								<!-- <div class="m-b30 col-md-5 col-sm-4">
-									<h6>Select quantity</h6>
-									<div class="quantity btn-quantity style-1">
-										<input id="demo_vertical2" type="text" value="1" name="demo_vertical2">
-									</div>
-								</div> -->
+
 							</div>
 							
 							 <!-- Modal (Popup) -->
@@ -170,261 +163,16 @@
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li>
                             </ul>
                             <div class="tab-content" style="margin-bottom: 300px;">
-                                <!-- <div id="web-design-1" class="tab-pane active">
-                                    <p class="m-b10">Suspendisse et justo. Praesent mattis commyolk augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis  commyolk augue aliquam ornare augue.</p>
-                                    <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences</p>
-                                    <ul class="list-check primary">
-                                        <li>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and </li>
-                                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                                    </ul>
-                                </div> -->
-                                <!-- <div id="graphic-design-1" class="tab-pane">
-                                    <table class="table table-bordered" >
-                                        <tr>
-                                            <td>Size</td>
-                                            <td>Small, Medium & Large</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Color</td>
-                                            <td>Pink & White</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rating</td>
-                                            <td>
-												<span class="rating-bx"> 
-													<i class="fas fa-star"></i> 
-													<i class="fas fa-star"></i> 
-													<i class="fas fa-star"></i> 
-													<i class="far fa-star"></i> 
-													<i class="far fa-star"></i> 
-												</span> 
-											</td>
-                                        </tr>
-										<tr>
-                                            <td>Waist</td>
-                                            <td>26 cm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Length</td>
-                                            <td>40 cm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Chest</td>
-                                            <td>33 inches</td>
-                                        </tr>
-										<tr>
-                                            <td>Fabric</td>
-                                            <td>Cotton, Silk & Synthetic</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Warranty</td>
-                                            <td>3 Months</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Chest</td>
-                                            <td>33 inches</td>
-                                        </tr>
-                                    </table>
-                                </div> -->
+
                                 <div id="developement-1" class="tab-pane">
-                                    <!-- <div id="comments">
-                                        <ol class="commentlist">
-                                            <li class="comment">
-                                                <div class="comment_container"> 
-													<img class="avatar avatar-60 photo" src="images/testimonials/pic1.jpg" alt="">
-                                                    <div class="comment-text">
-                                                        <div  class="star-rating">
-                                                            <div data-rating="3"> 
-																<i class="fas fa-star text-yellow" data-alt="1" title="regular"></i> 
-																<i class="fas fa-star text-yellow" data-alt="2" title="regular"></i> 
-																<i class="far fa-star text-yellow" data-alt="3" title="regular"></i> 
-																<i class="far fa-star text-yellow" data-alt="4" title="regular"></i> 
-																<i class="far fa-star text-yellow" data-alt="5" title="regular"></i> 
-															</div>
-                                                        </div>
-                                                        <p class="meta"> 
-															<strong class="author">Cobus Bester</strong> 
-															<span><i class="far fa-clock"></i> March 7, 2013</span> 
-														</p>
-                                                        <div class="description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="comment">
-                                                <div class="comment_container"> 
-													<img class="avatar avatar-60 photo" src="images/testimonials/pic2.jpg" alt="">
-                                                    <div class="comment-text">
-                                                        <div  class="star-rating">
-                                                            <div data-rating="3"> 
-																<i class="fas fa-star text-yellow" data-alt="1" title="regular"></i> 
-																<i class="fas fa-star text-yellow" data-alt="2" title="regular"></i> 
-																<i class="fas fa-star text-yellow" data-alt="3" title="regular"></i> 
-																<i class="far fa-star text-yellow" data-alt="4" title="regular"></i> 
-																<i class="far fa-star text-yellow" data-alt="5" title="regular"></i> 
-															</div>
-                                                        </div>
-                                                        <p class="meta"> 
-															<strong class="author">Cobus Bester</strong> 
-															<span><i class="far fa-clock"></i> March 7, 2013</span> 
-														</p>
-                                                        <div class="description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="comment">
-                                                <div class="comment_container"> 
-													<img class="avatar avatar-60 photo" src="images/testimonials/pic3.jpg" alt="">
-                                                    <div class="comment-text">
-                                                        <div  class="star-rating">
-                                                            <div data-rating="3"> 
-																<i class="fas fa-star text-yellow" data-alt="1" title="regular"></i> 
-																<i class="fas fa-star text-yellow" data-alt="2" title="regular"></i> 
-																<i class="fas fa-star text-yellow" data-alt="3" title="regular"></i> 
-																<i class="fas fa-star text-yellow" data-alt="4" title="regular"></i> 
-																<i class="far fa-star text-yellow" data-alt="5" title="regular"></i> 
-															</div>
-                                                        </div>
-                                                        <p class="meta"> 
-															<strong class="author">Cobus Bester</strong> 
-															<span><i class="far fa-clock"></i> March 7, 2013</span> 
-														</p>
-                                                        <div class="description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div> -->
+
                                     
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-				<!-- <div class="row">
-					<div class="col-lg-12">
-						<h5 class="m-b20">Related Products</h5>
-						<div class="img-carousel-content owl-carousel owl-btn-center-lr owl-btn-1 primary">
-							<div class="item">
-								<div class="item-box">
-									<div class="item-img">
-										<img src="images/product/item1.jpg" alt="">
-										<div class="item-info-in">
-											<ul>
-												<li><a href="shop-cart.html"><i class="ti-shopping-cart"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-eye"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-heart"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="item-info text-center text-black p-a10">
-										<h6 class="item-title text-uppercase font-weight-500"><a href="shop-product-details.html">Product Title</a></h6>
-										<ul class="item-review">
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star-half-alt text-yellow"></i></li>
-											<li><i class="far fa-star"></i></li>
-										</ul>
-										<h4 class="item-price">	
-											<del>$232</del> 
-											<span class="text-primary">$192</span>
-										</h4>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-box">
-									<div class="item-img">
-										<img src="images/product/item2.jpg" alt="">
-										<div class="item-info-in">
-											<ul>
-												<li><a href="shop-cart.html"><i class="ti-shopping-cart"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-eye"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-heart"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="item-info text-center text-black p-a10">
-										<h6 class="item-title text-uppercase font-weight-500"><a href="shop-product-details.html">Product Title</a></h6>
-										<ul class="item-review">
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star-half-alt text-yellow"></i></li>
-											<li><i class="far fa-star"></i></li>
-										</ul>
-										<h4 class="item-price">	
-											<del>$232</del> 
-											<span class="text-primary">$192</span>
-										</h4>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-box">
-									<div class="item-img">
-										<img src="images/product/item3.jpg" alt="">
-										<div class="item-info-in">
-											<ul>
-												<li><a href="shop-cart.html"><i class="ti-shopping-cart"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-eye"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-heart"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="item-info text-center text-black p-a10">
-										<h6 class="item-title text-uppercase font-weight-500"><a href="shop-product-details.html">Product Title</a></h6>
-										<ul class="item-review">
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star-half-alt text-yellow"></i></li>
-											<li><i class="far fa-star"></i></li>
-										</ul>
-										<h4 class="item-price">	
-											<del>$232</del> 
-											<span class="text-primary">$192</span>
-										</h4>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-box">
-									<div class="item-img">
-										<img src="images/product/item4.jpg" alt="">
-										<div class="item-info-in">
-											<ul>
-												<li><a href="shop-cart.html"><i class="ti-shopping-cart"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-eye"></i></a></li>
-												<li><a href="javascript:void(0);"><i class="ti-heart"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="item-info text-center text-black p-a10">
-										<h6 class="item-title text-uppercase font-weight-500"><a href="shop-product-details.html">Product Title</a></h6>
-										<ul class="item-review">
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star text-yellow"></i></li>
-											<li><i class="fas fa-star-half-alt text-yellow"></i></li>
-											<li><i class="far fa-star"></i></li>
-										</ul>
-										<h4 class="item-price">	
-											<del>$232</del> 
-											<span class="text-primary">$192</span>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
+
 			</div>
             <!-- Product details -->
         </div>

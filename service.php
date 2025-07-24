@@ -6,10 +6,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta name="robots" content="">
-	<meta name="description" content="Industry - Factory & Industrial HTML Template">
-	<meta property="og:title" content="Industry - Factory & Industrial HTML Template">
-	<meta property="og:description" content="Industry - Factory & Industrial HTML Template">
-	<meta property="og:image" content="https://industry.dexignzone.com/xhtml/social-image.webp">
+	<meta name="description" content="">
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
@@ -17,7 +14,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>弗劳恩生物</title>
+	<title>弗劳恩生物 - 研发与服务</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,11 +38,11 @@
 	<style>
 
 		.dlab-bnr-inr-entry-service {
-		height: 100%;
-		display: flex;
-		align-items: center;          /* 垂直居中 */
-		justify-content: center;      /* 水平居中 */
-		text-align: center;
+			height: 100%;
+			display: flex;
+			align-items: center;          /* 垂直居中 */
+			justify-content: center;      /* 水平居中 */
+			text-align: center;
 		}
 
 
