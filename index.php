@@ -325,7 +325,7 @@
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5>
-										<a href="products/Front-Biomed-Premium-Imported-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<a href="products/Front-Biomed-Premium-Imported-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -337,7 +337,7 @@
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
-										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -348,8 +348,8 @@
 										<img src="images/products/new-product2.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
-										<a href="products/Front-Biomed-Exceptional.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
+										<a href="products/Front-Biomed-Exceptional" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -362,7 +362,7 @@
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
-										<a href="products/Front-Biomed-Premium-FBS.php" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<a href="products/Front-Biomed-Premium-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -381,7 +381,7 @@
 							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中！联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">
-							<a href="contact.php" class="site-button btnhover10 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
+							<a href="contact" class="site-button btnhover10 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
 							
 						</div>
 					</div>
@@ -491,7 +491,7 @@
 						<div class="text-white align-self-center ">
 							<h2>关于弗劳恩生物</h2>
 							<p style="font-size: larger; line-height: 2; font-weight: bold;">深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。</p>
-							<a href="introduction.php" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;">了解更多</a>
+							<a href="introduction" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;">了解更多</a>
 						</div>
 					</div>
 				</div>

@@ -59,9 +59,9 @@
                     <div class="widget border-0 widget_services">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">产品中心</h6>
                         <ul >
-                            <li><a href="../product-center.php">血清</a></li>
-                            <li><a href="../product-center.php">细胞培养基</a></li>
-                            <li><a href="../product-center.php">其他</a></li>
+                            <li><a href="../product-center">血清</a></li>
+                            <li><a href="../product-center">细胞培养基</a></li>
+                            <li><a href="../product-center">其他</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,8 +69,8 @@
                     <div class="widget border-0 widget_services">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">关于我们</h6>
                         <ul >
-                            <li><a href="introduction.php">公司简介</a></li>
-                            <li><a href="contact.php">联系我们</a></li>
+                            <li><a href="../introduction">公司简介</a></li>
+                            <li><a href="../contact">联系我们</a></li>
                             <li><a href="#">交流与活动</a></li>
                         </ul>
                     </div>

@@ -68,7 +68,7 @@
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.php">首页</a></li>
+							<li><a href="index">首页</a></li>
 							<li>产品中心</li>
 						</ul>
 					</div>
@@ -109,10 +109,10 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="products/Front-Biomed-Premium-Imported-FBS.php" >Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" >Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
-															<li><a href="products/Front-Biomed-Exceptional.php" >Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></li>
-															<li><a href="products/Front-Biomed-Premium-FBS.php" >Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
+															<li><a href="products/Front-Biomed-Premium-Imported-FBS" >Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" >Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
+															<li><a href="products/Front-Biomed-Exceptional" >Front Biomed超优级胎牛血清 (FBS, Exceptional )</a></li>
+															<li><a href="products/Front-Biomed-Premium-FBS" >Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
 														</ul>
 													</div>
 												</div>
@@ -130,7 +130,7 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="products/Newborn-Calf-Serum.php">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
+															<li><a href="products/Newborn-Calf-Serum">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
 														</ul>
 													</div>
 												</div>
@@ -148,9 +148,9 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="products/Pig-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></li>
-															<li><a href="products/Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
-															<li><a href="products/Goat-Serum.php" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></li>
+															<li><a href="products/Pig-Serum" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></li>
+															<li><a href="products/Horse-Serum" style="hover: #FF8500;">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
+															<li><a href="products/Goat-Serum" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></li>
 														</ul>
 													</div>
 												</div>
@@ -168,9 +168,9 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="products/DMEM-Cell-Culture-Medium.php" style="hover: #FF8500;">DMEM培养基</a></li>
-															<li><a href="products/MEM-Cell-Culture-Medium.php" style="hover: #FF8500;">MEM培养基</a></li>
-															<li><a href="products/RPMI-Cell-Culture-Medium.php" style="hover: #FF8500;">RPMI 1640培养基</a></li>
+															<li><a href="products/DMEM-Cell-Culture-Medium" style="hover: #FF8500;">DMEM培养基</a></li>
+															<li><a href="products/MEM-Cell-Culture-Medium" style="hover: #FF8500;">MEM培养基</a></li>
+															<li><a href="products/RPMI-Cell-Culture-Medium" style="hover: #FF8500;">RPMI 1640培养基</a></li>
 															
 														</ul>
 													</div>
@@ -189,10 +189,10 @@
 												<div class="acod-content">
 													<div class="widget widget_services">
 														<ul class="list-star red">
-															<li><a href="products/Trypsin-0.05.php" style="hover: #FF8500;">胰蛋白酶(浓度0.05%)</a></li>
-															<li><a href="products/Trypsin-0.25.php" style="hover: #FF8500;">胰蛋白酶(浓度0.25%)</a></li>
-															<li><a href="products/Double-Antibiotic.php" style="hover: #FF8500;">青霉素-链霉素100X（双抗）</a></li>
-															<li><a href="products/Frozen-Cell-Suspension.php" style="hover: #FF8500;">细胞冻存液</a></li>
+															<li><a href="products/Trypsin-0.05" style="hover: #FF8500;">胰蛋白酶(浓度0.05%)</a></li>
+															<li><a href="products/Trypsin-0.25" style="hover: #FF8500;">胰蛋白酶(浓度0.25%)</a></li>
+															<li><a href="products/Double-Antibiotic" style="hover: #FF8500;">青霉素-链霉素100X（双抗）</a></li>
+															<li><a href="products/Frozen-Cell-Suspension" style="hover: #FF8500;">细胞冻存液</a></li>
 														</ul>
 													</div>
 												</div>
@@ -220,7 +220,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-Imported-FBS.php" style="hover: #FF8500;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-Imported-FBS" style="hover: #FF8500;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -252,7 +252,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum.php" style="hover: #FF8500;">Front Biomed国产特级胎牛血清(FBS, Optimum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" style="hover: #FF8500;">Front Biomed国产特级胎牛血清(FBS, Optimum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -284,7 +284,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Exceptional.php" style="hover: #FF8500;">Front Biomed超优级胎牛血清(FBS, Exceptional)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Exceptional" style="hover: #FF8500;">Front Biomed超优级胎牛血清(FBS, Exceptional)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -316,7 +316,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-FBS.php" style="hover: #FF8500;">Front Biomed优级胎牛血清(FBS, Premium)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Front-Biomed-Premium-FBS" style="hover: #FF8500;">Front Biomed优级胎牛血清(FBS, Premium)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -348,7 +348,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Newborn-Calf-Serum.php" style="hover: #FF8500;">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Newborn-Calf-Serum" style="hover: #FF8500;">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -380,7 +380,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Pig-Serum.php" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Pig-Serum" style="hover: #FF8500;">猪血清(Pig Serum-Porcine Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -414,7 +414,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Horse-Serum.php" style="hover: #FF8500;">供体马血清(Donor Horse Serum-Equine Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Horse-Serum" style="hover: #FF8500;">供体马血清(Donor Horse Serum-Equine Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->
@@ -447,7 +447,7 @@
 										<!-- 文字内容部分 -->
 										<div class="dlab-post-title" style="flex: 1;">
 											
-												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Goat-Serum.php" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></p>
+												<p class="post-title" style="font-size: 20px; color: #000; font-weight: 600;"><a href="products/Goat-Serum" style="hover: #FF8500;">供体山羊血清(Donor Goat Serum)</a></p>
 											
 											<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 												<!-- 按钮部分 -->

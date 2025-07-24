@@ -72,30 +72,12 @@
 						<div class="col-xl-3 col-lg-4 col-md-5">
 							<div class="widget sidebar-widget ext-sidebar-menu widget_nav_menu">
 								<ul class="menu">
-									<li ><a href="introduction.php">公司简介</a> </li>
+									<li ><a href="introduction">公司简介</a> </li>
 									<li class="active"><a href="#">联系我们</a></li>
 									<li ><a href="">交流与活动</a></li>
 								</ul>
 							</div>
-							<!-- <div class="widget">
-								<div class="download-file">
-									<h4 class="title">Get your brochures</h4>
-									<ul>
-										<li>
-											<a href="javascript:void(0);">
-												<div class="text">Company Brochures</div>
-												<i class="fas fa-download"></i>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<div class="text">Company Info</div>
-												<i class="fas fa-download"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div> -->
+
 						</div>
 						<div class="col-xl-9 col-lg-8 col-md-7">
 							

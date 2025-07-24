@@ -73,7 +73,7 @@
 							<div class="widget sidebar-widget ext-sidebar-menu widget_nav_menu">
 								<ul class="menu">
 									<li class="active"><a href="#">公司简介</a> </li>
-									<li ><a href="contact.php">联系我们</a></li>
+									<li ><a href="contact">联系我们</a></li>
 									<li ><a href="#">交流与活动</a></li>
 								</ul>
 							</div>
