@@ -719,8 +719,8 @@
 <script src="plugins/masonry/masonry.filter.js" ></script><!-- MASONRY -->
 <script src="plugins/owl-carousel/owl.carousel.js" ></script><!-- OWL SLIDER -->
 <script src="plugins/lightgallery/js/lightgallery-all.min.js" ></script><!-- Lightgallery -->
-<script src="plugins/scroll/scrollbar.min.js" ></script><!-- scroll -->
-<script src="js/custom.js" ></script><!-- CUSTOM FUCTIONS  -->
+<script src="plugins/scroll/scrollbar.min.js" defer></script><!-- scroll -->
+<script src="js/custom.js" defer></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.min.js" ></script><!-- SORTCODE FUCTIONS  -->
 <script src="plugins/countdown/jquery.countdown.js" ></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js" ></script><!-- CONTACT JS  -->
