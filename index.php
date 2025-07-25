@@ -697,7 +697,7 @@
 <script src="plugins/imagesloaded/imagesloaded.js" ></script><!-- IMAGESLOADED -->
 <script src="plugins/masonry/masonry-3.1.4.js" ></script><!-- MASONRY -->
 <script src="plugins/masonry/masonry.filter.js" ></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js" ></script><!-- OWL SLIDER -->
+<script src="plugins/owl-carousel/owl.carousel.js" defer></script><!-- OWL SLIDER -->
 <script src="plugins/lightgallery/js/lightgallery-all.min.js" ></script><!-- Lightgallery -->
 <script src="plugins/scroll/scrollbar.min.js" ></script><!-- scroll -->
 <script src="js/custom.js" ></script><!-- CUSTOM FUCTIONS  -->
@@ -711,9 +711,9 @@
 <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js" ></script>
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js" ></script>
 <!-- Slider revolution 5.0 Extensions -->
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js" defer></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js" defer></script>
-<script src="js/rev.slider.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js" ></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js" ></script>
+<script src="js/rev.slider.js" ></script>
 
 <script>
 jQuery(document).ready(function() {
