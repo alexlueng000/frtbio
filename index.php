@@ -697,7 +697,7 @@
 <script src="plugins/imagesloaded/imagesloaded.js" ></script><!-- IMAGESLOADED -->
 <script src="plugins/masonry/masonry-3.1.4.js" ></script><!-- MASONRY -->
 <script src="plugins/masonry/masonry.filter.js" ></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js" defer></script><!-- OWL SLIDER -->
+<script src="plugins/owl-carousel/owl.carousel.js" ></script><!-- OWL SLIDER -->
 <script src="plugins/lightgallery/js/lightgallery-all.min.js" ></script><!-- Lightgallery -->
 <script src="plugins/scroll/scrollbar.min.js" ></script><!-- scroll -->
 <script src="js/custom.js" ></script><!-- CUSTOM FUCTIONS  -->
