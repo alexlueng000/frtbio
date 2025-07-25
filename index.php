@@ -686,7 +686,7 @@
     <button class="scroltop style2 radius" type="button"><i class="fas fa-arrow-up"></i></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
-<script src="js/jquery.min.js" defer></script><!-- JQUERY.MIN JS -->
+<script src="js/jquery.min.js" ></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js" defer></script><!-- WOW JS -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js" defer></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js" defer></script><!-- FORM JS -->
