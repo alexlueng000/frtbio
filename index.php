@@ -697,10 +697,10 @@
 <script src="plugins/imagesloaded/imagesloaded.js" defer></script><!-- IMAGESLOADED -->
 <script src="plugins/masonry/masonry-3.1.4.js" defer></script><!-- MASONRY -->
 <script src="plugins/masonry/masonry.filter.js" defer></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js" defer></script><!-- OWL SLIDER -->
+<script src="plugins/owl-carousel/owl.carousel.js" ></script><!-- OWL SLIDER -->
 <script src="plugins/lightgallery/js/lightgallery-all.min.js" defer></script><!-- Lightgallery -->
 <script src="plugins/scroll/scrollbar.min.js" defer></script><!-- scroll -->
-<script src="js/custom.js" defer></script><!-- CUSTOM FUCTIONS  -->
+<script src="js/custom.js" ></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.min.js" defer></script><!-- SORTCODE FUCTIONS  -->
 <script src="plugins/countdown/jquery.countdown.js" defer></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js" defer></script><!-- CONTACT JS  -->
