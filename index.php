@@ -686,40 +686,41 @@
     <button class="scroltop style2 radius" type="button"><i class="fas fa-arrow-up"></i></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
-<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
-<script src="plugins/wow/wow.js"></script><!-- WOW JS -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
-<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
-<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
-<script src="plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
-<script src="plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
-<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
-<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
-<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
-<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
-<script src="plugins/scroll/scrollbar.min.js"></script><!-- scroll -->
-<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-<script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
-<script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
-<script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+<script src="js/jquery.min.js" defer></script><!-- JQUERY.MIN JS -->
+<script src="plugins/wow/wow.js" defer></script><!-- WOW JS -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js" defer></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/bootstrap-select/bootstrap-select.min.js" defer></script><!-- FORM JS -->
+<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js" defer></script><!-- FORM JS -->
+<script src="plugins/magnific-popup/magnific-popup.js" defer></script><!-- MAGNIFIC POPUP JS -->
+<script src="plugins/counter/waypoints-min.js" defer></script><!-- WAYPOINTS JS -->
+<script src="plugins/counter/counterup.min.js" defer></script><!-- COUNTERUP JS -->
+<script src="plugins/imagesloaded/imagesloaded.js" defer></script><!-- IMAGESLOADED -->
+<script src="plugins/masonry/masonry-3.1.4.js" defer></script><!-- MASONRY -->
+<script src="plugins/masonry/masonry.filter.js" defer></script><!-- MASONRY -->
+<script src="plugins/owl-carousel/owl.carousel.js" defer></script><!-- OWL SLIDER -->
+<script src="plugins/lightgallery/js/lightgallery-all.min.js" defer></script><!-- Lightgallery -->
+<script src="plugins/scroll/scrollbar.min.js" defer></script><!-- scroll -->
+<script src="js/custom.js" defer></script><!-- CUSTOM FUCTIONS  -->
+<script src="js/dz.carousel.min.js" defer></script><!-- SORTCODE FUCTIONS  -->
+<script src="plugins/countdown/jquery.countdown.js" defer></script><!-- COUNTDOWN FUCTIONS  -->
+<script src="js/dz.ajax.js" defer></script><!-- CONTACT JS  -->
 
+<script src="js/jquery.lazy.min.js" defer></script>
 
-<script src="js/jquery.lazy.min.js"></script>
 <!-- REVOLUTION JS FILES -->
-<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="js/rev.slider.js"></script>
+<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js" defer></script>
+<!-- Slider revolution 5.0 Extensions -->
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js" defer></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js" defer></script>
+<script src="js/rev.slider.js" defer></script>
+
 <script>
 jQuery(document).ready(function() {
 	// 'use strict';
