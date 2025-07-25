@@ -70,12 +70,32 @@
 		}
 	}
 
+	.best-sell-container .best-sell-inner {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	/* 小屏（手机）下保留左右边距 */
 	@media (max-width: 768px) {
-    .best-sell-container {
-        max-width: 100%; /* 小屏时取消左右边距 */
-        padding: 0 16px;  /* 可选，加一点内边距更舒服 */
-    }
-}
+		.best-sell-inner .row {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+
+		.best-sell-inner .row > [class*="col-"] {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+
+	.dlab-thum img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -314,12 +334,12 @@
 					<div class="sort-title clearfix text-center">
 						<h2>热销产品</h2>
 					</div>
-					<div class="container">
-						<div class="row" style="margin-top: -20px;">
+					<div class="best-sell-inner">
+						<div class="row" style="margin-top: -20px; ">
 							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s"
 							style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; "
 							>
-								<div class="" >
+								<div >
 									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
 										<img src="images/products/new-product1.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
@@ -710,9 +730,6 @@
 <!-- REVOLUTION JS FILES -->
 <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js" ></script>
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js" ></script>
-<!-- Slider revolution 5.0 Extensions -->
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js" ></script>
-<script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js" ></script>
 <script src="js/rev.slider.js" ></script>
 
 <script>
