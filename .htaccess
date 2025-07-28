@@ -16,13 +16,30 @@ RewriteRule ^(.+?)/?$ $1.php [L]
   AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
-# 设置浏览器缓存
+# 设置浏览器缓存（使用 Expires）
 <IfModule mod_expires.c>
   ExpiresActive On
+
+  # 图片缓存 1 年
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png  "access plus 1 year"
   ExpiresByType image/gif  "access plus 1 year"
-  ExpiresByType text/css "access plus 7 days"
-  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 1 year"
+
+  # 字体缓存 1 年
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # JS/CSS 缓存 1 年
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+</IfModule>
+
+# 设置 Cache-Control + immutable
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|webp|woff2|ttf|otf|png|jpg|jpeg|svg|gif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
 </IfModule>

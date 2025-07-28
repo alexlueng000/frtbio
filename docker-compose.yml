@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   apache:
-    image: php:7.4-apache
+    build: .                   # 改为 build，而非 image
     container_name: apache-php
     ports:
       - "8090:80"
