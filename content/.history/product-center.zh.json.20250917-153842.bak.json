@@ -1,0 +1,86 @@
+{
+    "meta": {
+      "title": "弗劳恩生物 - 产品中心",
+      "description": "弗劳恩生物产品中心：胎牛血清、动物血清、细胞培养基与科研耗材。"
+    },
+    "banner": {
+      "title": "产品中心"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "current": "产品中心"
+    },
+    "sidebar": {
+      "title": "产品中心",
+      "groups": {
+        "fbs": "胎牛血清",
+        "bovine": "牛血清",
+        "other_serum": "其他动物血清",
+        "medium": "细胞培养基",
+        "others": "其他"
+      },
+      "items": {
+        "fbs_imported": "Front Biomed进口特级胎牛血清 (FBS, Optimum)",
+        "fbs_domestic": "Front Biomed国产特级胎牛血清 (FBS, Optimum)",
+        "fbs_exceptional": "Front Biomed超优级胎牛血清 (FBS, Exceptional)",
+        "fbs_premium": "Front Biomed优级胎牛血清 (FBS, Premium)",
+        "nbcs": "新生牛血清 (Newborn Calf Serum - NBCS)",
+        "pig": "猪血清 (Pig Serum - Porcine Serum)",
+        "horse": "供体马血清 (Donor Horse Serum - Equine Serum)",
+        "goat": "供体山羊血清 (Donor Goat Serum)",
+        "dmem": "DMEM培养基",
+        "mem": "MEM培养基",
+        "rpmi": "RPMI 1640培养基",
+        "trypsin005": "胰蛋白酶（0.05%）",
+        "trypsin025": "胰蛋白酶（0.25%）",
+        "antibiotic": "青霉素-链霉素100X（双抗）",
+        "frozen": "细胞冻存液"
+      }
+    },
+    "products": {
+      "labels": {
+        "overview": "概述",
+        "specs": "规格"
+      },
+      "sizes": {
+        "500": "500mL",
+        "1000": "1L",
+        "3500": "3.5L"
+      },
+      "items": [
+        {
+          "title": "Front Biomed进口特级胎牛血清 (FBS, Optimum)",
+          "desc": "Front Biomed 长期深耕科研设备与试剂领域，在美国设有科研与物流中心，并与美国、澳大利亚、新西兰、欧洲及国内多家生产商建立委托/联合/代理合作，保障高质量 FBS 稳定供给。所有进口批次均经国外与国内实验室两轮严格检测与评估，合格后方可进口。"
+        },
+        {
+          "title": "Front Biomed国产特级胎牛血清 (FBS, Optimum)",
+          "desc": "甄选国内优质无疫病牧场原料，生态环境优良、无污染；按 Front 确认工艺标准生产并通过弗劳恩质量体系检测，达到 ESC 级别标准，已成为众多重点实验室的国产替代首选。"
+        },
+        {
+          "title": "Front Biomed超优级胎牛血清 (FBS, Exceptional)",
+          "desc": "来源于呼伦贝尔/锡林郭勒等优质天然牧场 6–8 月龄健康胎牛，0.1 μm 过滤，符合国际胎牛血清质量标准。依 GMP 规范全自动灌装，批量大、批间差小；经多种细胞验证，细胞形态佳、活力高，适用于部分干细胞、免疫细胞、常规肿瘤细胞、难培养细胞及原代细胞等。"
+        },
+        {
+          "title": "Front Biomed优级胎牛血清 (FBS, Premium)",
+          "desc": "采用严格筛选的新西兰或国产原料，三次 100 nm 过滤，质量对标国际一线品牌；综合性能相当或优于同类产品，适配度与稳定性兼顾。"
+        },
+        {
+          "title": "新生牛血清 (Newborn Calf Serum - NBCS)",
+          "desc": "适用于多种细胞培养基。原料来源于新西兰与中国，其中新西兰部分可确保采集自产后 10 天内牛犊，以提升成分一致性与批次稳定性。"
+        },
+        {
+          "title": "猪血清 (Pig Serum - Porcine Serum)",
+          "desc": "源自美国农场，供体动物未使用抗生素或激素；200 nm 过滤、低血红蛋白水平，适用于疫苗生产及细胞培养等场景，亦可作为特定细胞系的补充成分。"
+        },
+        {
+          "title": "供体马血清 (Donor Horse Serum - Equine Serum)",
+          "desc": "采自中国 / 美国 / 澳洲 / 新西兰受监管马群，定期兽医检查与监控；批次一致性良好，常用于多类细胞培养与兽医生物制品。"
+        },
+        {
+          "title": "供体山羊血清 (Donor Goat Serum)",
+          "desc": "来自严格监控的健康成年山羊群，经规范采集与多重过滤处理，获得高品质、批间一致性出色的产品，适用于多类细胞培养应用。"
+        }
+      ]
+    }
+  }
+  

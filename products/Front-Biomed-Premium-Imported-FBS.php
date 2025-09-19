@@ -111,31 +111,45 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed进口特级胎牛血清(FBS, Optimum)</a></h3>
-								<p class="m-b10 m-t10"> Front Biomed特级国产胎牛血清，原材料甄选于国内特级牧场：牧草肥美，生态环境优美，完全无污染，严格筛选的顶级胎牛原料，各项血清指标都达到或超过国际最高标准；以Front确认的工艺标准生产加工、经弗劳恩质量体系检测的esc级别胎牛血清。该款胎牛血清已经成为国内许多重点实验室的国产替代首选。</p>
-								<!-- <div class="dlab-divider bg-gray tb15">
-									<i class="icon-dot c-square"></i>
-								</div> -->
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomedical 进口特级胎牛血清(FBS, Optimum)</a></h3>
+								<div style="flex:1;font-size:20px;line-height:1.6; margin-top:20px;">
+									<div style="font-size:16px;">
+										<b data-i18n="products.items.1.fields.partno">产品货号</b>：
+										<span data-i18n="products.items.1.desc.desc_partno">FBS-FFA   FBS-FFN</span>
+									</div>
+									<div style="font-size:16px; margin-top:10px;">
+										<b data-i18n="products.items.1.fields.basic">基础信息</b>：
+										<span data-i18n="products.items.1.desc.desc_basic">来源于澳洲、新西兰优质天然牧场6-8月龄健康胎牛
+
+专用于培养对血清要求较高的、难培养的娇贵细胞，如干细胞、难培养原代细胞、神经元细胞等。
+1、干细胞代表：胚胎干细胞、精原干细胞、NSC、UC-MSCs、PB-MSCs等
+2、难培养原代细胞代表：外周血原代间充质干细胞、外周血原代巨噬细胞等</span>
+									</div>
+									<div style="font-size:16px; margin-top:10px;">
+										<b data-i18n="products.items.1.fields.cells">适用细胞举例</b>：
+										<span data-i18n="products.items.1.desc.desc_cells">mESC、精原干细胞、NE-4C、 HUC-MSCs、BM-MSCs、AD-MSCs、HUCB-MSCs、PB-MSCs、人外周血原代间充质干细胞、人外周血原代巨噬细胞、毛囊干细胞等细胞。</span>
+									</div>
+								</div>
 							</div>
 
 							<div class="dlab-divider bg-gray tb15">
 								<i class="icon-dot c-square"></i>
 							</div>
 							<div class="row">
-								<div class="m-b30 col-md-7 col-sm-8">
+								<div class="col-12">
 									<h6>产品规格</h6>
+									<div class="d-flex align-items-center" style="gap:15px;">
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
-										<button class="site-button orange  m-r15" type="button">500mL</button>
+										<button class="site-button orange m-r15" type="button">500mL</button>
+									</div>
+									<div class="btn-group product-item-size" data-bs-toggle="buttons">
+										<button class="site-button orange m-r15" type="button"
+												data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+									</div>
 									</div>
 								</div>
-
 							</div>
 
-							 <!-- Modal (Popup) -->
-							
-							<div class="btn-group product-item-size" data-bs-toggle="buttons">
-								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
-							</div>
 							<!-- 模态框 -->
 							<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
 								<div class="modal-dialog modal-sm">
@@ -159,17 +173,181 @@
                     <div class="col-lg-12">
                         <div class="dlab-tabs product-description tabs-site-button">
                             <ul class="nav nav-tabs ">
-                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
+                                <!-- <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
                                 <li><a data-bs-toggle="tab" href="#graphic-design-1"><i class="far fa-image"></i> 数据文件</a></li>
-                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li>
-                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 应用</a></li>
-                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li>
+                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li> -->
+                                <li><a data-bs-toggle="tab" href="#developement-1" class="active"><i class="fas fa-cog"></i> 应用</a></li>
+                                <!-- <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li> -->
                             </ul>
-                            <div class="tab-content" style="margin-bottom: 300px;">
-
-                                <div id="developement-1" class="tab-pane">
-
+                            <div id="content-dental" class="tab-pane">
+                                <h4>精原干细胞</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic1.png" alt="">
+                                                </div>
+                                                <h6>对照（P1、100×、120h）</h6>
+                                            </div>
+                                        </div>
                                     
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic2.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFN（P1、100×、120h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic3.png" alt="">
+                                                </div>
+                                                <h6>对照（P2、100×、120h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic4.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFN（P2、100×、120h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <h4>神经干细胞（NE-4C）</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic5.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic6.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFN（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic7.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic8.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFN （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <h4>人脐带间充质干细胞（HUC-MSCs）</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic9.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic10.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFN （P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic11.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic12.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFN （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <h4>外周血原代巨噬细胞</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic13.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic14.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFN （P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic15.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product1/pic16.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFN （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
