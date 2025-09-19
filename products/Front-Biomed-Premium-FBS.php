@@ -110,36 +110,45 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomed优级胎牛血清 (FBS, Premium)</a></h3>
-								<p class="m-b10 m-t10">Front Biomed优级胎牛血清采用经过严格筛选的最优质的新西兰或国产胎牛血清。其采集方法，加工过程，检定标准与美国原产优等胎牛血清完全一致。经过3次100 nm过滤，其质量相当或优于Gibco南美/依科赛南美等同类产品。</p>
-								<!-- <div class="dlab-divider bg-gray tb15">
-									<i class="icon-dot c-square"></i>
-								</div> -->
+								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomedical 优级胎牛血清 (FBS, Premium)</a></h3>
+								<div style="flex:1;font-size:20px;line-height:1.6; margin-top:20px;">
+									<div style="font-size:16px;">
+										<b data-i18n="products.items.1.fields.partno">产品货号</b>：
+										<span data-i18n="products.items.1.desc.desc_partno">FBS-P500A  FBS-P500B  FBS-P500C</span>
+									</div>
+									<div style="font-size:16px; margin-top:10px;">
+										<b data-i18n="products.items.1.fields.basic">基础信息</b>：
+										<span data-i18n="products.items.1.desc.desc_basic">来源于国内优质天然牧场6-8月龄健康胎牛
+适用细胞范围推荐：
+适用于培养绝大多数肿瘤细胞和规模化生产细胞，部分原代细胞和部分免疫细胞等。</span>
+									</div>
+									<div style="font-size:16px; margin-top:10px;">
+										<b data-i18n="products.items.1.fields.cells">适用细胞举例</b>：
+										<span data-i18n="products.items.1.desc.desc_cells">NCI-H292、HeLa、ACHN、 NCI-HI299、ACT-1、NCI-H226、P19、NCI-H596、PC-9、NCI-H520、NCI-H1975、95-D、CT26、SW620、TE-1、RWPE-1、ECa-109、 H4、COS-7、U373、A549、293T、CHO、VERO、大鼠原代软骨细胞、RAWV264.7、THP1等细胞。</span>
+									</div>
+								</div>
 							</div>
 							
 							<div class="dlab-divider bg-gray tb15">
 								<i class="icon-dot c-square"></i>
 							</div>
 							<div class="row">
-								<div class="m-b30 col-md-7 col-sm-8">
+								<div class="col-12">
 									<h6>产品规格</h6>
+									<div class="d-flex align-items-center" style="gap:15px;">
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
-										<button class="site-button orange  m-r15" type="button">500mL</button>
+										<button class="site-button orange m-r15" type="button">500mL</button>
+									</div>
+									<div class="btn-group product-item-size" data-bs-toggle="buttons">
+										<button class="site-button orange m-r15" type="button"
+												data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+									</div>
 									</div>
 								</div>
-								<!-- <div class="m-b30 col-md-5 col-sm-4">
-									<h6>Select quantity</h6>
-									<div class="quantity btn-quantity style-1">
-										<input id="demo_vertical2" type="text" value="1" name="demo_vertical2">
-									</div>
-								</div> -->
 							</div>
 							
 							 <!-- Modal (Popup) -->
 							
-							<div class="btn-group product-item-size" data-bs-toggle="buttons">
-								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
-							</div>
 							<!-- 模态框 -->
 							<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
 								<div class="modal-dialog modal-sm">
@@ -163,19 +172,184 @@
                     <div class="col-lg-12">
                         <div class="dlab-tabs product-description tabs-site-button">
                             <ul class="nav nav-tabs ">
-                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
+                                <!-- <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
                                 <li><a data-bs-toggle="tab" href="#graphic-design-1"><i class="far fa-image"></i> 数据文件</a></li>
-                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li>
-                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 应用</a></li>
-                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li>
+                                <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li> -->
+                                <li><a data-bs-toggle="tab" href="#developement-1" class="active"><i class="fas fa-cog" ></i> 应用</a></li>
+                                <!-- <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li> -->
                             </ul>
-                            <div class="tab-content" style="margin-bottom: 300px;">
-
-                                <div id="developement-1" class="tab-pane">
-
+                            <div id="content-dental" class="tab-pane">
+                                <h4>人非小细胞肺癌细胞（A549）</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic1.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
                                     
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic2.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFU （P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic3.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic4.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFU （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <h4>人胚肾细胞（293T）</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic5.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic6.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFU （P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic7.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic8.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFU （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <h4>小鼠结肠癌细胞（CT26.WT）</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic9.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic10.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFU （P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic11.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 ">     
+                                                    <img src="../images/products/product4/pic12.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFU （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <h4>人类胶质母细胞瘤星形细胞瘤细胞（U373）</h4>
+                                <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
+                                <div class="section-content p-b0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic13.png" alt="">
+                                                </div>
+                                                <h6>对照（P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic14.png" alt="">
+                                                </div>
+                                                <h6>FBS-FFU （P3、100×、72h）</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic15.png" alt="">
+                                                </div>
+                                                <h6>对照（P6、100×、72h） </h6>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                                            <div class="dlab-box img-content-style-1">
+                                                <div class="dlab-media dlab-img-overlay1 "> 
+                                                    <img src="../images/products/product4/pic16.png" alt="">
+                                                </div>
+                                            <h6>FBS-FFU （P6、100×、72h）</h6>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
+                                        
                         </div>
                     </div>
                 </div>

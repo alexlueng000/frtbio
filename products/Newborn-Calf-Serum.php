@@ -111,30 +111,51 @@
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
 								<h3 class="post-title m-b10"><a href="javascript:void(0);">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></h3>
-								<p class="m-b10 m-t10">Front提供的新生牛血清（NBCS），可用于各种细胞培养基。我们的NBCS来源于新西兰和中国。对于新西兰的原材料，我们可保证NBCS是来自产后10天甚至更少天数的牛，从而保证最终产品的品质一致性。</p>
-								<!-- <div class="dlab-divider bg-gray tb15">
-									<i class="icon-dot c-square"></i>
-								</div> -->
+								<div style="flex:1;font-size:20px;line-height:1.6; margin-top:20px;">
+								<div style="font-size:16px;">
+									<b data-i18n="products.items.4.fields.partno">产品货号</b>：
+									<span data-i18n="products.items.4.desc.desc_partno">NZ-NCS(GI)</span>
+								</div>
+								<div style="font-size:16px; margin-top:10px;">
+									<b data-i18n="products.items.4.fields.basic">基础信息</b>：
+									<span data-i18n="products.items.4.desc.desc_basic">血清来源于国内外优质天然牧场出生10天内的健康新生牛</span>
+								</div>
+								<div style="font-size:16px; margin-top:10px;">
+									<b data-i18n="products.items.4.fields.scope">适用范围推荐</b>：
+									<span data-i18n="products.items.4.desc.desc_scope">适用于诊断试剂生产（酶联免疫/化学发光），推荐用于HIV等Elisa试剂盒，适用于工程类细胞培养，例如：PK15细胞、ST细胞、VERO细胞等。</span>
+								</div>
+								<div style="font-size:16px; margin-top:10px;">
+									<b data-i18n="products.items.4.fields.features">产品特点</b>：
+									<span data-i18n="products.items.4.desc.desc_features">低血红蛋白（＜100mg/L),低γ-球蛋白（＜2mg/ml),稳定性高。</span>
+								</div>
+								<div style="font-size:16px; margin-top:10px;">
+									<b data-i18n="products.items.4.fields.storage">存储条件</b>：
+									<span data-i18n="products.items.4.desc.desc_storage">-5℃到-20℃冷冻保存，避免反复冻融，保质期为5年。</span>
+								</div>
+								</div>
 							</div>
 							
 							<div class="dlab-divider bg-gray tb15">
 								<i class="icon-dot c-square"></i>
 							</div>
 							<div class="row">
-								<div class="m-b30 col-md-7 col-sm-8">
+								<div class="col-12">
 									<h6>产品规格</h6>
+									<div class="d-flex align-items-center" style="gap:15px;">
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
-										<button class="site-button orange  m-r15" type="button">500mL</button>
+										<button class="site-button orange m-r15" type="button">500mL</button>
+									</div>
+									<div class="btn-group product-item-size" data-bs-toggle="buttons">
+										<button class="site-button orange m-r15" type="button"
+												data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+									</div>
 									</div>
 								</div>
-								
 							</div>
 							
 							 <!-- Modal (Popup) -->
 							
-							<div class="btn-group product-item-size" data-bs-toggle="buttons">
-								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
-							</div>
+							
 							<!-- 模态框 -->
 							<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
 								<div class="modal-dialog modal-sm">
@@ -154,7 +175,7 @@
 						</form>
 					</div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12">
                         <div class="dlab-tabs product-description tabs-site-button">
                             <ul class="nav nav-tabs ">
@@ -174,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-				
+				 -->
 			</div>
             <!-- Product details -->
         </div>

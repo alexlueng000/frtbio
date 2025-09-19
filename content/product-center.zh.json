@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "弗劳恩生物 - 产品中心",
+    "description": "弗劳恩生物产品中心：胎牛血清、动物血清、细胞培养基与科研耗材。"
+  },
+  "banner": {
+    "title": "产品中心"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "current": "产品中心"
+  },
+  "sidebar": {
+    "title": "产品中心",
+    "groups": {
+      "fbs": "胎牛血清",
+      "bovine": "牛血清",
+      "other_serum": "其他动物血清",
+      "medium": "细胞培养基",
+      "others": "其他"
+    },
+    "items": {
+      "fbs_imported": "Front Biomed进口特级胎牛血清 (FBS, Optimum)",
+      "fbs_domestic": "Front Biomed国产特级胎牛血清 (FBS, Optimum)",
+      "fbs_exceptional": "Front Biomed超优级胎牛血清 (FBS, Exceptional)",
+      "fbs_premium": "Front Biomed优级胎牛血清 (FBS, Premium)",
+      "nbcs": "新生牛血清 (Newborn Calf Serum - NBCS)",
+      "pig": "猪血清 (Pig Serum - Porcine Serum)",
+      "horse": "供体马血清 (Donor Horse Serum - Equine Serum)",
+      "goat": "供体山羊血清 (Donor Goat Serum)",
+      "dmem": "DMEM培养基",
+      "mem": "MEM培养基",
+      "rpmi": "RPMI 1640培养基",
+      "trypsin005": "胰蛋白酶（0.05%）",
+      "trypsin025": "胰蛋白酶（0.25%）",
+      "antibiotic": "青霉素-链霉素100X（双抗）",
+      "frozen": "细胞冻存液"
+    }
+  },
+  "products": {
+    "labels": {
+      "overview": "概述",
+      "specs": "规格"
+    },
+    "sizes": {
+      "500": "500mL",
+      "1000": "1L",
+      "3500": "3.5L"
+    },
+    "items": [
+      {
+        "title": "Front Biomedical 进口特级胎牛血清 (FBS, Optimum)",
+        "fields": {
+            "partno": "产品货号",
+            "basic": "基础信息",
+            "cells": "适用细胞举例"
+        },
+        "desc": {
+            "desc_partno": "FBS-FFA / FBS-FFN",
+            "desc_basic": "来源于澳洲、新西兰优质天然牧场6-8月龄健康胎牛；专用于培养对血清要求较高的、难培养的娇贵细胞，如干细胞、难培养原代细胞、神经元细胞等。1、干细胞代表：胚胎干细胞、精原干细胞、NSC、UC-MSCs、PB-MSCs等；2、难培养原代细胞代表：外周血原代间充质干细胞、外周血原代巨噬细胞等。",
+            "desc_cells": "mESC、精原干细胞、NE-4C、HUC-MSCs、BM-MSCs、AD-MSCs、HUCB-MSCs、PB-MSCs、人外周血原代间充质干细胞、人外周血原代巨噬细胞、毛囊干细胞等"
+          }
+      },
+      {
+        "title": "Front Biomedical 国产特级胎牛血清 (FBS, Optimum)",
+        "fields": {
+          "partno": "产品货号",
+          "basic": "基础信息",
+          "cells": "适用细胞举例"
+        },
+        "desc": {
+          "desc_partno": "FBS-OPT500A / FBS-OPT500B / FBS-OPT500C",
+          "desc_basic": "来源于国内优质天然牧场6-8月龄健康胎牛；普适性强，适用于大部分干细胞、免疫细胞、常规肿瘤细胞、难培养细胞及原代细胞等。",
+          "desc_cells": "人脐带间充质干细胞、A549、HEB、山羊子宫内膜细胞、GM12878、K562、HeLa、293T、HEK293、KMB17、HCC1937、3T3-L1、MRC-5、MDBK、Caov3、CTLL-2、Hepa1-6、MARC-145、H9C2、NRK-52E、McCoy 5A、HK-2、HUC-MSC、HEP3B2.1-7、U373、Caco-2、THP-1、RBE、R1610、Caski、MB49、MG63、MC38、MDCK、NCI-H157、NCI-H446、PA-1 等细胞"
+        }
+      },
+      {
+        "title": "Front Biomedical 超优级胎牛血清 (FBS, Exceptional)",
+        "fields": {
+          "partno": "产品货号",
+          "basic": "基础信息",
+          "cells": "适用细胞举例"
+        },
+        "desc": {
+          "desc_partno": "FBS-E500A / FBS-E500B / FBS-E500C",
+          "desc_basic": "来源于国内优质天然牧场 6–8 月龄健康胎牛；0.1 μm 过滤，符合国际胎牛血清质量标准；依 GMP 规范全自动灌装，批量大、批间差小。普适性强，适用于培养常规原代细胞、干细胞、免疫细胞及难培养细胞（如乳腺癌、结直肠腺癌、胃腺癌、肺腺癌、肝癌等）。",
+          "desc_cells": "HeLa、HCC1937、HT22、Caov3、NCI-H460、NCI-H146、CT26.WT、NRK-52E、A375、H9C2、L929、NCI-N87、COLO 205、BEP2D、HMy-2CIR、MDA-MB-453、MS751、RL95-2、SW780、22RV1、PK-15、A3、NCI-H82、OVCAR-3、BRL、Calu-3、SNU-387、MCF7 等"
+        }
+      },
+      {
+        "title": "Front Biomedical 优级胎牛血清 (FBS, Premium)",
+        "fields": {
+          "partno": "产品货号",
+          "basic": "基础信息",
+          "cells": "适用细胞举例"
+        },
+        "desc": {
+          "desc_partno": "FBS-P500A / FBS-P500B / FBS-P500C",
+          "desc_basic": "来源于国内优质天然牧场 6–8 月龄健康胎牛；采用严格筛选的新西兰或国产原料，三次 100 nm 过滤，质量对标国际一线品牌。综合性能相当或优于同类产品，适配度与稳定性兼顾；适用于培养绝大多数肿瘤细胞和规模化生产细胞，亦可用于部分原代细胞与部分免疫细胞。",
+          "desc_cells": "NCI-H292、HeLa、ACHN、NCI-HI299、ACT-1、NCI-H226、P19、NCI-H596、PC-9、NCI-H520、NCI-H1975、95-D、CT26、SW620、TE-1、RWPE-1、ECa-109、H4、COS-7、U373、A549、293T、CHO、VERO、大鼠原代软骨细胞、RAW264.7、THP-1 等"
+        }
+      },
+      {
+        "title": "新生牛血清 (Newborn Calf Serum - NBCS)",
+        "fields": {
+          "partno": "产品货号",
+          "basic": "基础信息",
+          "scope": "适用范围推荐",
+          "features": "产品特点",
+          "storage": "储存条件及保质期"
+        },
+        "desc": {
+          "desc_partno": "NZ-NCS(GI)",
+          "desc_basic": "血清来源于国内外优质天然牧场出生 10 天内的健康新生牛。",
+          "desc_scope": "适用于诊断试剂生产（酶联免疫/化学发光），推荐用于 HIV 等 Elisa 试剂盒；适用于工程类细胞培养，如 PK15、ST、VERO 等。",
+          "desc_features": "低血红蛋白（<100mg/L）、低 γ-球蛋白（<2mg/ml）、稳定性高。",
+          "desc_storage": "包装规格：500ml/瓶；储存条件：-5℃ 到 -20℃ 冷冻保存，避免反复冻融；保质期 5 年。"
+        }
+      },
+      {
+        "title": "猪血清 (Pig Serum - Porcine Serum)",
+        "desc": "作为少数天然猪血清供应商之一，Front的猪血清源自美国农场。Front从未用抗生素或激素处理的动物收集和生产猪血清。这种独特的猪血清用作细胞培养基特别是疫苗生产中非常理想。有机猪血清经过200nm无菌过滤，具有低血红蛋白水平.猪血清非常适合用于疫苗生产以及细胞培养。"
+      },
+      {
+        "title": "供体马血清 (Donor Horse Serum - Equine Serum)",
+        "desc": "Front的供体马血清是采自中国、美国、澳洲或新西兰，有兽医定期检查及监控的牛群。马血清非常适合用作细胞培养基和兽医生物制品。"
+      },
+      {
+        "title": "供体山羊血清 (Donor Goat Serum)",
+        "desc": "来自严格监控的健康成年山羊群，经规范采集与多重过滤处理，获得高品质Front从严格监控的山羊群中，挑选健康成年羊为供体。我们收集山羊血清并将其过滤，得到的是高品质的高度一致的批次产品。"
+      }
+    ]
+  }
+}
