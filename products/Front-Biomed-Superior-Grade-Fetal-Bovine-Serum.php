@@ -187,7 +187,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic1.png" alt="">
+                                                    <img src="../images/products/product3/pic1.webp" alt="">
                                                 </div>
                                                 <h6>对照（P1、100×、120h）</h6>
                                             </div>
@@ -196,7 +196,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic2.png" alt="">
+                                                    <img src="../images/products/product3/pic2.webp" alt="">
                                                 </div>
                                                 <h6>FBS-FFN（P1、100×、120h）</h6>
                                             </div>
@@ -205,7 +205,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic3.png" alt="">
+                                                    <img src="../images/products/product3/pic3.webp" alt="">
                                                 </div>
                                                 <h6>对照（P2、100×、120h） </h6>
                                             </div>
@@ -214,7 +214,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic4.png" alt="">
+                                                    <img src="../images/products/product3/pic4.webp" alt="">
                                                 </div>
                                             <h6>FBS-FFN（P2、100×、120h）</h6>
                                             </div>
@@ -229,7 +229,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic5.png" alt="">
+                                                    <img src="../images/products/product3/pic5.webp" alt="">
                                                 </div>
                                                 <h6>对照（P3、100×、72h）</h6>
                                             </div>
@@ -238,7 +238,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic6.png" alt="">
+                                                    <img src="../images/products/product3/pic6.webp" alt="">
                                                 </div>
                                                 <h6>FBS-FFN（P3、100×、72h）</h6>
                                             </div>
@@ -247,7 +247,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic7.png" alt="">
+                                                    <img src="../images/products/product3/pic7.webp" alt="">
                                                 </div>
                                                 <h6>对照（P6、100×、72h） </h6>
                                             </div>
@@ -256,7 +256,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic8.png" alt="">
+                                                    <img src="../images/products/product3/pic8.webp" alt="">
                                                 </div>
                                             <h6>FBS-FFN （P6、100×、72h）</h6>
                                             </div>
@@ -271,7 +271,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic9.png" alt="">
+                                                    <img src="../images/products/product3/pic9.webp" alt="">
                                                 </div>
                                                 <h6>对照（P3、100×、72h）</h6>
                                             </div>
@@ -280,7 +280,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic10.png" alt="">
+                                                    <img src="../images/products/product3/pic10.webp" alt="">
                                                 </div>
                                                 <h6>FBS-FFN （P3、100×、72h）</h6>
                                             </div>
@@ -289,7 +289,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic11.png" alt="">
+                                                    <img src="../images/products/product3/pic11.webp" alt="">
                                                 </div>
                                                 <h6>对照（P6、100×、72h） </h6>
                                             </div>
@@ -298,7 +298,7 @@
                                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                             <div class="dlab-box img-content-style-1">
                                                 <div class="dlab-media dlab-img-overlay1 "> 
-                                                    <img src="../images/products/product3/pic12.png" alt="">
+                                                    <img src="../images/products/product3/pic12.webp" alt="">
                                                 </div>
                                             <h6>FBS-FFN （P6、100×、72h）</h6>
                                             </div>
