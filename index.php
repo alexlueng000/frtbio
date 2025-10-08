@@ -346,7 +346,7 @@
 										<img src="images/products/new-product1.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed进口特级胎牛血清 (FBS, Optimum)</h5>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 进口特级胎牛血清 (FBS, Optimum)</h5>
 										<a href="products/Front-Biomed-Premium-Imported-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
@@ -358,7 +358,7 @@
 										<img src="images/products/gouchanteji-front.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed国产特级胎牛血清 (FBS, Optimum)</h5>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 国产特级胎牛血清 (FBS, Optimum)</h5>
 										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
@@ -370,7 +370,7 @@
 										<img src="images/products/new-product2.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed超优级胎牛血清 (FBS, Exceptional )</h5>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 超优级胎牛血清 (FBS, Exceptional )</h5>
 										<a href="products/Front-Biomed-Exceptional" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
@@ -383,7 +383,7 @@
 										<img src="images/products/new-product3.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">Front Biomed优级胎牛血清 (FBS, Premium)</h5>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 优级胎牛血清 (FBS, Premium)</h5>
 										<a href="products/Front-Biomed-Premium-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
 									</div>
 								</div>
