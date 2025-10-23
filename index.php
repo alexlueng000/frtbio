@@ -743,5 +743,127 @@ jQuery(document).ready(function() {
 });	/*ready*/
 </script>
 
+<script>
+(function () {
+  function getLang() {
+    var url = new URL(window.location.href);
+    var urlLang = url.searchParams.get('lang');
+    var savedLang = localStorage.getItem('lang');
+    return (urlLang || savedLang || document.documentElement.getAttribute('lang') || 'zh').toLowerCase();
+  }
+
+  // 初始化 lang
+  var lang = getLang();
+  if (document.documentElement.getAttribute('lang') !== lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+  localStorage.setItem('lang', lang);
+
+  // 语言下拉点击：仅当切换到不同语言时才刷新
+  function onPick(e) {
+    e.preventDefault();
+    var picked = this.getAttribute('data-lang');
+    if (!picked || picked === lang) return;
+    localStorage.setItem('lang', picked);
+    var u = new URL(window.location.href);
+    u.searchParams.set('lang', picked);
+    window.location.href = u.toString();
+  }
+
+  // 绑定事件
+  var langLinks = document.querySelectorAll('a[data-lang]');
+  langLinks.forEach(function (a) { a.addEventListener('click', onPick); });
+
+  // 更新按钮文案
+  var toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.firstChild && (toggle.firstChild.nodeValue = (lang === 'en' ? 'English' : '中文') + ' ');
+  }
+
+  // 暴露一个获取当前语言的函数，给下面的 i18n loader 用
+  window.__getLang = getLang;
+})();
+</script>
+
+<script>
+  // 取值工具：a.b.c
+  function deepGet(obj, path) {
+    return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+
+  // 写文本但保留 <i> 等子节点：优先改第一个文本节点
+  function setTextPreserveIcons(el, text) {
+    const node = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+    if (node) node.nodeValue = text + ' ';
+    else el.insertBefore(document.createTextNode(text + ' '), el.firstChild);
+  }
+
+  async function loadI18n(lang) {
+    const pagePath   = `content/product-center.${lang}.json`;
+    const headerPath = `content/header.${lang}.json`;
+
+    async function fetchOrZh(path, zhPath) {
+      try {
+        const r = await fetch(path, { cache: 'no-cache' });
+        if (!r.ok) throw 0;
+        return await r.json();
+      } catch (_) {
+        const r2 = await fetch(zhPath, { cache: 'no-cache' });
+        return r2.ok ? await r2.json() : {};
+      }
+    }
+
+    // 并行拉两份，各自兜底到 zh
+    const [pageDict, headerDict] = await Promise.all([
+      fetchOrZh(pagePath,   'content/product-center.zh.json'),
+      fetchOrZh(headerPath, 'content/header.zh.json')
+    ]);
+
+    // 遍历填充
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n');
+      const attr    = el.getAttribute('data-i18n-attr');
+
+      let val = null;
+      if (fullKey.startsWith('header.')) {
+        // 去掉前缀后在 header.json 顶层取值（无包裹结构）
+        val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else {
+        val = deepGet(pageDict, fullKey);
+      }
+      if (val == null) return;
+
+      if (attr) {
+        el.setAttribute(attr, val);
+      } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.setAttribute('placeholder', val);
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        setTextPreserveIcons(el, val);
+      }
+    });
+
+    // 同步 <title>
+    const titleEl = document.querySelector('title[data-i18n="meta.title"]');
+    if (titleEl) document.title = titleEl.textContent || document.title;
+
+    // 更新语言下拉按钮显示（若有）
+    const toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const label = deepGet(headerDict, 'lang.toggle');
+      if (label) setTextPreserveIcons(toggle, label);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const lang = (window.__getLang ? window.__getLang() : (document.documentElement.getAttribute('lang') || 'zh')).toLowerCase();
+    loadI18n(lang);
+    if (window.$ && $.fn.lazy) { $('.lazy').Lazy(); }
+  });
+</script>
+
+
+
 </body>
 </html>

@@ -60,12 +60,12 @@
 		<div class="dlab-bnr-inr bg-pt" style="background-image:url(images/banner/banner-5.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">研发与服务</h1>
+                    <h1 class="text-white" data-i18n="research-and-service.banner.title">研发与服务</h1>
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index">首页</a></li>
-							<li>研发与服务</li>
+							<li><a href="index" data-i18n="research-and-service.banner.home">首页</a></li>
+							<li data-i18n="research-and-service.banner.current">研发与服务</li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -81,9 +81,9 @@
 					<div class="row align-items-center">
 						<div class="col-lg-6 col-md-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="our-story">
-								<span style="color: #FF8500;">我们的实力</span>
-								<h2 class="title">专注科研创新</h2>
-								<h4 class="title">我们致力于打造高效、可靠的生物工程解决方案。</h4>
+								<span style="color: #FF8500;" data-i18n="research-and-service.hero.strength_label">我们的实力</span>
+								<h2 class="title" data-i18n="research-and-service.hero.title">专注科研创新</h2>
+								<h4 class="title" data-i18n="research-and-service.hero.subtitle">我们致力于打造高效、可靠的生物工程解决方案。</h4>
 								<p style="color:black; font-size:20px; ">弗劳恩生物的全资子公司弗劳恩生物药业组建了由多名国外留学人员为核心的技术团队，团队成员包括在一名院士和千人计划特聘专家、3位美国大学终身大学教授，顾问团队由院士、千人计划特聘专家、教授组成。在研药物均为抗肿瘤药物，这些项目大部分（超过10个）已经申请国际和中国专利。</p>
 								<!-- <a href="about-2.html" class="site-button btnhover20">About Us</a> -->
 							</div>
@@ -105,7 +105,7 @@
 					<div class="col-lg-6 col-md-12 bg-primary">
 						<div class="max-w700 m-auto p-tb50 p-lr20">
 							<div class="text-white">
-								<h2>专注生物医药前沿研发，<br>打造更具突破性的治疗方案</h2>
+								<h2 data-i18n="research-and-service.billboard.headline" >专注生物医药前沿研发，<br>打造更具突破性的治疗方案</h2>
 							</div>
 							<div class="icon-bx-wraper m-b30 left" >
 								<div class="icon-md"> 
@@ -114,8 +114,8 @@
 									</a> 
 								</div>
 								<div class="icon-content">
-									<h4 class="dlab-tilte">抗肿瘤生物药研发</h4>
-									<p>两位美籍教授湛教授和刘教授担任我司弗劳恩药业-生物药技术团队负责人。目前对某抗癌蛋白Par-4Ex（MODIFIED PROSTATE APOPTOSIS RESPONSE-4 (PAR-4) POLYPEPTIDE，改良的前列腺凋亡反应-4（PAR-4）多肽）已进入临床前研究，通过动物实验（前列腺癌）效果明显，已在国内申请发明专利，进入审查阶段。</p>
+									<h4 class="dlab-tilte" data-i18n="research-and-service.billboard.items.0.title">抗肿瘤生物药研发</h4>
+									<p data-i18n="research-and-service.billboard.items.0.text">两位美籍教授湛教授和刘教授担任我司弗劳恩药业-生物药技术团队负责人。目前对某抗癌蛋白Par-4Ex（MODIFIED PROSTATE APOPTOSIS RESPONSE-4 (PAR-4) POLYPEPTIDE，改良的前列腺凋亡反应-4（PAR-4）多肽）已进入临床前研究，通过动物实验（前列腺癌）效果明显，已在国内申请发明专利，进入审查阶段。</p>
 								</div>
 							</div>
 							<div class="icon-bx-wraper m-b30 left">
@@ -125,8 +125,8 @@
 									</a> 
 								</div>
 								<div class="icon-content">
-									<h4 class="dlab-tilte">新型化学药物研发</h4>
-									<p>为子公司弗劳恩药业与国内985大学生物系重点实验室邹教授之间的合作项目。MTH1抑制剂抗肿瘤药物研发过程中，通过设计合成并反复实验化合物，结合MTH1活性位点，选择性抑制这种蛋白作用的小分子，导致氧化dNTP，DNA损伤，以及毒性增加，从而在癌症中得到治疗应答。技术团队合成了50种全新化合物，已验证其中的数十种对MTH1酶有良好的抑制作用，目前正在开展细胞水平的抗癌活性实验，效果良好，正处于专利申请阶段。</p>
+									<h4 class="dlab-tilte" data-i18n="research-and-service.billboard.items.1.title">新型化学药物研发</h4>
+									<p data-i18n="research-and-service.billboard.items.1.text">为子公司弗劳恩药业与国内985大学生物系重点实验室邹教授之间的合作项目。MTH1抑制剂抗肿瘤药物研发过程中，通过设计合成并反复实验化合物，结合MTH1活性位点，选择性抑制这种蛋白作用的小分子，导致氧化dNTP，DNA损伤，以及毒性增加，从而在癌症中得到治疗应答。技术团队合成了50种全新化合物，已验证其中的数十种对MTH1酶有良好的抑制作用，目前正在开展细胞水平的抗癌活性实验，效果良好，正处于专利申请阶段。</p>
 								</div>
 							</div>
 							<div class="icon-bx-wraper left">
@@ -136,8 +136,8 @@
 									</a> 
 								</div>
 								<div class="icon-content">
-									<h4 class="dlab-tilte"> 干细胞转化研发</h4>
-									<p>为我司参与投资的弗劳恩药业与国家科技部干细胞领域评审主委崔教授团队合作的干细胞转化研究项目。专注于干细胞外泌体技术研究，推进干细胞外泌体在再生治疗领域内的细胞治疗临床应用方案，力争成为具有前瞻性、区域性、影响性的干细胞行业领导者，推动干细胞科技惠及所有人。</p>
+									<h4 class="dlab-tilte" data-i18n="research-and-service.billboard.items.2.title">干细胞转化研发</h4>
+									<p data-i18n="research-and-service.billboard.items.2.text">为我司参与投资的弗劳恩药业与国家科技部干细胞领域评审主委崔教授团队合作的干细胞转化研究项目。专注于干细胞外泌体技术研究，推进干细胞外泌体在再生治疗领域内的细胞治疗临床应用方案，力争成为具有前瞻性、区域性、影响性的干细胞行业领导者，推动干细胞科技惠及所有人。</p>
 								</div>
 							</div>
 						</div>
@@ -153,7 +153,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="sort-title clearfix text-center">
-								<h2>在研项目</h2>
+								<h2 data-i18n="research-and-service.projects.title">在研项目</h2>
 							</div>
 						</div>
 					</div>
@@ -168,7 +168,7 @@
 									<!-- <div class="big-number">01</div> -->
 									<div>
 										<div class="sort-title clearfix text-center">
-											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5">工程化间充质干细胞外泌体靶向肝癌递送siMYC-AS1和anti-PD-l1抑制肿瘤研究</p>
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5" data-i18n="research-and-service.projects.items.0">工程化间充质干细胞外泌体靶向肝癌递送siMYC-AS1和anti-PD-l1抑制肿瘤研究</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -183,7 +183,7 @@
 									<!-- <div class="big-number">01</div> -->
 									<div>
 										<div class="sort-title clearfix text-center">
-											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5">羊膜间充质干细胞及其外泌体治疗脊髓损伤/创伤后膝关节炎修复研究</p>
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5" data-i18n="research-and-service.projects.items.1">羊膜间充质干细胞及其外泌体治疗脊髓损伤/创伤后膝关节炎修复研究</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -198,7 +198,7 @@
 									<!-- <div class="big-number">01</div> -->
 									<div>
 										<div class="sort-title clearfix text-center">
-											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5">细胞因子在美容产品上的运用</p>
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5" data-i18n="research-and-service.projects.items.2">细胞因子在美容产品上的运用</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -213,7 +213,7 @@
 									<!-- <div class="big-number">01</div> -->
 									<div>
 										<div class="sort-title clearfix text-center">
-											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5">亚健康人群细胞精准治疗</p>
+											<p style="font-size: 24px; color: #000; text-align: left; padding: 20px 65px; line-height: 1.5" data-i18n="research-and-service.projects.items.3">亚健康人群细胞精准治疗</p>
 										</div>
 										<!-- <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span class="testimonial-position">Student</span>  -->
 									</div>
@@ -237,21 +237,21 @@
 						height: 100%; " >
 							<div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:0;"></div>
 							<div class="section-head text-white" style="z-index:1;">
-								<h3 class="sort-title clearfix text-left">细胞培养研究中心</h3>
+								<h3 class="sort-title clearfix text-left" data-i18n="research-and-service.labs.cell_culture.title">细胞培养研究中心</h3>
 							</div>
 							<div style="z-index:1;">
 								<ul class="list-check white list-2 rounded border">
 									<li>
-										<h4 class="title m-b10">血清个性化定制</h4>
-										<p style="font-weight: 600;">可以根据客户的血清需求，进行个性化处理，包括活性炭处理、透析处理、热灭活处理、聚乙二醇处理、低内毒素水平，超低IgG以及伽马射线照射。此外，血清瓶容量亦可定制。</p>
+										<h4 class="title m-b10" data-i18n="research-and-service.labs.cell_culture.bullets.0.title">血清个性化定制</h4>
+										<p style="font-weight: 600;" data-i18n="research-and-service.labs.cell_culture.bullets.0.text">可以根据客户的血清需求，进行个性化处理，包括活性炭处理、透析处理、热灭活处理、聚乙二醇处理、低内毒素水平，超低IgG以及伽马射线照射。此外，血清瓶容量亦可定制。</p>
 									</li>
 									<li>
-										<h4 class="title m-b10">胎牛血清筛选标准</h4>
-										<p style="font-weight: 600;">弗劳恩生物有一套完善严谨的胎牛血清筛选标准。对于待筛选的血清，我们会根据客户需求分别从传代稳定性、细胞生长速率、生长状态、扩大培养等多方面进行验证，充分判断最适合细胞的血清，并预留足够的存货量。</p>
+										<h4 class="title m-b10" data-i18n="research-and-service.labs.cell_culture.bullets.1.title">胎牛血清筛选标准</h4>
+										<p style="font-weight: 600;" data-i18n="research-and-service.labs.cell_culture.bullets.1.text">弗劳恩生物有一套完善严谨的胎牛血清筛选标准。对于待筛选的血清，我们会根据客户需求分别从传代稳定性、细胞生长速率、生长状态、扩大培养等多方面进行验证，充分判断最适合细胞的血清，并预留足够的存货量。</p>
 									</li>
 									<li>
-										<h4 class="title m-b10">无血清培养基研发</h4>
-										<p style="font-weight: 600;">弗劳恩生物通过重组蛋白表达系统的技术应用，可以量产细胞培养所需的各种生长因子（表皮生长因子、成纤维生长因子、类胰岛素生长因子等）；与中国科学院广州生物医药与健康研究院顶级干细胞研究团队合作，可以根据各种细胞株的生长特性开发最合适的无血清培养基。</p>
+										<h4 class="title m-b10" data-i18n="research-and-service.labs.cell_culture.bullets.2.title">无血清培养基研发</h4>
+										<p style="font-weight: 600;" data-i18n="research-and-service.labs.cell_culture.bullets.2.text">弗劳恩生物通过重组蛋白表达系统的技术应用，可以量产细胞培养所需的各种生长因子（表皮生长因子、成纤维生长因子、类胰岛素生长因子等）；与中国科学院广州生物医药与健康研究院顶级干细胞研究团队合作，可以根据各种细胞株的生长特性开发最合适的无血清培养基。</p>
 									</li>
 								</ul>
 							</div>
@@ -265,10 +265,10 @@
 						height: 100%; " >		
 							<div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:0;"></div>
 							<div class="section-head text-white" style="z-index:1">
-							<h3 class="sort-title clearfix text-left">影像检测实验室</h3>
+							<h3 class="sort-title clearfix text-left" data-i18n="research-and-service.labs.imaging_lab.title">影像检测实验室</h3>
 							</div>
 							<div  style="z-index:1">
-								<p style="font-weight: 600;" >弗劳恩科技与全球最早进行MicroCT开发的行业龙头企业瑞士SCANCO Medical AG建立了深度战略合作关系，是SCANCO在大中华地区（ 大陆、香港、台湾和澳门）的唯一代理机构，同时建立了影像检测实验室-Micro CT扫描中心，为大中华区科教单位、医学院、医疗机构及研发企业提供深度的研究辅助服务，助力客户创新创造能力采用超高分辨率的Micro CT（临床前影像检测分析中心）等实验设备对活体、细胞等样品进行生物检测分析，对生物结构和参数的定性定量分析提供可靠依据。成熟运营7年的Micro CT扫描中心，相关硬件设施及服务技术团队目前在国内属于领先地位，已覆盖国内及港澳近100家医学院、大学实验室、高级别三甲医院等客户。</p>
+								<p style="font-weight: 600;" data-i18n="research-and-service.labs.imaging_lab.paragraph">弗劳恩科技与全球最早进行MicroCT开发的行业龙头企业瑞士SCANCO Medical AG建立了深度战略合作关系，是SCANCO在大中华地区（ 大陆、香港、台湾和澳门）的唯一代理机构，同时建立了影像检测实验室-Micro CT扫描中心，为大中华区科教单位、医学院、医疗机构及研发企业提供深度的研究辅助服务，助力客户创新创造能力采用超高分辨率的Micro CT（临床前影像检测分析中心）等实验设备对活体、细胞等样品进行生物检测分析，对生物结构和参数的定性定量分析提供可靠依据。成熟运营7年的Micro CT扫描中心，相关硬件设施及服务技术团队目前在国内属于领先地位，已覆盖国内及港澳近100家医学院、大学实验室、高级别三甲医院等客户。</p>
 							</div>
 						</div>
 					</div>
@@ -310,6 +310,143 @@
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
 <script>
+(function () {
+  // —— 统一用“无 hash”的 URL 来读/写参数
+  function cleanURL() {
+    return new URL(window.location.origin + window.location.pathname + window.location.search);
+  }
+
+  function getLang() {
+    // 先从 query 读，其次 localStorage，最后 <html lang>
+    const u = cleanURL();                               // ✅ 去掉 #
+    const urlLang = u.searchParams.get('lang');
+    const savedLang = localStorage.getItem('lang');
+    const docLang  = document.documentElement.getAttribute('lang');
+    return (urlLang || savedLang || docLang || 'zh').toLowerCase();
+  }
+
+  // 初始化 lang
+  var lang = getLang();
+  if (document.documentElement.getAttribute('lang') !== lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+  localStorage.setItem('lang', lang);
+
+  // 点击切换（确保参数写在 hash 之前）
+  function onPick(e) {
+    e.preventDefault();
+    var picked = this.getAttribute('data-lang');
+    if (!picked || picked === lang) return;
+
+    localStorage.setItem('lang', picked);
+    var u = cleanURL();                                 // ✅ 去掉 #
+    u.searchParams.set('lang', picked);
+    // 如果你不想整页刷新，用 history.replaceState 再手动触发你的 i18n 加载器也行
+    window.location.href = u.toString();                // ✅ /service?lang=en
+  }
+
+  // 事件绑定（放在 DOM 有了之后也没问题）
+  document.addEventListener('DOMContentLoaded', function () {
+    var langLinks = document.querySelectorAll('a[data-lang]');
+    langLinks.forEach(function (a) { a.addEventListener('click', onPick); });
+
+    // 更新下拉按钮显示
+    var toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const icon = toggle.querySelector('i');
+      toggle.innerHTML = '';
+      toggle.append(document.createTextNode((lang === 'en' ? 'English' : '中文') + ' '));
+      if (icon) toggle.appendChild(icon);
+    }
+  });
+
+  // 暴露
+  window.__getLang = getLang;
+})();
+</script>
+
+
+<script>
+  // 小工具
+  function deepGet(obj, path) {
+    return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+
+  async function loadI18n(lang) {
+    // const pagePath   = `content/research-and-service.${lang}.json`;
+    const headerPath = `content/header.${lang}.json`;
+
+    // 并行拉取，任何一个缺失都回退到 zh 的对应文件
+    let [pageDict, headerDict] = await Promise.allSettled([
+      fetch(pagePath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
+      fetch(headerPath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
+    ]).then(async (results) => {
+      let p = results[0].status === 'fulfilled' ? results[0].value : null;
+      let h = results[1].status === 'fulfilled' ? results[1].value : null;
+
+      // 各自独立兜底
+      if (!p) {
+        const r = await fetch(`content/research-and-service.zh.json`, { cache: 'no-cache' });
+        p = r.ok ? await r.json() : {};
+      }
+      if (!h) {
+        const r = await fetch(`content/header.zh.json`, { cache: 'no-cache' });
+        h = r.ok ? await r.json() : {};
+      }
+      return [p, h];
+    });
+
+    // 选择器：以 "header." 开头的 key 走 headerDict，其余走 pageDict
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n');
+      const attr    = el.getAttribute('data-i18n-attr');
+
+      let val = null;
+      if (fullKey.startsWith('header.')) {
+        // 去掉前缀，在 header.json 内部查找
+        val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else {
+        val = deepGet(pageDict, fullKey);
+      }
+      if (val == null) return;
+
+      if (attr) {
+        el.setAttribute(attr, val);
+      } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.setAttribute('placeholder', val);
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        el.textContent = val;
+      }
+    });
+
+    // 同步 <title>
+    const titleEl = document.querySelector('title[data-i18n="meta.title"]');
+    if (titleEl) document.title = titleEl.textContent || document.title;
+
+    // 如果 header.json 里有语言按钮文案，顺便更新下拉按钮显示
+    const toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const label = deepGet(headerDict, 'lang.toggle');
+      if (label) {
+        // 只替换文字部分，保留 <i> 图标
+        const icon = toggle.querySelector('i');
+        toggle.innerHTML = '';
+        toggle.append(document.createTextNode(label + ' '));
+        if (icon) toggle.appendChild(icon);
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const lang = (window.__getLang ? window.__getLang() : (document.documentElement.getAttribute('lang') || 'zh')).toLowerCase();
+    loadI18n(lang);
+    if (window.$ && $.fn.lazy) { $('.lazy').Lazy(); }
+  });
+</script>
+
+<script>
 jQuery(document).ready(function() {
 	'use strict';
 	// jQuery("#welcome").show();
@@ -317,6 +454,7 @@ jQuery(document).ready(function() {
 	$('.lazy').Lazy();
 });	/*ready*/
 </script>
+
 
 
 </body>

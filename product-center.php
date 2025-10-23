@@ -511,40 +511,126 @@
 <script src="js/dz.ajax.js"></script>
 
 <script>
-  // 简单 i18n 加载器（支持 alt 属性 via data-i18n-attr）
+(function () {
+  function getLang() {
+    var url = new URL(window.location.href);
+    var urlLang = url.searchParams.get('lang');
+    var savedLang = localStorage.getItem('lang');
+    return (urlLang || savedLang || document.documentElement.getAttribute('lang') || 'zh').toLowerCase();
+  }
+
+  // 初始化 lang
+  var lang = getLang();
+  if (document.documentElement.getAttribute('lang') !== lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+  localStorage.setItem('lang', lang);
+
+  // 语言下拉点击：仅当切换到不同语言时才刷新
+  function onPick(e) {
+    e.preventDefault();
+    var picked = this.getAttribute('data-lang');
+    if (!picked || picked === lang) return;
+    localStorage.setItem('lang', picked);
+    var u = new URL(window.location.href);
+    u.searchParams.set('lang', picked);
+    window.location.href = u.toString();
+  }
+
+  // 绑定事件
+  var langLinks = document.querySelectorAll('a[data-lang]');
+  langLinks.forEach(function (a) { a.addEventListener('click', onPick); });
+
+  // 更新按钮文案
+  var toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.firstChild && (toggle.firstChild.nodeValue = (lang === 'en' ? 'English' : '中文') + ' ');
+  }
+
+  // 暴露一个获取当前语言的函数，给下面的 i18n loader 用
+  window.__getLang = getLang;
+})();
+</script>
+
+<script>
+  // 小工具
+  function deepGet(obj, path) {
+    return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+
   async function loadI18n(lang) {
-    try {
-      const res = await fetch(`content/product-center.${lang}.json`, { cache: 'no-cache' });
-      if (!res.ok) throw new Error('fetch failed');
-      const dict = await res.json();
+    const pagePath   = `content/product-center.${lang}.json`;
+    const headerPath = `content/header.${lang}.json`;
 
-      const get = (path, obj = dict) =>
-        path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+    // 并行拉取，任何一个缺失都回退到 zh 的对应文件
+    let [pageDict, headerDict] = await Promise.allSettled([
+      fetch(pagePath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
+      fetch(headerPath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
+    ]).then(async (results) => {
+      let p = results[0].status === 'fulfilled' ? results[0].value : null;
+      let h = results[1].status === 'fulfilled' ? results[1].value : null;
 
-      // 文本填充
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        const attr = el.getAttribute('data-i18n-attr');
-        const val = get(key);
-        if (val == null) return;
-        if (attr) {
-          el.setAttribute(attr, val);
-        } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.setAttribute('placeholder', val);
-        } else {
-          el.textContent = val;
-        }
-      });
-    } catch (e) {
-      console.error('i18n load error:', e);
+      // 各自独立兜底
+      if (!p) {
+        const r = await fetch(`content/product-center.zh.json`, { cache: 'no-cache' });
+        p = r.ok ? await r.json() : {};
+      }
+      if (!h) {
+        const r = await fetch(`content/header.zh.json`, { cache: 'no-cache' });
+        h = r.ok ? await r.json() : {};
+      }
+      return [p, h];
+    });
+
+    // 选择器：以 "header." 开头的 key 走 headerDict，其余走 pageDict
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n');
+      const attr    = el.getAttribute('data-i18n-attr');
+
+      let val = null;
+      if (fullKey.startsWith('header.')) {
+        // 去掉前缀，在 header.json 内部查找
+        val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else {
+        val = deepGet(pageDict, fullKey);
+      }
+      if (val == null) return;
+
+      if (attr) {
+        el.setAttribute(attr, val);
+      } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.setAttribute('placeholder', val);
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        el.textContent = val;
+      }
+    });
+
+    // 同步 <title>
+    const titleEl = document.querySelector('title[data-i18n="meta.title"]');
+    if (titleEl) document.title = titleEl.textContent || document.title;
+
+    // 如果 header.json 里有语言按钮文案，顺便更新下拉按钮显示
+    const toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const label = deepGet(headerDict, 'lang.toggle');
+      if (label) {
+        // 只替换文字部分，保留 <i> 图标
+        const icon = toggle.querySelector('i');
+        toggle.innerHTML = '';
+        toggle.append(document.createTextNode(label + ' '));
+        if (icon) toggle.appendChild(icon);
+      }
     }
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    // 默认中文
-    loadI18n('zh');
+    const lang = (window.__getLang ? window.__getLang() : (document.documentElement.getAttribute('lang') || 'zh')).toLowerCase();
+    loadI18n(lang);
     if (window.$ && $.fn.lazy) { $('.lazy').Lazy(); }
   });
 </script>
+
 </body>
 </html>

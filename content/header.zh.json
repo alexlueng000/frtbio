@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "home": "首页",
+        "service": "研发与服务",
+        "product_center": "产品中心",
+        "about": "关于我们",
+        "promo": "促销活动"
+      },
+      "product_menu": {
+        "serum": "血清",
+        "serum_items": {
+          "fbs_imported": "Front Biomed进口特级胎牛血清 (FBS, Optimum)",
+          "fbs_exceptional": "Front Biomed超优级胎牛血清 (FBS, Exceptional)",
+          "fbs_domestic": "Front Biomed国产特级胎牛血清 (FBS, Optimum)",
+          "fbs_premium": "Front Biomed优级胎牛血清 (FBS, Premium)",
+          "nbcs": "新生牛血清(Newborn Calf Serum-NBCS(Bovine))",
+          "pig": "猪血清(Pig Serum-Porcine Serum)",
+          "horse": "供体马血清(Donor Horse Serum -Equine Serum)",
+          "goat": "供体山羊血清(Donor Goat Serum)"
+        },
+        "medium": "细胞培养基",
+        "medium_items": {
+          "dmem": "DMEM培养基",
+          "mem": "MEM培养基",
+          "rpmi": "RPMI 1640培养基"
+        },
+        "others": "其他",
+        "other_items": {
+          "trypsin005": "胰蛋白酶(浓度0.05%)",
+          "trypsin025": "胰蛋白酶(浓度0.25%)",
+          "antibiotic": "青霉素-链霉素100X（双抗）",
+          "frozen": "细胞冻存液"
+        }
+      },
+      "about_menu": {
+        "intro": "公司简介",
+        "contact": "联系我们",
+        "events": "交流与活动"
+      },
+      "lang": {
+        "toggle": "中文",
+        "zh": "中文",
+        "en": "English"
+      }
+  }
+  

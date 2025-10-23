@@ -20,76 +20,64 @@
                         <a href="index"><img src="images/logo_new.webp" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav">	
-                        <li style="margin-right: 30px;">
-                            <a href="index">首页</a>
-                        </li>
+                        <!-- 顶部一级菜单 -->
+                        <li style="margin-right: 30px;"><a href="index" data-i18n="header.nav.home">首页</a></li>
+                        <li style="margin-right: 30px;"><a href="service" data-i18n="header.nav.service">研发与服务</a></li>
 
-                        <li style="margin-right: 30px;">
-                            <a href="service">研发与服务</a>
-                        </li>
-                        
                         <li class="has-mega-menu" style="margin-right: 30px;">
-                            <a href="product-center">产品中心<i class="fas fa-chevron-down"></i></a>
-                            <ul class="mega-menu">
-                                <li>
-                                    <a href="#">血清 </a>
-                                    <ul>
-                                        <li><a href="products/Front-Biomed-Premium-Imported-FBS">Front Biomed进口特级胎牛血清 (FBS, Optimum)</a></li>
-                                        <li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum">Front Biomed超优级胎牛血清 (FBS, Exceptional)</a></li>
-                                        <li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum">Front Biomed国产特级胎牛血清 (FBS, Optimum)</a></li>
-                                        <li><a href="products/Front-Biomed-Premium-FBS">Front Biomed优级胎牛血清 (FBS, Premium)</a></li>
-                                        <li><a href="products/Newborn-Calf-Serum">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></li>
-                                        <li><a href="products/Pig-Serum">猪血清(Pig Serum-Porcine Serum)</a></li>
-                                        <li><a href="products/Horse-Serum">供体马血清(Donor Horse Serum -Equine Serum)</a></li>
-                                        <li><a href="products/Goat-Serum">供体山羊血清(Donor Goat Serum)</a></li>
-                                    </ul>
-                                </li>
-                                
-                                
-                                <li> 
-                                    <a href="#">细胞培养基</a>
-                                    
-                                    <ul>
-                                        <li><a href="products/DMEM-Cell-Culture-Medium">DMEM培养基</a></li>
-                                        <li><a href="products/MEM-Cell-Culture-Medium">MEM培养基</a></li>
-                                        <li><a href="products/RPMI-Cell-Culture-Medium">RPMI 1640培养基</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li> 
-                                    <a href="#">其他</a>
-                                    
-                                    <ul>
-                                        <li><a href="products/Trypsin-0.05">胰蛋白酶(浓度0.05%)</a></li>
-                                        <li><a href="products/Trypsin-0.25">胰蛋白酶(浓度0.25%)</a></li>
-                                        <li><a href="products/Double-Antibiotic">青霉素-链霉素100X（双抗）</a></li>
-                                        <li><a href="products/Frozen-Cell-Suspension">细胞冻存液</a></li>
-                                        
-                                    </ul>
-                                </li>
+                        <a href="product-center" data-i18n="header.nav.product_center">产品中心<i class="fas fa-chevron-down"></i></a>
+                        <ul class="mega-menu">
+                            <li>
+                            <a href="#" data-i18n="header.product_menu.serum">血清</a>
+                            <ul>
+                                <li><a href="products/Front-Biomed-Premium-Imported-FBS" data-i18n="header.product_menu.serum_items.fbs_imported"></a></li>
+                                <li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" data-i18n="header.product_menu.serum_items.fbs_exceptional"></a></li>
+                                <li><a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" data-i18n="header.product_menu.serum_items.fbs_domestic"></a></li>
+                                <li><a href="products/Front-Biomed-Premium-FBS" data-i18n="header.product_menu.serum_items.fbs_premium"></a></li>
+                                <li><a href="products/Newborn-Calf-Serum" data-i18n="header.product_menu.serum_items.nbcs"></a></li>
+                                <li><a href="products/Pig-Serum" data-i18n="header.product_menu.serum_items.pig"></a></li>
+                                <li><a href="products/Horse-Serum" data-i18n="header.product_menu.serum_items.horse"></a></li>
+                                <li><a href="products/Goat-Serum" data-i18n="header.product_menu.serum_items.goat"></a></li>
                             </ul>
+                            </li>
+                            <li>
+                            <a href="#" data-i18n="header.product_menu.medium">细胞培养基</a>
+                            <ul>
+                                <li><a href="products/DMEM-Cell-Culture-Medium" data-i18n="header.product_menu.medium_items.dmem"></a></li>
+                                <li><a href="products/MEM-Cell-Culture-Medium" data-i18n="header.product_menu.medium_items.mem"></a></li>
+                                <li><a href="products/RPMI-Cell-Culture-Medium" data-i18n="header.product_menu.medium_items.rpmi"></a></li>
+                            </ul>
+                            </li>
+                            <li>
+                            <a href="#" data-i18n="header.product_menu.others">其他</a>
+                            <ul>
+                                <li><a href="products/Trypsin-0.05" data-i18n="header.product_menu.other_items.trypsin005"></a></li>
+                                <li><a href="products/Trypsin-0.25" data-i18n="header.product_menu.other_items.trypsin025"></a></li>
+                                <li><a href="products/Double-Antibiotic" data-i18n="header.product_menu.other_items.antibiotic"></a></li>
+                                <li><a href="products/Frozen-Cell-Suspension" data-i18n="header.product_menu.other_items.frozen"></a></li>
+                            </ul>
+                            </li>
+                        </ul>
                         </li>
 
-                        
-                        
-                        <li style="margin-right: 30px;"> 
-                            <a href="introduction">关于我们<i class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu  tab-content">
-                                <li> 
-                                    <a href="introduction">公司简介</a>
-                                </li>
-                                <li> 
-                                    <a href="contact">联系我们</a>
-                                </li>
-                                <li> 
-                                    <a href="javascript:;">交流与活动</a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        
                         <li style="margin-right: 30px;">
-                            <a href="#">促销活动</a>
+                        <a href="introduction" data-i18n="header.nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu tab-content">
+                            <li><a href="introduction" data-i18n="header.about_menu.intro"></a></li>
+                            <li><a href="contact" data-i18n="header.about_menu.contact"></a></li>
+                            <li><a href="javascript:;" data-i18n="header.about_menu.events"></a></li>
+                        </ul>
+                        </li>
+
+                        <li style="margin-right: 30px;"><a href="#" data-i18n="header.nav.promo">促销活动</a></li>
+
+                        <!-- 语言切换（下拉） -->
+                        <li class="sub-menu" style="margin-right: 30px;">
+                        <a href="javascript:;" id="langToggle" data-i18n="header.lang.toggle">中文<i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#" data-lang="zh" data-i18n="header.lang.zh">中文</a></li>
+                            <li><a href="#" data-lang="en" data-i18n="header.lang.en">English</a></li>
+                        </ul>
                         </li>
                     </ul>
 						 

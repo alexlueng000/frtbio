@@ -1,0 +1,47 @@
+{
+
+    "nav": {
+        "home": "Home",
+        "service": "R&D & Services",
+        "product_center": "Product Center",
+        "about": "About Us",
+        "promo": "Promotions"
+      },
+      "product_menu": {
+        "serum": "Serum",
+        "serum_items": {
+          "fbs_imported": "Front Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
+          "fbs_exceptional": "Front Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
+          "fbs_domestic": "Front Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
+          "fbs_premium": "Front Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
+          "nbcs": "Newborn Calf Serum (NBCS, Bovine)",
+          "pig": "Pig Serum (Porcine Serum)",
+          "horse": "Donor Horse Serum (Equine Serum)",
+          "goat": "Donor Goat Serum"
+        },
+        "medium": "Cell Culture Media",
+        "medium_items": {
+          "dmem": "DMEM Cell Culture Medium",
+          "mem": "MEM Cell Culture Medium",
+          "rpmi": "RPMI 1640 Cell Culture Medium"
+        },
+        "others": "Others",
+        "other_items": {
+          "trypsin005": "Trypsin (0.05%)",
+          "trypsin025": "Trypsin (0.25%)",
+          "antibiotic": "Penicillin–Streptomycin 100X (Dual Antibiotic)",
+          "frozen": "Cell Freezing Medium"
+        }
+      },
+      "about_menu": {
+        "intro": "Company Profile",
+        "contact": "Contact Us",
+        "events": "News & Events"
+      },
+      "lang": {
+        "toggle": "English",
+        "zh": "中文",
+        "en": "English"
+      }
+  }
+  

@@ -1,0 +1,135 @@
+{
+    "meta": {
+      "title": "Front Biomed - Product Center",
+      "description": "Front Biomed Product Center: Fetal Bovine Serum, Animal Serum, Cell Culture Media, and Research Consumables."
+    },
+    "banner": {
+      "title": "Product Center"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Product Center"
+    },
+    "sidebar": {
+      "title": "Product Center",
+      "groups": {
+        "fbs": "Fetal Bovine Serum",
+        "bovine": "Bovine Serum",
+        "other_serum": "Other Animal Serum",
+        "medium": "Cell Culture Media",
+        "others": "Others"
+      },
+      "items": {
+        "fbs_imported": "Front Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
+        "fbs_domestic": "Front Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
+        "fbs_exceptional": "Front Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
+        "fbs_premium": "Front Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
+        "nbcs": "Newborn Calf Serum (NBCS)",
+        "pig": "Pig Serum (Porcine Serum)",
+        "horse": "Donor Horse Serum (Equine Serum)",
+        "goat": "Donor Goat Serum",
+        "dmem": "DMEM Cell Culture Medium",
+        "mem": "MEM Cell Culture Medium",
+        "rpmi": "RPMI 1640 Cell Culture Medium",
+        "trypsin005": "Trypsin (0.05%)",
+        "trypsin025": "Trypsin (0.25%)",
+        "antibiotic": "Penicillin-Streptomycin 100X (Dual Antibiotic)",
+        "frozen": "Cell Freezing Medium"
+      }
+    },
+    "products": {
+      "labels": {
+        "overview": "Overview",
+        "specs": "Specifications"
+      },
+      "sizes": {
+        "500": "500mL",
+        "1000": "1L",
+        "3500": "3.5L"
+      },
+      "items": [
+        {
+          "title": "Front Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
+          "fields": {
+            "partno": "Product No.",
+            "basic": "Basic Information",
+            "cells": "Example Cell Types"
+          },
+          "desc": {
+            "desc_partno": "FBS-FFA / FBS-FFN",
+            "desc_basic": "Sourced from 6–8-month-old healthy fetal calves raised on high-quality natural pastures in Australia and New Zealand. Specifically designed for culturing delicate and serum-sensitive cells, such as stem cells, hard-to-culture primary cells, and neurons. Examples include embryonic stem cells, spermatogonial stem cells, NSC, UC-MSCs, PB-MSCs, etc.",
+            "desc_cells": "mESC, spermatogonial stem cells, NE-4C, HUC-MSCs, BM-MSCs, AD-MSCs, HUCB-MSCs, PB-MSCs, human peripheral blood-derived mesenchymal stem cells, human peripheral blood-derived macrophages, hair follicle stem cells, etc."
+          }
+        },
+        {
+          "title": "Front Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
+          "fields": {
+            "partno": "Product No.",
+            "basic": "Basic Information",
+            "cells": "Example Cell Types"
+          },
+          "desc": {
+            "desc_partno": "FBS-OPT500A / FBS-OPT500B / FBS-OPT500C",
+            "desc_basic": "Sourced from 6–8-month-old healthy fetal calves raised on high-quality domestic pastures. Highly versatile and suitable for most stem cells, immune cells, conventional tumor cells, hard-to-culture cells, and primary cells.",
+            "desc_cells": "Human umbilical cord mesenchymal stem cells, A549, HEB, goat endometrial cells, GM12878, K562, HeLa, 293T, HEK293, KMB17, HCC1937, 3T3-L1, MRC-5, MDBK, Caov3, CTLL-2, Hepa1-6, MARC-145, H9C2, NRK-52E, McCoy 5A, HK-2, HUC-MSC, HEP3B2.1-7, U373, Caco-2, THP-1, RBE, R1610, Caski, MB49, MG63, MC38, MDCK, NCI-H157, NCI-H446, PA-1, etc."
+          }
+        },
+        {
+          "title": "Front Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
+          "fields": {
+            "partno": "Product No.",
+            "basic": "Basic Information",
+            "cells": "Example Cell Types"
+          },
+          "desc": {
+            "desc_partno": "FBS-E500A / FBS-E500B / FBS-E500C",
+            "desc_basic": "Sourced from 6–8-month-old healthy fetal calves raised on high-quality domestic pastures. Filtered through 0.1 μm and meets international quality standards for FBS. Fully automated filling under GMP conditions ensures large batch size and minimal batch variation. Highly versatile, suitable for culturing regular primary cells, stem cells, immune cells, and hard-to-culture tumor cells such as breast, colorectal, gastric, lung, and liver cancers.",
+            "desc_cells": "HeLa, HCC1937, HT22, Caov3, NCI-H460, NCI-H146, CT26.WT, NRK-52E, A375, H9C2, L929, NCI-N87, COLO 205, BEP2D, HMy-2CIR, MDA-MB-453, MS751, RL95-2, SW780, 22RV1, PK-15, A3, NCI-H82, OVCAR-3, BRL, Calu-3, SNU-387, MCF7, etc."
+          }
+        },
+        {
+          "title": "Front Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
+          "fields": {
+            "partno": "Product No.",
+            "basic": "Basic Information",
+            "cells": "Example Cell Types"
+          },
+          "desc": {
+            "desc_partno": "FBS-P500A / FBS-P500B / FBS-P500C",
+            "desc_basic": "Sourced from 6–8-month-old healthy fetal calves raised on high-quality domestic pastures. Uses rigorously selected New Zealand or domestic raw materials, triple 100 nm filtration, and meets international first-tier standards. Offers comparable or superior performance to similar products, balancing adaptability and stability. Suitable for most tumor and large-scale production cells, as well as some primary and immune cells.",
+            "desc_cells": "NCI-H292, HeLa, ACHN, NCI-H1299, ACT-1, NCI-H226, P19, NCI-H596, PC-9, NCI-H520, NCI-H1975, 95-D, CT26, SW620, TE-1, RWPE-1, ECa-109, H4, COS-7, U373, A549, 293T, CHO, VERO, primary rat chondrocytes, RAW264.7, THP-1, etc."
+          }
+        },
+        {
+          "title": "Newborn Calf Serum (NBCS)",
+          "fields": {
+            "partno": "Product No.",
+            "basic": "Basic Information",
+            "scope": "Recommended Applications",
+            "features": "Product Features",
+            "storage": "Storage & Shelf Life"
+          },
+          "desc": {
+            "desc_partno": "NZ-NCS(GI)",
+            "desc_basic": "Sourced from healthy newborn calves less than 10 days old from premium domestic or international natural pastures.",
+            "desc_scope": "Suitable for diagnostic reagent manufacturing (ELISA / CLIA), especially for HIV ELISA kits; also suitable for engineering cell cultures such as PK15, ST, and VERO cells.",
+            "desc_features": "Low hemoglobin (<100 mg/L), low γ-globulin (<2 mg/mL), and high stability.",
+            "desc_storage": "Packaging: 500mL/bottle; Storage: -5°C to -20°C, avoid repeated freeze-thaw cycles; Shelf life: 5 years."
+          }
+        },
+        {
+          "title": "Pig Serum (Porcine Serum)",
+          "desc": "As one of the few natural porcine serum suppliers, Front’s pig serum is sourced from U.S. farms. Collected from animals never treated with antibiotics or hormones, this unique serum is ideal for use in vaccine production and cell culture media. It is filtered through 200 nm sterile membranes and has low hemoglobin levels, making it highly suitable for vaccine manufacturing and cell culture applications."
+        },
+        {
+          "title": "Donor Horse Serum (Equine Serum)",
+          "desc": "Front’s donor horse serum is collected from herds in China, the United States, Australia, or New Zealand under regular veterinary inspection and monitoring. It is ideal for use in cell culture media and veterinary biological products."
+        },
+        {
+          "title": "Donor Goat Serum",
+          "desc": "Collected from carefully monitored, healthy adult goats. The serum undergoes standardized collection and multiple filtration steps, resulting in high-quality and highly consistent batch-to-batch products."
+        }
+      ]
+    }
+  }
+  
