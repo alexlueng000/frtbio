@@ -1,0 +1,27 @@
+{
+    "page": {
+      "title": "Fraun Biomed - Company Profile",
+      "breadcrumb": ["Home", "About Us", "Company Profile"]
+    },
+    "banner": {
+      "title": "Company Profile"
+    },
+    "sidebar": {
+      "items": [
+        { "label": "Company Profile", "link": "#" },
+        { "label": "Contact Us", "link": "contact" },
+        { "label": "News & Events", "link": "#" }
+      ]
+    },
+    "about": {
+      "intro_title": "Company Profile",
+      "intro_text": "Founded in 2015, Shenzhen Fraun Biomed Co., Ltd. is a high-tech enterprise dedicated to biomedical research, technology introduction, and specialized services. Combining research and sourcing, Fraun Biomed strategically focuses on advanced laboratory consumables and diagnostic reagents. We provide high-quality fetal bovine serum, growth factors, serum-free media, and preclinical testing services for medical institutions, universities, and biopharmaceutical companies nationwide.",
+      "vision_title": "Our Vision",
+      "vision_text": "To become China’s leading supplier of biomedical consumables",
+      "values_title": "Core Values",
+      "values_text": "Innovation without boundaries, customer first",
+      "mission_title": "Our Mission",
+      "mission_text": "To be an essential driving force for biomedical research and innovation"
+    }
+  }
+  

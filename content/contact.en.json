@@ -1,0 +1,30 @@
+{
+    "page": {
+      "title": "Fraun Biomed - Contact Us",
+      "breadcrumb": ["Home", "About Us", "Contact Us"]
+    },
+    "banner": {
+      "title": "Contact Us"
+    },
+    "sidebar": {
+      "items": [
+        { "label": "Company Profile", "link": "introduction" },
+        { "label": "Contact Us", "link": "#" },
+        { "label": "News & Events", "link": "" }
+      ]
+    },
+    "form": {
+      "title": "Online Inquiry",
+      "fields": {
+        "name": { "placeholder": "Name" },
+        "phone": { "placeholder": "Phone" },
+        "email": { "placeholder": "Email" },
+        "organization": { "placeholder": "Organization" },
+        "message": { "placeholder": "Tell us your needs" }
+      },
+      "submit": {
+        "label": "Submit"
+      }
+    }
+  }
+  

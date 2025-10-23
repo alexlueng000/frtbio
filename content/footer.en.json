@@ -1,0 +1,41 @@
+{
+    
+      "products": {
+        "title": "Products",
+        "items": [
+          { "label": "Serum", "link": "product-center" },
+          { "label": "Cell Culture Media", "link": "product-center" },
+          { "label": "Others", "link": "product-center" }
+        ]
+      },
+      "about": {
+        "title": "About Us",
+        "items": [
+          { "label": "Company Profile", "link": "introduction" },
+          { "label": "Contact Us", "link": "contact" },
+          { "label": "News & Events", "link": "#" }
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "address_label": "Address",
+        "address": "Room 1302, Hongchang Plaza, No.2001 Shennan East Rd,\nNanhu Sub-district, Luohu, Shenzhen",
+        "phone_label": "Phone",
+        "phone": "0755-86955516",
+        "email_label": "Email",
+        "email": "sales@frontbiomedical.com"
+      },
+      "follow": {
+        "title": "Follow Us",
+        "qrcodes": [
+          { "label": "Official WeChat", "alt": "Fraun Biomed" },
+          { "label": "WeChat Support", "alt": "Fraun WeChat Support" }
+        ]
+      },
+      "bottom": {
+        "copyright": "Copyright © {year} Fraun Biomed. All rights reserved.",
+        "icp": "粤ICP备18028387号-2"
+      }
+    
+  }
+  

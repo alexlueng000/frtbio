@@ -180,7 +180,7 @@
 									data-paddingright="[10,10,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
+									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;" data-i18n-html="slider.s1">           
 									 实验室信赖之选 <br> 细胞培养定制专家 
 								
 							</li>
@@ -244,7 +244,7 @@
 									data-paddingright="[10,10,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
+									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;" data-i18n-html="slider.s2">           
 									产品参数高标准 • 对标国际一线品牌 <br> 新西兰/国产双源产地 • 甄选世界顶级牧场
 								</div>
 							</li>
@@ -308,7 +308,7 @@
 									data-paddingright="[10,10,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">           
+									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;" data-i18n-html="slider.s3">           
 									服务200+实验室 <br> 华南地区最大血清进口商
 								</div>
 								
@@ -334,7 +334,7 @@
 			<div class="section-full content-inner bg-white">
 				<div class="best-sell-container">
 					<div class="sort-title clearfix text-center">
-						<h2>热销产品</h2>
+						<h2 data-i18n-html="best.title">热销产品</h2>
 					</div>
 					<div class="best-sell-inner">
 						<div class="row" style="margin-top: -20px; ">
@@ -346,8 +346,8 @@
 										<img src="images/products/new-product1.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 进口特级胎牛血清 (FBS, Optimum)</h5>
-										<a href="products/Front-Biomed-Premium-Imported-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.0.title">FRTBIO 进口特级胎牛血清</h5>
+										<a href="products/Front-Biomed-Premium-Imported-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.0.action">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -358,8 +358,8 @@
 										<img src="images/products/gouchanteji-front.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 国产特级胎牛血清 (FBS, Optimum)</h5>
-										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.1.title">FRTBIO 国产特级胎牛血清</h5>
+										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.1.action">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -370,8 +370,8 @@
 										<img src="images/products/new-product2.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 超优级胎牛血清 (FBS, Exceptional )</h5>
-										<a href="products/Front-Biomed-Exceptional" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.2.title">FRTBIO 超优级胎牛血清 (FBS, Exceptional )</h5>
+										<a href="products/Front-Biomed-Exceptional" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.2.action">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -383,8 +383,8 @@
 										<img src="images/products/new-product3.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
-										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;">FRTBIO 优级胎牛血清 (FBS, Premium)</h5>
-										<a href="products/Front-Biomed-Premium-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;">查看详情</a>
+										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items3.title">FRTBIO 优级胎牛血清 (FBS, Premium)</h5>
+										<a href="products/Front-Biomed-Premium-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.3.action">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -399,11 +399,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-9 text-white">
-							<h2 class="title">全球精粹 全线赋能</h2>
-							<p class="m-b0">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中！联系我们,获取优惠报价!</p>
+							<h2 class="title" data-i18n-html="cta.title">全球精粹 全线赋能</h2>
+							<p class="m-b0" data-i18n-html="cta.desc">精选新西兰/澳洲、中国无疫病、优质血源提供双源优质保障 ；实验室攻坚必备；细胞培养基/鉴定试剂盒/定制耗材等优质产品持续上新中！联系我们,获取优惠报价!</p>
 						</div>
 						<div class="col-lg-3 d-flex">
-							<a href="contact" class="site-button btnhover10 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;">联系我们 </a>
+							<a href="contact" class="site-button btnhover10 white align-self-center ms-auto radius-xl" style="background-color: #FF8500; color: #fff;" data-i18n-html="cta.btn">联系我们 </a>
 							
 						</div>
 					</div>
@@ -415,7 +415,7 @@
 			<div class="section-full content-inner bg-white">
 				<div class="container">
 					<div class="sort-title clearfix text-center">
-						<h2>质控及售后</h2>
+						<h2 data-i18n-html="qc.title">质控及售后</h2>
 					</div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
@@ -424,8 +424,8 @@
 									<img src="images/frtbio-1.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info" >
-									<h4 class="title" style="text-align: center;">源头把控</h4>
-									<p>精选无疫病牧场，所血源地均需通过资质审核与实地考察。</p>
+									<h4 class="title" style="text-align: center;" data-i18n-html="qc.cards.0.title">源头把控</h4>
+									<p data-i18n-html="qc.cards.0.desc">精选无疫病牧场，所血源地均需通过资质审核与实地考察。</p>
 								</div>
 							</div>
 						</div>
@@ -435,8 +435,8 @@
 									<img src="images/iso-1.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
-									<h4 class="title" style="text-align: center;">国际认证</h4>
-									<p>产品符合国际血清行业协会（ISIA）标准，并通过ISO 9001、ISO 13485认证。</p>
+									<h4 class="title" style="text-align: center;" data-i18n-html="qc.cards.1.title">国际认证</h4>
+									<p data-i18n-html="qc.cards.1.desc">产品符合国际血清行业协会（ISIA）标准，并通过ISO 9001、ISO 13485认证。</p>
 								</div>
 							</div>
 						</div>
@@ -446,8 +446,8 @@
 									<img src="images/service-3.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
-									<h4 class="title" style="text-align: center;">多重检测评估</h4>
-									<p>①国内外血清出厂前必须出具可靠的检验证书（Certificate of Analysis）。<br>②国外胎牛血清在进口前经弗劳恩生物国外、国内实验室两轮严格的质量检测及评估。</p>
+									<h4 class="title" style="text-align: center;" data-i18n-html="qc.cards.2.title">多重检测评估</h4>
+									<p data-i18n-html="qc.cards.2.desc">①国内外血清出厂前必须出具可靠的检验证书（Certificate of Analysis）。<br>②国外胎牛血清在进口前经弗劳恩生物国外、国内实验室两轮严格的质量检测及评估。</p>
 								</div>
 							</div>
 						</div>
@@ -457,8 +457,8 @@
 									<img src="images/frtbio-2.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
-									<h4 class="title" style="text-align: center;">生物学效能验证</h4>
-									<p>通过细胞增殖率、克隆形成率等实验确保产品效能。</p>
+									<h4 class="title" style="text-align: center;" data-i18n-html="qc.cards.3.title">生物学效能验证</h4>
+									<p data-i18n-html="qc.cards.3.desc">通过细胞增殖率、克隆形成率等实验确保产品效能。</p>
 								</div>
 							</div>
 						</div>
@@ -468,8 +468,8 @@
 									<img src="images/frtbio-3.webp" loading="lazy" alt=""> 
 								</div>
 								<div class="dlab-info">
-									<h4 class="title" style="text-align: center;">完善售后服务</h4>
-									<p style="text-align: justify;">弗劳恩生物有严格的商品管理，连续多年顺利通过深圳海关的“进境生物材料使用单位核查”,并密切监管产品流向，定期询问用户库存,如有质量问题，包退包换。</p>
+									<h4 class="title" style="text-align: center;" data-i18n-html="qc.cards.4.title">完善售后服务</h4>
+									<p data-i18n-html="qc.cards.4.desc">弗劳恩生物有严格的商品管理，连续多年顺利通过深圳海关的“进境生物材料使用单位核查”,并密切监管产品流向，定期询问用户库存,如有质量问题，包退包换。</p>
 								</div>
 							</div>
 						</div>
@@ -511,9 +511,9 @@
 					</div>
 					<div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="text-white align-self-center ">
-							<h2>关于弗劳恩生物</h2>
-							<p style="font-size: larger; line-height: 2; font-weight: bold;">深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。</p>
-							<a href="introduction" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;">了解更多</a>
+							<h2 data-i18n-html="about.title">关于弗劳恩生物</h2>
+							<p data-i18n-html="about.desc" style="font-size: larger; line-height: 2; font-weight: bold;">深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。</p>
+							<a href="introduction" class="site-button btnhover10 white" style="background-color: #FF8500; color: #fff;" data-i18n-html="about.btn">了解更多</a>
 						</div>
 					</div>
 				</div>
@@ -523,7 +523,7 @@
 			<div class="section-full content-inner bg-gray">
 				<div class="container">
 					<div class="sort-title clearfix text-center">
-						<h2>合作客户</h2>
+						<h2 data-i18n-html="clients.title">合作客户</h2>
 					</div>
 					<div class="row m-b30">
 						<div id="lightgallery" class="dlab-gallery-listing row sp15 gallery">
@@ -799,8 +799,9 @@ jQuery(document).ready(function() {
   }
 
   async function loadI18n(lang) {
-    const pagePath   = `content/product-center.${lang}.json`;
+    const pagePath   = `content/index.${lang}.json`;
     const headerPath = `content/header.${lang}.json`;
+	const footerPath = `content/footer.${lang}.json`;
 
     async function fetchOrZh(path, zhPath) {
       try {
@@ -814,9 +815,10 @@ jQuery(document).ready(function() {
     }
 
     // 并行拉两份，各自兜底到 zh
-    const [pageDict, headerDict] = await Promise.all([
-      fetchOrZh(pagePath,   'content/product-center.zh.json'),
-      fetchOrZh(headerPath, 'content/header.zh.json')
+    const [pageDict, headerDict, footerDict] = await Promise.all([
+      fetchOrZh(pagePath,   'content/index.zh.json'),
+      fetchOrZh(headerPath, 'content/header.zh.json'),
+      fetchOrZh(footerPath, 'content/footer.zh.json')
     ]);
 
     // 遍历填充
@@ -828,6 +830,8 @@ jQuery(document).ready(function() {
       if (fullKey.startsWith('header.')) {
         // 去掉前缀后在 header.json 顶层取值（无包裹结构）
         val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else if (fullKey.startsWith('footer.')) {
+        val = deepGet(footerDict, fullKey.slice('footer.'.length));
       } else {
         val = deepGet(pageDict, fullKey);
       }
@@ -843,6 +847,18 @@ jQuery(document).ready(function() {
         setTextPreserveIcons(el, val);
       }
     });
+
+	// ✅ 正确处理 data-i18n-html（支持 header.* 命名空间）
+	document.querySelectorAll('[data-i18n-html]').forEach(el => {
+	const fullKey = el.getAttribute('data-i18n-html');
+	let val = null;
+	if (fullKey.startsWith('header.')) {
+		val = deepGet(headerDict, fullKey.slice('header.'.length));
+	} else {
+		val = deepGet(pageDict, fullKey);
+	}
+	if (val != null) el.innerHTML = val;
+	});
 
     // 同步 <title>
     const titleEl = document.querySelector('title[data-i18n="meta.title"]');

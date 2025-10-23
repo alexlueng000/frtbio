@@ -49,13 +49,13 @@
         <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/banner-1.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">联系我们</h1>
+                    <h1 class="text-white" data-i18n="page.title">联系我们</h1>
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
-							<li>关于我们</li>
-							<li>联系我们</li>
+							<li><a href="index.html" data-i18n="page.breadcrumb.0">首页</a></li>
+							<li data-i18n="page.breadcrumb.1">关于我们</li>
+							<li data-i18n="page.breadcrumb.2">联系我们</li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -72,9 +72,9 @@
 						<div class="col-xl-3 col-lg-4 col-md-5">
 							<div class="widget sidebar-widget ext-sidebar-menu widget_nav_menu">
 								<ul class="menu">
-									<li ><a href="introduction">公司简介</a> </li>
-									<li class="active"><a href="#">联系我们</a></li>
-									<li ><a href="">交流与活动</a></li>
+									<li ><a href="introduction" data-i18n="sidebar.items.0.label">公司简介</a> </li>
+									<li class="active"><a href="#" data-i18n="sidebar.items.1.label">联系我们</a></li>
+									<li ><a href="" data-i18n="sidebar.items.2.label">交流与活动</a></li>
 								</ul>
 							</div>
 
@@ -82,14 +82,14 @@
 						<div class="col-xl-9 col-lg-8 col-md-7">
 							
 							<form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
-                                <h3 class="title-box font-weight-300 m-t0 m-b10">在线留言 <span class="bg-primary"></span></h3>
+                                <h3 class="title-box font-weight-300 m-t0 m-b10" data-i18n="form.title">在线留言 <span class="bg-primary"></span></h3>
                                 <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p> -->
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="ti-user" style="color: #FF8500;"></i></span>
-                                                <input name="dzName" type="text" required class="form-control" placeholder="姓名">
+                                                <input name="dzName" type="text" required class="form-control" data-i18n="form.fields.name.placeholder" placeholder="姓名">
                                             </div>
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="ti-mobile" style="color: #FF8500;"></i></span>
-                                                <input name="dzOther[Phone]" type="text" required class="form-control dz-number" placeholder="电话">
+                                                <input name="dzOther[Phone]" type="text" required class="form-control dz-number" data-i18n="form.fields.phone.placeholder" placeholder="电话">
                                             </div>
                                         </div>
                                     </div>
@@ -105,7 +105,7 @@
                                         <div class="form-group">
                                             <div class="input-group"> 
                                                 <span class="input-group-addon"><i class="ti-email" style="color: #FF8500;"></i></span>
-                                                <input name="dzEmail" type="email" class="form-control" required  placeholder="邮箱" >
+                                                <input name="dzEmail" type="email" class="form-control" required  data-i18n="form.fields.email.placeholder" placeholder="邮箱" >
                                             </div>
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@
                                         <div class="form-group">
                                             <div class="input-group"> 
                                                 <span class="input-group-addon"><i class="ti-email" style="color: #FF8500;"></i></span>
-                                                <input name="dzEmail" type="email" class="form-control" required  placeholder="单位" >
+                                                <input name="dzEmail" type="email" class="form-control" required  data-i18n="form.fields.organization.placeholder" placeholder="单位" >
                                             </div>
                                         </div>
                                     </div>
@@ -126,12 +126,12 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <span class="input-group-addon" ><i class="ti-agenda" style="color: #FF8500;"></i></span>
-                                                <textarea name="dzMessage" rows="4" class="form-control" required placeholder="请告诉我们您的需求"></textarea>
+                                                <textarea name="dzMessage" rows="4" class="form-control" required data-i18n="form.fields.message.placeholder" placeholder="请告诉我们您的需求"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button button-md" style="background-color: #FF8500; color: #fff;"> <span>提交</span> </button>
+                                        <button name="submit" type="submit" value="Submit" class="site-button button-md" style="background-color: #FF8500; color: #fff;"> <span data-i18n="form.submit.label">提交</span> </button>
                                     </div>
                                 </div>
                             </form>	
@@ -169,6 +169,141 @@
 <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+
+<script>
+(function () {
+  function getLang() {
+    var url = new URL(window.location.href);
+    var urlLang = url.searchParams.get('lang');
+    var savedLang = localStorage.getItem('lang');
+    return (urlLang || savedLang || document.documentElement.getAttribute('lang') || 'zh').toLowerCase();
+  }
+
+  // 初始化 lang
+  var lang = getLang();
+  if (document.documentElement.getAttribute('lang') !== lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+  localStorage.setItem('lang', lang);
+
+  // 语言下拉点击：仅当切换到不同语言时才刷新
+  function onPick(e) {
+    e.preventDefault();
+    var picked = this.getAttribute('data-lang');
+    if (!picked || picked === lang) return;
+    localStorage.setItem('lang', picked);
+    var u = new URL(window.location.href);
+    u.searchParams.set('lang', picked);
+    window.location.href = u.toString();
+  }
+
+  // 绑定事件
+  var langLinks = document.querySelectorAll('a[data-lang]');
+  langLinks.forEach(function (a) { a.addEventListener('click', onPick); });
+
+  // 更新按钮文案
+  var toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.firstChild && (toggle.firstChild.nodeValue = (lang === 'en' ? 'English' : '中文') + ' ');
+  }
+
+  // 暴露一个获取当前语言的函数，给下面的 i18n loader 用
+  window.__getLang = getLang;
+})();
+</script>
+
+<script>
+  // 取值工具：a.b.c
+  function deepGet(obj, path) {
+    return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+
+  // 写文本但保留 <i> 等子节点：优先改第一个文本节点
+  function setTextPreserveIcons(el, text) {
+    const node = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+    if (node) node.nodeValue = text + ' ';
+    else el.insertBefore(document.createTextNode(text + ' '), el.firstChild);
+  }
+
+  async function loadI18n(lang) {
+    const pagePath   = `content/contact.${lang}.json`;
+    const headerPath = `content/header.${lang}.json`;
+    const footerPath = `content/footer.${lang}.json`;
+
+    async function fetchOrZh(path, zhPath) {
+      try {
+        const r = await fetch(path, { cache: 'no-cache' });
+        if (!r.ok) throw 0;
+        return await r.json();
+      } catch (_) {
+        const r2 = await fetch(zhPath, { cache: 'no-cache' });
+        return r2.ok ? await r2.json() : {};
+      }
+    }
+
+    // 并行拉两份，各自兜底到 zh
+    const [pageDict, headerDict, footerDict] = await Promise.all([
+      fetchOrZh(pagePath,   'content/contact.zh.json'),
+      fetchOrZh(headerPath, 'content/header.zh.json'),
+      fetchOrZh(footerPath, 'content/footer.zh.json')
+    ]);
+
+    // 遍历填充
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n');
+      const attr    = el.getAttribute('data-i18n-attr');
+
+      let val = null;
+      if (fullKey.startsWith('header.')) {
+        val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else if (fullKey.startsWith('footer.')) {
+        val = deepGet(footerDict, fullKey.slice('footer.'.length));
+      } else {
+        val = deepGet(pageDict, fullKey);
+      }
+      if (val == null) return;
+
+      if (attr) {
+        el.setAttribute(attr, val);
+      } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.setAttribute('placeholder', val);
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        setTextPreserveIcons(el, val);
+      }
+    });
+
+	// ✅ 正确处理 data-i18n-html（支持 header.* 命名空间）
+	document.querySelectorAll('[data-i18n-html]').forEach(el => {
+	const fullKey = el.getAttribute('data-i18n-html');
+	let val = null;
+	if (fullKey.startsWith('header.')) {
+		val = deepGet(headerDict, fullKey.slice('header.'.length));
+	} else {
+		val = deepGet(pageDict, fullKey);
+	}
+	if (val != null) el.innerHTML = val;
+	});
+
+    // 同步 <title>
+    const titleEl = document.querySelector('title[data-i18n="meta.title"]');
+    if (titleEl) document.title = titleEl.textContent || document.title;
+
+    // 更新语言下拉按钮显示（若有）
+    const toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const label = deepGet(headerDict, 'lang.toggle');
+      if (label) setTextPreserveIcons(toggle, label);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const lang = (window.__getLang ? window.__getLang() : (document.documentElement.getAttribute('lang') || 'zh')).toLowerCase();
+    loadI18n(lang);
+    if (window.$ && $.fn.lazy) { $('.lazy').Lazy(); }
+  });
+</script>
 
 </body>
 </html>

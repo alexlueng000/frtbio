@@ -1,0 +1,41 @@
+{
+    
+      "products": {
+        "title": "产品中心",
+        "items": [
+          { "label": "血清", "link": "product-center" },
+          { "label": "细胞培养基", "link": "product-center" },
+          { "label": "其他", "link": "product-center" }
+        ]
+      },
+      "about": {
+        "title": "关于我们",
+        "items": [
+          { "label": "公司简介", "link": "introduction" },
+          { "label": "联系我们", "link": "contact" },
+          { "label": "交流与活动", "link": "#" }
+        ]
+      },
+      "contact": {
+        "title": "联系我们",
+        "address_label": "公司地址",
+        "address": "深圳市罗湖区南湖街道新南社区\n深南东路2001号鸿昌广场1302",
+        "phone_label": "联系电话",
+        "phone": "0755-86955516",
+        "email_label": "电子邮件",
+        "email": "sales@frontbiomedical.com"
+      },
+      "follow": {
+        "title": "关注我们",
+        "qrcodes": [
+          { "label": "生物公众号", "alt": "弗劳恩生物" },
+          { "label": "微信客服", "alt": "弗劳恩微信客服" }
+        ]
+      },
+      "bottom": {
+        "copyright": "Copyright © {year} 弗劳恩生物. all rights reserved.",
+        "icp": "粤ICP备18028387号-2"
+      }
+    
+  }
+  

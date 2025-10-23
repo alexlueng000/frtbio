@@ -1,0 +1,64 @@
+{
+    "meta": {
+      "title": "FRTBIO - Customized Cell Culture Expert",
+      "description": "Founded in 2015, Shenzhen FRTBIO Medical Co., Ltd. is a high-tech enterprise specializing in biomedical R&D, technology introduction, and related services. With a forward-looking vision, the company focuses on laboratory consumables, diagnostic reagents, and advanced international technologies. We provide high-quality fetal bovine serum, growth factors, serum-free media, and preclinical testing services for hospitals, medical institutes, and biopharmaceutical companies nationwide.",
+      "og_title": "FRTBIO",
+      "og_description": "FRTBIO"
+    },
+    "slider": {
+      "s1": "Trusted by Laboratories <br> Customized Cell Culture Expert",
+      "s2": "High Standard Specifications • Benchmarking Global Leading Brands <br> Dual Origins (New Zealand / Domestic) • Sourced from World-class Ranches",
+      "s3": "Serving 200+ Laboratories <br> Largest Serum Importer in South China"
+    },
+    "best": {
+      "title": "Best-Selling Products",
+      "items": [
+        { "title": "Front Biomed Imported Premium FBS (Optimum)" },
+        { "title": "Front Biomed Domestic Premium FBS (Optimum)" },
+        { "title": "Front Biomed Exceptional Grade FBS (Exceptional)" },
+        { "title": "Front Biomed Superior Grade FBS (Premium)" }
+      ]
+    },
+    "common": {
+      "view": "View Details"
+    },
+    "cta": {
+      "title": "Global Excellence, Full-Line Empowerment",
+      "desc": "Premium dual-origin sourcing from New Zealand / Australia and disease-free regions in China provides top-quality assurance. Essential for laboratory breakthroughs — new cell culture media, assay kits, and custom consumables are continuously launching! Contact us for special offers!",
+      "btn": "Contact Us"
+    },
+    "qc": {
+      "title": "Quality Control & After-Sales",
+      "cards": [
+        {
+          "title": "Source Control",
+          "desc": "Selected from disease-free ranches, all origins undergo qualification review and on-site inspection."
+        },
+        {
+          "title": "International Certifications",
+          "desc": "Products comply with ISIA standards and are certified under ISO 9001 and ISO 13485."
+        },
+        {
+          "title": "Multiple Testing & Evaluation",
+          "desc": "① COA required before shipment; ② Two rounds of strict testing and evaluation by overseas and domestic laboratories before import."
+        },
+        {
+          "title": "Biological Efficacy Verification",
+          "desc": "Validated through cell proliferation rate, colony formation, and other performance assays."
+        },
+        {
+          "title": "Comprehensive After-Sales Service",
+          "desc": "Continuously approved by Shenzhen Customs as a qualified biological material importer; product traceability strictly monitored, and quality issues are fully refundable or replaceable."
+        }
+      ]
+    },
+    "about": {
+      "title": "About FRTBIO",
+      "desc": "Founded in 2015, Shenzhen FRTBIO Medical Co., Ltd. is a high-tech company specializing in biomedical R&D, the introduction of advanced technologies, and comprehensive services. With a dual focus on research and introduction, FRTBIO strategically deploys cutting-edge laboratory consumables and diagnostic reagent technologies worldwide. We provide high-quality fetal bovine serum, growth factors, serum-free media, and preclinical testing services to hospitals, medical schools, and biopharmaceutical enterprises across China.",
+      "btn": "Learn More"
+    },
+    "clients": {
+      "title": "Our Clients"
+    }
+  }
+  

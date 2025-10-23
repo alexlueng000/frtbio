@@ -1,0 +1,30 @@
+{
+    "page": {
+      "title": "弗劳恩生物 - 联系我们",
+      "breadcrumb": ["首页", "关于我们", "联系我们"]
+    },
+    "banner": {
+      "title": "联系我们"
+    },
+    "sidebar": {
+      "items": [
+        { "label": "公司简介", "link": "introduction" },
+        { "label": "联系我们", "link": "#" },
+        { "label": "交流与活动", "link": "" }
+      ]
+    },
+    "form": {
+      "title": "在线留言",
+      "fields": {
+        "name": { "placeholder": "姓名" },
+        "phone": { "placeholder": "电话" },
+        "email": { "placeholder": "邮箱" },
+        "organization": { "placeholder": "单位" },
+        "message": { "placeholder": "请告诉我们您的需求" }
+      },
+      "submit": {
+        "label": "提交"
+      }
+    }
+  }
+  

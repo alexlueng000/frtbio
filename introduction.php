@@ -49,13 +49,13 @@
         <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/banner-1.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">公司简介</h1>
+                    <h1 class="text-white" data-i18n="about.intro_title">公司简介</h1>
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="index.html">首页</a></li>
-							<li>关于我们</li>
-							<li>公司简介</li>
+							<li><a href="index.html" data-i18n="page.breadcrumb.0">首页</a></li>
+							<li data-i18n="page.breadcrumb.1">关于我们</li>
+							<li data-i18n="page.breadcrumb.2">公司简介</li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -72,9 +72,9 @@
 						<div class="col-xl-3 col-lg-4 col-md-5">
 							<div class="widget sidebar-widget ext-sidebar-menu widget_nav_menu">
 								<ul class="menu">
-									<li class="active"><a href="#">公司简介</a> </li>
-									<li ><a href="contact">联系我们</a></li>
-									<li ><a href="#">交流与活动</a></li>
+									<li class="active"><a href="#" data-i18n="sidebar.items.0.label">公司简介</a> </li>
+									<li ><a href="contact" data-i18n="sidebar.items.1.label">联系我们</a></li>
+									<li ><a href="#" data-i18n="sidebar.items.2.label">交流与活动</a></li>
 								</ul>
 							</div>
 							
@@ -87,24 +87,24 @@
 								<div class="col-lg-12 m-b30">
 									<img alt="" class="rounded" src="images/company.webp">
 									<div class="dlab-info m-t30 ">
-										<h4 class="dlab-title m-t0">公司简介</h4>
-										<p>深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。 </p>
+										<h4 class="dlab-title m-t0" data-i18n="about.intro_title">公司简介</h4>
+										<p data-i18n="about.intro_text">深圳市弗劳恩生物医学有限公司成立于2015年，是一家专注于生物医学领域的研发、引进先进技术及服务的高科技企业。公司研引并重，前瞻性地在实验室耗材、诊断试剂等国际先进技术及产品进行布局。专注于为全国各地医疗机构、医学院所、生物制药企业提供胎牛血清、生长因子、无血清培养基等高质量产品和临床前研究检测服务。 </p>
 									</div>
 								</div>
 								
 								<div class="dlab-box">
-									<h4 class="dlab-title m-t0">企业愿景</h4>
-									<p>成为全国领先的生物耗材供应商</p>
+									<h4 class="dlab-title m-t0" data-i18n="about.vision_title">企业愿景</h4>
+									<p data-i18n="about.vision_text">成为全国领先的生物耗材供应商</p>
 									
 								</div>
 								<div class="dlab-box">
-									<h4 class="dlab-title m-t0">企业价值观</h4>
-									<p>研引无界，客户至上</p>
+									<h4 class="dlab-title m-t0" data-i18n="about.values_title">企业价值观</h4>
+									<p data-i18n="about.values_text">研引无界，客户至上</p>
 									
 								</div>
 								<div class="dlab-box">
-									<h4 class="dlab-title m-t0">公司使命</h4>
-									<p>成为生物医学科研创新不可或缺的养分</p>
+									<h4 class="dlab-title m-t0" data-i18n="about.mission_title">公司使命</h4>
+									<p data-i18n="about.mission_text">成为生物医学科研创新不可或缺的养分</p>
 									
 								</div>
 							</div>
@@ -144,4 +144,142 @@
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
 </body>
+
+<script>
+(function () {
+  function getLang() {
+    var url = new URL(window.location.href);
+    var urlLang = url.searchParams.get('lang');
+    var savedLang = localStorage.getItem('lang');
+    return (urlLang || savedLang || document.documentElement.getAttribute('lang') || 'zh').toLowerCase();
+  }
+
+  // 初始化 lang
+  var lang = getLang();
+  if (document.documentElement.getAttribute('lang') !== lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+  localStorage.setItem('lang', lang);
+
+  // 语言下拉点击：仅当切换到不同语言时才刷新
+  function onPick(e) {
+    e.preventDefault();
+    var picked = this.getAttribute('data-lang');
+    if (!picked || picked === lang) return;
+    localStorage.setItem('lang', picked);
+    var u = new URL(window.location.href);
+    u.searchParams.set('lang', picked);
+    window.location.href = u.toString();
+  }
+
+  // 绑定事件
+  var langLinks = document.querySelectorAll('a[data-lang]');
+  langLinks.forEach(function (a) { a.addEventListener('click', onPick); });
+
+  // 更新按钮文案
+  var toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.firstChild && (toggle.firstChild.nodeValue = (lang === 'en' ? 'English' : '中文') + ' ');
+  }
+
+  // 暴露一个获取当前语言的函数，给下面的 i18n loader 用
+  window.__getLang = getLang;
+})();
+</script>
+
+<script>
+  // 取值工具：a.b.c
+  function deepGet(obj, path) {
+    return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+
+  // 写文本但保留 <i> 等子节点：优先改第一个文本节点
+  function setTextPreserveIcons(el, text) {
+    const node = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+    if (node) node.nodeValue = text + ' ';
+    else el.insertBefore(document.createTextNode(text + ' '), el.firstChild);
+  }
+
+  async function loadI18n(lang) {
+    const pagePath   = `content/introduction.${lang}.json`;
+    const headerPath = `content/header.${lang}.json`;
+	const footerPath = `content/footer.${lang}.json`;
+
+    async function fetchOrZh(path, zhPath) {
+      try {
+        const r = await fetch(path, { cache: 'no-cache' });
+        if (!r.ok) throw 0;
+        return await r.json();
+      } catch (_) {
+        const r2 = await fetch(zhPath, { cache: 'no-cache' });
+        return r2.ok ? await r2.json() : {};
+      }
+    }
+
+    // 并行拉两份，各自兜底到 zh
+    const [pageDict, headerDict, footerDict] = await Promise.all([
+      fetchOrZh(pagePath,   'content/introduction.zh.json'),
+      fetchOrZh(headerPath, 'content/header.zh.json'),
+      fetchOrZh(footerPath, 'content/footer.zh.json')
+    ]);
+
+    // 遍历填充
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n');
+      const attr    = el.getAttribute('data-i18n-attr');
+
+      let val = null;
+      if (fullKey.startsWith('header.')) {
+        // 去掉前缀后在 header.json 顶层取值（无包裹结构）
+        val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else if (fullKey.startsWith('footer.')) {
+        val = deepGet(footerDict, fullKey.slice('footer.'.length));
+      } else {
+        val = deepGet(pageDict, fullKey);
+      }
+      if (val == null) return;
+
+      if (attr) {
+        el.setAttribute(attr, val);
+      } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.setAttribute('placeholder', val);
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        setTextPreserveIcons(el, val);
+      }
+    });
+
+	// ✅ 正确处理 data-i18n-html（支持 header.* 命名空间）
+	document.querySelectorAll('[data-i18n-html]').forEach(el => {
+	const fullKey = el.getAttribute('data-i18n-html');
+	let val = null;
+	if (fullKey.startsWith('header.')) {
+		val = deepGet(headerDict, fullKey.slice('header.'.length));
+	} else if (fullKey.startsWith('footer.')) {
+		val = deepGet(footerDict, fullKey.slice('footer.'.length));
+	} else {
+		val = deepGet(pageDict, fullKey);
+	}
+	if (val != null) el.innerHTML = val;
+	});
+
+    // 同步 <title>
+    const titleEl = document.querySelector('title[data-i18n="meta.title"]');
+    if (titleEl) document.title = titleEl.textContent || document.title;
+
+    // 更新语言下拉按钮显示（若有）
+    const toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const label = deepGet(headerDict, 'lang.toggle');
+      if (label) setTextPreserveIcons(toggle, label);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const lang = (window.__getLang ? window.__getLang() : (document.documentElement.getAttribute('lang') || 'zh')).toLowerCase();
+    loadI18n(lang);
+    if (window.$ && $.fn.lazy) { $('.lazy').Lazy(); }
+  });
+</script>
 </html>

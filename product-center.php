@@ -561,14 +561,17 @@
   async function loadI18n(lang) {
     const pagePath   = `content/product-center.${lang}.json`;
     const headerPath = `content/header.${lang}.json`;
+	const footerPath = `content/footer.${lang}.json`;
 
     // 并行拉取，任何一个缺失都回退到 zh 的对应文件
-    let [pageDict, headerDict] = await Promise.allSettled([
+    let [pageDict, headerDict, footerDict] = await Promise.allSettled([
       fetch(pagePath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
       fetch(headerPath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
+	  fetch(footerPath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
     ]).then(async (results) => {
       let p = results[0].status === 'fulfilled' ? results[0].value : null;
       let h = results[1].status === 'fulfilled' ? results[1].value : null;
+	  let f = results[2].status === 'fulfilled' ? results[2].value : null;
 
       // 各自独立兜底
       if (!p) {
@@ -579,7 +582,11 @@
         const r = await fetch(`content/header.zh.json`, { cache: 'no-cache' });
         h = r.ok ? await r.json() : {};
       }
-      return [p, h];
+      if (!f) {
+        const r = await fetch(`content/footer.zh.json`, { cache: 'no-cache' });
+        f = r.ok ? await r.json() : {};
+      }
+      return [p, h, f];
     });
 
     // 选择器：以 "header." 开头的 key 走 headerDict，其余走 pageDict
@@ -591,6 +598,8 @@
       if (fullKey.startsWith('header.')) {
         // 去掉前缀，在 header.json 内部查找
         val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else if (fullKey.startsWith('footer.')) {
+        val = deepGet(footerDict, fullKey.slice('footer.'.length));
       } else {
         val = deepGet(pageDict, fullKey);
       }
