@@ -156,7 +156,7 @@
                     <div class="col-lg-12">
                         <div class="dlab-tabs product-description tabs-site-button">
                             <ul class="nav nav-tabs ">
-                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" data-i18n="tabs.details"></i> 产品详情</a></li>
+                                <li><a data-bs-toggle="tab" href="#web-design-1" class="active" data-i18n="tabs.details"><i class="fas fa-globe" ></i> 产品详情</a></li>
                                 <li><a data-bs-toggle="tab" href="#graphic-design-1" data-i18n="tabs.files"><i class="far fa-image"></i> 数据文件</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1" data-i18n="tabs.literature"><i class="fas fa-cog"></i> 文献资料</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1" data-i18n="tabs.examples"><i class="fas fa-cog"></i> 应用</a></li>

@@ -67,12 +67,12 @@
         <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(../images/banner/banner-1.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">产品详情</h1>
+                    <h1 class="text-white" data-i18n-html="product.title">产品详情</h1>
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="../index">首页</a></li>
-							<li><a href="../product-center">产品中心</a></li>
+							<li><a href="../index" data-i18n-html="product.index">首页</a></li>
+							<li><a href="../product-center" data-i18n-html="product.product-center">产品中心</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -110,7 +110,7 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></h3>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);" data-i18n-html="products.items.4.title">新生牛血清(Newborn Calf Serum-NBCS(Bovine))</a></h3>
 								<div style="flex:1;font-size:20px;line-height:1.6; margin-top:20px;">
 								<div style="font-size:16px;">
 									<b data-i18n="products.items.4.fields.partno">产品货号</b>：
