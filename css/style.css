@@ -3342,6 +3342,31 @@ blockquote:before {
     margin-top: -8px;
     font-size: 8px;
 }
+
+/* 仅英文版导航压缩水平间距（桌面端） */
+@media (min-width: 992px) {
+    html[lang="en"] .header-nav .navbar-nav > li {
+      margin-right: 12px !important;   /* 覆盖 li 的内联 30px */
+    }
+    html[lang="en"] .header-nav .navbar-nav > li > a {
+      padding-left: 4px !important;
+      padding-right: 4px !important;  /* 链接左右内边距也缩小一点 */
+      font-size: 15px;                  /* 可选：英文略调小，避免换行 */
+      letter-spacing: 0.2px;            /* 可选：英文微调字距 */
+    }
+  
+    /* 可选：英文下拉/mega菜单的内边距也收一收 */
+    html[lang="en"] .header-nav .mega-menu > li > a,
+    html[lang="en"] .header-nav .sub-menu > li > a {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      white-space: nowrap;              /* 防止英文过早换行 */
+    }
+  }
+
+
+
+
 /* Header Center */
 .site-header.center .header-nav .nav {
     display: inline-block;

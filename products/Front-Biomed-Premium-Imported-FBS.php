@@ -66,12 +66,12 @@
         <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(../images/banner/banner-1.webp);">
             <div class="container">
                 <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">产品详情</h1>
+                    <h1 class="text-white" data-i18n="banner.title">产品详情</h1>
 					<!-- Breadcrumb row -->
 					<div class="breadcrumb-row">
 						<ul class="list-inline">
-							<li><a href="../index">首页</a></li>
-							<li><a href="../product-center">产品中心</a></li>
+							<li><a href="../index" data-i18n="breadcrumb.home">首页</a></li>
+							<li><a href="../product-center" data-i18n="breadcrumb.center">产品中心</a></li>
 						</ul>
 					</div>
 					<!-- Breadcrumb row END -->
@@ -111,7 +111,7 @@
 					<div class="col-md-7 col-lg-7 col-sm-12">
 						<form method="post" class="cart sticky-top">
 							<div class="dlab-post-title">
-								<h3 class="post-title m-b10"><a href="javascript:void(0);">Front Biomedical 进口特级胎牛血清(FBS, Optimum)</a></h3>
+								<h3 class="post-title m-b10"><a href="javascript:void(0);" data-i18n="product.name">Front Biomedical 进口特级胎牛血清(FBS, Optimum)</a></h3>
 								<div style="flex:1;font-size:20px;line-height:1.6; margin-top:20px;">
 									<div style="font-size:16px;">
 										<b data-i18n="products.items.1.fields.partno">产品货号</b>：
@@ -120,10 +120,9 @@
 									<div style="font-size:16px; margin-top:10px;">
 										<b data-i18n="products.items.1.fields.basic">基础信息</b>：
 										<span data-i18n="products.items.1.desc.desc_basic">来源于澳洲、新西兰优质天然牧场6-8月龄健康胎牛
-
-专用于培养对血清要求较高的、难培养的娇贵细胞，如干细胞、难培养原代细胞、神经元细胞等。
-1、干细胞代表：胚胎干细胞、精原干细胞、NSC、UC-MSCs、PB-MSCs等
-2、难培养原代细胞代表：外周血原代间充质干细胞、外周血原代巨噬细胞等</span>
+                                            专用于培养对血清要求较高的、难培养的娇贵细胞，如干细胞、难培养原代细胞、神经元细胞等。
+                                            1、干细胞代表：胚胎干细胞、精原干细胞、NSC、UC-MSCs、PB-MSCs等
+                                            2、难培养原代细胞代表：外周血原代间充质干细胞、外周血原代巨噬细胞等</span>
 									</div>
 									<div style="font-size:16px; margin-top:10px;">
 										<b data-i18n="products.items.1.fields.cells">适用细胞举例</b>：
@@ -137,14 +136,14 @@
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<h6>产品规格</h6>
+									<h6 data-i18n="products.items.1.fields.spec">产品规格</h6>
 									<div class="d-flex align-items-center" style="gap:15px;">
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
-										<button class="site-button orange m-r15" type="button">500mL</button>
+										<button class="site-button orange m-r15" type="button" data-i18n="products.items.1.spec.size_500">500mL</button>
 									</div>
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
 										<button class="site-button orange m-r15" type="button"
-												data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+												data-bs-toggle="modal" data-bs-target="#infoModal" data-i18n="products.items.1.spec.consult">立即咨询</button>
 									</div>
 									</div>
 								</div>
@@ -176,11 +175,11 @@
                                 <!-- <li><a data-bs-toggle="tab" href="#web-design-1" class="active" ><i class="fas fa-globe" ></i> 产品详情</a></li>
                                 <li><a data-bs-toggle="tab" href="#graphic-design-1"><i class="far fa-image"></i> 数据文件</a></li>
                                 <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 文献资料</a></li> -->
-                                <li><a data-bs-toggle="tab" href="#developement-1" class="active"><i class="fas fa-cog"></i> 应用</a></li>
+                                <li><a data-bs-toggle="tab" href="#developement-1" class="active" data-i18n="tabs.examples"><i class="fas fa-cog"></i> 应用</a></li>
                                 <!-- <li><a data-bs-toggle="tab" href="#developement-1"><i class="fas fa-cog"></i> 相关产品</a></li> -->
                             </ul>
                             <div id="content-dental" class="tab-pane">
-                                <h4>精原干细胞</h4>
+                                <h4 data-i18n="examples.ssc.title">精原干细胞</h4>
                                 <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
                                 <div class="section-content p-b0">
                                     <div class="row">
@@ -189,7 +188,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic1.webp" alt="">
                                                 </div>
-                                                <h6>对照（P1、100×、120h）</h6>
+                                                <h6 data-i18n="examples.ssc.labels.0">对照（P1、100×、120h）</h6>
                                             </div>
                                         </div>
                                     
@@ -207,7 +206,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic3.webp" alt="">
                                                 </div>
-                                                <h6>对照（P2、100×、120h） </h6>
+                                                <h6 data-i18n="examples.ssc.labels.2">对照（P2、100×、120h） </h6>
                                             </div>
                                         </div>
                                     
@@ -223,7 +222,7 @@
                                     </div>
                                 </div>
 
-                                <h4>神经干细胞（NE-4C）</h4>
+                                <h4 data-i18n="examples.ne4c.title">神经干细胞（NE-4C）</h4>
                                 <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
                                 <div class="section-content p-b0">
                                     <div class="row">
@@ -232,7 +231,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic5.webp" alt="">
                                                 </div>
-                                                <h6>对照（P3、100×、72h）</h6>
+                                                <h6 data-i18n="examples.ne4c.labels.0">对照（P3、100×、72h）</h6>
                                             </div>
                                         </div>
                                     
@@ -250,7 +249,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic7.webp" alt="">
                                                 </div>
-                                                <h6>对照（P6、100×、72h） </h6>
+                                                <h6 data-i18n="examples.ne4c.labels.2">对照（P6、100×、72h） </h6>
                                             </div>
                                         </div>
                                     
@@ -265,7 +264,7 @@
                                         
                                     </div>
                                 </div>
-                                <h4>人脐带间充质干细胞（HUC-MSCs）</h4>
+                                <h4 data-i18n="examples.huc_msc.title">人脐带间充质干细胞（HUC-MSCs）</h4>
                                 <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
                                 <div class="section-content p-b0">
                                     <div class="row">
@@ -274,7 +273,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic9.webp" alt="">
                                                 </div>
-                                                <h6>对照（P3、100×、72h）</h6>
+                                                <h6 data-i18n="examples.huc_msc.labels.0">对照（P3、100×、72h）</h6>
                                             </div>
                                         </div>
                                     
@@ -292,7 +291,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic11.webp" alt="">
                                                 </div>
-                                                <h6>对照（P6、100×、72h） </h6>
+                                                <h6 data-i18n="examples.huc_msc.labels.2">对照（P6、100×、72h） </h6>
                                             </div>
                                         </div>
                                     
@@ -307,7 +306,7 @@
                                         
                                     </div>
                                 </div>
-                                <h4>外周血原代巨噬细胞</h4>
+                                <h4 data-i18n="examples.pb_macrophage.title">外周血原代巨噬细胞</h4>
                                 <!-- <p>牙科领域聚焦硬组织微结构解析。通过扫描牙齿及颌骨标本，可评估种植体骨结合率、牙本质微裂扩展、龋齿矿化层破坏程度以及正畸治疗对牙槽骨微孔结构的影响，为口腔修复提供三维力学依据。</p> -->
                                 <div class="section-content p-b0">
                                     <div class="row">
@@ -316,7 +315,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic13.webp" alt="">
                                                 </div>
-                                                <h6>对照（P3、100×、72h）</h6>
+                                                <h6 data-i18n="examples.pb_macrophage.labels.0">对照（P3、100×、72h）</h6>
                                             </div>
                                         </div>
                                     
@@ -334,7 +333,7 @@
                                                 <div class="dlab-media dlab-img-overlay1 "> 
                                                     <img src="../images/products/product1/pic15.webp" alt="">
                                                 </div>
-                                                <h6>对照（P6、100×、72h） </h6>
+                                                <h6 data-i18n="examples.pb_macrophage.labels.2">对照（P6、100×、72h） </h6>
                                             </div>
                                         </div>
                                     
@@ -485,7 +484,133 @@ $(document).ready(function() {
 
 </script>
 
+<script>
+(function () {
+  function getLang() {
+    var url = new URL(window.location.href);
+    var urlLang = url.searchParams.get('lang');
+    var savedLang = localStorage.getItem('lang');
+    return (urlLang || savedLang || document.documentElement.getAttribute('lang') || 'zh').toLowerCase();
+  }
 
+  // 初始化 lang
+  var lang = getLang();
+  if (document.documentElement.getAttribute('lang') !== lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+  localStorage.setItem('lang', lang);
+
+  // 语言下拉点击：仅当切换到不同语言时才刷新
+  function onPick(e) {
+    e.preventDefault();
+    var picked = this.getAttribute('data-lang');
+    if (!picked || picked === lang) return;
+    localStorage.setItem('lang', picked);
+    var u = new URL(window.location.href);
+    u.searchParams.set('lang', picked);
+    window.location.href = u.toString();
+  }
+
+  // 绑定事件
+  var langLinks = document.querySelectorAll('a[data-lang]');
+  langLinks.forEach(function (a) { a.addEventListener('click', onPick); });
+
+  // 更新按钮文案
+  var toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.firstChild && (toggle.firstChild.nodeValue = (lang === 'en' ? 'English' : '中文') + ' ');
+  }
+
+  // 暴露一个获取当前语言的函数，给下面的 i18n loader 用
+  window.__getLang = getLang;
+})();
+</script>
+
+<script>
+  // 站点根前缀（你的项目根是 /frtbio/）
+  const ROOT = (location.pathname.indexOf('/frtbio/') === 0) ? '/frtbio/' : '/';
+
+  function deepGet(obj, path) {
+    return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+  function setTextPreserveIcons(el, text) {
+    const node = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+    if (node) node.nodeValue = text + ' ';
+    else el.insertBefore(document.createTextNode(text + ' '), el.firstChild);
+  }
+  async function fetchOrZh(path, zhPath) {
+    try {
+      const r = await fetch(path, { cache: 'no-cache' });
+      if (!r.ok) throw 0;
+      return await r.json();
+    } catch (_) {
+      const r2 = await fetch(zhPath, { cache: 'no-cache' });
+      return r2.ok ? await r2.json() : {};
+    }
+  }
+
+  async function loadI18n(lang) {
+    // ✅ 用绝对路径（带 ROOT 前缀），不受当前 /products/ 的影响
+    const headerPath = ROOT + `content/products/product-header.${lang}.json`;
+    const headerZh   = ROOT + `content/products/product-header.zh.json`;
+    const footerPath = ROOT + `content/products/product-footer.${lang}.json`;
+    const footerZh   = ROOT + `content/products/product-footer.zh.json`;
+    // 你的页面字典（改成你的实际文件名）
+    const pagePath   = ROOT + `content/products/Front-Biomed-Premium-Imported-FBS.${lang}.json`;
+    const pageZh     = ROOT + `content/products/Front-Biomed-Premium-Imported-FBS.zh.json`;
+
+    const [headerDict, pageDict, footerDict] = await Promise.all([
+      fetchOrZh(headerPath, headerZh),
+      fetchOrZh(pagePath,   pageZh),
+      fetchOrZh(footerPath, footerZh),
+    ]);
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n');
+      const attr = el.getAttribute('data-i18n-attr');
+      let val = null;
+
+      if (fullKey.startsWith('header.')) {
+        val = deepGet(headerDict, fullKey.slice('header.'.length));
+      } else if (fullKey.startsWith('footer.')) {
+        val = deepGet(footerDict, fullKey.slice('footer.'.length));
+      } else {
+        val = deepGet(pageDict, fullKey);
+      }
+      if (val == null) return;
+
+      if (attr) el.setAttribute(attr, val);
+      else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.setAttribute('placeholder', val);
+      else if (el.tagName === 'META') el.setAttribute('content', val);
+      else setTextPreserveIcons(el, val);
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const fullKey = el.getAttribute('data-i18n-html');
+      let val = null;
+      if (fullKey.startsWith('header.'))      val = deepGet(headerDict, fullKey.slice('header.'.length));
+      else if (fullKey.startsWith('footer.')) val = deepGet(footerDict, fullKey.slice('footer.'.length));
+      else                                    val = deepGet(pageDict,   fullKey);
+      if (val != null) el.innerHTML = val;
+    });
+
+    const toggle = document.getElementById('langToggle');
+    if (toggle) {
+      const label = deepGet(headerDict, 'lang.toggle');
+      if (label) setTextPreserveIcons(toggle, label);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const getLang = () => {
+      const url = new URL(location.href);
+      return (url.searchParams.get('lang') || localStorage.getItem('lang') || document.documentElement.lang || 'zh').toLowerCase();
+    };
+    document.documentElement.lang = getLang();
+    loadI18n(getLang());
+  });
+</script>
+ 
  
 </body>
 </html>

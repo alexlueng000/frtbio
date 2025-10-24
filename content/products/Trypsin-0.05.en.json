@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "0.05% Trypsin with EDTA and phenol red; calcium- and magnesium-free. Sterile filtered for gentle, consistent dissociation of tissues and monolayers."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Trypsin (0.05%) with EDTA & Phenol Red",
+      "intro": "Formulated at 0.05% trypsin and supplemented with EDTA and phenol red. Free of Ca2+ and Mg2+, sterile-filtered, and suitable for gentle dissociation of tissues and adherent cell monolayers."
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "Specification"
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "Details",
+      "files": "Data Files",
+      "literature": "Publications",
+      "examples": "Applications",
+      "related": "Related Products"
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

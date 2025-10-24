@@ -1,0 +1,75 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Front Biomed Exceptional Fetal Bovine Serum (FBS, Exceptional) details and application examples."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Front Biomed Exceptional Fetal Bovine Serum (FBS, Exceptional)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "Part No.",
+            "basic": "Overview",
+            "cells": "Example Cell Lines",
+            "spec": "Specification"
+          },
+          "desc": {
+            "desc_partno": "FBS-FFU   FBS-FFB",
+            "desc_basic": "Highly universal; suitable for routine primary cells, stem cells, immune cells, and hard-to-culture tumor cells. Primary cells include epithelial, smooth muscle, endothelial, melanocytes, cardiomyocytes, macrophages, etc. Stem cells include NSC and UC-MSCs. Immune cells include H9, CTLL-2, peripheral-blood-derived NK and T cells. Tumor cells include breast, colorectal, gastric, lung and liver cancer cell lines.",
+            "desc_cells": "Hela, HCC1937, HT22, Caov3, NCI-H460, NCI-H146, CT26.WT, NRK-52E, A375, H9C2, L929, NCI-N87, COLO 205, BEP2D, HMy-2CIR, MDA-MB-453, MS751, RL95-2, SW 780, 22RV1, PK-15, A3, NCI-H82, OVCAR-3, BRL, Calu-3, SNU-387, MCF7, etc."
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "Application Examples"
+    },
+    "examples": {
+      "cartilage": {
+        "title": "Primary Chondrocytes",
+        "labels": [
+          "Control (P3, 100×, 48 h)",
+          "FBS-E500A (P3, 100×, 48 h)",
+          "Control (P6, 100×, 48 h)",
+          "FBS-E500A (P6, 100×, 48 h)"
+        ]
+      },
+      "ctll2": {
+        "title": "Mouse T Lymphocyte (CTLL-2)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-E500A (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-E500A (P6, 100×, 72 h)"
+        ]
+      },
+      "h9": {
+        "title": "Human Lymphocyte Line (H9)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-E500A (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-E500A (P6, 100×, 72 h)"
+        ]
+      }
+    },
+    "modal": {
+      "title": "Scan the QR Code to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

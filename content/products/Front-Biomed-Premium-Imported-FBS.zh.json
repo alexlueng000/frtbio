@@ -1,0 +1,84 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "Front Biomedical 进口特级胎牛血清（FBS, Optimum）产品详情与应用示例。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "Front Biomedical 进口特级胎牛血清(FBS, Optimum)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "产品货号",
+            "basic": "基础信息",
+            "cells": "适用细胞举例",
+            "spec": "产品规格"
+          },
+          "desc": {
+            "desc_partno": "FBS-FFA   FBS-FFN",
+            "desc_basic": "来源于澳洲/新西兰优质天然牧场 6–8 月龄健康胎牛。专用于培养对血清要求更高的、难培养的娇贵细胞，如干细胞、难培养原代细胞、神经元细胞等。示例：1）干细胞：胚胎干细胞、精原干细胞、NSC、UC-MSCs、PB-MSCs 等；2）难培养原代细胞：外周血原代间充质干细胞、外周血原代巨噬细胞等。",
+            "desc_cells": "mESC、精原干细胞、NE-4C、HUC-MSCs、BM-MSCs、AD-MSCs、HUCB-MSCs、PB-MSCs、人外周血原代间充质干细胞、人外周血原代巨噬细胞、毛囊干细胞等。"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "应用"
+    },
+    "examples": {
+      "ssc": {
+        "title": "精原干细胞",
+        "labels": [
+          "对照（P1、100×、120h）",
+          "FBS-FFN（P1、100×、120h）",
+          "对照（P2、100×、120h）",
+          "FBS-FFN（P2、100×、120h）"
+        ]
+      },
+      "ne4c": {
+        "title": "神经干细胞（NE-4C）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFN（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFN（P6、100×、72h）"
+        ]
+      },
+      "huc_msc": {
+        "title": "人脐带间充质干细胞（HUC-MSCs）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFN（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFN（P6、100×、72h）"
+        ]
+      },
+      "pb_macrophage": {
+        "title": "外周血原代巨噬细胞",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFN（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFN（P6、100×、72h）"
+        ]
+      }
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

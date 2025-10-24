@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "DMEM 培养基：比 MEM 营养更丰富，广泛适用于多种哺乳动物细胞培养，配方稳定、批间一致性好。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "DMEM培养基",
+      "intro": "一种广泛使用的细胞培养基，比 MEM 营养更丰富，经大量文献与应用验证，可用于多种哺乳动物细胞类型；配方稳定、适配性强。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

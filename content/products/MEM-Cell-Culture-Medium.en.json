@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "MEM medium: a widely used, reliable cell culture medium that can be modified to support many mammalian cell types and applications. Its distinctive performance comes from the inclusion of the reducing agent glutathione and elevated vitamin levels."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "MEM Cell Culture Medium",
+      "intro": "A commonly used cell culture medium that can be adapted to support a broad range of mammalian cell culture types and applications. Compared with other media, its unique performance is attributed to the presence of the reducing agent glutathione and higher vitamin concentrations."
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "Specification"
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "Details",
+      "files": "Data Files",
+      "literature": "Publications",
+      "examples": "Applications",
+      "related": "Related Products"
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

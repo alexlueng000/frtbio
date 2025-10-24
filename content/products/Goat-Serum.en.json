@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Donor Goat Serum: collected from healthy adult goats under strict herd monitoring, filtered for high quality and excellent lot-to-lot consistency."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Donor Goat Serum",
+      "intro": "Front selects healthy adult goats from strictly monitored herds as donors. The serum is collected and thoroughly filtered to deliver a high-quality product with excellent lot-to-lot consistency."
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "Specification"
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "Details",
+      "files": "Data Files",
+      "literature": "Publications",
+      "examples": "Applications",
+      "related": "Related Products"
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

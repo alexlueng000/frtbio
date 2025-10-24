@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Front porcine serum is sourced from U.S. farms; donor animals are not treated with antibiotics or hormones. Sterile-filtered at 200 nm with low hemoglobin levels, ideal for vaccine manufacturing and cell culture."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Porcine Serum (Pig Serum)",
+      "intro": "As one of the few suppliers of natural porcine serum, Front sources from U.S. farms and collects serum from animals not treated with antibiotics or hormones. This distinctive porcine serum is highly suitable for use in cell culture media, especially vaccine production. It is sterile-filtered at 200 nm and features low hemoglobin levels—ideal for vaccine manufacturing and a wide range of cell culture applications."
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "Specification"
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "Details",
+      "files": "Data Files",
+      "literature": "Publications",
+      "examples": "Applications",
+      "related": "Related Products"
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

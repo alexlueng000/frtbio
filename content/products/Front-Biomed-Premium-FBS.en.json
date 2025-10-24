@@ -1,0 +1,84 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Front Biomed Premium Fetal Bovine Serum (FBS, Premium) details and application examples."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Front Biomed Premium Fetal Bovine Serum (FBS, Premium)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "Part No.",
+            "basic": "Overview",
+            "cells": "Example Cell Lines",
+            "spec": "Specification"
+          },
+          "desc": {
+            "desc_partno": "FBS-P500A  FBS-P500B  FBS-P500C",
+            "desc_basic": "Sourced from healthy 6–8 month domestic calves from high-quality ranches. Recommended use: broadly suitable for most tumor cell lines and scale-up production cells; also works for some primary and immune cells.",
+            "desc_cells": "NCI-H292, HeLa, ACHN, NCI-H1299, ACT-1, NCI-H226, P19, NCI-H596, PC-9, NCI-H520, NCI-H1975, 95-D, CT26, SW620, TE-1, RWPE-1, ECa-109, H4, COS-7, U373, A549, 293T, CHO, VERO, primary rat chondrocytes, RAW264.7, THP-1, etc."
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "Applications"
+    },
+    "examples": {
+      "a549": {
+        "title": "Human NSCLC Cells (A549)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFU (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFU (P6, 100×, 72 h)"
+        ]
+      },
+      "hek293t": {
+        "title": "Human Embryonic Kidney Cells (293T)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFU (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFU (P6, 100×, 72 h)"
+        ]
+      },
+      "ct26": {
+        "title": "Mouse Colon Carcinoma Cells (CT26.WT)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFU (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFU (P6, 100×, 72 h)"
+        ]
+      },
+      "u373": {
+        "title": "Human Glioblastoma/Astrocytoma Cells (U373)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFU (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFU (P6, 100×, 72 h)"
+        ]
+      }
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

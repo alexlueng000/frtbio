@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "RPMI 1640 is widely used for suspension and adherent mammalian cell culture. It contains the reducing agent glutathione and elevated vitamins, supporting lymphocytes, hybridomas, and various tumor cell lines."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "RPMI 1640 Cell Culture Medium",
+      "intro": "RPMI 1640 stands out due to the presence of glutathione and higher vitamin concentrations compared with many other media. It supports a broad range of cell types including lymphocytes, hybridomas, and tumor cell lines."
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "Specification"
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "Details",
+      "files": "Data Files",
+      "literature": "Publications",
+      "examples": "Applications",
+      "related": "Related Products"
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

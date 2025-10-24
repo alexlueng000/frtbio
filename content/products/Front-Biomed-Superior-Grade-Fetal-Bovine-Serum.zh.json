@@ -1,0 +1,75 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "Front Biomedical 国产特级胎牛血清（FBS, Optimum）产品详情与应用示例。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "Front Biomedical 国产特级胎牛血清 (FBS, Optimum)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "产品货号",
+            "basic": "基础信息",
+            "cells": "适用细胞举例",
+            "spec": "产品规格"
+          },
+          "desc": {
+            "desc_partno": "FBS-OPT500A  FBS-OPT500B  FBS-OPT500C",
+            "desc_basic": "来源于国内优质天然牧场 6–8 月龄健康胎牛。普适性强，适用于大部分干细胞、免疫细胞、常规肿瘤细胞、难培养细胞及原代细胞等。",
+            "desc_cells": "人脐带间充质干细胞、A549、HEB、山羊子宫内膜细胞、GM12878、K562、HeLa、293T、HEK293、KMB17、HCC1937、3T3-L1、MRC-5、MDBK、Caov3、CTLL-2、Hepa1-6、MARC-145、H9C2、NRK-52E、McCoy5A、HK-2、HUC-MSC、HEP3B2.1-7、U373、Caco-2、THP-1、RBE、R1610、Caski、MB49、MG63、MC38、MDCK、NCI-H157、NCI-H446、PA-1 等。"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "应用"
+    },
+    "examples": {
+      "huc_msc": {
+        "title": "人脐带间充质干细胞（HUC-MSCs）",
+        "labels": [
+          "对照（P1、100×、120h）",
+          "FBS-FFN（P1、100×、120h）",
+          "对照（P2、100×、120h）",
+          "FBS-FFN（P2、100×、120h）"
+        ]
+      },
+      "thp1": {
+        "title": "人单核细胞白血病（THP-1）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFN（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFN（P6、100×、72h）"
+        ]
+      },
+      "mcf7": {
+        "title": "人乳腺癌细胞（MCF-7）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFN（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFN（P6、100×、72h）"
+        ]
+      }
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

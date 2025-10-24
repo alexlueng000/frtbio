@@ -1,0 +1,84 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Front Biomed Optimum Imported Fetal Bovine Serum (FBS, Optimum) details and application examples."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Front Biomed Optimum Imported FBS (Fetal Bovine Serum)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "Part No.",
+            "basic": "Overview",
+            "cells": "Example Cell Types",
+            "spec": "Specification"
+          },
+          "desc": {
+            "desc_partno": "FBS-FFA   FBS-FFN",
+            "desc_basic": "Sourced from healthy 6–8-month calves from high-quality ranches in Australia/New Zealand. Designed for demanding and delicate cells that are hard to culture, such as stem cells, challenging primary cells, and neurons. Examples: (1) Stem cells: ESCs, spermatogonial stem cells, NSC, UC-MSCs, PB-MSCs; (2) Primary hard-to-culture cells: peripheral blood–derived MSCs and macrophages, etc.",
+            "desc_cells": "mESC, spermatogonial stem cells, NE-4C, HUC-MSCs, BM-MSCs, AD-MSCs, HUCB-MSCs, PB-MSCs, primary PB-MSCs, primary PB-macrophages, hair follicle stem cells, etc."
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "Applications"
+    },
+    "examples": {
+      "ssc": {
+        "title": "Spermatogonial Stem Cells",
+        "labels": [
+          "Control (P1, 100×, 120 h)",
+          "FBS-FFN (P1, 100×, 120 h)",
+          "Control (P2, 100×, 120 h)",
+          "FBS-FFN (P2, 100×, 120 h)"
+        ]
+      },
+      "ne4c": {
+        "title": "Neural Stem Cells (NE-4C)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFN (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFN (P6, 100×, 72 h)"
+        ]
+      },
+      "huc_msc": {
+        "title": "Human Umbilical Cord MSCs (HUC-MSCs)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFN (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFN (P6, 100×, 72 h)"
+        ]
+      },
+      "pb_macrophage": {
+        "title": "Primary Peripheral Blood Macrophages",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFN (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFN (P6, 100×, 72 h)"
+        ]
+      }
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

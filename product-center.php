@@ -553,9 +553,16 @@
 </script>
 
 <script>
-  // 小工具
+  // 取值工具：a.b.c
   function deepGet(obj, path) {
     return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
+  }
+
+  // 写文本但保留 <i> 等子节点：优先改第一个文本节点
+  function setTextPreserveIcons(el, text) {
+    const node = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+    if (node) node.nodeValue = text + ' ';
+    else el.insertBefore(document.createTextNode(text + ' '), el.firstChild);
   }
 
   async function loadI18n(lang) {
@@ -563,40 +570,32 @@
     const headerPath = `content/header.${lang}.json`;
 	const footerPath = `content/footer.${lang}.json`;
 
-    // 并行拉取，任何一个缺失都回退到 zh 的对应文件
-    let [pageDict, headerDict, footerDict] = await Promise.allSettled([
-      fetch(pagePath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
-      fetch(headerPath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
-	  fetch(footerPath, { cache: 'no-cache' }).then(r => { if(!r.ok) throw 0; return r.json(); }),
-    ]).then(async (results) => {
-      let p = results[0].status === 'fulfilled' ? results[0].value : null;
-      let h = results[1].status === 'fulfilled' ? results[1].value : null;
-	  let f = results[2].status === 'fulfilled' ? results[2].value : null;
+    async function fetchOrZh(path, zhPath) {
+      try {
+        const r = await fetch(path, { cache: 'no-cache' });
+        if (!r.ok) throw 0;
+        return await r.json();
+      } catch (_) {
+        const r2 = await fetch(zhPath, { cache: 'no-cache' });
+        return r2.ok ? await r2.json() : {};
+      }
+    }
 
-      // 各自独立兜底
-      if (!p) {
-        const r = await fetch(`content/product-center.zh.json`, { cache: 'no-cache' });
-        p = r.ok ? await r.json() : {};
-      }
-      if (!h) {
-        const r = await fetch(`content/header.zh.json`, { cache: 'no-cache' });
-        h = r.ok ? await r.json() : {};
-      }
-      if (!f) {
-        const r = await fetch(`content/footer.zh.json`, { cache: 'no-cache' });
-        f = r.ok ? await r.json() : {};
-      }
-      return [p, h, f];
-    });
+    // 并行拉两份，各自兜底到 zh
+    const [pageDict, headerDict, footerDict] = await Promise.all([
+      fetchOrZh(pagePath,   'content/product-center.zh.json'),
+      fetchOrZh(headerPath, 'content/header.zh.json'),
+      fetchOrZh(footerPath, 'content/footer.zh.json')
+    ]);
 
-    // 选择器：以 "header." 开头的 key 走 headerDict，其余走 pageDict
+    // 遍历填充
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const fullKey = el.getAttribute('data-i18n');
       const attr    = el.getAttribute('data-i18n-attr');
 
       let val = null;
       if (fullKey.startsWith('header.')) {
-        // 去掉前缀，在 header.json 内部查找
+        // 去掉前缀后在 header.json 顶层取值（无包裹结构）
         val = deepGet(headerDict, fullKey.slice('header.'.length));
       } else if (fullKey.startsWith('footer.')) {
         val = deepGet(footerDict, fullKey.slice('footer.'.length));
@@ -612,25 +611,31 @@
       } else if (el.tagName === 'META') {
         el.setAttribute('content', val);
       } else {
-        el.textContent = val;
+        setTextPreserveIcons(el, val);
       }
     });
+
+	// ✅ 正确处理 data-i18n-html（支持 header.* 命名空间）
+	document.querySelectorAll('[data-i18n-html]').forEach(el => {
+	const fullKey = el.getAttribute('data-i18n-html');
+	let val = null;
+	if (fullKey.startsWith('header.')) {
+		val = deepGet(headerDict, fullKey.slice('header.'.length));
+	} else {
+		val = deepGet(pageDict, fullKey);
+	}
+	if (val != null) el.innerHTML = val;
+	});
 
     // 同步 <title>
     const titleEl = document.querySelector('title[data-i18n="meta.title"]');
     if (titleEl) document.title = titleEl.textContent || document.title;
 
-    // 如果 header.json 里有语言按钮文案，顺便更新下拉按钮显示
+    // 更新语言下拉按钮显示（若有）
     const toggle = document.getElementById('langToggle');
     if (toggle) {
       const label = deepGet(headerDict, 'lang.toggle');
-      if (label) {
-        // 只替换文字部分，保留 <i> 图标
-        const icon = toggle.querySelector('i');
-        toggle.innerHTML = '';
-        toggle.append(document.createTextNode(label + ' '));
-        if (icon) toggle.appendChild(icon);
-      }
+      if (label) setTextPreserveIcons(toggle, label);
     }
   }
 
@@ -640,6 +645,7 @@
     if (window.$ && $.fn.lazy) { $('.lazy').Lazy(); }
   });
 </script>
+
 
 </body>
 </html>

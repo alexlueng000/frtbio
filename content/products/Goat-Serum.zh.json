@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "供体山羊血清：来源于健康成羊供体，严格过滤与批间一致性控制，适用于多种细胞培养应用。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "供体山羊血清 (Donor Goat Serum)",
+      "intro": "Front 从严格监控的山羊群中，挑选健康成年羊为供体。我们收集山羊血清并将其过滤，得到的是高品质且批次间高度一致的产品。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

@@ -1,0 +1,75 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Front Biomed Domestic Optimum Fetal Bovine Serum (FBS, Optimum) details and application examples."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Front Biomed Domestic Optimum FBS (Fetal Bovine Serum)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "Part No.",
+            "basic": "Overview",
+            "cells": "Example Cell Types",
+            "spec": "Specification"
+          },
+          "desc": {
+            "desc_partno": "FBS-OPT500A  FBS-OPT500B  FBS-OPT500C",
+            "desc_basic": "Sourced from healthy 6–8-month calves from high-quality domestic ranches. Highly versatile: suitable for most stem cells, immune cells, common tumor cell lines, hard-to-culture cells, and primary cells.",
+            "desc_cells": "HUC-MSCs, A549, HEB, Caprine endometrial cells, GM12878, K562, HeLa, 293T, HEK293, KMB17, HCC1937, 3T3-L1, MRC-5, MDBK, Caov3, CTLL-2, Hepa1-6, MARC-145, H9C2, NRK-52E, McCoy5A, HK-2, HUC-MSC, HEP3B2.1-7, U373, Caco-2, THP-1, RBE, R1610, Caski, MB49, MG63, MC38, MDCK, NCI-H157, NCI-H446, PA-1, etc."
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "Applications"
+    },
+    "examples": {
+      "huc_msc": {
+        "title": "Human Umbilical Cord MSCs (HUC-MSCs)",
+        "labels": [
+          "Control (P1, 100×, 120 h)",
+          "FBS-FFN (P1, 100×, 120 h)",
+          "Control (P2, 100×, 120 h)",
+          "FBS-FFN (P2, 100×, 120 h)"
+        ]
+      },
+      "thp1": {
+        "title": "Human Monocytic Leukemia (THP-1)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFN (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFN (P6, 100×, 72 h)"
+        ]
+      },
+      "mcf7": {
+        "title": "Human Breast Cancer Cells (MCF-7)",
+        "labels": [
+          "Control (P3, 100×, 72 h)",
+          "FBS-FFN (P3, 100×, 72 h)",
+          "Control (P6, 100×, 72 h)",
+          "FBS-FFN (P6, 100×, 72 h)"
+        ]
+      }
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

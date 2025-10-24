@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "0.25% 胰蛋白酶（含EDTA与酚红），不含钙镁离子，严格过滤除菌，适用于组织与单层细胞的高效消化与分离。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "胰蛋白酶（0.25%，含EDTA、酚红）",
+      "intro": "浓度0.25%，含EDTA与酚红，不含Ca2+、Mg2+。经过严格过滤除菌，适合组织块、贴壁细胞的快速消化与传代处理，重复性好。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

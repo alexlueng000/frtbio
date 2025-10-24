@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "Product Details",
+      "description": "Donor Horse Serum: sourced from strictly monitored herds in China, the US, Australia, or New Zealand; excellent lot-to-lot consistency for cell culture and veterinary biologics."
+    },
+    "banner": {
+      "title": "Product Details",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "Product Center"
+    },
+    "product": {
+      "name": "Donor Horse Serum (Equine Serum)",
+      "intro": "Front’s Donor Horse Serum is collected from herds under regular veterinary inspection and monitoring in China, the United States, Australia, or New Zealand. It is well suited as a supplement for cell culture media and for use in veterinary biologics."
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "Specification"
+          },
+          "spec": {
+            "size_500": "500 mL",
+            "consult": "Contact Now"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "Details",
+      "files": "Data Files",
+      "literature": "Publications",
+      "examples": "Applications",
+      "related": "Related Products"
+    },
+    "modal": {
+      "title": "Scan to Get Free Samples",
+      "close": "Close"
+    }
+  }
+  

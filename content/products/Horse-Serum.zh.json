@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "供体马血清：来自严格监控的马群，批间一致性佳，适用于多种细胞培养与兽医生物制品场景。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "供体马血清 (Donor Horse Serum - Equine Serum)",
+      "intro": "Front 的供体马血清采自中国、美国、澳洲或新西兰，来源马群接受兽医定期检查与监控。该产品非常适合用作细胞培养基添加与兽医生物制品的原材料。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

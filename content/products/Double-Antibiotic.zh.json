@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "青霉素-链霉素100X（双抗）：含青霉素10,000 units/mL、链霉素10,000 µg/mL，滤膜除菌，可直接用于细胞培养，有效抑制细菌污染。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "青霉素-链霉素100X（双抗）",
+      "intro": "含有青霉素 10,000 units/mL 与链霉素 10,000 µg/mL，产品经无菌过滤处理，可直接用于细胞培养，有效预防与控制细菌对培养体系的污染。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

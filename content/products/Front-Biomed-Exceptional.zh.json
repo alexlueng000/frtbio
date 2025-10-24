@@ -1,0 +1,75 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "Front Biomedical 超优级胎牛血清（FBS, Exceptional）产品详情与应用示例。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "Front Biomedical 超优级胎牛血清 (FBS, Exceptional )"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "产品货号",
+            "basic": "基础信息",
+            "cells": "适用细胞举例",
+            "spec": "产品规格"
+          },
+          "desc": {
+            "desc_partno": "FBS-FFU   FBS-FFB",
+            "desc_basic": "普适性强，适用于培养常规原代细胞、干细胞、免疫细胞及难培养细胞。1、原代细胞代表：上皮细胞、平滑肌细胞、内皮细胞、黑色素细胞、心肌细胞、巨噬细胞等；2、干细胞代表：NSC、UC·MSCs；3、免疫细胞代表：H9、CTLL-2、人外周血来源NK细胞、人外周血来源T细胞等；4、难培养细胞：乳腺癌细胞、结直肠腺癌细胞、胃腺癌细胞、肺腺癌细胞、肝癌细胞等。",
+            "desc_cells": "Hela、HCC1937、HT22、Caov3、NCI-H460、NCI-H146、CT26.WT、NRK-52E、A375、H9C2、L929、NC1N87、C0L0 205、BEP2D、HMy-2CIR、MDA-MB-453、MS751、RL95-2、SW 780、22RV1、PK-15、A3、NCI-H82、OVCAR-3、BRL、Calu-3、SNU-387、MCF7等细胞。"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "应用实例"
+    },
+    "examples": {
+      "cartilage": {
+        "title": "原代软骨细胞",
+        "labels": [
+          "对照（P3、100×、48h）",
+          "FBS-E500A（P3、100×、48h）",
+          "对照（P6、100×、48h）",
+          "FBS-E500A（P6、100×、48h）"
+        ]
+      },
+      "ctll2": {
+        "title": "小鼠T淋巴细胞（CTLL-2）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-E500A（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-E500A（P6、100×、72h）"
+        ]
+      },
+      "h9": {
+        "title": "人淋巴细胞系（H9）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-E500A（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-E500A（P6、100×、72h）"
+        ]
+      }
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

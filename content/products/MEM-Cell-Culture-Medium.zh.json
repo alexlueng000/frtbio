@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "MEM 培养基：常用且稳定的细胞培养基，可改良以支持多种哺乳动物细胞培养类型与应用。其独特效果来源于配方中的谷胱甘肽与较高浓度维生素。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "MEM培养基",
+      "intro": "是一种常用的细胞培养基，可改良以支持多种哺乳动物细胞培养类型和应用。相比其他培养基之所以具有独特的效果，是因为其中含有还原剂谷胱甘肽和高浓度的维生素。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

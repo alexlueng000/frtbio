@@ -1,69 +1,68 @@
 {
-    "meta": {
-      "title": "Front Biomed - R&D & Services",
-      "description": "Front Biomed focuses on anti-tumor biologics, novel chemical therapeutics, and stem cell translation, with full-stack services via our Cell Culture Research Center and Imaging Laboratory."
-    },
-    "banner": {
-      "title": "R&D & Services"
-    },
-    "breadcrumb": {
-      "home": "Home",
-      "current": "R&D & Services"
-    },
-    "hero": {
-      "strength_label": "Our Strength",
-      "title": "Driven by Scientific Innovation",
-      "subtitle": "We build efficient and reliable bioengineering solutions.",
-      "paragraph": "Front Biomed’s wholly owned subsidiary has formed a core technical team of overseas-trained experts, including an academician, a Thousand Talents Program distinguished expert, and three tenured professors from U.S. universities. The advisory board spans academicians and leading scholars. Our pipeline centers on anti-tumor therapeutics, with 10+ programs already filed for international and Chinese patents."
-    },
-    "billboard": {
-      "headline": "Pioneering Biomedical Research to Enable Breakthrough Therapies",
-      "items": [
-        {
-          "title": "Anti-tumor Biologics",
-          "text": "Led by two U.S.-based professors, our biologics team is advancing Par-4Ex (a modified PAR-4 polypeptide). The program has entered preclinical development with clear efficacy in animal models (prostate cancer) and is under invention patent review in China."
-        },
-        {
-          "title": "Novel Chemical Therapeutics",
-          "text": "In collaboration with a key laboratory at a C9/985 university, we develop MTH1 inhibitors. We have synthesized 50 novel compounds and validated dozens with strong MTH1 inhibition. Cell-based anti-cancer studies are progressing well and patent filings are underway."
-        },
-        {
-          "title": "Stem Cell Translation",
-          "text": "Together with a leading national stem cell evaluation committee team, we focus on exosome technologies and drive clinical translation for regenerative therapies—aiming to lead the field with forward-looking, high-impact solutions."
-        }
-      ]
-    },
-    "projects": {
-      "title": "Ongoing Projects",
-      "items": [
-        "Targeted delivery of siMYC-AS1 and anti-PD-L1 via engineered MSC-derived exosomes for hepatocellular carcinoma",
-        "Amniotic MSCs and exosomes for spinal cord injury and post-traumatic knee osteoarthritis repair",
-        "Application of cytokines in cosmetic products",
-        "Precision cell therapy for sub-healthy populations"
-      ]
-    },
-    "labs": {
-      "cell_culture": {
-        "title": "Cell Culture Research Center",
-        "bullets": [
-          {
-            "title": "Customized Serum Processing",
-            "text": "Activated carbon, dialysis, heat inactivation, PEG treatment, low endotoxin, ultra-low IgG, gamma irradiation, and customizable bottle volumes."
-          },
-          {
-            "title": "FBS Screening Standards",
-            "text": "Multi-dimensional evaluation—passage stability, growth rate/state, and scale-up—to identify the best-fit serum for each cell line with reserved batch inventory."
-          },
-          {
-            "title": "Serum-free Medium Development",
-            "text": "Recombinant protein systems to mass-produce growth factors (EGF/FGF/IGF, etc.); co-develop highly adapted serum-free media tailored to specific cell lines."
-          }
-        ]
-      },
-      "imaging_lab": {
-        "title": "Imaging Laboratory",
-        "paragraph": "Front Tech partners with SCANCO Medical AG (Switzerland), the pioneer of Micro-CT, as the sole agent in Greater China, operating a Micro-CT Scanning Center that provides high-resolution preclinical imaging and analysis services. The center has run for 7+ years and serves ~100 universities and top hospitals."
-      }
-    }
+  "meta": {
+    "title": "Cell Culture Research Center - FRTBIO",
+    "description": "Personalized serum processing, cell-level biovalidation, and serum-free medium co-development. High-quality solutions for vaccines, gene and stem-cell therapies, and monoclonal antibody production."
+  },
+  "banner": {
+    "title": "Cell Culture Research Center",
+    "subtitle": "Precise Customization · Curated Quality · Breakthrough Innovation",
+    "bg_alt": "Hero banner of cell culture research center"
+  },
+  "about": {
+    "title": "Personalized Serum Customization",
+    "lead": "Advanced deep-processing workflows tailored to your experimental needs.",
+    "seven_title": "Seven Core Processing Techniques",
+    "seven": [
+      "Activated carbon treatment — efficiently adsorb small-molecule impurities",
+      "Dialysis — precisely remove inorganic salts and metabolic wastes",
+      "Heat inactivation (56°C/30 min) — fully inactivate complement",
+      "Ultra-low IgG (≤5 μg/ml) — minimize immune interference",
+      "Low endotoxin (≤3 EU/ml) — safeguard cell viability",
+      "PEG concentration — enrich target proteins",
+      "Gamma irradiation — sterility assurance"
+    ],
+    "image_alt": "Biological laboratory environment"
+  },
+  "scenes": {
+    "title": "Key Application Scenarios",
+    "items": [
+      "Vaccine development",
+      "Gene therapy",
+      "Stem-cell therapy",
+      "Monoclonal antibody production"
+    ]
+  },
+  "serum_selection": {
+    "badge": "Define premium serum by cellular performance",
+    "title": "FBS Rigorous Selection System",
+    "desc": "A four-level biological validation framework to ensure every lot meets high-end research requirements.",
+    "block1_title": "Four Cell-Level Verifications",
+    "block1_list": [
+      "Passage stability",
+      "Doubling rate",
+      "Colony formation efficiency",
+      "Scalability for large-volume expansion"
+    ],
+    "block2_title": "Four-Layer Safeguard",
+    "block2_list": [
+      "Direct sourcing from NZ/AU & domestic certified ranches",
+      "Three-lot safety inventory reserved",
+      "End-to-end cold-chain traceability (−20 °C to LN2 vapor)",
+      "Up to triple testing from factory to end user (factory COA + overseas & domestic lab testing)"
+    ],
+    "image_alt": "Quality system and validation flow illustration"
+  },
+  "serum_free": {
+    "badge": "Re-engineering the golden environment for cell growth",
+    "title": "Serum-Free Medium R&D",
+    "desc": "Using recombinant protein expression to supply diverse growth factors; in collaboration with CAS elite teams, we tailor serum-free media to specific cell lines.",
+    "co_title": "Co-development with CAS",
+    "co_points": [
+      "Custom serum-free media for stem cells",
+      "Serum-free formulations for tumor cell lines",
+      "Solutions for suspension/adherent culture differences",
+      "Chemically defined medium (CDM) development"
+    ],
+    "image_alt": "Serum-free medium R&D illustration"
   }
-  
+}

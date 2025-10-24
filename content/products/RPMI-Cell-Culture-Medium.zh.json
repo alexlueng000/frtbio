@@ -1,0 +1,43 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "RPMI 1640 培养基广泛用于悬浮与贴壁哺乳动物细胞培养，含还原剂谷胱甘肽与较高浓度维生素，常用于淋巴细胞、杂交瘤、肿瘤细胞等的培养。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "RPMI 1640 培养基",
+      "intro": "相比其他培养基之所以具有独特的效果，是因为其中含有还原剂谷胱甘肽和高浓度的维生素。适用于多种细胞类型，包括淋巴细胞、杂交瘤与多种肿瘤细胞系。"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "spec": "产品规格"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "details": "产品详情",
+      "files": "数据文件",
+      "literature": "文献资料",
+      "examples": "应用",
+      "related": "相关产品"
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

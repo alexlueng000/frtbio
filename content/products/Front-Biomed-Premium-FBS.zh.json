@@ -1,0 +1,84 @@
+{
+    "meta": {
+      "title": "产品详情",
+      "description": "Front Biomedical 优级胎牛血清（FBS, Premium）产品详情与应用示例。"
+    },
+    "banner": {
+      "title": "产品详情",
+      "bg": "../images/banner/banner-1.webp"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "center": "产品中心"
+    },
+    "product": {
+      "name": "Front Biomedical 优级胎牛血清 (FBS, Premium)"
+    },
+    "products": {
+      "items": {
+        "1": {
+          "fields": {
+            "partno": "产品货号",
+            "basic": "基础信息",
+            "cells": "适用细胞举例",
+            "spec": "产品规格"
+          },
+          "desc": {
+            "desc_partno": "FBS-P500A  FBS-P500B  FBS-P500C",
+            "desc_basic": "来源于国内优质天然牧场 6–8 月龄健康胎牛。适用范围：适用于培养绝大多数肿瘤细胞和规模化生产细胞，亦适用于部分原代细胞与部分免疫细胞等。",
+            "desc_cells": "NCI-H292、HeLa、ACHN、NCI-H1299、ACT-1、NCI-H226、P19、NCI-H596、PC-9、NCI-H520、NCI-H1975、95-D、CT26、SW620、TE-1、RWPE-1、ECa-109、H4、COS-7、U373、A549、293T、CHO、VERO、大鼠原代软骨细胞、RAW264.7、THP-1 等。"
+          },
+          "spec": {
+            "size_500": "500mL",
+            "consult": "立即咨询"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "examples": "应用"
+    },
+    "examples": {
+      "a549": {
+        "title": "人非小细胞肺癌细胞（A549）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFU（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFU（P6、100×、72h）"
+        ]
+      },
+      "hek293t": {
+        "title": "人胚肾细胞（293T）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFU（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFU（P6、100×、72h）"
+        ]
+      },
+      "ct26": {
+        "title": "小鼠结肠癌细胞（CT26.WT）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFU（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFU（P6、100×、72h）"
+        ]
+      },
+      "u373": {
+        "title": "人类胶质母细胞瘤星形细胞瘤细胞（U373）",
+        "labels": [
+          "对照（P3、100×、72h）",
+          "FBS-FFU（P3、100×、72h）",
+          "对照（P6、100×、72h）",
+          "FBS-FFU（P6、100×、72h）"
+        ]
+      }
+    },
+    "modal": {
+      "title": "扫码免费领样",
+      "close": "关闭"
+    }
+  }
+  

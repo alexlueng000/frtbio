@@ -98,7 +98,77 @@
 		height: auto;
 		display: block;
 	}
+
+/* 英文界面：缩小首屏大标题（Rev Slider Layer #slide-100-layer-3） */
+html[lang="en"] #slide-100-layer-3{
+  font-size: 48px !important;   /* 桌面 */
+  line-height: 1.25 !important;
+  letter-spacing: 1px !important;
+}
+
+/* 平板 */
+@media (max-width: 991.98px){
+  html[lang="en"] #slide-100-layer-3{
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+}
+
+/* 手机横/竖屏 */
+@media (max-width: 767.98px){
+  html[lang="en"] #slide-200-layer-3{
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+  }
+}
+
+html[lang="en"] #slide-200-layer-3{
+  font-size: 48px !important;   /* 桌面 */
+  line-height: 1.25 !important;
+  letter-spacing: 1px !important;
+}
+
+/* 平板 */
+@media (max-width: 991.98px){
+  html[lang="en"] #slide-200-layer-3{
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+}
+
+/* 手机横/竖屏 */
+@media (max-width: 767.98px){
+  html[lang="en"] #slide-300-layer-3{
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+  }
+}
+
+html[lang="en"] #slide-300-layer-3{
+  font-size: 48px !important;   /* 桌面 */
+  line-height: 1.25 !important;
+  letter-spacing: 1px !important;
+}
+
+/* 平板 */
+@media (max-width: 991.98px){
+  html[lang="en"] #slide-300-layer-3{
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+}
+
+/* 手机横/竖屏 */
+@media (max-width: 767.98px){
+  html[lang="en"] #slide-300-layer-3{
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+  }
+}
+
 	</style>
+
+
 	
 	<!-- REVOLUTION SLIDER CSS -->
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/revolution.min.css">
@@ -182,6 +252,7 @@
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;" data-i18n-html="slider.s1">           
 									 实验室信赖之选 <br> 细胞培养定制专家 
+								</div>
 								
 							</li>
 							<li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
