@@ -1,0 +1,35 @@
+{
+    "product": {
+      "title": "Product Details",
+      "index": "Home",
+      "product-center": "Product Center"
+    },
+    "products": {
+      "items": {
+        "4": {
+          "title": "Newborn Calf Serum (NBCS, Bovine)",
+          "fields": {
+            "partno": "Part No.",
+            "basic": "Overview",
+            "scope": "Recommended Applications",
+            "features": "Key Features",
+            "storage": "Storage Conditions",
+            "spec": "Specification"
+          },
+          "desc": {
+            "desc_partno": "NZ-NCS(GI)",
+            "desc_basic": "Sourced from healthy newborn calves (≤10 days old) from high-quality ranches in China and abroad.",
+            "desc_scope": "Suitable for diagnostic reagent manufacturing (ELISA/chemiluminescence); recommended for ELISA kits such as HIV; ideal for engineered cell culture, e.g., PK-15, ST, and Vero cells.",
+            "desc_features": "Low hemoglobin (<100 mg/L), low γ-globulin (<2 mg/mL), high batch-to-batch stability.",
+            "desc_storage": "Store frozen at −5°C to −20°C; avoid repeated freeze–thaw cycles; shelf life: 5 years."
+          },
+          
+          "spec": {
+            "size": "500mL",
+            "consult": "Consult Now"
+          }
+        }
+      }
+    }
+  }
+  

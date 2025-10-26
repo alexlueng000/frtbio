@@ -131,7 +131,7 @@
 							 <!-- Modal (Popup) -->
 							
 							<div class="btn-group product-item-size" data-bs-toggle="buttons">
-								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+								<button class="site-button orange m-r15" type="button" data-bs-toggle="modal" data-bs-target="#infoModal" data-i18n-html="products.items.1.spec.consult">立即咨询</button>
 							</div>
 							<!-- 模态框 -->
 							<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">

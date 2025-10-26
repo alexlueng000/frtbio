@@ -140,14 +140,14 @@
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<h6>产品规格</h6>
+									<h6 data-i18n-html="products.items.4.fields.spec">产品规格</h6>
 									<div class="d-flex align-items-center" style="gap:15px;">
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
 										<button class="site-button orange m-r15" type="button">500mL</button>
 									</div>
 									<div class="btn-group product-item-size" data-bs-toggle="buttons">
 										<button class="site-button orange m-r15" type="button"
-												data-bs-toggle="modal" data-bs-target="#infoModal">立即咨询</button>
+												data-bs-toggle="modal" data-bs-target="#infoModal" data-i18n-html="products.items.4.spec.consult">立即咨询</button>
 									</div>
 									</div>
 								</div>

@@ -1,0 +1,30 @@
+{
+    "product": {
+      "title": "产品详情",
+      "index": "首页",
+      "product-center": "产品中心"
+    },
+    "products": {
+      "items": {
+        "4": {
+          "title": "新生牛血清 (Newborn Calf Serum - NBCS, Bovine)",
+          "fields": {
+            "partno": "产品货号",
+            "basic": "基础信息",
+            "scope": "适用范围推荐",
+            "features": "产品特点",
+            "storage": "存储条件",
+            "spec": "产品规格"
+          },
+          "desc": {
+            "desc_partno": "NZ-NCS(GI)",
+            "desc_basic": "血清来源于国内外优质天然牧场出生10天内的健康新生牛。",
+            "desc_scope": "适用于诊断试剂生产（酶联免疫/化学发光），推荐用于 HIV 等 ELISA 试剂盒；适用于工程类细胞培养，例如：PK-15 细胞、ST 细胞、Vero 细胞等。",
+            "desc_features": "低血红蛋白（＜100 mg/L），低 γ-球蛋白（＜2 mg/mL），稳定性高。",
+            "desc_storage": "-5℃ 到 -20℃ 冷冻保存，避免反复冻融，保质期为 5 年。"
+          }
+        }
+      }
+    }
+  }
+  

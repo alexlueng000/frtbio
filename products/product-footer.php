@@ -59,12 +59,12 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © <span class="current-year">2025</span> <a href="https://dexignzone.com/" target="_blank">弗劳恩生物</a>. all rights reserved.</span> </div>
+                <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © <span class="current-year">2025</span> <a href="https://dexignzone.com/" target="_blank" data-i18n-html="footer.bottom.copyright">FRTBIO</a>. all rights reserved.</span> </div>
                 <div class="col-md-6 col-sm-6 text-right "> 
                     <div class="widget-link "> 
                         <div class="col-md-6 col-sm-6 text-right "> 
                             <img src="../images/beian.png" style="width: 20px; height: 20px;" alt="">
-                            <a href="https://beian.miit.gov.cn/" target="_blank">
+                            <a href="https://beian.miit.gov.cn/" target="_blank" data-i18n-html="footer.bottom.icp">
                             粤ICP备18028387号-2</a>
                         </div>
                     </div>

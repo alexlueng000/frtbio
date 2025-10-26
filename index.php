@@ -418,7 +418,7 @@ html[lang="en"] #slide-300-layer-3{
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.0.title">FRTBIO 进口特级胎牛血清</h5>
-										<a href="products/Front-Biomed-Premium-Imported-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.0.action">查看详情</a>
+										<a href="products/Front-Biomed-Premium-Imported-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="common.view">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -430,7 +430,7 @@ html[lang="en"] #slide-300-layer-3{
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.1.title">FRTBIO 国产特级胎牛血清</h5>
-										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.1.action">查看详情</a>
+										<a href="products/Front-Biomed-Superior-Grade-Fetal-Bovine-Serum" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="common.view">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -442,7 +442,7 @@ html[lang="en"] #slide-300-layer-3{
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.2.title">FRTBIO 超优级胎牛血清 (FBS, Exceptional )</h5>
-										<a href="products/Front-Biomed-Exceptional" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.2.action">查看详情</a>
+										<a href="products/Front-Biomed-Exceptional" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="common.view">查看详情</a>
 									</div>
 								</div>
 							</div>
@@ -455,7 +455,7 @@ html[lang="en"] #slide-300-layer-3{
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.3.title">FRTBIO 优级胎牛血清 (FBS, Premium)</h5>
-										<a href="products/Front-Biomed-Premium-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="best.items.3.action">查看详情</a>
+										<a href="products/Front-Biomed-Premium-FBS" class="site-button btnhover10 mb-4" style="background-color: #FF8500; color: #fff; padding: 8px 16px; border-radius: 6px; display: inline-block;" data-i18n-html="common.view">查看详情</a>
 									</div>
 								</div>
 							</div>
