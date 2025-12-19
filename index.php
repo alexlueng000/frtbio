@@ -426,7 +426,7 @@ html[lang="en"] #slide-300-layer-3{
 							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 								<div class="product-card dlab-post-media" >
 									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-										<img src="images/products/gouchanteji-front.webp" loading="lazy" alt="" class="img-fluid" >
+										<img src="images/products/new-product2.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.1.title">FRTBIO 国产特级胎牛血清</h5>
@@ -438,7 +438,7 @@ html[lang="en"] #slide-300-layer-3{
 							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 								<div class="product-card dlab-post-media" >
 									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-										<img src="images/products/new-product2.webp" loading="lazy" alt="" class="img-fluid" >
+										<img src="images/products/new-product3.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.2.title">FRTBIO 超优级胎牛血清 (FBS, Exceptional )</h5>
@@ -451,7 +451,7 @@ html[lang="en"] #slide-300-layer-3{
 							<div class="col-lg-3 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s" style=" box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  transition: transform 0.3s ease, box-shadow 0.3s ease; ">
 								<div class="product-card dlab-post-media" >
 									<div class="dlab-thum dlab-img-overlay2 primary dlab-img-effect zoom">
-										<img src="images/products/new-product3.webp" loading="lazy" alt="" class="img-fluid" >
+										<img src="images/products/new-product4.webp" loading="lazy" alt="" class="img-fluid" >
 									</div>
 									<div class="text-center">
 										<h5 class="text-black" style="font-size: 1rem; font-weight: 600; min-height: 36px; margin-top: 10px;" data-i18n-html="best.items.3.title">FRTBIO 优级胎牛血清 (FBS, Premium)</h5>
