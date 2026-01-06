@@ -13,10 +13,10 @@
     "best": {
       "title": "热销产品",
       "items": [
-        { "title": "Front Biomed进口特级胎牛血清 (FBS, Optimum)" },
-        { "title": "Front Biomed国产特级胎牛血清 (FBS, Optimum)" },
-        { "title": "Front Biomed超优级胎牛血清 (FBS, Exceptional)" },
-        { "title": "Front Biomed优级胎牛血清 (FBS, Premium)" }
+        { "title": "FRTIER BIOMEDICAL进口特级胎牛血清" },
+        { "title": "FRTIER BIOMEDICAL国产特级胎牛血清" },
+        { "title": "FRTIER BIOMEDICAL超优级胎牛血清" },
+        { "title": "FRTIER BIOMEDICAL优级胎牛血清" }
       ]
     },
     "common": {

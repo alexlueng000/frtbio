@@ -13,10 +13,10 @@
     "best": {
       "title": "Best-Selling Products",
       "items": [
-        { "title": "Front Biomed Imported Premium FBS (Optimum)" },
-        { "title": "Front Biomed Domestic Premium FBS (Optimum)" },
-        { "title": "Front Biomed Exceptional Grade FBS (Exceptional)" },
-        { "title": "Front Biomed Superior Grade FBS (Premium)" }
+        { "title": "FRTIER BIOMEDICAL Imported Premium FBS" },
+        { "title": "FRTIER BIOMEDICAL Domestic Premium FBS" },
+        { "title": "FRTIER BIOMEDICAL Exceptional Grade FBS" },
+        { "title": "FRTIER BIOMEDICAL Superior Grade FBS" }
       ]
     },
     "common": {

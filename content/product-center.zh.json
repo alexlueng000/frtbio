@@ -49,7 +49,7 @@
     },
     "items": [
       {
-        "title": "Front Biomedical 进口特级胎牛血清 (FBS, Optimum)",
+        "title": "FRTIER BIOMEDICAL 进口特级胎牛血清",
         "fields": {
             "partno": "产品货号",
             "basic": "基础信息",
@@ -62,7 +62,7 @@
           }
       },
       {
-        "title": "Front Biomedical 国产特级胎牛血清 (FBS, Optimum)",
+        "title": "FRTIER BIOMEDICAL 国产特级胎牛血清",
         "fields": {
           "partno": "产品货号",
           "basic": "基础信息",
@@ -75,7 +75,7 @@
         }
       },
       {
-        "title": "Front Biomedical 超优级胎牛血清 (FBS, Exceptional)",
+        "title": "FRTIER BIOMEDICAL 超优级胎牛血清",
         "fields": {
           "partno": "产品货号",
           "basic": "基础信息",
@@ -88,7 +88,7 @@
         }
       },
       {
-        "title": "Front Biomedical 优级胎牛血清 (FBS, Premium)",
+        "title": "FRTIER BIOMEDICAL 优级胎牛血清",
         "fields": {
           "partno": "产品货号",
           "basic": "基础信息",

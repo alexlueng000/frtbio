@@ -20,7 +20,7 @@
         "others": "Others"
       },
       "items": {
-        "fbs_imported": "Front Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
+        "fbs_imported": "FRTIER BIOMEDICAL Premium Imported Fetal Bovine Serum",
         "fbs_domestic": "Front Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
         "fbs_exceptional": "Front Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
         "fbs_premium": "Front Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
@@ -49,7 +49,7 @@
       },
       "items": [
         {
-          "title": "Front Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
+          "title": "FRTIER BIOMEDICAL Premium Imported Fetal Bovine Serum",
           "fields": {
             "partno": "Product No.",
             "basic": "Basic Information",
@@ -62,7 +62,7 @@
           }
         },
         {
-          "title": "Front Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
+          "title": "FRTIER BIOMEDICAL Domestic Premium Fetal Bovine Serum",
           "fields": {
             "partno": "Product No.",
             "basic": "Basic Information",
@@ -75,7 +75,7 @@
           }
         },
         {
-          "title": "Front Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
+          "title": "FRTIER BIOMEDICAL Superior Grade Fetal Bovine Serum",
           "fields": {
             "partno": "Product No.",
             "basic": "Basic Information",
@@ -88,7 +88,7 @@
           }
         },
         {
-          "title": "Front Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
+          "title": "FRTIER BIOMEDICAL Premium Grade Fetal Bovine Serum",
           "fields": {
             "partno": "Product No.",
             "basic": "Basic Information",
