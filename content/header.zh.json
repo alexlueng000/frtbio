@@ -9,10 +9,10 @@
       "product_menu": {
         "serum": "血清",
         "serum_items": {
-          "fbs_imported": "Front Biomed进口特级胎牛血清 (FBS, Optimum)",
-          "fbs_exceptional": "Front Biomed超优级胎牛血清 (FBS, Exceptional)",
-          "fbs_domestic": "Front Biomed国产特级胎牛血清 (FBS, Optimum)",
-          "fbs_premium": "Front Biomed优级胎牛血清 (FBS, Premium)",
+          "fbs_imported": "FRTIER Biomed进口特级胎牛血清 (FBS, Optimum)",
+          "fbs_exceptional": "FRTIER Biomed超优级胎牛血清 (FBS, Exceptional)",
+          "fbs_domestic": "FRTIER Biomed国产特级胎牛血清 (FBS, Optimum)",
+          "fbs_premium": "FRTIER Biomed优级胎牛血清 (FBS, Premium)",
           "nbcs": "新生牛血清(Newborn Calf Serum-NBCS(Bovine))",
           "pig": "猪血清(Pig Serum-Porcine Serum)",
           "horse": "供体马血清(Donor Horse Serum -Equine Serum)",
