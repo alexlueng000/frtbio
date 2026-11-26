@@ -10,10 +10,10 @@
       "product_menu": {
         "serum": "Serum",
         "serum_items": {
-          "fbs_imported": "Front Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
-          "fbs_exceptional": "Front Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
-          "fbs_domestic": "Front Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
-          "fbs_premium": "Front Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
+          "fbs_imported": "FRTIER Biomed Premium Imported Fetal Bovine Serum (FBS, Optimum)",
+          "fbs_exceptional": "FRTIER Biomed Superior Grade Fetal Bovine Serum (FBS, Exceptional)",
+          "fbs_domestic": "FRTIER Biomed Domestic Premium Fetal Bovine Serum (FBS, Optimum)",
+          "fbs_premium": "FRTIER Biomed Premium Grade Fetal Bovine Serum (FBS, Premium)",
           "nbcs": "Newborn Calf Serum (NBCS, Bovine)",
           "pig": "Pig Serum (Porcine Serum)",
           "horse": "Donor Horse Serum (Equine Serum)",
