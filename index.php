@@ -316,7 +316,7 @@ html[lang="en"] #slide-300-layer-3{
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;" data-i18n-html="slider.s2">           
-									产品参数高标准 • 对标国际一线品牌 <br> 新西兰/国产双源产地 • 甄选世界顶级牧场
+									产品参数严苛把控・参考国际主流技术标准 <br> 新西兰 / 国产双源产地・甄选优质合规牧场
 								</div>
 							</li>
 							<li data-index="rs-300" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -380,7 +380,7 @@ html[lang="en"] #slide-300-layer-3{
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;" data-i18n-html="slider.s3">           
-									服务200+实验室 <br> 华南地区最大血清进口商
+									服务200+实验室 <br> 华南地区深耕胎牛血清领域十年的专业进口商
 								</div>
 								
 							</li>

@@ -105,7 +105,7 @@
 					<div class="sort-title clearfix text-center">
 						<h2 data-i18n="about.title">血清个性化定制解决方案</h2>
 						<p style="font-size: 20px; color: black" data-i18n="about.lead">
-							我们提供领先的血清深度处理工艺，根据实验特异性需求进行灵活定制
+							我们具备成熟可靠的血清深度处理工艺，可根据实验特异性需求灵活定制
 							</p>
 					</div>
 
@@ -272,7 +272,7 @@
                                         <li data-i18n="serum_selection.block2_list.0">澳新/国内源头牧场直采</li>
                                         <li data-i18n="serum_selection.block2_list.1">预留3批次安全库存</li>
                                         <li data-i18n="serum_selection.block2_list.2">全周期冷链追溯（-20℃至液氮气相环境）</li>
-                                        <li data-i18n="serum_selection.block2_list.3">从出厂到用户手里最多经历三重检验（出厂检测+国内外实验室检测）</li>
+                                        <li data-i18n="serum_selection.block2_list.3">从出厂到用户手里至少经历两次检验（出厂检验+专业实验室检验），保障品质稳定</li>
                                     </ul>
 								</div>
 							</div>
